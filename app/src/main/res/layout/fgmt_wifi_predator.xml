@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+                 android:background="#FFFFFF">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@drawable/bg">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:id="@+id/ImageLayout"
+                android:minWidth="100dp" android:background="@drawable/simple_border"
+                android:layout_marginTop="6dp" android:layout_marginLeft="29dp" android:layout_marginRight="29dp">
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/img_wifi_detail" android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"/>
+            <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/NbDevicesOnNetWork"
+                    android:layout_alignTop="@+id/imageView" android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp" android:background="@drawable/simple_border_light"
+                    android:gravity="center" android:textStyle="bold"/>
+            <TextView android:layout_width="30dp" android:layout_height="30dp"
+                      android:textAppearance="?android:attr/textAppearanceSmall" android:text="0"
+                      android:id="@+id/NbDevicesProbe"
+                      android:background="@drawable/simple_border_light" android:gravity="center" android:textStyle="bold"
+                      android:layout_below="@+id/NbDevicesOnNetWork" android:layout_alignLeft="@+id/NbDevicesOnNetWork"
+                      android:layout_alignStart="@+id/NbDevicesOnNetWork" android:layout_marginTop="8dp"/>
+            <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/serverVizu" android:layout_alignTop="@+id/NbDevicesOnNetWork"
+                    android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                    android:background="#69151c" android:layout_marginLeft="12dp"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logoVictim"
+                    android:src="@drawable/victime_connected" android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false" android:layout_alignParentStart="false"
+                    android:layout_alignTop="@+id/NbDevicesOnNetWork" android:layout_alignParentRight="false"
+                    android:layout_toLeftOf="@+id/NbDevicesOnNetWork"
+                    android:layout_alignBottom="@+id/NbDevicesOnNetWork"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/logoSSID"
+                       android:src="@drawable/wifissid" android:layout_alignParentTop="false"
+                       android:layout_alignParentLeft="false" android:layout_alignParentStart="false"
+                       android:layout_alignTop="@+id/NbDevicesProbe" android:layout_alignParentRight="false"
+                       android:layout_toLeftOf="@+id/NbDevicesOnNetWork"
+                       android:layout_alignBottom="@+id/NbDevicesProbe"/>
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" android:layout_alignTop="@+id/imageView"
+                    android:layout_alignBottom="@+id/imageView">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/replay"
+                        android:src="@drawable/replay"
+                        android:layout_alignParentTop="false" android:layout_marginTop="66dp"
+                        android:layout_marginLeft="158dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewIdClient" android:layout_below="@+id/ImageLayout"
+                android:layout_alignLeft="@+id/ImageLayout" android:layout_alignStart="@+id/ImageLayout"
+                android:layout_marginTop="12dp" android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/ImageLayout" android:layout_alignEnd="@+id/ImageLayout"
+                android:background="@drawable/simple_border" android:dividerHeight="1px" android:divider="#222222"
+                android:layout_marginBottom="4dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

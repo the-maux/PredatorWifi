@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@drawable/simple_border_black_little_corn">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/nameDevice"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false" android:layout_alignParentTop="true" android:gravity="center"
+            android:textStyle="bold" android:background="@drawable/simple_border"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:background="@drawable/simple_border_black"
+            android:id="@+id/relativeLayout3" android:layout_below="@+id/nameDevice">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                android:baselineAligned="false" android:id="@+id/linearLayout" android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" android:background="@drawable/simple_border">
+            <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="DHCP"
+                    android:id="@+id/radioButtonDHCP"
+                    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" android:layout_alignParentBottom="true"
+                    android:minWidth="80dp" android:maxWidth="80dp"
+                    android:background="@drawable/simple_border_black_little_corn"
+                    android:layout_weight="1" android:paddingLeft="8dp" android:clickable="true"/>
+            <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="DNS"
+                    android:id="@+id/radioButtonDNS"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" android:layout_toLeftOf="@+id/radioButtonHTTP"
+                    android:minWidth="90dp"
+                    android:background="@drawable/simple_border_black_little_corn"
+                    android:layout_weight="1" android:paddingLeft="8dp" android:clickable="true"/>
+            <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="HTTP"
+                    android:id="@+id/radioButtonHTTP" android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" android:layout_toLeftOf="@+id/radioButtonSSI"
+                    android:minWidth="90dp"
+                    android:background="@drawable/simple_border_black_little_corn"
+                    android:layout_weight="1" android:paddingLeft="8dp" android:allowUndo="true"
+                    android:checked="false" android:clickable="true"/>
+            <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="SSID"
+                    android:id="@+id/radioButtonSSI" android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:minWidth="90dp" android:background="@drawable/simple_border_black_little_corn"
+                    android:paddingLeft="8dp" android:clickable="true"/>
+        </LinearLayout>
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewRedcordClient"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_below="@+id/linearLayout" android:background="@drawable/simple_border"
+                android:layout_marginTop="2sp" android:layout_margin="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>
