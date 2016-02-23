@@ -6,8 +6,11 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.MediaRouteActionProvider;
+import android.support.v7.media.MediaRouteSelector;
 import android.util.Log;
 import android.view.*;
 import android.view.inputmethod.InputMethodManager;
@@ -43,6 +46,10 @@ public class                            MainActivityToFragment extends AppCompat
     public boolean                      Predator = false;
     public InfoConfNetWork              infoConfNetWork;
     public ClientNatif                  clientNatif = null;
+    private Menu                        menu;
+    private MediaRouteActionProvider    mediaRouteActionProvider;
+    private MenuItem                    mediaRouteMenuItem;
+
     /**
      * Parametrage de l'ActionBar
      */
@@ -230,13 +237,27 @@ public class                            MainActivityToFragment extends AppCompat
         }
         return super.onOptionsItemSelected(item);
     }
-    public ClientPredator getActualClientPredator() {
+    public ClientPredator               getActualClientPredator() {
         return actualClientPredator;
     }
-    public void setActualClientPredator(ClientPredator actualClientPredator) {
+    public void                         setActualClientPredator(ClientPredator actualClientPredator) {
         this.actualClientPredator = actualClientPredator;
     }
     public LinkWifiPredator             getLinkWifiPredator() {
         return linkWifiPredator;
+    }
+    @Override
+    public boolean                      onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        this.menu = menu;
+        getMenuInflater().inflate(R.menu.menu, menu);
+        mediaRouteMenuItem = menu.findItem(R.id.media_route_menu_item);
+        mediaRouteMenuItem.setVisible(false);
+        return true;
+    }
+    public void                         initMenuForAirplay(MediaRouteSelector mediaRouteSelector) {
+        mediaRouteMenuItem.setVisible(true);
+        mediaRouteActionProvider = (MediaRouteActionProvider) MenuItemCompat.getActionProvider(mediaRouteMenuItem);
+        mediaRouteActionProvider.setRouteSelector(mediaRouteSelector);
     }
 }

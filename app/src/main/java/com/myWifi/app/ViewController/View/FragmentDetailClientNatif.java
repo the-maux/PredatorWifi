@@ -1,6 +1,6 @@
 package com.myWifi.app.ViewController.View;
 
-import android.widget.ArrayAdapter;
+
 import android.widget.ListView;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,4 +35,6 @@ public class                    FragmentDetailClientNatif extends android.suppor
         Log.w(TAG, "createView");
         return rootView;
     }
+
+
 }

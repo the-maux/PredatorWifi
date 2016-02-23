@@ -3,16 +3,18 @@ package com.myWifi.app.ViewController.View;
 import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.support.v7.media.MediaRouter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
+import com.myWifi.app.ViewController.Controler.Casting.CastingManager;
 import com.myWifi.app.ViewController.View.Adapter.Networking.clientNatifAdapter;
 import com.myWifi.app.ViewController.Controler.Networking.MapNetwork;
 import com.myWifi.app.ViewController.Model.Networking.StackClientNatif;
-
+import android.content.Context;
 public class                        FragmentDiscoverClientNatif extends android.support.v4.app.Fragment {
     private final String            TAG = "FragmentDiscoverClientNatif";
     private MapNetwork              mapNetwork;
@@ -22,6 +24,8 @@ public class                        FragmentDiscoverClientNatif extends android.
     TextView                        TVNameNetwork, typeNetwork, TvServiceType, TvServiceName;
     ProgressBar                     progressBTotal, progressBarWaitting;
     RelativeLayout                  LogWaitLayout;
+    CastingManager                  managerCastScreen;
+
 
     @Override
     public void             onCreate(Bundle bundle) {
@@ -39,6 +43,7 @@ public class                        FragmentDiscoverClientNatif extends android.
         adapter = new clientNatifAdapter(getContext(), mapNetwork.getStackclient(), this);
         listViewClientNatifs.setAdapter(adapter);
         initXml(rootView);
+        managerCastScreen = new CastingManager(getContext(), this);
         return rootView;
     }
 
@@ -55,7 +60,7 @@ public class                        FragmentDiscoverClientNatif extends android.
                     .getConnectionInfo().getSSID().replace("\"", ""));
     }
 
-    public void            advanceWaitBar(final String nameLog, final String nameService, final int progress) {
+    public void             advanceWaitBar(final String nameLog, final String nameService, final int progress) {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -88,5 +93,17 @@ public class                        FragmentDiscoverClientNatif extends android.
         super.onResume();
 
     }
-
+    @Override
+    public void             onStart()
+    {
+        super.onStart();
+        //managerCastScreen.getmMediaRouter().addCallback(mediaRouteSelector, mediaRouterCallback, MediaRouter.CALLBACK_FLAG_PERFORM_ACTIVE_SCAN);
+    }
+    @Override
+    public void             onStop()
+    {
+        //setSelectedDevice(null);
+        //managerCastScreen.getmMediaRouter().removeCallback(mediaRouterCallback);
+        super.onStop();
+    }
 }
