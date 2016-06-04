@@ -1,45 +1,45 @@
 import time
 from os import path
-from subprocess import check_output,CalledProcessError
-from Core.loaders.master.github import GithubUpdate,UrllibDownload
+from subprocess import check_output, CalledProcessError
+from Core.loaders.master.github import UrllibDownload
 from Core.loaders.Stealth.PackagesUI import *
 
 
 class frm_githubUpdate(PumpkinModule):
-    def __init__(self,version,parent = None):
+    def __init__(self, version, parent=None):
         super(frm_githubUpdate, self).__init__(parent)
         self.setWindowTitle("WiFi-Pumpkin Software Update")
         self.loadtheme(self.configure.XmlThemeSelected())
         self.version = version
         self.UrlDownloadCommits = \
-        'https://raw.githubusercontent.com/P0cL4bs/WiFi-Pumpkin/master/Core/config/commits/Lcommits.cfg'
+            'https://raw.githubusercontent.com/P0cL4bs/WiFi-Pumpkin/master/Core/config/commits/Lcommits.cfg'
         self.PathUrlRcommits = 'Core/config/commits/Rcommits.cfg'
         self.PathUrlLcommits = 'Core/config/commits/Lcommits.cfg'
         self.center()
         self.GUI()
 
     def GUI(self):
-        self.Main       = QVBoxLayout()
-        self.Blayout    = QHBoxLayout()
-        self.frm        = QFormLayout()
-        self.frmOutPut  = QFormLayout()
+        self.Main = QVBoxLayout()
+        self.Blayout = QHBoxLayout()
+        self.frm = QFormLayout()
+        self.frmOutPut = QFormLayout()
         self.frmCommits = QFormLayout()
-        self.split      = QHBoxLayout()
-        self.LVersion   = QLabel(self.version)
-        self.pb         = ProgressBarWid(total=101)
-        self.btnUpdate  = QPushButton('Install')
-        self.btnCheck   = QPushButton('Check Updates')
-        self.LCommits   = QListWidget(self)
-        self.LOutput    = QListWidget(self)
+        self.split = QHBoxLayout()
+        self.LVersion = QLabel(self.version)
+        self.pb = ProgressBarWid(total=101)
+        self.btnUpdate = QPushButton('Install')
+        self.btnCheck = QPushButton('Check Updates')
+        self.LCommits = QListWidget(self)
+        self.LOutput = QListWidget(self)
         self.btnUpdate.setDisabled(True)
 
         # icons
         self.btnCheck.setIcon(QIcon('rsc/Checklist_update.png'))
         self.btnUpdate.setIcon(QIcon('rsc/updates_.png'))
-        #connects
+        # connects
         self.btnCheck.clicked.connect(self.checkUpdate)
         self.btnUpdate.clicked.connect(self.startUpdate)
-        #temporary
+        # temporary
 
         # split left
         self.frmCommits.addRow(QLabel('New Commits::'))
@@ -63,44 +63,43 @@ class frm_githubUpdate(PumpkinModule):
         self.setLayout(self.Main)
 
     def startUpdate(self):
-        if hasattr(self,'git'):
+        if hasattr(self, 'git'):
             self.git.UpdateRepository()
 
     def checkUpdate(self):
         try:
-            if not path.isfile(check_output(['which','git']).rstrip()):
-                return QMessageBox.warning(self,'git','git is not installed')
+            if not path.isfile(check_output(['which', 'git']).rstrip()):
+                return QMessageBox.warning(self, 'git', 'git is not installed')
         except CalledProcessError:
-            return QMessageBox.warning(self,'git','git is not installed')
-        self.LCommits.clear(),self.LOutput.clear()
+            return QMessageBox.warning(self, 'git', 'git is not installed')
+        self.LCommits.clear(), self.LOutput.clear()
         self.pb.setValue(1)
         self.btnCheck.setDisabled(True)
         self.downloaderUrl = UrllibDownload(self.UrlDownloadCommits)
         self.downloaderUrl.data_downloaded.connect(self.Get_ContentUrl)
         self.downloaderUrl.start()
 
-    def Get_ContentUrl(self,data):
+    def Get_ContentUrl(self, data):
         if data == 'URLError':
             self.btnCheck.setEnabled(True)
-            return QMessageBox.warning(self,'Update Warning','Checking internet connection failed.')
-        self.git = GithubUpdate(self.version,data,self.PathUrlLcommits,self.PathUrlRcommits)
-        self.connect(self.git,SIGNAL('Activated ( QString ) '), self.RcheckCommits)
+            return QMessageBox.warning(self, 'Update Warning', 'Checking internet connection failed.')
+        self.git = GithubUpdate(self.version, data, self.PathUrlLcommits, self.PathUrlRcommits)
+        self.connect(self.git, SIGNAL('Activated ( QString ) '), self.RcheckCommits)
         self.git.start()
         self.btnCheck.setDisabled(True)
 
-
-    def RcheckCommits(self,commits):
+    def RcheckCommits(self, commits):
         if 'no changes into' in commits:
             item = QListWidgetItem()
             item.setText(commits)
             item.setIcon(QIcon('rsc/checked_update.png'))
-            item.setSizeHint(QSize(20,20))
+            item.setSizeHint(QSize(20, 20))
             self.LCommits.addItem(item)
             return self.btnCheck.setEnabled(True)
         elif 'new Version available WiFi-Pumpkin v' in commits:
             reply = QMessageBox.question(self, 'Update Information',
-                '{}, would you like to update??'.format(commits), QMessageBox.Yes |
-                QMessageBox.No, QMessageBox.No)
+                                         '{}, would you like to update??'.format(commits), QMessageBox.Yes |
+                                         QMessageBox.No, QMessageBox.No)
             if reply == QMessageBox.Yes:
                 self.git.NewVersionUpdate()
             return self.btnCheck.setEnabled(True)
@@ -108,7 +107,7 @@ class frm_githubUpdate(PumpkinModule):
             item = QListWidgetItem()
             item.setText(commits)
             item.setIcon(QIcon('rsc/check_update.png'))
-            item.setSizeHint(QSize(20,20))
+            item.setSizeHint(QSize(20, 20))
             self.LCommits.addItem(item)
             self.btnCheck.setEnabled(True)
             self.btnUpdate.setEnabled(True)
@@ -116,12 +115,11 @@ class frm_githubUpdate(PumpkinModule):
             self.pb.update_bar(10)
         elif '::updated' in commits:
             self.pb.update_bar(100)
-            QMessageBox.information(self,'Update Information',
-            "Already up-to-date. You're required to restart the tool to apply this update.")
+            QMessageBox.information(self, 'Update Information',
+                                    "Already up-to-date. You're required to restart the tool to apply this update.")
             self.btnUpdate.setDisabled(True)
         else:
             self.LOutput.addItem(commits)
-
 
 
 class ProgressBarWid(QProgressBar):

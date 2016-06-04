@@ -1,15 +1,15 @@
 from Core.loaders.Stealth.PackagesUI import *
 
 class frmAbout(PumpkinModule):
-    def __init__(self,author,emails,version,
-        update,license,desc, parent = None):
+    def __init__(self, author, emails, version,
+                 update, license, desc, parent=None):
         super(frmAbout, self).__init__(parent)
-        self.author      = author
-        self.emails      = emails
-        self.version     = version
-        self.update      = update
-        self.license     = license
-        self.desc        = desc
+        self.author = author
+        self.emails = emails
+        self.version = version
+        self.update = update
+        self.license = license
+        self.desc = desc
         self.setWindowTitle("About WiFi-Pumpkin")
         self.Main = QVBoxLayout()
         self.frm = QFormLayout()
@@ -19,9 +19,9 @@ class frmAbout(PumpkinModule):
         self.loadtheme(self.config.XmlThemeSelected())
         self.Qui_update()
 
-    def loadtheme(self,theme):
-        sshFile=("Core/%s.qss"%(theme))
-        with open(sshFile,"r") as fh:
+    def loadtheme(self, theme):
+        sshFile = ("Core/%s.qss" % (theme))
+        with open(sshFile, "r") as fh:
             self.setStyleSheet(fh.read())
 
     def center(self):
@@ -35,14 +35,14 @@ class frmAbout(PumpkinModule):
         self.btn_exit = QPushButton("Close")
         self.licenseEdit = QTextEdit(self)
         self.licenseEdit.setFixedHeight(150)
-        self.licenseEdit.setText(open('LICENSE','r').read())
-        ltool  = QLabel('<center>WiFi-Pumpkin v%s</center>'%(self.version))
-        ldesc = QLabel('<center>'+self.desc[0]+'</center>')
-        lversion = QLabel('Version:'+self.version)
-        lupdate = QLabel('Last Update:'+self.update)
-        lautor = QLabel('Author:'+self.author)
-        lemail = QLabel('Emails:'+self.emails[0] +" | "+self.emails[1])
-        licese = QLabel('License:'+self.license)
+        self.licenseEdit.setText(open('LICENSE', 'r').read())
+        ltool = QLabel('<center>WiFi-Pumpkin v%s</center>' % (self.version))
+        ldesc = QLabel('<center>' + self.desc[0] + '</center>')
+        lversion = QLabel('Version:' + self.version)
+        lupdate = QLabel('Last Update:' + self.update)
+        lautor = QLabel('Author:' + self.author)
+        lemail = QLabel('Emails:' + self.emails[0] + " | " + self.emails[1])
+        licese = QLabel('License:' + self.license)
         self.form.addRow(ltool)
         self.form.addRow(ldesc)
         self.form.addRow(lversion)
