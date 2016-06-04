@@ -3622,6 +3622,3 @@ GET http://173.194.40.97/generate_204
 GET http://173.194.40.97/generate_204
 {'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
 
-GET http://216.58.211.78/generate_204
-{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
-
