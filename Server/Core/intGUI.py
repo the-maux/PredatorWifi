@@ -4,6 +4,7 @@ import Modules as pkg
 from os import getcwd
 from Core.PopUpServer import PopUpServer
 from Core.helpers.update import frm_githubUpdate
+from Core.StartApFake import StartApFake
 
 def show_arp_posion(view):
     view.Farp_posion = pkg.frm_Arp_Poison()
@@ -288,7 +289,7 @@ def intGUI(view):
     view.btn_cancelar = QPushButton('Stop Access Point', view)
     view.btn_cancelar.setIcon(QIcon('rsc/Stop.png'))
     view.btn_cancelar.clicked.connect(view.kill)
-    view.btn_start_attack.clicked.connect(view.StartApFake)
+    view.btn_start_attack.clicked.connect(lambda: StartApFake(view))
 
     hBox = QHBoxLayout()
     hBox.addWidget(view.btn_start_attack)

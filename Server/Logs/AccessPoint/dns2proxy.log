@@ -43564,3 +43564,468 @@
 2016-01-25 02:09:59,454 :   File "Plugins/dns2proxy/dns2proxy.py", line 745, in <module>
 2016-01-25 02:09:59,454 :     message, address = s.recvfrom(1024)
 2016-01-25 02:09:59,454 : KeyboardInterrupt
+2016-06-04 21:44:09,384 : Non spoofing imap.gmail.com
+2016-06-04 21:44:09,401 : Non spoofing to 127.0.0.1
+2016-06-04 21:44:09,402 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 21:44:09,402 : DNS Forwarding activado....
+2016-06-04 21:44:09,402 : binded to UDP port 53.
+2016-06-04 21:44:09,402 : waiting requests.
+2016-06-04 21:58:08,148 : Non spoofing imap.gmail.com
+2016-06-04 21:58:08,226 : Non spoofing to 127.0.0.1
+2016-06-04 21:58:08,226 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 21:58:08,226 : DNS Forwarding activado....
+2016-06-04 21:58:08,226 : binded to UDP port 53.
+2016-06-04 21:58:08,226 : waiting requests.
+2016-06-04 22:00:49,994 : Non spoofing imap.gmail.com
+2016-06-04 22:00:49,994 : Non spoofing imap.gmail.com
+2016-06-04 22:00:49,995 : Non spoofing to 127.0.0.1
+2016-06-04 22:00:49,995 : Non spoofing to 127.0.0.1
+2016-06-04 22:00:49,999 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:00:49,999 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:00:50,001 : DNS Forwarding activado....
+2016-06-04 22:00:50,001 : DNS Forwarding activado....
+2016-06-04 22:00:50,001 : binded to UDP port 53.
+2016-06-04 22:00:50,001 : binded to UDP port 53.
+2016-06-04 22:00:50,001 : waiting requests.
+2016-06-04 22:00:50,001 : waiting requests.
+2016-06-04 22:03:06,715 : Non spoofing imap.gmail.com
+2016-06-04 22:03:06,716 : Non spoofing to 127.0.0.1
+2016-06-04 22:03:06,716 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:03:06,716 : DNS Forwarding activado....
+2016-06-04 22:03:06,716 : binded to UDP port 53.
+2016-06-04 22:03:06,716 : waiting requests.
+2016-06-04 22:08:35,132 : Non spoofing imap.gmail.com
+2016-06-04 22:08:35,190 : Non spoofing to 127.0.0.1
+2016-06-04 22:08:35,191 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:08:35,192 : DNS Forwarding activado....
+2016-06-04 22:08:35,192 : binded to UDP port 53.
+2016-06-04 22:08:35,192 : waiting requests.
+2016-06-04 22:09:41,182 : Non spoofing imap.gmail.com
+2016-06-04 22:09:41,312 : Non spoofing to 127.0.0.1
+2016-06-04 22:09:41,313 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:09:41,313 : DNS Forwarding activado....
+2016-06-04 22:09:41,313 : binded to UDP port 53.
+2016-06-04 22:09:41,313 : waiting requests.
+2016-06-04 22:09:41,313 : Traceback (most recent call last):
+2016-06-04 22:09:41,313 :   File "Plugins/dns2proxy/dns2proxy.py", line 745, in <module>
+2016-06-04 22:09:41,313 :     message, address = s.recvfrom(1024)
+2016-06-04 22:09:41,313 : KeyboardInterrupt
+2016-06-04 22:09:58,039 : Traceback (most recent call last):
+2016-06-04 22:09:58,096 :   File "Plugins/dns2proxy/dns2proxy.py", line 745, in <module>
+2016-06-04 22:09:58,096 :     message, address = s.recvfrom(1024)
+2016-06-04 22:09:58,096 : KeyboardInterrupt
+2016-06-04 22:17:25,246 : Non spoofing imap.gmail.com
+2016-06-04 22:17:25,247 : Non spoofing to 127.0.0.1
+2016-06-04 22:17:25,248 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-04 22:17:25,249 : DNS Forwarding activado....
+2016-06-04 22:17:25,249 : binded to UDP port 53.
+2016-06-04 22:17:25,249 : waiting requests.
+2016-06-04 22:17:43,510 : serving a request.
+2016-06-04 22:17:43,510 : msg id = 21552
+2016-06-04 22:17:43,510 : Client IP: 10.0.0.20
+2016-06-04 22:17:43,511 : request is connectivitycheck.android.com. IN A
+2016-06-04 22:17:43,548 : Doing the A query....
+2016-06-04 22:17:43,548 : 1 questions.
+2016-06-04 22:17:43,548 : q name = connectivitycheck.android.com
+2016-06-04 22:17:43,548 : Query = connectivitycheck.android.com A
+2016-06-04 22:17:43,609 : Adding real IP  = 216.58.211.110
+2016-06-04 22:17:43,610 : waiting requests.
+2016-06-04 22:17:43,610 : serving a request.
+2016-06-04 22:17:43,610 : msg id = 53172
+2016-06-04 22:17:43,610 : Client IP: 10.0.0.20
+2016-06-04 22:17:43,610 : request is edge-mqtt.facebook.com. IN A
+2016-06-04 22:17:43,610 : Doing the A query....
+2016-06-04 22:17:43,610 : 1 questions.
+2016-06-04 22:17:43,610 : q name = edge-mqtt.facebook.com
+2016-06-04 22:17:43,610 : Query = edge-mqtt.facebook.com A
+2016-06-04 22:17:43,631 : Adding real IP  = 179.60.192.2
+2016-06-04 22:17:43,631 : waiting requests.
+2016-06-04 22:17:43,631 : serving a request.
+2016-06-04 22:17:43,631 : msg id = 19251
+2016-06-04 22:17:43,631 : Client IP: 10.0.0.20
+2016-06-04 22:17:43,631 : request is www.googleapis.com. IN A
+2016-06-04 22:17:43,631 : Doing the A query....
+2016-06-04 22:17:43,631 : 1 questions.
+2016-06-04 22:17:43,631 : q name = www.googleapis.com
+2016-06-04 22:17:43,631 : Query = www.googleapis.com A
+2016-06-04 22:17:43,658 : Adding real IP  = 216.58.211.74
+2016-06-04 22:17:43,658 : waiting requests.
+2016-06-04 22:17:43,658 : serving a request.
+2016-06-04 22:17:43,658 : msg id = 43502
+2016-06-04 22:17:43,658 : Client IP: 10.0.0.20
+2016-06-04 22:17:43,658 : request is settings.crashlytics.com. IN A
+2016-06-04 22:17:43,658 : Doing the A query....
+2016-06-04 22:17:43,658 : 1 questions.
+2016-06-04 22:17:43,658 : q name = settings.crashlytics.com
+2016-06-04 22:17:43,658 : Query = settings.crashlytics.com A
+2016-06-04 22:17:43,737 : Adding real IP  = 54.243.242.217
+2016-06-04 22:17:43,737 : Adding real IP  = 107.21.214.197
+2016-06-04 22:17:43,737 : Adding real IP  = 174.129.19.57
+2016-06-04 22:17:43,737 : Adding real IP  = 107.22.179.196
+2016-06-04 22:17:43,737 : Adding real IP  = 107.20.188.203
+2016-06-04 22:17:43,737 : Adding real IP  = 174.129.209.245
+2016-06-04 22:17:43,737 : Adding real IP  = 107.20.135.85
+2016-06-04 22:17:43,737 : Adding real IP  = 54.243.33.165
+2016-06-04 22:17:43,738 : waiting requests.
+2016-06-04 22:17:43,775 : serving a request.
+2016-06-04 22:17:43,775 : msg id = 34551
+2016-06-04 22:17:43,775 : Client IP: 10.0.0.20
+2016-06-04 22:17:43,775 : request is mtalk.google.com. IN A
+2016-06-04 22:17:43,776 : Doing the A query....
+2016-06-04 22:17:43,776 : 1 questions.
+2016-06-04 22:17:43,776 : q name = mtalk.google.com
+2016-06-04 22:17:43,776 : Query = mtalk.google.com A
+2016-06-04 22:17:43,806 : Adding real IP  = 108.177.15.188
+2016-06-04 22:17:43,806 : waiting requests.
+2016-06-04 22:18:31,948 : serving a request.
+2016-06-04 22:18:31,948 : msg id = 34846
+2016-06-04 22:18:31,948 : Client IP: 10.0.0.20
+2016-06-04 22:18:31,948 : request is accounts.google.com. IN A
+2016-06-04 22:18:31,948 : Doing the A query....
+2016-06-04 22:18:31,949 : 1 questions.
+2016-06-04 22:18:31,949 : q name = accounts.google.com
+2016-06-04 22:18:31,949 : Query = accounts.google.com A
+2016-06-04 22:18:31,991 : Adding real IP  = 216.58.208.237
+2016-06-04 22:18:31,991 : waiting requests.
+2016-06-04 22:18:31,991 : serving a request.
+2016-06-04 22:18:31,991 : msg id = 5721
+2016-06-04 22:18:31,991 : Client IP: 10.0.0.20
+2016-06-04 22:18:31,991 : request is clients4.google.com. IN A
+2016-06-04 22:18:31,991 : Doing the A query....
+2016-06-04 22:18:31,991 : 1 questions.
+2016-06-04 22:18:31,991 : q name = clients4.google.com
+2016-06-04 22:18:31,991 : Query = clients4.google.com A
+2016-06-04 22:18:32,025 : Adding real IP  = 216.58.208.206
+2016-06-04 22:18:32,025 : waiting requests.
+2016-06-04 22:18:32,025 : serving a request.
+2016-06-04 22:18:32,025 : msg id = 39915
+2016-06-04 22:18:32,025 : Client IP: 10.0.0.20
+2016-06-04 22:18:32,025 : request is scontent-cdg2-1.xx.fbcdn.net. IN A
+2016-06-04 22:18:32,025 : Doing the A query....
+2016-06-04 22:18:32,025 : 1 questions.
+2016-06-04 22:18:32,025 : q name = scontent-cdg2-1.xx.fbcdn.net
+2016-06-04 22:18:32,026 : Query = scontent-cdg2-1.xx.fbcdn.net A
+2016-06-04 22:18:32,062 : Adding real IP  = 179.60.192.7
+2016-06-04 22:18:32,063 : waiting requests.
+2016-06-04 22:18:32,063 : serving a request.
+2016-06-04 22:18:32,063 : msg id = 3252
+2016-06-04 22:18:32,063 : Client IP: 10.0.0.20
+2016-06-04 22:18:32,063 : request is translate.googleapis.com. IN A
+2016-06-04 22:18:32,063 : Doing the A query....
+2016-06-04 22:18:32,063 : 1 questions.
+2016-06-04 22:18:32,063 : q name = translate.googleapis.com
+2016-06-04 22:18:32,063 : Query = translate.googleapis.com A
+2016-06-04 22:18:32,089 : Adding real IP  = 64.233.184.239
+2016-06-04 22:18:32,089 : waiting requests.
+2016-06-04 22:18:32,089 : serving a request.
+2016-06-04 22:18:32,089 : msg id = 56042
+2016-06-04 22:18:32,089 : Client IP: 10.0.0.20
+2016-06-04 22:18:32,089 : request is www.google.com. IN A
+2016-06-04 22:18:32,089 : Doing the A query....
+2016-06-04 22:18:32,089 : 1 questions.
+2016-06-04 22:18:32,089 : q name = www.google.com
+2016-06-04 22:18:32,089 : Query = www.google.com A
+2016-06-04 22:18:32,115 : Adding real IP  = 172.217.19.132
+2016-06-04 22:18:32,115 : waiting requests.
+2016-06-04 22:18:32,920 : serving a request.
+2016-06-04 22:18:32,920 : msg id = 39946
+2016-06-04 22:18:32,920 : Client IP: 10.0.0.20
+2016-06-04 22:18:32,920 : request is android.clients.google.com. IN A
+2016-06-04 22:18:32,921 : Doing the A query....
+2016-06-04 22:18:32,921 : 1 questions.
+2016-06-04 22:18:32,921 : q name = android.clients.google.com
+2016-06-04 22:18:32,921 : Query = android.clients.google.com A
+2016-06-04 22:18:33,025 : Adding real IP  = 216.58.208.238
+2016-06-04 22:18:33,025 : waiting requests.
+2016-06-04 22:18:33,025 : serving a request.
+2016-06-04 22:18:33,025 : msg id = 33905
+2016-06-04 22:18:33,025 : Client IP: 10.0.0.20
+2016-06-04 22:18:33,025 : request is clients4.google.com. IN A
+2016-06-04 22:18:33,025 : Doing the A query....
+2016-06-04 22:18:33,025 : 1 questions.
+2016-06-04 22:18:33,025 : q name = clients4.google.com
+2016-06-04 22:18:33,025 : Query = clients4.google.com A
+2016-06-04 22:18:33,049 : Adding real IP  = 216.58.211.110
+2016-06-04 22:18:33,049 : waiting requests.
+2016-06-04 22:18:33,049 : serving a request.
+2016-06-04 22:18:33,049 : msg id = 48468
+2016-06-04 22:18:33,049 : Client IP: 10.0.0.20
+2016-06-04 22:18:33,049 : request is www.google.fr. IN A
+2016-06-04 22:18:33,049 : Doing the A query....
+2016-06-04 22:18:33,049 : 1 questions.
+2016-06-04 22:18:33,049 : q name = www.google.fr
+2016-06-04 22:18:33,049 : Query = www.google.fr A
+2016-06-04 22:18:33,076 : Adding real IP  = 216.58.211.99
+2016-06-04 22:18:33,076 : waiting requests.
+2016-06-04 22:18:34,005 : serving a request.
+2016-06-04 22:18:34,005 : msg id = 38335
+2016-06-04 22:18:34,005 : Client IP: 10.0.0.20
+2016-06-04 22:18:34,005 : request is www.googleapis.com. IN A
+2016-06-04 22:18:34,005 : Doing the A query....
+2016-06-04 22:18:34,005 : 1 questions.
+2016-06-04 22:18:34,005 : q name = www.googleapis.com
+2016-06-04 22:18:34,005 : Query = www.googleapis.com A
+2016-06-04 22:18:34,111 : Adding real IP  = 216.58.208.234
+2016-06-04 22:18:34,111 : waiting requests.
+2016-06-04 22:18:34,111 : serving a request.
+2016-06-04 22:18:34,111 : msg id = 42448
+2016-06-04 22:18:34,111 : Client IP: 10.0.0.20
+2016-06-04 22:18:34,111 : request is android.googleapis.com. IN A
+2016-06-04 22:18:34,111 : Doing the A query....
+2016-06-04 22:18:34,111 : 1 questions.
+2016-06-04 22:18:34,111 : q name = android.googleapis.com
+2016-06-04 22:18:34,111 : Query = android.googleapis.com A
+2016-06-04 22:18:34,139 : Adding real IP  = 216.58.211.74
+2016-06-04 22:18:34,139 : waiting requests.
+2016-06-04 22:18:36,878 : serving a request.
+2016-06-04 22:18:36,878 : msg id = 24535
+2016-06-04 22:18:36,878 : Client IP: 10.0.0.20
+2016-06-04 22:18:36,878 : request is www.facebook.com. IN A
+2016-06-04 22:18:36,878 : Doing the A query....
+2016-06-04 22:18:36,878 : 1 questions.
+2016-06-04 22:18:36,878 : q name = www.facebook.com
+2016-06-04 22:18:36,878 : Query = www.facebook.com A
+2016-06-04 22:18:36,898 : Adding real IP  = 179.60.192.36
+2016-06-04 22:18:36,898 : waiting requests.
+2016-06-04 22:18:36,921 : serving a request.
+2016-06-04 22:18:36,921 : msg id = 55044
+2016-06-04 22:18:36,921 : Client IP: 10.0.0.20
+2016-06-04 22:18:36,921 : request is www.google.com. IN A
+2016-06-04 22:18:36,921 : Doing the A query....
+2016-06-04 22:18:36,921 : 1 questions.
+2016-06-04 22:18:36,921 : q name = www.google.com
+2016-06-04 22:18:36,922 : Query = www.google.com A
+2016-06-04 22:18:36,946 : Adding real IP  = 172.217.16.68
+2016-06-04 22:18:36,946 : waiting requests.
+2016-06-04 22:18:37,256 : serving a request.
+2016-06-04 22:18:37,256 : msg id = 40882
+2016-06-04 22:18:37,256 : Client IP: 10.0.0.20
+2016-06-04 22:18:37,256 : request is edge-chat.facebook.com. IN A
+2016-06-04 22:18:37,256 : Doing the A query....
+2016-06-04 22:18:37,256 : 1 questions.
+2016-06-04 22:18:37,256 : q name = edge-chat.facebook.com
+2016-06-04 22:18:37,256 : Query = edge-chat.facebook.com A
+2016-06-04 22:18:37,277 : Adding real IP  = 179.60.192.3
+2016-06-04 22:18:37,277 : waiting requests.
+2016-06-04 22:18:37,277 : serving a request.
+2016-06-04 22:18:37,277 : msg id = 21704
+2016-06-04 22:18:37,277 : Client IP: 10.0.0.20
+2016-06-04 22:18:37,277 : request is fbstatic-a.akamaihd.net. IN A
+2016-06-04 22:18:37,277 : Doing the A query....
+2016-06-04 22:18:37,277 : 1 questions.
+2016-06-04 22:18:37,277 : q name = fbstatic-a.akamaihd.net
+2016-06-04 22:18:37,277 : Query = fbstatic-a.akamaihd.net A
+2016-06-04 22:18:37,311 : Adding real IP  = 80.236.32.9
+2016-06-04 22:18:37,311 : Adding real IP  = 80.236.32.33
+2016-06-04 22:18:37,311 : waiting requests.
+2016-06-04 22:18:37,312 : serving a request.
+2016-06-04 22:18:37,312 : msg id = 17561
+2016-06-04 22:18:37,312 : Client IP: 10.0.0.20
+2016-06-04 22:18:37,312 : request is m.facebook.com. IN A
+2016-06-04 22:18:37,312 : Doing the A query....
+2016-06-04 22:18:37,312 : 1 questions.
+2016-06-04 22:18:37,312 : q name = m.facebook.com
+2016-06-04 22:18:37,312 : Query = m.facebook.com A
+2016-06-04 22:18:37,342 : Adding real IP  = 179.60.192.36
+2016-06-04 22:18:37,342 : waiting requests.
+2016-06-04 22:18:37,342 : serving a request.
+2016-06-04 22:18:37,342 : msg id = 3072
+2016-06-04 22:18:37,342 : Client IP: 10.0.0.20
+2016-06-04 22:18:37,342 : request is scontent-ams3-1.xx.fbcdn.net. IN A
+2016-06-04 22:18:37,342 : Doing the A query....
+2016-06-04 22:18:37,342 : 1 questions.
+2016-06-04 22:18:37,342 : q name = scontent-ams3-1.xx.fbcdn.net
+2016-06-04 22:18:37,342 : Query = scontent-ams3-1.xx.fbcdn.net A
+2016-06-04 22:18:37,362 : Adding real IP  = 31.13.91.6
+2016-06-04 22:18:37,362 : waiting requests.
+2016-06-04 22:18:38,242 : serving a request.
+2016-06-04 22:18:38,242 : msg id = 24345
+2016-06-04 22:18:38,242 : Client IP: 10.0.0.20
+2016-06-04 22:18:38,242 : request is scontent-bru2-1.xx.fbcdn.net. IN A
+2016-06-04 22:18:38,242 : Doing the A query....
+2016-06-04 22:18:38,243 : 1 questions.
+2016-06-04 22:18:38,243 : q name = scontent-bru2-1.xx.fbcdn.net
+2016-06-04 22:18:38,243 : Query = scontent-bru2-1.xx.fbcdn.net A
+2016-06-04 22:18:38,264 : Adding real IP  = 179.60.195.12
+2016-06-04 22:18:38,264 : waiting requests.
+2016-06-04 22:18:39,003 : serving a request.
+2016-06-04 22:18:39,003 : msg id = 34868
+2016-06-04 22:18:39,003 : Client IP: 10.0.0.20
+2016-06-04 22:18:39,003 : request is clients4.google.com. IN A
+2016-06-04 22:18:39,003 : Doing the A query....
+2016-06-04 22:18:39,004 : 1 questions.
+2016-06-04 22:18:39,004 : q name = clients4.google.com
+2016-06-04 22:18:39,004 : Query = clients4.google.com A
+2016-06-04 22:18:39,034 : Adding real IP  = 216.58.208.238
+2016-06-04 22:18:39,034 : waiting requests.
+2016-06-04 22:18:39,049 : serving a request.
+2016-06-04 22:18:39,049 : msg id = 27207
+2016-06-04 22:18:39,049 : Client IP: 10.0.0.20
+2016-06-04 22:18:39,049 : request is bubmgrdgopyws.PumpAP. IN A
+2016-06-04 22:18:39,049 : Doing the A query....
+2016-06-04 22:18:39,049 : 1 questions.
+2016-06-04 22:18:39,050 : q name = bubmgrdgopyws.PumpAP
+2016-06-04 22:18:39,050 : Query = bubmgrdgopyws.pumpap A
+2016-06-04 22:18:39,421 : Exception...
+2016-06-04 22:18:39,462 : No host....
+2016-06-04 22:18:39,462 : waiting requests.
+2016-06-04 22:18:39,462 : serving a request.
+2016-06-04 22:18:39,463 : msg id = 907
+2016-06-04 22:18:39,463 : Client IP: 10.0.0.20
+2016-06-04 22:18:39,463 : request is gxsdwcvvmpepu.PumpAP. IN A
+2016-06-04 22:18:39,463 : Doing the A query....
+2016-06-04 22:18:39,463 : 1 questions.
+2016-06-04 22:18:39,463 : q name = gxsdwcvvmpepu.PumpAP
+2016-06-04 22:18:39,463 : Query = gxsdwcvvmpepu.pumpap A
+2016-06-04 22:18:39,526 : Exception...
+2016-06-04 22:18:39,526 : No host....
+2016-06-04 22:18:39,526 : waiting requests.
+2016-06-04 22:18:39,526 : serving a request.
+2016-06-04 22:18:39,526 : msg id = 33813
+2016-06-04 22:18:39,526 : Client IP: 10.0.0.20
+2016-06-04 22:18:39,526 : request is lsfhrvxqtey.PumpAP. IN A
+2016-06-04 22:18:39,526 : Doing the A query....
+2016-06-04 22:18:39,526 : 1 questions.
+2016-06-04 22:18:39,526 : q name = lsfhrvxqtey.PumpAP
+2016-06-04 22:18:39,526 : Query = lsfhrvxqtey.pumpap A
+2016-06-04 22:18:39,588 : Exception...
+2016-06-04 22:18:39,588 : No host....
+2016-06-04 22:18:39,588 : waiting requests.
+2016-06-04 22:18:39,973 : serving a request.
+2016-06-04 22:18:39,973 : msg id = 43798
+2016-06-04 22:18:39,973 : Client IP: 10.0.0.20
+2016-06-04 22:18:39,973 : request is bubmgrdgopyws. IN A
+2016-06-04 22:18:39,973 : Doing the A query....
+2016-06-04 22:18:39,973 : 1 questions.
+2016-06-04 22:18:39,973 : q name = bubmgrdgopyws
+2016-06-04 22:18:39,973 : Query = bubmgrdgopyws A
+2016-06-04 22:18:40,007 : Exception...
+2016-06-04 22:18:40,007 : No host....
+2016-06-04 22:18:40,008 : waiting requests.
+2016-06-04 22:18:40,069 : serving a request.
+2016-06-04 22:18:40,069 : msg id = 58015
+2016-06-04 22:18:40,069 : Client IP: 10.0.0.20
+2016-06-04 22:18:40,069 : request is gxsdwcvvmpepu. IN A
+2016-06-04 22:18:40,069 : Doing the A query....
+2016-06-04 22:18:40,069 : 1 questions.
+2016-06-04 22:18:40,069 : q name = gxsdwcvvmpepu
+2016-06-04 22:18:40,069 : Query = gxsdwcvvmpepu A
+2016-06-04 22:18:40,108 : Exception...
+2016-06-04 22:18:40,108 : No host....
+2016-06-04 22:18:40,108 : waiting requests.
+2016-06-04 22:18:40,108 : serving a request.
+2016-06-04 22:18:40,108 : msg id = 29052
+2016-06-04 22:18:40,108 : Client IP: 10.0.0.20
+2016-06-04 22:18:40,108 : request is lsfhrvxqtey. IN A
+2016-06-04 22:18:40,108 : Doing the A query....
+2016-06-04 22:18:40,108 : 1 questions.
+2016-06-04 22:18:40,108 : q name = lsfhrvxqtey
+2016-06-04 22:18:40,108 : Query = lsfhrvxqtey A
+2016-06-04 22:18:40,132 : Exception...
+2016-06-04 22:18:40,132 : No host....
+2016-06-04 22:18:40,132 : waiting requests.
+2016-06-04 22:18:40,657 : serving a request.
+2016-06-04 22:18:40,657 : msg id = 42208
+2016-06-04 22:18:40,657 : Client IP: 10.0.0.20
+2016-06-04 22:18:40,657 : request is safebrowsing.googleapis.com. IN A
+2016-06-04 22:18:40,657 : Doing the A query....
+2016-06-04 22:18:40,657 : 1 questions.
+2016-06-04 22:18:40,657 : q name = safebrowsing.googleapis.com
+2016-06-04 22:18:40,657 : Query = safebrowsing.googleapis.com A
+2016-06-04 22:18:40,686 : Adding real IP  = 64.233.167.239
+2016-06-04 22:18:40,686 : waiting requests.
+2016-06-04 22:18:41,514 : serving a request.
+2016-06-04 22:18:41,515 : msg id = 27747
+2016-06-04 22:18:41,515 : Client IP: 10.0.0.20
+2016-06-04 22:18:41,515 : request is external-bru2-1.xx.fbcdn.net. IN A
+2016-06-04 22:18:41,515 : Doing the A query....
+2016-06-04 22:18:41,515 : 1 questions.
+2016-06-04 22:18:41,515 : q name = external-bru2-1.xx.fbcdn.net
+2016-06-04 22:18:41,515 : Query = external-bru2-1.xx.fbcdn.net A
+2016-06-04 22:18:41,533 : Adding real IP  = 179.60.195.12
+2016-06-04 22:18:41,533 : waiting requests.
+2016-06-04 22:18:43,265 : serving a request.
+2016-06-04 22:18:43,265 : msg id = 24345
+2016-06-04 22:18:43,265 : I am already serving this request.
+2016-06-04 22:18:43,265 : waiting requests.
+2016-06-04 22:18:45,727 : serving a request.
+2016-06-04 22:18:45,727 : msg id = 42208
+2016-06-04 22:18:45,727 : I am already serving this request.
+2016-06-04 22:18:45,727 : waiting requests.
+2016-06-04 22:18:48,259 : serving a request.
+2016-06-04 22:18:48,260 : msg id = 27263
+2016-06-04 22:18:48,260 : Client IP: 10.0.0.20
+2016-06-04 22:18:48,260 : request is scontent-bru2-1.xx.fbcdn.net.PumpAP. IN A
+2016-06-04 22:18:48,260 : Doing the A query....
+2016-06-04 22:18:48,260 : 1 questions.
+2016-06-04 22:18:48,260 : q name = scontent-bru2-1.xx.fbcdn.net.PumpAP
+2016-06-04 22:18:48,260 : Query = scontent-bru2-1.xx.fbcdn.net.pumpap A
+2016-06-04 22:18:48,548 : Exception...
+2016-06-04 22:18:48,549 : No host....
+2016-06-04 22:18:48,549 : waiting requests.
+2016-06-04 22:18:48,549 : serving a request.
+2016-06-04 22:18:48,549 : msg id = 46599
+2016-06-04 22:18:48,549 : Client IP: 10.0.0.20
+2016-06-04 22:18:48,549 : request is scontent-bru2-1.xx.fbcdn.net. IN A
+2016-06-04 22:18:48,549 : Doing the A query....
+2016-06-04 22:18:48,549 : 1 questions.
+2016-06-04 22:18:48,549 : q name = scontent-bru2-1.xx.fbcdn.net
+2016-06-04 22:18:48,549 : Query = scontent-bru2-1.xx.fbcdn.net A
+2016-06-04 22:18:48,573 : Adding real IP  = 179.60.195.12
+2016-06-04 22:18:48,573 : waiting requests.
+2016-06-04 22:18:49,245 : serving a request.
+2016-06-04 22:18:49,245 : msg id = 22918
+2016-06-04 22:18:49,245 : Client IP: 10.0.0.20
+2016-06-04 22:18:49,245 : request is cx.atdmt.com. IN A
+2016-06-04 22:18:49,245 : Doing the A query....
+2016-06-04 22:18:49,245 : 1 questions.
+2016-06-04 22:18:49,245 : q name = cx.atdmt.com
+2016-06-04 22:18:49,245 : Query = cx.atdmt.com A
+2016-06-04 22:18:49,269 : Adding real IP  = 179.60.192.10
+2016-06-04 22:18:49,269 : waiting requests.
+2016-06-04 22:18:49,269 : serving a request.
+2016-06-04 22:18:49,269 : msg id = 56420
+2016-06-04 22:18:49,269 : Client IP: 10.0.0.20
+2016-06-04 22:18:49,269 : request is sync.liverail.com. IN A
+2016-06-04 22:18:49,269 : Doing the A query....
+2016-06-04 22:18:49,269 : 1 questions.
+2016-06-04 22:18:49,269 : q name = sync.liverail.com
+2016-06-04 22:18:49,269 : Query = sync.liverail.com A
+2016-06-04 22:18:49,296 : Adding real IP  = 179.60.192.12
+2016-06-04 22:18:49,297 : waiting requests.
+2016-06-04 22:18:49,297 : serving a request.
+2016-06-04 22:18:49,297 : msg id = 2493
+2016-06-04 22:18:49,297 : Client IP: 10.0.0.20
+2016-06-04 22:18:49,297 : request is tools.google.com. IN A
+2016-06-04 22:18:49,297 : Doing the A query....
+2016-06-04 22:18:49,297 : 1 questions.
+2016-06-04 22:18:49,297 : q name = tools.google.com
+2016-06-04 22:18:49,297 : Query = tools.google.com A
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.102
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.138
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.100
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.101
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.113
+2016-06-04 22:18:49,329 : Adding real IP  = 74.125.71.139
+2016-06-04 22:18:49,329 : waiting requests.
+2016-06-04 22:18:50,645 : serving a request.
+2016-06-04 22:18:50,645 : msg id = 61944
+2016-06-04 22:18:50,645 : Client IP: 10.0.0.20
+2016-06-04 22:18:50,645 : request is safebrowsing.googleapis.com.PumpAP. IN A
+2016-06-04 22:18:50,646 : Doing the A query....
+2016-06-04 22:18:50,646 : 1 questions.
+2016-06-04 22:18:50,646 : q name = safebrowsing.googleapis.com.PumpAP
+2016-06-04 22:18:50,646 : Query = safebrowsing.googleapis.com.pumpap A
+2016-06-04 22:18:50,716 : Exception...
+2016-06-04 22:18:50,717 : No host....
+2016-06-04 22:18:50,717 : waiting requests.
+2016-06-04 22:20:02,307 : serving a request.
+2016-06-04 22:20:02,307 : msg id = 61991
+2016-06-04 22:20:02,307 : Client IP: 10.0.0.20
+2016-06-04 22:20:02,307 : request is clients4.google.com. IN A
+2016-06-04 22:20:02,307 : Doing the A query....
+2016-06-04 22:20:02,307 : 1 questions.
+2016-06-04 22:20:02,307 : q name = clients4.google.com
+2016-06-04 22:20:02,308 : Query = clients4.google.com A
+2016-06-04 22:20:02,335 : Adding real IP  = 216.58.208.238
+2016-06-04 22:20:02,335 : waiting requests.
