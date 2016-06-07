@@ -43564,3 +43564,9 @@
 2016-01-25 02:09:59,454 :   File "Plugins/dns2proxy/dns2proxy.py", line 745, in <module>
 2016-01-25 02:09:59,454 :     message, address = s.recvfrom(1024)
 2016-01-25 02:09:59,454 : KeyboardInterrupt
+2016-06-07 04:01:13,716 : Non spoofing imap.gmail.com
+2016-06-07 04:01:13,741 : Non spoofing to 127.0.0.1
+2016-06-07 04:01:13,742 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-07 04:01:13,746 : DNS Forwarding activado....
+2016-06-07 04:01:13,746 : binded to UDP port 53.
+2016-06-07 04:01:13,746 : waiting requests.

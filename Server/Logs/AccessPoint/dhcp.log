@@ -3222,3 +3222,16 @@
 2016-01-26 17:22:15,197 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
 2016-01-26 17:22:15,197 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
 2016-01-26 17:22:15,197 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-07 04:01:13,460 : ---[ Start DHCP Tue Jun  7 04:01:13 2016]---
+2016-06-07 04:01:13,678 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-07 04:01:13,678 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-07 04:01:13,678 : All rights reserved.
+2016-06-07 04:01:13,678 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-07 04:01:13,678 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-07 04:01:13,679 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-07 04:01:13,679 : PID file: /var/run/dhcpd.pid
+2016-06-07 04:01:13,688 : Wrote 0 leases to leases file.
+2016-06-07 04:01:14,526 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-07 04:01:14,526 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-07 04:01:14,526 : Sending on   Socket/fallback/fallback-net
+2016-06-07 04:01:14,527 : Server starting service.
