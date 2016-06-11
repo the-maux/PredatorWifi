@@ -1,62 +1,68 @@
-from Core.loaders.Stealth.PackagesUI import *
-from threading import Thread
-import socket
-import sys
+from PyQt4 import QtGui
+from PyQt4 import QtNetwork
+from PyQt4 import QtCore
 import time
-import os
 
-class FrontServer(Thread):
-    def __init__(self, main):
-        Thread.__init__(self)
-        self.main = main
+class LogSniffer(QtCore.QThread):
+    def __init__(self, parent):
+        print "Log:Sniffer Start"
+        QtCore.QThread.__init__(self, parent)
+        self.listLogs = [open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r')]
+        QtCore.QObject.connect(parent, QtCore.SIGNAL("stop"), self.stop)
 
     def run(self):
-        self.Init()
+        while 1:
+            rcx = 0
+            for log in self.listLogs:
+                self.logString = log.readline()
+                if not self.logString: rcx += 1
+                else: self.emit(QtCore.SIGNAL("LogToSend"))
+            if rcx == 4:
+                time.sleep(2)
+    def stop(self):
+        print "Log:Sniffer Stop"
 
-    def Init(self):
-        print "Current working dir : %s" % os.getcwd()
-#        logDico = ((), (), (), (), ())
-        self.main.form_widget.btn_probe.trigger()
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.log = open('Logs/LogProbeScan', 'r')
-        self.server_address = ("localhost", 42429)
-        print >> sys.stderr, 'starting up on %s port %s' % self.server_address
-        self.sock.bind(self.server_address)
-        self.sock.listen(1)
-        print >> sys.stderr, 'waiting for a connection'
-        self.myLoop()
+class FrontServer(QtCore.QObject):
+    def __init__(self):
+        super(FrontServer, self).__init__()
+        self.tcpServer = QtNetwork.QTcpServer()
+        self.tcpServer.listen(QtNetwork.QHostAddress("127.0.0.1"), 1234)
+        print "FrontServer: Listening"
+        self.tcpServer.newConnection.connect(self.addConnection)
+        self.logger = LogSniffer(self)
+        self.logger.start()
+        QtCore.QObject.connect(self.logger, QtCore.SIGNAL("LogToSend"), self.sendMessage)
 
-    def reloading(self):
-        print "reloading"
-        self.sock.close()
-        time.sleep(1)
-        while self.sock == 0x00:
-            try:
-                self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                self.sock.bind(self.server_address)
-                self.sock.listen(1)
-                self.myLoop()
-            except self.socket.error:
-                sock = 0x00
-
-    def myLoop(self):
-        connection, client_address = self.sock.accept()
-        print >> sys.stderr, 'client connected:', client_address
+    def addConnection(self):
+        print "FrontServer: Adding Connection Front"
         try:
-            while (True):
-                res = log.readline()
-                if res == "":
-                    time.sleep(1)
-                else:
-                    print "data { " + res + "}"
-                    connection.sendall(res)
-                buffIN = ""
-                while buffIN == "" :
-                    buffIN = connection.recv(42)
-                    if buffIN == "@+" : self.reloading()
-                    print "data rcv {" + buffIN + "}"
-                    if buffIN == "" : time.sleep(1)
-        except:
-            print "connection closed"
-        finally:
-            self.reloading()
+            self.clientConnection = self.tcpServer.nextPendingConnection()
+            self.clientConnection.nextBlockSize = 0
+            self.clientConnection.readyRead.connect(self.receiveMessage)
+            self.clientConnection.disconnected.connect(self.removeConnection)
+            self.clientConnection.error.connect(self.socketError)
+            self.stream = QtCore.QDataStream(self.clientConnection)
+            self.stream.setVersion(QtCore.QDataStream.Qt_4_2)
+
+        except Exception as ex:
+            QtGui.QMessageBox.information(None, "Error", ex.message)
+
+    def receiveMessage(self):
+        print "FrontServer: in Received"
+        if self.clientConnection.bytesAvailable() > 0:
+            self.Message = self.stream.readRawData(self.clientConnection.bytesAvailable())
+            print "Received Message :" + str(self.Message)
+            self.clientConnection.nextBlockSize = 0
+            self.emit(QtCore.SIGNAL('DataReceived'))
+            self.clientConnection.nextBlockSize = 0
+
+    def sendMessage(self):
+        print "FrontServer: in sendMessage"
+        self.request = QtCore.QByteArray()
+        self.stream.writeRawData(self.logger.logString)
+
+    def removeConnection(self):
+        pass
+
+    def socketError(self):
+        pass

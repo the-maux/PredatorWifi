@@ -13,7 +13,7 @@ from os import system, path, getcwd, chdir, popen, listdir, mkdir
 from subprocess import Popen, PIPE, STDOUT, call, check_output, CalledProcessError
 from isc_dhcp_leases.iscdhcpleases import IscDhcpLeases
 from Core.Utils import ProcessThread, Refactor, setup_logger, set_monitor_mode, ProcessHostapd
-from Modules.monitors.FrontServer import FrontServer
+
 from Core.config.Settings import frm_Settings
 from Plugins.sslstrip.StrippingProxy import StrippingProxy
 from Plugins.sslstrip.URLMonitor import URLMonitor
@@ -37,8 +37,6 @@ class Initialize(QMainWindow):
         self.setCentralWidget(self.form_widget)
         self.setWindowTitle('Epitech Sniffer' + version)
         self.loadtheme(self.FSettings.XmlThemeSelected())
-        self.FrontServer = FrontServer(self)
-        self.FrontServer.start()
 
     def loadtheme(self, theme):
         sshFile = ("Core/%s.qss" % (theme))
@@ -347,7 +345,7 @@ class SubMain(QWidget):
 
         # menu module
         Menu_module = self.myQMenuBar.addMenu('&Modules')
-        btn_deauth = QAction('Deauth Attack', self)
+        self.btn_deauth = QAction('Deauth Attack', self)
         self.btn_probe = QAction('Probe Request', self)
         btn_mac = QAction('Mac Changer', self)
         btn_dhcpStar = QAction('DHCP S. Attack', self)
@@ -359,7 +357,7 @@ class SubMain(QWidget):
 
         # connect buttons
         self.btn_probe.triggered.connect(self.showProbe)
-        btn_deauth.triggered.connect(self.formDauth)
+        self.btn_deauth.triggered.connect(self.formDauth)
         btn_mac.triggered.connect(self.form_mac)
         btn_dhcpStar.triggered.connect(self.show_dhcpDOS)
         btn_winup.triggered.connect(self.show_windows_update)
@@ -375,13 +373,13 @@ class SubMain(QWidget):
         btn_dhcpStar.setIcon(QIcon('rsc/dhcp.png'))
         btn_mac.setIcon(QIcon('rsc/mac.png'))
         self.btn_probe.setIcon(QIcon('rsc/probe.png'))
-        btn_deauth.setIcon(QIcon('rsc/deauth.png'))
+        self.btn_deauth.setIcon(QIcon('rsc/deauth.png'))
         btn_dns.setIcon(QIcon('rsc/dns_spoof.png'))
         btn_phishing.setIcon(QIcon('rsc/page.png'))
         action_settings.setIcon(QIcon('rsc/setting.png'))
 
         # add modules menu
-        Menu_module.addAction(btn_deauth)
+        Menu_module.addAction(self.btn_deauth)
         Menu_module.addAction(self.btn_probe)
         Menu_module.addAction(btn_mac)
         Menu_module.addAction(btn_dhcpStar)
@@ -820,49 +818,31 @@ class SubMain(QWidget):
                                            'You are connected with interface wireless, try again with local connection')
         self.btn_start_attack.setDisabled(True)
         self.APactived = self.FSettings.xmlSettings('accesspoint', 'actived', None, False)
-        if self.APactived == 'airbase-ng':
-            self.ConfigTwin['interface'] = str(set_monitor_mode(self.selectCard.currentText()).setEnable())
-            self.FSettings.xmlSettings('interface', 'monitor_mode', self.ConfigTwin['interface'], False)
-            # airbase thread
-            Thread_airbase = ProcessThread(['airbase-ng',
-                                            '-c', str(self.EditChannel.text()), '-e', self.EditApName.text(),
-                                            '-F', 'Logs/Caplog/' + asctime(), self.ConfigTwin['interface']])
-            Thread_airbase.name = 'Airbase-ng'
-            self.Apthreads['RougeAP'].append(Thread_airbase)
-            Thread_airbase.start()
-            # settings
-            while True:
-                if Thread_airbase.iface != None:
-                    self.ConfigTwin['AP_iface'] = [x for x in Refactor.get_interfaces()['all'] if search('at', x)][0]
-                    self.FSettings.xmlSettings('netcreds', 'interface', self.ConfigTwin['AP_iface'], False)
-                    break
-            self.CoreSettings()
-        elif self.APactived == 'hostapd':
-            self.FSettings.xmlSettings('netcreds', 'interface',
-                                       str(self.selectCard.currentText()), False)
-            self.ConfigTwin['AP_iface'] = str(self.selectCard.currentText())
+        self.FSettings.xmlSettings('netcreds', 'interface',
+                                   str(self.selectCard.currentText()), False)
+        self.ConfigTwin['AP_iface'] = str(self.selectCard.currentText())
+        try:
+            check_output(['nmcli', 'radio', 'wifi', "off"])
+        except CalledProcessError:
             try:
-                check_output(['nmcli', 'radio', 'wifi', "off"])
-            except CalledProcessError:
-                try:
-                    check_output(['nmcli', 'nm', 'wifi', "off"])
-                except CalledProcessError as e:
-                    return QMessageBox.warning(self, 'Error nmcli', e)
-            call(['rfkill', 'unblock', 'wlan'])
-            self.CoreSettings()
-            ignore = ('interface=', 'ssid=', 'channel=')
-            with open('Settings/hostapd.conf', 'w') as apconf:
-                for i in self.SettingsAP['hostapd']: apconf.write(i)
-                for config in str(self.FSettings.ListHostapd.toPlainText()).split('\n'):
-                    if not config.startswith('#') and len(config) > 0:
-                        if not config.startswith(ignore):
-                            apconf.write(config + '\n')
-                apconf.close()
-            self.Thread_hostapd = ProcessHostapd(['hostapd', '-d', 'Settings/hostapd.conf'])
-            self.Thread_hostapd.setObjectName('hostapd')
-            self.Thread_hostapd.statusAP_connected.connect(self.GetHostapdStatus)
-            self.Apthreads['RougeAP'].append(self.Thread_hostapd)
-            self.Thread_hostapd.start()
+                check_output(['nmcli', 'nm', 'wifi', "off"])
+            except CalledProcessError as e:
+                return QMessageBox.warning(self, 'Error nmcli', e)
+        call(['rfkill', 'unblock', 'wlan'])
+        self.CoreSettings()
+        ignore = ('interface=', 'ssid=', 'channel=')
+        with open('Settings/hostapd.conf', 'w') as apconf:
+            for i in self.SettingsAP['hostapd']: apconf.write(i)
+            for config in str(self.FSettings.ListHostapd.toPlainText()).split('\n'):
+                if not config.startswith('#') and len(config) > 0:
+                    if not config.startswith(ignore):
+                        apconf.write(config + '\n')
+            apconf.close()
+        self.Thread_hostapd = ProcessHostapd(['hostapd', '-d', 'Settings/hostapd.conf'])
+        self.Thread_hostapd.setObjectName('hostapd')
+        self.Thread_hostapd.statusAP_connected.connect(self.GetHostapdStatus)
+        self.Apthreads['RougeAP'].append(self.Thread_hostapd)
+        self.Thread_hostapd.start()
 
         # thread dhcp
         selected_dhcp = self.FSettings.xmlSettings('dhcp', 'dhcp_server', None, False)
