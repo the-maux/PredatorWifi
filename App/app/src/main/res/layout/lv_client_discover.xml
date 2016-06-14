@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:id="@+id/AllLayout"
+                android:descendantFocusability="blocksDescendants"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/simple_border_list_v_ssid">
+
+    <RelativeLayout
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:id="@+id/leftLayout"
+            android:gravity="center"
+            android:layout_alignParentTop="true" android:background="@drawable/simple_border_black">
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:id="@+id/idType" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/leftLayout"
+            android:layout_toEndOf="@+id/leftLayout"
+            android:layout_alignBottom="@+id/leftLayout">
+
+        <TextView
+                android:id="@+id/hostname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cbcbcb"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:text="Inconnues" android:layout_alignParentTop="true" android:textStyle="bold|italic"
+                android:layout_toLeftOf="@+id/SSID" android:layout_toStartOf="@+id/SSID"
+                android:layout_marginRight="6dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/ip"
+                android:textColor="#d9d9d9"
+                android:textSize="16sp"
+                android:text="SFR-324"
+                android:textStyle="bold" android:layout_alignTop="@+id/nameDevice"
+                android:layout_alignRight="@+id/macAddr" android:layout_alignEnd="@+id/macAddr"
+                android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="12h42"
+                android:id="@+id/time" android:layout_gravity="right"
+                android:layout_alignBaseline="@+id/macAddr" android:layout_alignBottom="@+id/macAddr"
+                android:layout_alignLeft="@+id/nameDevice" android:layout_alignStart="@+id/nameDevice"
+                android:textStyle="bold" android:textColor="#c8c8c8" android:textSize="14sp"
+                android:layout_toLeftOf="@+id/macAddr" android:layout_toStartOf="@+id/macAddr"
+                android:singleLine="true" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/macAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#d6d6d6"
+                android:visibility="visible"
+                android:gravity="bottom"
+                android:text="42:42:42:42:42:42"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:textStyle="bold" android:layout_marginBottom="2dp"
+                android:layout_marginRight="8sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

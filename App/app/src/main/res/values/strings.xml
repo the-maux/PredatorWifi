@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wifi Predator</string>
+    <string-array name="Menu">
+        <item>Wifi Detail</item>
+        <item>WifiPredator</item>
+        <item>Wifi Discovery</item>
+
+    </string-array>
+
+    <string name="ip">ip</string>
+
+</resources>

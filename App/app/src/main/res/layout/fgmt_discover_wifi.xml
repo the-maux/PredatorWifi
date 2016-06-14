@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout4" android:background="@drawable/simple_border_black_little_corn">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:src="@drawable/tower4"
+                android:background="@drawable/simple_border_black_little_corn"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TP-Link_D846+F"
+                android:id="@+id/TVNameNetwork" android:layout_alignTop="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2" android:layout_toEndOf="@+id/imageView2"
+                android:textStyle="bold" android:layout_marginTop="8dp" android:layout_marginLeft="4dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Wireless network"
+                android:id="@+id/typeNetwork" android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/TVNameNetwork" android:layout_alignStart="@+id/TVNameNetwork"
+                android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LVNatifClient" android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
