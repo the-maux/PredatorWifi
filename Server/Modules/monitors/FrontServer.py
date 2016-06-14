@@ -5,7 +5,6 @@ import time
 
 class LogSniffer(QtCore.QThread):
     def __init__(self, parent):
-        print "Log:Sniffer Start"
         QtCore.QThread.__init__(self, parent)
         self.listLogs = [open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r')]
         QtCore.QObject.connect(parent, QtCore.SIGNAL("stop"), self.stop)
@@ -30,7 +29,6 @@ class FrontServer(QtCore.QObject):
         print "FrontServer: Listening"
         self.tcpServer.newConnection.connect(self.addConnection)
         self.logger = LogSniffer(self)
-        self.logger.start()
         QtCore.QObject.connect(self.logger, QtCore.SIGNAL("LogToSend"), self.sendMessage)
 
     def addConnection(self):
@@ -43,7 +41,7 @@ class FrontServer(QtCore.QObject):
             self.clientConnection.error.connect(self.socketError)
             self.stream = QtCore.QDataStream(self.clientConnection)
             self.stream.setVersion(QtCore.QDataStream.Qt_4_2)
-
+            self.logger.start()
         except Exception as ex:
             QtGui.QMessageBox.information(None, "Error", ex.message)
 
@@ -53,6 +51,7 @@ class FrontServer(QtCore.QObject):
             self.Message = self.stream.readRawData(self.clientConnection.bytesAvailable())
             print "Received Message :" + str(self.Message)
             self.clientConnection.nextBlockSize = 0
+
             self.emit(QtCore.SIGNAL('DataReceived'))
             self.clientConnection.nextBlockSize = 0
 

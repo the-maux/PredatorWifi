@@ -949,7 +949,7 @@ def printer(src_ip_port, dst_ip_port, msg):
     if dst_ip_port != None:
         print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
         # All credentials will have dst_ip_port, URLs will not
-        myLogProbeScan.write("HTTP:%s}%s\n" % (src_ip_port, msg))
+        myLogProbeScan.write("HTTP-Credidential:" + print_str)
         # Prevent identical outputs unless it's an HTTP search or POST load
         skip = ['Searched ', 'POST load:']
         for s in skip:
@@ -969,8 +969,8 @@ def printer(src_ip_port, dst_ip_port, msg):
         # Log the creds
         creds.info(print_str)
     else:
-        myLogProbeScan.write("HTTP:%s}%s" % (src_ip_port, msg))
         print_str = '[%s] %s' % (src_ip_port.split(':')[0], msg)
+        myLogProbeScan.write("HTTP-Url:" + print_str + "\n")
         url.info(print_str)
         print print_str
     myLogProbeScan.flush()

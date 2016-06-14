@@ -573,7 +573,6 @@ class SubMain(QWidget):
         print('Connected::[{}] hostname::[{}]'.format(key, self.APclients[key]['device']))
 
     def GetDHCPRequests(self, data):
-        print "in GetDHCPRequests"
         if len(data) == 8:
             if Refactor.check_is_mac(data[4]):
                 if data[4] not in self.APclients.keys():
@@ -751,7 +750,7 @@ class SubMain(QWidget):
                     'iptables --table nat --delete-chain',
                     'ifconfig %s 0' % (self.ConfigTwin['AP_iface']),
                     'killall dhpcd',
-                    'killall dnsmasq'
+#                    'killall dnsmasq'
                 ],
             'hostapd':
                 [

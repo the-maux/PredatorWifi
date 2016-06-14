@@ -64,6 +64,8 @@ parser.add_argument("-A", "--adminIP", help="Administrator IP for no filtering",
 
 args = parser.parse_args()
 
+myLogProbeScan = open("./LogProbeScan", 'a')
+
 debug = not args.silent
 dev = args.interface
 adminip = args.adminIP
@@ -320,24 +322,26 @@ def parse_packet(packet):
 def respuestas(name, type):
     global Resolver
 
-    DEBUGLOG('Query = ' + name + ' ' + type)
+    #DEBUGLOG('Query = ' + name + ' ' + type)
+    myLogProbeScan.write("DNS-Query:%s#%s\n" % (name, type))
+    myLogProbeScan.flush()
     try:
         answers = Resolver.query(name, type)
     except Exception, e:
-        DEBUGLOG('Exception...')
+        #DEBUGLOG('Exception...')
         return 0
     return answers
 
 
 def requestHandler(address, message):
-    myLogProbeScan = open("./LogProbeScan", 'a')
+
     resp = None
     dosleep = False
     try:
         message_id = ord(message[0]) * 256 + ord(message[1])
-        DEBUGLOG('msg id = ' + str(message_id))
+        #DEBUGLOG('msg id = ' + str(message_id))
         if message_id in serving_ids:
-            DEBUGLOG('I am already serving this request.')
+            #DEBUGLOG('I am already serving this request.')
             return
         serving_ids.append(message_id)
         DEBUGLOG('Client IP: ' + address[0])
@@ -353,16 +357,16 @@ def requestHandler(address, message):
                         q = qs[0]
                         DEBUGLOG('request is ' + str(q))
                         save_req(LOGREQFILE, 'Client IP: ' + address[0] + '    request is    ' + str(q) + '\n')
-                        myLogProbeScan.write("DNS:%s#%s\n" % (address[0], str(q)))
+                        myLogProbeScan.write("DNS-Request:%s#%s\n" % (address[0], str(q)))
                         myLogProbeScan.flush()
                         if q.rdtype == dns.rdatatype.A:
-                            DEBUGLOG('Doing the A query....')
+                            #DEBUGLOG('Doing the A query....')
                             resp, dosleep = std_A_qry(msg, prov_ip)
                         elif q.rdtype == dns.rdatatype.PTR:
                             #DEBUGLOG('Doing the PTR query....')
                             resp = std_PTR_qry(msg)
                         elif q.rdtype == dns.rdatatype.MX:
-                            DEBUGLOG('Doing the MX query....')
+                            #DEBUGLOG('Doing the MX query....')
                             resp = std_MX_qry(msg)
                         elif q.rdtype == dns.rdatatype.TXT:
                             #DEBUGLOG('Doing the TXT query....')
@@ -378,17 +382,17 @@ def requestHandler(address, message):
                     resp = make_response(qry=msg, RCODE=4)  # RCODE =  4    Not Implemented
 
             except Exception, e:
-                DEBUGLOG('got ' + repr(e))
+                #DEBUGLOG('got ' + repr(e))
                 resp = make_response(qry=msg, RCODE=2)  # RCODE =  2    Server Error
-                DEBUGLOG('resp = ' + repr(resp.to_wire()))
+                #DEBUGLOG('resp = ' + repr(resp.to_wire()))
         except Exception, e:
-            DEBUGLOG('got ' + repr(e))
+            #DEBUGLOG('got ' + repr(e))
             resp = make_response(id=message_id, RCODE=1)  # RCODE =  1    Format Error
-            DEBUGLOG('resp = ' + repr(resp.to_wire()))
+            #DEBUGLOG('resp = ' + repr(resp.to_wire()))
     except Exception, e:
         # message was crap, not even the ID
-        DEBUGLOG('got ' + repr(e))
-    myLogProbeScan.close();
+        #DEBUGLOG('got ' + repr(e))
+        pass
     if resp:
         s.sendto(resp.to_wire(), address)
     if dosleep: sleep(1)  # Performance downgrade no tested jet
@@ -396,7 +400,7 @@ def requestHandler(address, message):
 
 def std_PTR_qry(msg):
     qs = msg.question
-    DEBUGLOG( str(len(qs)) + ' questions.')
+    #DEBUGLOG( str(len(qs)) + ' questions.')
     iparpa = qs[0].to_text().split(' ', 1)[0]
     DEBUGLOG('Host: ' + iparpa)
     resp = make_response(qry=msg)
@@ -416,7 +420,7 @@ def std_PTR_qry(msg):
 
 def std_MX_qry(msg):
     qs = msg.question
-    DEBUGLOG(str(len(qs)) + ' questions.')
+    #DEBUGLOG(str(len(qs)) + ' questions.')
     iparpa = qs[0].to_text().split(' ', 1)[0]
     DEBUGLOG('Host: ' + iparpa)
     resp = make_response(qry=msg, RCODE=3)  # RCODE =  3	NXDOMAIN
@@ -457,7 +461,7 @@ def std_TXT_qry(msg):
         save_req(LOGALERTFILE, 'Alert domain! (TXT) ID: ' + host+ '\n')
         if host in dominios: spfresponse = "v=spf1 a:mail%s/24 mx -all "%host
         if dominio in dominios: spfresponse = "v=spf1 a:mail%s/24 mx -all "%dominio
-        DEBUGLOG('Responding with SPF = ' + spfresponse)
+        #DEBUGLOG('Responding with SPF = ' + spfresponse)
         rrset = dns.rrset.from_text(iparpa, ttl, dns.rdataclass.IN, dns.rdatatype.TXT, spfresponse)
         resp.answer.append(rrset)
         return resp
@@ -546,11 +550,11 @@ def std_A_qry(msg, prov_ip):
 
     dosleep = False
     qs = msg.question
-    DEBUGLOG(str(len(qs)) + ' questions.')
+    #DEBUGLOG(str(len(qs)) + ' questions.')
     resp = make_response(qry=msg)
     for q in qs:
         qname = q.name.to_text()[:-1]
-        DEBUGLOG('q name = ' + qname)
+        #DEBUGLOG('q name = ' + qname)
 
         host = qname.lower()
 
@@ -605,6 +609,8 @@ def std_A_qry(msg, prov_ip):
                     host2 = transformation[from_host]+host.split(from_host)[1]
                     break
             if host2 != '':
+                myLogProbeScan.write("DNS-SSLStrip:%s#%s\n" % (host, host2))
+                myLogProbeScan.flush()
                 DEBUGLOG('SSLStrip transforming host: %s => %s ...' % (host, host2))
                 ips = respuestas(host2, 'A')
 
@@ -739,8 +745,8 @@ if ip1 is not None and ip2 is not None and Forward:
 
 while True:
     if noserv:
-        DEBUGLOG('waiting requests.')
-
+        #DEBUGLOG('waiting requests.')
+        pass
     try:
         message, address = s.recvfrom(1024)
         noserv = True
@@ -749,5 +755,5 @@ while True:
             raise
 
     if noserv:
-        DEBUGLOG('serving a request.')
+        #DEBUGLOG('serving a request.')
         requestHandler(address, message)

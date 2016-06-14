@@ -8,16 +8,21 @@ from Core.loaders.checker.check_depen import check_dependencies
 from Core.Utils import Refactor
 from Modules.monitors.FrontServer import *
 
+def nothing():
+    print "nothingToo"
+
 def RemoteControl():
     print "Entering Remote Control\t\t\t[+]"
     if "/launch" in server.Message :
+        print "switcher"
         switcher = {
-            "/launch ProbeMonitor": app.form_widget.btn_probe.trigger(),
-            "/launch StartAttack": app.form_widget.btn_start_attack.click(),
-            "/launch StopAttack": app.form_widget.btn_cancelar.click(),
+            "/launch ProbeMonitor\n": app.form_widget.btn_probe.trigger,
+            "/launch StartAttack\n": app.form_widget.btn_start_attack.click,
+            "/launch StopAttack\n": app.form_widget.btn_cancelar.click,
         }
         print "launching Control=>" + server.Message
-        switcher.get(server.Message)()
+        switcher.get(server.Message, nothing)()
+
     elif "/ApName" in server.Message:
         app.form_widget.EditApName.setText(server.Message[len("/ApName "):])
     elif "/Channel" in server.Message:
