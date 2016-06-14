@@ -1,4 +1,10 @@
 TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
 HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
 DNS-Request:10.0.0.20#cdn.jsdelivr.net. IN A

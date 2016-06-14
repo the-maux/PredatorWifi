@@ -322,9 +322,6 @@ def parse_packet(packet):
 def respuestas(name, type):
     global Resolver
 
-    #DEBUGLOG('Query = ' + name + ' ' + type)
-    myLogProbeScan.write("DNS-Query:%s#%s\n" % (name, type))
-    myLogProbeScan.flush()
     try:
         answers = Resolver.query(name, type)
     except Exception, e:
@@ -610,7 +607,6 @@ def std_A_qry(msg, prov_ip):
                     break
             if host2 != '':
                 myLogProbeScan.write("DNS-SSLStrip:%s#%s\n" % (host, host2))
-                myLogProbeScan.flush()
                 DEBUGLOG('SSLStrip transforming host: %s => %s ...' % (host, host2))
                 ips = respuestas(host2, 'A')
 

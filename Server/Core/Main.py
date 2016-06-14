@@ -80,8 +80,10 @@ class ThRunDhcp(QThread):
         loggerDhcp.info('---[ Start DHCP ' + asctime() + ']---')
         for line, data in enumerate(iter(self.process.stdout.readline, b'')):
             if 'DHCPREQUEST for' in data.rstrip():
+                print "test debug[DHCPREQUEST]:->" + str(data.rstrip()) + "<-"
                 self.sendRequest.emit(data.split())
             elif 'DHCPACK on' in data.rstrip():
+                print "test debug[DHCPACK]:->" + str(data.rstrip()) + "<-"
                 self.sendRequest.emit(data.split())
             loggerDhcp.info(data.rstrip())
 

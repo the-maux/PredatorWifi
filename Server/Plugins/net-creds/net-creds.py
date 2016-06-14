@@ -586,7 +586,7 @@ def other_parser(src_ip_port, dst_ip_port, full_load, ack, seq, pkt, verbose):
         if http_url_req != None:
             if verbose == False:
                 if len(http_url_req) > 98:
-                    http_url_req = http_url_req[:99] + '...'
+                    http_url_req = http_url_req
             printer(src_ip_port, None, http_url_req)
 
     # Print search terms
@@ -618,7 +618,7 @@ def other_parser(src_ip_port, dst_ip_port, full_load, ack, seq, pkt, verbose):
         try:
             if verbose == False and len(body) > 99:
                 # If it can't decode to utf8 we're probably not interested in it
-                msg = 'POST load: %s...' % body[:99].encode('utf8')
+                msg = 'POST load: %s' % body.encode('utf8')
             else:
                 msg = 'POST load: %s' % body.encode('utf8')
             printer(src_ip_port, None, msg)
@@ -949,7 +949,7 @@ def printer(src_ip_port, dst_ip_port, msg):
     if dst_ip_port != None:
         print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
         # All credentials will have dst_ip_port, URLs will not
-        myLogProbeScan.write("HTTP-Credidential:" + print_str)
+        myLogProbeScan.write("HTTP-Credidential:" + print_str + "\n")
         # Prevent identical outputs unless it's an HTTP search or POST load
         skip = ['Searched ', 'POST load:']
         for s in skip:
@@ -963,8 +963,8 @@ def printer(src_ip_port, dst_ip_port, msg):
         print print_str
 
         # Escape colors like whatweb has
-        ansi_escape = re.compile(r'\x1b[^m]*m')
-        print_str = ansi_escape.sub('', print_str)
+        #ansi_escape = re.compile(r'\x1b[^m]*m')
+        #print_str = ansi_escape.sub('', print_str)
 
         # Log the creds
         creds.info(print_str)
