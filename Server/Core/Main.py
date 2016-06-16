@@ -70,6 +70,7 @@ class ThRunDhcp(QThread):
         QThread.__init__(self)
         self.args = args
         self.process = None
+        self.myLogProbeScan = open("./LogProbeScan", 'a')
 
     def run(self):
         print 'Starting Thread:' + self.objectName()
@@ -80,10 +81,10 @@ class ThRunDhcp(QThread):
         loggerDhcp.info('---[ Start DHCP ' + asctime() + ']---')
         for line, data in enumerate(iter(self.process.stdout.readline, b'')):
             if 'DHCPREQUEST for' in data.rstrip():
-                print "test debug[DHCPREQUEST]:->" + str(data.rstrip()) + "<-"
+                self.myLogProbeScan.write(str(data.rstrip()) + "\n")
                 self.sendRequest.emit(data.split())
             elif 'DHCPACK on' in data.rstrip():
-                print "test debug[DHCPACK]:->" + str(data.rstrip()) + "<-"
+                self.myLogProbeScan.write(str(data.rstrip()) + "\n")
                 self.sendRequest.emit(data.split())
             loggerDhcp.info(data.rstrip())
 
