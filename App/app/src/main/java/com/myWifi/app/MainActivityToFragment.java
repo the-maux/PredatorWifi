@@ -36,11 +36,14 @@ public class                            MainActivityToFragment extends AppCompat
     private NavDrawerListAdapter        adapter = null;
     private List<Fragment>              myStack = new ArrayList<>();
     private List<String>                myStackTitre = new ArrayList<>();
-    public StackClientPredator myListClient = null;
-    private ClientPredator actualClientPredator = null;
+    public StackClientPredator          myListClient = null;
+    private ClientPredator              actualClientPredator = null;
     private LinkWifiPredator            linkWifiPredator = null;
     public boolean                      Predator = false;
     public InfoNetWork                  infoNetWork;
+    private Menu                        menu;
+    private Fragment                    actualFragment = null;
+
     /**
      * Parametrage de l'ActionBar
      */
@@ -146,34 +149,31 @@ public class                            MainActivityToFragment extends AppCompat
      * @return Fragment
      */
     private     Fragment                getFragmentByPosition(int position) {
-        Fragment                        fragment = null;
         switch (position) {
             case 0:
-                fragment = new FragmentWifiDetails();
+                actualFragment = new FragmentWifiDetails();
                 break;
             case 1:
-                fragment = new FragmentWifiDetails();
+                actualFragment = new FragmentWifiDetails();
                 break;
             case 2:
-                fragment = new FragmentLinkWifiPredator();
+                actualFragment = new FragmentWifiPredator();
                 break;
             case 3:
-                fragment = new FragmentDiscoverWifi();
+                actualFragment = new FragmentWifiDiscovery();
                 break;
             case 5:
-                fragment = (actualClientPredator != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
+                actualFragment = (actualClientPredator != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
                 break;
             case 4:
-                fragment = new FragmentApScanObsolet();
+                actualFragment = new FragmentObsoletForApScan();
                 break;
-
-
         }
-        Predator = (fragment.getClass() == FragmentLinkWifiPredator.class);
+        Predator = (actualFragment.getClass() == FragmentWifiPredator.class);
         Log.w("ActivityToFragment", "getFragment-> " + position + " bool Predator : " + Predator);
-        return fragment;
+        paramMenuBehavior(typeMenuBehavior.INIT);
+        return actualFragment;
     }
-
     /**
      * Set le titre de la Page & produit les decalages
      * @param position
@@ -197,17 +197,45 @@ public class                            MainActivityToFragment extends AppCompat
         Log.w("ActivityToFragment", "goToSwitchScreen-> " + position);
         switch_screen(getFragmentByPosition(position), position);
     }
+    private void                        paramMenuBehavior(typeMenuBehavior type) {
+        if (actualFragment.getClass() == FragmentWifiDetails.class ||
+                actualFragment.getClass() == FragmentWifiDiscovery.class ||
+                actualFragment.getClass() == FragmentObsoletForApScan.class) {
+            if (type == typeMenuBehavior.INIT) menu.findItem(R.id.img_param).setVisible(false);
+        }  else if (actualFragment.getClass() == FragmentWifiPredator.class) {
+            if (type == typeMenuBehavior.INIT) menu.findItem(R.id.img_param).setVisible(true);
+            else {
+                ((FragmentWifiPredator)actualFragment).paramMenuClick();
+            }
+        }  else if (actualFragment.getClass() == FragmentDetailsClient.class) {
+            if (type == typeMenuBehavior.INIT) menu.findItem(R.id.img_param).setVisible(true);
+            else {
+                ((FragmentDetailsClient)actualFragment).paramMenuClick();
+            }
+        }
+    }
+    @Override
+    public boolean                      onCreateOptionsMenu(final Menu menu) {
+        this.menu = menu;
+        getMenuInflater().inflate(R.menu.actionbar_menu, menu);
 
+        menu.findItem(R.id.img_param).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                paramMenuBehavior(typeMenuBehavior.CLIKED);
+                return true;
+            }
+        });
+        return true;
+    }
     @Override
     public void                         onBackPressed() {
         if (myStack.size() >= 0x2) {
             {
-                // load le fragment
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.frame_container, myStack.get(myStack.size() - 0x2))
                         .commit();
-                // Load le Titre du Fragment dans l'ActionBar
                 TitleActionBar.setText(myStackTitre.get(myStack.size() - 0x2));
                 myStackTitre.remove(myStackTitre.size() - 0x1);
                 myStack.remove(myStack.size() - 0x1);
@@ -227,13 +255,14 @@ public class                            MainActivityToFragment extends AppCompat
         }
         return super.onOptionsItemSelected(item);
     }
-    public ClientPredator getActualClientPredator() {
+    public ClientPredator               getActualClientPredator() {
         return actualClientPredator;
     }
-    public void setActualClientPredator(ClientPredator actualClientPredator) {
+    public void                         setActualClientPredator(ClientPredator actualClientPredator) {
         this.actualClientPredator = actualClientPredator;
     }
     public LinkWifiPredator             getLinkWifiPredator() {
         return linkWifiPredator;
     }
+    public enum                         typeMenuBehavior{ INIT, CLIKED; }
 }

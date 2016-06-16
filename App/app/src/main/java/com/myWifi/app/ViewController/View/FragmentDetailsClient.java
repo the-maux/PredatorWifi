@@ -83,4 +83,7 @@ public class                FragmentDetailsClient extends android.support.v4.app
         initialize(rootView);
         return rootView;
     }
+    public void             paramMenuClick() {
+        //TODO: show dialog to enter param
+    }
 }

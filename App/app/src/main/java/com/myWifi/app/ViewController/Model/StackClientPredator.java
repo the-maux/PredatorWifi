@@ -39,15 +39,12 @@ public class StackClientPredator extends ArrayList {
         this.adapter = adapter;
     }
     public      boolean         isAllowed(Record.recordType type) {
-        if (type == Record.recordType.HTTP && http)
-            return true;
-        else if (type == Record.recordType.DNS && dns)
-            return true;
-        else if (type == Record.recordType.SSID && ssid)
-            return true;
-        else if (type == Record.recordType.DHCP && dhcp)
-            return true;
-        return false;
+        return ((type == Record.recordType.HttpCredit && http)  ||
+                 (type == Record.recordType.HttpPost && http)   ||
+                 (type == Record.recordType.HttpGET && http)    ||
+                 (type == Record.recordType.DNS && dns)         ||
+                 (type == Record.recordType.SSID && ssid)       ||
+                 (type == Record.recordType.DHCP && dhcp));
     }
     public int                  getNbrPersonneConnected() {
         return nbrPersonneConnected;
