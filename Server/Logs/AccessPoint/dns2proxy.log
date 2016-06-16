@@ -1355,3 +1355,509 @@
 2016-06-14 20:46:49,577 : Adding real IP  = 216.58.208.228
 2016-06-14 20:46:54,838 : Client IP: 10.0.0.20
 2016-06-14 20:46:54,838 : request is websubscribeonandroid.com. IN A
+2016-06-15 16:46:43,451 : Non spoofing imap.gmail.com
+2016-06-15 16:46:43,500 : Non spoofing to 127.0.0.1
+2016-06-15 16:46:43,500 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 16:46:43,500 : DNS Forwarding activado....
+2016-06-15 16:46:43,500 : binded to UDP port 53.
+2016-06-15 16:47:13,001 : Client IP: 10.0.0.20
+2016-06-15 16:47:13,001 : request is connectivitycheck.android.com. IN A
+2016-06-15 16:47:13,133 : Adding real IP  = 216.58.211.110
+2016-06-15 16:47:13,135 : Client IP: 10.0.0.20
+2016-06-15 16:47:13,136 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 16:47:13,161 : Adding real IP  = 179.60.192.2
+2016-06-15 16:47:13,163 : Client IP: 10.0.0.20
+2016-06-15 16:47:13,164 : request is mtalk.google.com. IN A
+2016-06-15 16:47:13,197 : Adding real IP  = 64.233.184.188
+2016-06-15 16:47:13,213 : Client IP: 10.0.0.20
+2016-06-15 16:47:13,214 : request is www.googleapis.com. IN A
+2016-06-15 16:47:13,240 : Adding real IP  = 172.217.16.74
+2016-06-15 16:47:48,395 : Client IP: 10.0.0.20
+2016-06-15 16:47:48,395 : request is cloudconfig.googleapis.com. IN A
+2016-06-15 16:47:48,425 : Adding real IP  = 216.58.208.234
+2016-06-15 16:47:48,729 : Client IP: 10.0.0.20
+2016-06-15 16:47:48,730 : request is www.gstatic.com. IN A
+2016-06-15 16:47:48,756 : Adding real IP  = 172.217.20.35
+2016-06-15 16:47:50,029 : Client IP: 10.0.0.20
+2016-06-15 16:47:50,029 : request is android.clients.google.com. IN A
+2016-06-15 16:47:50,058 : Adding real IP  = 216.58.208.206
+2016-06-15 16:47:50,643 : Client IP: 10.0.0.20
+2016-06-15 16:47:50,643 : request is mclients.googleapis.com. IN A
+2016-06-15 16:47:50,669 : Adding real IP  = 172.217.16.74
+2016-06-15 16:47:50,882 : Client IP: 10.0.0.20
+2016-06-15 16:47:50,882 : request is android.clients.google.com. IN A
+2016-06-15 16:47:50,909 : Adding real IP  = 74.125.206.101
+2016-06-15 16:47:50,909 : Adding real IP  = 74.125.206.113
+2016-06-15 16:47:50,909 : Adding real IP  = 74.125.206.102
+2016-06-15 16:47:50,909 : Adding real IP  = 74.125.206.139
+2016-06-15 16:47:50,910 : Adding real IP  = 74.125.206.138
+2016-06-15 16:47:50,910 : Adding real IP  = 74.125.206.100
+2016-06-15 16:47:51,746 : Client IP: 10.0.0.20
+2016-06-15 16:47:51,746 : request is csi.gstatic.com. IN A
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.212.131
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.212.163
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.212.195
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.212.227
+2016-06-15 16:47:51,773 : Adding real IP  = 172.217.18.131
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.201.163
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.209.99
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.209.131
+2016-06-15 16:47:51,773 : Adding real IP  = 172.217.1.131
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.193.131
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.217.227
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.218.3
+2016-06-15 16:47:51,773 : Adding real IP  = 172.217.17.227
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.201.195
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.213.3
+2016-06-15 16:47:51,773 : Adding real IP  = 216.58.213.35
+2016-06-15 16:47:51,775 : Client IP: 10.0.0.20
+2016-06-15 16:47:51,775 : request is www.googleadservices.com. IN A
+2016-06-15 16:47:51,803 : Adding real IP  = 216.58.208.226
+2016-06-15 16:47:52,841 : Client IP: 10.0.0.20
+2016-06-15 16:47:52,841 : request is www.googleapis.com. IN A
+2016-06-15 16:47:52,865 : Adding real IP  = 172.217.16.74
+2016-06-15 16:47:53,063 : Client IP: 10.0.0.20
+2016-06-15 16:47:53,064 : request is cast.google.com. IN A
+2016-06-15 16:47:53,092 : Adding real IP  = 216.58.208.206
+2016-06-15 17:43:56,180 : Non spoofing imap.gmail.com
+2016-06-15 17:43:56,193 : Non spoofing to 127.0.0.1
+2016-06-15 17:43:56,204 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 17:43:56,204 : DNS Forwarding activado....
+2016-06-15 17:43:56,204 : binded to UDP port 53.
+2016-06-15 17:44:07,675 : Client IP: 10.0.0.20
+2016-06-15 17:44:07,675 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 17:44:07,675 : 1 questions.
+2016-06-15 17:44:07,675 : Host: connectivitycheck.android.com.
+2016-06-15 17:44:07,777 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 17:44:07,779 : Client IP: 10.0.0.20
+2016-06-15 17:44:07,779 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 17:44:07,798 : Adding real IP  = 179.60.192.2
+2016-06-15 17:44:07,798 : Client IP: 10.0.0.20
+2016-06-15 17:44:07,799 : request is android.clients.google.com. IN A
+2016-06-15 17:44:07,826 : Adding real IP  = 216.58.208.206
+2016-06-15 17:44:08,436 : Client IP: 10.0.0.20
+2016-06-15 17:44:08,436 : request is e.crashlytics.com. IN A
+2016-06-15 17:44:08,457 : Adding real IP  = 54.225.208.80
+2016-06-15 17:44:08,457 : Adding real IP  = 54.225.221.229
+2016-06-15 17:44:08,457 : Adding real IP  = 54.204.10.253
+2016-06-15 17:44:08,458 : Adding real IP  = 54.225.183.207
+2016-06-15 17:44:08,458 : Adding real IP  = 50.19.219.120
+2016-06-15 17:44:08,458 : Adding real IP  = 54.225.144.48
+2016-06-15 17:44:08,458 : Adding real IP  = 54.225.164.176
+2016-06-15 17:44:08,458 : Adding real IP  = 50.19.94.109
+2016-06-15 17:44:08,520 : Client IP: 10.0.0.20
+2016-06-15 17:44:08,521 : request is connectivitycheck.android.com. IN A
+2016-06-15 17:44:08,549 : Adding real IP  = 216.58.211.110
+2016-06-15 17:44:08,549 : Client IP: 10.0.0.20
+2016-06-15 17:44:08,549 : request is mtalk.google.com. IN A
+2016-06-15 17:44:08,576 : Adding real IP  = 64.233.167.188
+2016-06-15 17:44:09,898 : Client IP: 10.0.0.20
+2016-06-15 17:44:09,898 : request is www.googleapis.com. IN A
+2016-06-15 17:44:09,925 : Adding real IP  = 172.217.16.74
+2016-06-15 17:46:37,727 : Non spoofing imap.gmail.com
+2016-06-15 17:46:37,728 : Non spoofing to 127.0.0.1
+2016-06-15 17:46:37,728 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 17:46:37,728 : DNS Forwarding activado....
+2016-06-15 17:46:37,728 : binded to UDP port 53.
+2016-06-15 17:46:46,804 : Client IP: 10.0.0.20
+2016-06-15 17:46:46,804 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 17:46:46,804 : 1 questions.
+2016-06-15 17:46:46,804 : Host: connectivitycheck.android.com.
+2016-06-15 17:46:46,832 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 17:46:46,853 : Client IP: 10.0.0.20
+2016-06-15 17:46:46,853 : request is connectivitycheck.android.com. IN A
+2016-06-15 17:46:46,883 : Adding real IP  = 216.58.211.110
+2016-06-15 17:46:46,918 : Client IP: 10.0.0.20
+2016-06-15 17:46:46,920 : request is mtalk.google.com. IN A
+2016-06-15 17:46:46,947 : Adding real IP  = 64.233.184.188
+2016-06-15 17:49:02,314 : Non spoofing imap.gmail.com
+2016-06-15 17:49:02,314 : Non spoofing to 127.0.0.1
+2016-06-15 17:49:02,315 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 17:49:02,315 : DNS Forwarding activado....
+2016-06-15 17:49:02,315 : binded to UDP port 53.
+2016-06-15 17:49:10,616 : Client IP: 10.0.0.20
+2016-06-15 17:49:10,616 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 17:49:10,616 : 1 questions.
+2016-06-15 17:49:10,616 : Host: connectivitycheck.android.com.
+2016-06-15 17:49:10,645 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 17:49:10,652 : Client IP: 10.0.0.20
+2016-06-15 17:49:10,652 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 17:49:10,675 : Adding real IP  = 179.60.192.2
+2016-06-15 17:49:10,676 : Client IP: 10.0.0.20
+2016-06-15 17:49:10,677 : request is connectivitycheck.android.com. IN A
+2016-06-15 17:49:10,706 : Adding real IP  = 216.58.211.110
+2016-06-15 17:49:10,719 : Client IP: 10.0.0.20
+2016-06-15 17:49:10,719 : request is mtalk.google.com. IN A
+2016-06-15 17:49:10,745 : Adding real IP  = 74.125.71.188
+2016-06-15 17:49:10,802 : Client IP: 10.0.0.20
+2016-06-15 17:49:10,804 : request is www.googleapis.com. IN A
+2016-06-15 17:49:10,834 : Adding real IP  = 216.58.208.234
+2016-06-15 17:52:24,140 : Non spoofing imap.gmail.com
+2016-06-15 17:52:24,140 : Non spoofing to 127.0.0.1
+2016-06-15 17:52:24,141 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 17:52:24,141 : DNS Forwarding activado....
+2016-06-15 17:52:24,141 : binded to UDP port 53.
+2016-06-15 17:52:32,302 : Client IP: 10.0.0.20
+2016-06-15 17:52:32,302 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 17:52:32,302 : 1 questions.
+2016-06-15 17:52:32,302 : Host: connectivitycheck.android.com.
+2016-06-15 17:52:32,332 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 17:52:32,362 : Client IP: 10.0.0.20
+2016-06-15 17:52:32,362 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 17:52:32,383 : Adding real IP  = 179.60.192.2
+2016-06-15 17:52:32,384 : Client IP: 10.0.0.20
+2016-06-15 17:52:32,384 : request is mtalk.google.com. IN A
+2016-06-15 17:52:32,411 : Adding real IP  = 74.125.71.188
+2016-06-15 17:52:32,412 : Client IP: 10.0.0.20
+2016-06-15 17:52:32,412 : request is connectivitycheck.android.com. IN A
+2016-06-15 17:52:32,436 : Adding real IP  = 216.58.211.110
+2016-06-15 17:52:32,437 : Client IP: 10.0.0.20
+2016-06-15 17:52:32,437 : request is www.googleapis.com. IN A
+2016-06-15 17:52:32,472 : Adding real IP  = 216.58.208.202
+2016-06-15 17:53:03,559 : Client IP: 10.0.0.20
+2016-06-15 17:53:03,559 : request is files.acompli.net. IN A
+2016-06-15 17:53:03,582 : Adding real IP  = 52.11.92.1
+2016-06-15 17:53:03,583 : Adding real IP  = 52.11.25.174
+2016-06-15 17:53:03,585 : Adding real IP  = 52.11.173.39
+2016-06-15 17:53:03,585 : Adding real IP  = 52.10.84.127
+2016-06-15 17:53:03,586 : Adding real IP  = 52.10.77.154
+2016-06-15 17:53:03,586 : Adding real IP  = 52.24.66.109
+2016-06-15 17:53:03,586 : Adding real IP  = 52.24.232.173
+2016-06-15 17:53:03,586 : Adding real IP  = 52.24.216.112
+2016-06-15 17:57:02,292 : Client IP: 10.0.0.20
+2016-06-15 17:57:02,292 : request is data.flurry.com. IN A
+2016-06-15 17:57:02,313 : Adding real IP  = 74.6.34.30
+2016-06-15 17:57:06,376 : Client IP: 10.0.0.20
+2016-06-15 17:57:06,376 : request is geoip.overlooksoft.com. IN A
+2016-06-15 17:57:06,409 : Adding real IP  = 178.79.176.239
+2016-06-15 17:57:06,410 : Client IP: 10.0.0.20
+2016-06-15 17:57:06,410 : request is 20.0.0.10.in-addr.arpa. IN PTR
+2016-06-15 17:57:06,411 : Host: 20.0.0.10.in-addr.arpa.
+2016-06-15 17:57:06,467 : No host....
+2016-06-15 17:57:07,746 : Client IP: 10.0.0.20
+2016-06-15 17:57:07,747 : request is 1.0.0.10.in-addr.arpa. IN PTR
+2016-06-15 17:57:07,747 : Host: 1.0.0.10.in-addr.arpa.
+2016-06-15 17:57:07,786 : No host....
+2016-06-15 17:57:30,812 : Client IP: 10.0.0.20
+2016-06-15 17:57:30,812 : request is www.googleapis.com. IN A
+2016-06-15 17:57:30,844 : Adding real IP  = 216.58.208.202
+2016-06-15 18:09:15,365 : Non spoofing imap.gmail.com
+2016-06-15 18:09:15,365 : Non spoofing to 127.0.0.1
+2016-06-15 18:09:15,365 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 18:09:15,366 : DNS Forwarding activado....
+2016-06-15 18:09:15,366 : binded to UDP port 53.
+2016-06-15 18:09:48,710 : Non spoofing imap.gmail.com
+2016-06-15 18:09:48,710 : Non spoofing to 127.0.0.1
+2016-06-15 18:09:48,710 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 18:09:48,710 : DNS Forwarding activado....
+2016-06-15 18:09:48,710 : binded to UDP port 53.
+2016-06-15 18:09:55,077 : Client IP: 10.0.0.20
+2016-06-15 18:09:55,077 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 18:09:55,078 : 1 questions.
+2016-06-15 18:09:55,078 : Host: connectivitycheck.android.com.
+2016-06-15 18:09:55,111 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 18:09:55,128 : Client IP: 10.0.0.20
+2016-06-15 18:09:55,128 : request is mtalk.google.com. IN A
+2016-06-15 18:09:55,157 : Adding real IP  = 74.125.71.188
+2016-06-15 18:09:55,246 : Client IP: 10.0.0.20
+2016-06-15 18:09:55,246 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 18:09:55,269 : Adding real IP  = 179.60.192.2
+2016-06-15 18:09:55,269 : Client IP: 10.0.0.20
+2016-06-15 18:09:55,270 : request is connectivitycheck.android.com. IN A
+2016-06-15 18:09:55,301 : Adding real IP  = 216.58.211.110
+2016-06-15 18:09:55,301 : Client IP: 10.0.0.20
+2016-06-15 18:09:55,301 : request is www.googleapis.com. IN A
+2016-06-15 18:09:55,328 : Adding real IP  = 216.58.211.106
+2016-06-15 18:20:24,855 : Non spoofing imap.gmail.com
+2016-06-15 18:20:24,856 : Non spoofing to 127.0.0.1
+2016-06-15 18:20:24,856 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-15 18:20:24,856 : DNS Forwarding activado....
+2016-06-15 18:20:24,856 : binded to UDP port 53.
+2016-06-15 18:20:48,616 : Client IP: 10.0.0.20
+2016-06-15 18:20:48,616 : request is connectivitycheck.android.com. IN AAAA
+2016-06-15 18:20:48,617 : 1 questions.
+2016-06-15 18:20:48,617 : Host: connectivitycheck.android.com.
+2016-06-15 18:20:48,657 : Adding 2a00:1450:4007:80c::200e
+2016-06-15 18:20:48,697 : Client IP: 10.0.0.20
+2016-06-15 18:20:48,697 : request is edge-mqtt.facebook.com. IN A
+2016-06-15 18:20:48,744 : Adding real IP  = 179.60.192.2
+2016-06-15 18:20:48,745 : Client IP: 10.0.0.20
+2016-06-15 18:20:48,745 : request is www.googleapis.com. IN A
+2016-06-15 18:20:48,774 : Adding real IP  = 216.58.208.234
+2016-06-15 18:20:48,865 : Client IP: 10.0.0.20
+2016-06-15 18:20:48,865 : request is connectivitycheck.android.com. IN A
+2016-06-15 18:20:48,890 : Adding real IP  = 216.58.211.110
+2016-06-15 18:20:49,502 : Client IP: 10.0.0.20
+2016-06-15 18:20:49,502 : request is mtalk.google.com. IN A
+2016-06-15 18:20:49,521 : Adding real IP  = 74.125.206.188
+2016-06-15 18:20:57,908 : Client IP: 10.0.0.20
+2016-06-15 18:20:57,908 : request is play.googleapis.com. IN A
+2016-06-15 18:20:57,939 : Adding real IP  = 216.58.211.106
+2016-06-15 18:23:05,375 : Client IP: 10.0.0.20
+2016-06-15 18:23:05,377 : request is files.acompli.net. IN A
+2016-06-15 18:23:05,405 : Adding real IP  = 52.26.33.49
+2016-06-15 18:23:05,405 : Adding real IP  = 52.26.225.107
+2016-06-15 18:23:05,405 : Adding real IP  = 52.32.127.220
+2016-06-15 18:23:05,405 : Adding real IP  = 52.32.236.175
+2016-06-15 18:23:05,406 : Adding real IP  = 52.34.186.111
+2016-06-15 18:23:05,406 : Adding real IP  = 52.27.165.105
+2016-06-15 18:23:05,406 : Adding real IP  = 52.26.222.21
+2016-06-15 18:23:05,406 : Adding real IP  = 52.27.214.100
+2016-06-15 18:25:08,361 : Client IP: 10.0.0.20
+2016-06-15 18:25:08,361 : request is play.googleapis.com. IN A
+2016-06-15 18:25:08,389 : Adding real IP  = 216.58.208.202
+2016-06-15 18:26:11,740 : Client IP: 10.0.0.20
+2016-06-15 18:26:11,742 : request is www.googleapis.com. IN A
+2016-06-15 18:26:11,768 : Adding real IP  = 172.217.19.138
+2016-06-15 18:30:25,508 : Client IP: 10.0.0.20
+2016-06-15 18:30:25,508 : request is www.googleapis.com. IN A
+2016-06-15 18:30:25,537 : Adding real IP  = 172.217.16.74
+2016-06-15 18:32:12,213 : Client IP: 10.0.0.20
+2016-06-15 18:32:12,213 : request is api.periscope.tv. IN A
+2016-06-15 18:32:12,244 : Adding real IP  = 52.35.244.230
+2016-06-15 18:32:12,249 : Adding real IP  = 52.89.172.218
+2016-06-15 18:32:12,251 : Adding real IP  = 52.39.185.53
+2016-06-15 18:32:12,252 : Adding real IP  = 52.40.40.131
+2016-06-15 18:32:12,252 : Adding real IP  = 52.89.46.152
+2016-06-15 18:32:12,252 : Adding real IP  = 52.36.142.9
+2016-06-15 18:32:12,252 : Adding real IP  = 54.148.104.163
+2016-06-15 18:32:12,252 : Adding real IP  = 52.89.190.37
+2016-06-15 18:32:12,403 : Client IP: 10.0.0.20
+2016-06-15 18:32:12,404 : request is pool.ntp.org. IN A
+2016-06-15 18:32:12,447 : Adding real IP  = 195.154.216.44
+2016-06-15 18:32:12,447 : Adding real IP  = 195.154.10.106
+2016-06-15 18:32:12,448 : Adding real IP  = 37.187.101.146
+2016-06-15 18:32:12,448 : Adding real IP  = 178.32.216.71
+2016-06-15 18:32:12,451 : Client IP: 10.0.0.20
+2016-06-15 18:32:12,452 : request is api.twitter.com. IN A
+2016-06-15 18:32:12,472 : Adding real IP  = 199.16.156.72
+2016-06-15 18:32:12,472 : Adding real IP  = 199.16.156.231
+2016-06-15 18:32:12,472 : Adding real IP  = 199.16.156.199
+2016-06-15 18:32:12,472 : Adding real IP  = 199.16.156.104
+2016-06-15 18:32:12,474 : Client IP: 10.0.0.20
+2016-06-15 18:32:12,474 : request is api.branch.io. IN A
+2016-06-15 18:32:12,533 : Adding real IP  = 50.18.220.35
+2016-06-15 18:32:12,533 : Adding real IP  = 50.18.204.46
+2016-06-15 18:32:12,533 : Adding real IP  = 52.9.39.234
+2016-06-15 18:32:12,533 : Adding real IP  = 52.8.123.52
+2016-06-15 18:32:12,533 : Adding real IP  = 52.9.70.103
+2016-06-15 18:32:12,534 : Adding real IP  = 52.9.68.50
+2016-06-15 18:32:12,534 : Adding real IP  = 52.9.68.81
+2016-06-15 18:32:12,534 : Adding real IP  = 52.8.100.19
+2016-06-15 18:32:13,000 : Client IP: 10.0.0.20
+2016-06-15 18:32:13,000 : request is clients4.google.com. IN A
+2016-06-15 18:32:13,032 : Adding real IP  = 216.58.211.78
+2016-06-15 18:32:13,377 : Client IP: 10.0.0.20
+2016-06-15 18:32:13,378 : request is analytics.localytics.com. IN A
+2016-06-15 18:32:13,413 : Adding real IP  = 107.20.177.234
+2016-06-15 18:32:13,413 : Adding real IP  = 107.22.189.69
+2016-06-15 18:32:13,413 : Adding real IP  = 54.221.208.223
+2016-06-15 18:32:13,414 : Adding real IP  = 184.73.217.92
+2016-06-15 18:32:13,414 : Adding real IP  = 54.243.161.200
+2016-06-15 18:32:13,414 : Adding real IP  = 107.20.220.183
+2016-06-15 18:32:13,414 : Adding real IP  = 54.235.111.202
+2016-06-15 18:32:13,414 : Adding real IP  = 107.20.219.32
+2016-06-15 18:32:14,026 : Client IP: 10.0.0.20
+2016-06-15 18:32:14,027 : request is csi.gstatic.com. IN A
+2016-06-15 18:32:14,072 : Adding real IP  = 216.58.212.131
+2016-06-15 18:32:14,072 : Adding real IP  = 216.58.212.163
+2016-06-15 18:32:14,072 : Adding real IP  = 216.58.212.195
+2016-06-15 18:32:14,073 : Adding real IP  = 216.58.212.227
+2016-06-15 18:32:14,073 : Adding real IP  = 172.217.18.131
+2016-06-15 18:32:14,073 : Adding real IP  = 216.58.201.163
+2016-06-15 18:32:14,073 : Adding real IP  = 216.58.209.99
+2016-06-15 18:32:14,073 : Adding real IP  = 216.58.209.131
+2016-06-15 18:32:14,073 : Adding real IP  = 172.217.1.131
+2016-06-15 18:32:14,074 : Adding real IP  = 216.58.193.131
+2016-06-15 18:32:14,074 : Adding real IP  = 216.58.217.227
+2016-06-15 18:32:14,074 : Adding real IP  = 216.58.218.3
+2016-06-15 18:32:14,074 : Adding real IP  = 172.217.17.227
+2016-06-15 18:32:14,074 : Adding real IP  = 216.58.201.195
+2016-06-15 18:32:14,075 : Adding real IP  = 216.58.213.3
+2016-06-15 18:32:14,075 : Adding real IP  = 216.58.213.35
+2016-06-15 18:32:17,120 : Client IP: 10.0.0.20
+2016-06-15 18:32:17,120 : request is pbs.twimg.com. IN A
+2016-06-15 18:32:17,141 : Adding real IP  = 104.244.43.199
+2016-06-15 18:32:17,142 : Adding real IP  = 104.244.43.7
+2016-06-15 18:32:20,784 : Client IP: 10.0.0.20
+2016-06-15 18:32:20,784 : request is tn.periscope.tv. IN A
+2016-06-15 18:32:20,829 : Adding real IP  = 54.230.184.97
+2016-06-15 18:32:22,167 : Client IP: 10.0.0.20
+2016-06-15 18:32:22,167 : request is clients4.google.com. IN A
+2016-06-15 18:32:22,202 : Adding real IP  = 216.58.208.206
+2016-06-15 18:32:22,203 : Client IP: 10.0.0.20
+2016-06-15 18:32:22,203 : request is clients4.google.com. IN A
+2016-06-15 18:32:22,236 : Adding real IP  = 216.58.208.206
+2016-06-15 18:32:33,377 : Client IP: 10.0.0.20
+2016-06-15 18:32:33,377 : request is pbs.twimg.com.PumpAP. IN A
+2016-06-15 18:32:33,477 : No host....
+2016-06-15 18:32:33,477 : Client IP: 10.0.0.20
+2016-06-15 18:32:33,479 : request is pbs.twimg.com. IN A
+2016-06-15 18:32:33,504 : Adding real IP  = 104.244.43.7
+2016-06-15 18:32:33,504 : Adding real IP  = 104.244.43.231
+2016-06-15 18:32:33,822 : Client IP: 10.0.0.20
+2016-06-15 18:32:33,823 : request is tn.periscope.tv. IN A
+2016-06-15 18:32:33,848 : Adding real IP  = 54.230.184.97
+2016-06-15 18:32:33,849 : Client IP: 10.0.0.20
+2016-06-15 18:32:33,849 : request is tn.periscope.tv.PumpAP. IN A
+2016-06-15 18:32:34,158 : No host....
+2016-06-15 18:32:34,161 : Client IP: 10.0.0.20
+2016-06-15 18:32:34,163 : request is clients4.google.com. IN A
+2016-06-15 18:32:34,203 : Adding real IP  = 216.58.208.206
+2016-06-15 18:32:34,203 : Client IP: 10.0.0.20
+2016-06-15 18:32:34,204 : request is clients4.google.com.PumpAP. IN A
+2016-06-15 18:32:34,264 : No host....
+2016-06-15 18:32:38,654 : Client IP: 10.0.0.20
+2016-06-15 18:32:38,655 : request is pbs.twimg.com.PumpAP. IN A
+2016-06-15 18:32:38,716 : No host....
+2016-06-15 18:32:38,716 : Client IP: 10.0.0.20
+2016-06-15 18:32:38,716 : request is prod-periscope-profile.s3-us-west-2.amazonaws.com. IN A
+2016-06-15 18:32:38,744 : Adding real IP  = 54.231.184.121
+2016-06-16 17:25:26,934 : Non spoofing imap.gmail.com
+2016-06-16 17:25:26,935 : Non spoofing to 127.0.0.1
+2016-06-16 17:25:26,935 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-16 17:25:26,936 : DNS Forwarding activado....
+2016-06-16 17:25:26,936 : binded to UDP port 53.
+2016-06-16 17:25:37,041 : Client IP: 10.0.0.20
+2016-06-16 17:25:37,041 : request is connectivitycheck.android.com. IN A
+2016-06-16 17:25:37,089 : Adding real IP  = 216.58.211.110
+2016-06-16 17:25:37,089 : Client IP: 10.0.0.20
+2016-06-16 17:25:37,089 : request is www.googleapis.com. IN A
+2016-06-16 17:25:37,116 : Adding real IP  = 172.217.16.74
+2016-06-16 17:25:37,116 : Client IP: 10.0.0.20
+2016-06-16 17:25:37,117 : request is edge-mqtt.facebook.com. IN A
+2016-06-16 17:25:37,134 : Adding real IP  = 179.60.192.2
+2016-06-16 17:25:37,134 : Client IP: 10.0.0.20
+2016-06-16 17:25:37,135 : request is android.clients.google.com. IN A
+2016-06-16 17:25:37,159 : Adding real IP  = 216.58.208.206
+2016-06-16 17:25:38,280 : Client IP: 10.0.0.20
+2016-06-16 17:25:38,280 : request is settings.crashlytics.com. IN A
+2016-06-16 17:25:38,304 : Adding real IP  = 54.197.255.73
+2016-06-16 17:25:38,305 : Adding real IP  = 50.17.233.203
+2016-06-16 17:25:38,305 : Adding real IP  = 54.225.212.15
+2016-06-16 17:25:38,305 : Adding real IP  = 23.23.111.85
+2016-06-16 17:25:38,305 : Adding real IP  = 23.23.254.42
+2016-06-16 17:25:38,305 : Adding real IP  = 23.21.54.53
+2016-06-16 17:25:38,305 : Adding real IP  = 54.243.180.96
+2016-06-16 17:25:38,305 : Adding real IP  = 54.243.215.229
+2016-06-16 17:25:38,468 : Client IP: 10.0.0.20
+2016-06-16 17:25:38,468 : request is mtalk.google.com. IN A
+2016-06-16 17:25:38,494 : Adding real IP  = 74.125.71.188
+2016-06-16 17:25:46,051 : Client IP: 10.0.0.20
+2016-06-16 17:25:46,051 : request is connectivitycheck.android.com.PumpAP. IN A
+2016-06-16 17:25:46,143 : No host....
+2016-06-16 17:25:46,226 : Client IP: 10.0.0.20
+2016-06-16 17:25:46,226 : request is www.googleapis.com.PumpAP. IN A
+2016-06-16 17:25:46,276 : No host....
+2016-06-16 17:25:46,276 : Client IP: 10.0.0.20
+2016-06-16 17:25:46,276 : request is www.googleapis.com. IN A
+2016-06-16 17:25:46,304 : Adding real IP  = 216.58.208.202
+2016-06-16 17:25:46,613 : Client IP: 10.0.0.20
+2016-06-16 17:25:46,613 : request is www.googleapis.com. IN A
+2016-06-16 17:25:46,638 : Adding real IP  = 216.58.208.234
+2016-06-16 17:25:47,571 : Client IP: 10.0.0.20
+2016-06-16 17:25:47,571 : request is settings.crashlytics.com.PumpAP. IN A
+2016-06-16 17:25:47,621 : No host....
+2016-06-16 17:25:47,787 : Client IP: 10.0.0.20
+2016-06-16 17:25:47,787 : request is mtalk.google.com.PumpAP. IN A
+2016-06-16 17:25:47,840 : No host....
+2016-06-16 17:25:51,275 : Client IP: 10.0.0.20
+2016-06-16 17:25:51,276 : request is connectivitycheck.android.com. IN A
+2016-06-16 17:25:51,308 : Adding real IP  = 216.58.211.110
+2016-06-16 17:25:57,102 : Client IP: 10.0.0.20
+2016-06-16 17:25:57,102 : request is mtalk.google.com. IN A
+2016-06-16 17:25:57,132 : Adding real IP  = 74.125.71.188
+2016-06-16 17:27:47,486 : Client IP: 10.0.0.20
+2016-06-16 17:27:47,486 : request is files.acompli.net. IN A
+2016-06-16 17:27:47,497 : Adding real IP  = 54.68.91.3
+2016-06-16 17:27:47,497 : Adding real IP  = 54.200.32.226
+2016-06-16 17:27:47,498 : Adding real IP  = 54.187.220.209
+2016-06-16 17:27:47,498 : Adding real IP  = 54.187.52.111
+2016-06-16 17:27:47,498 : Adding real IP  = 54.200.38.27
+2016-06-16 17:27:47,498 : Adding real IP  = 54.69.20.206
+2016-06-16 17:27:47,498 : Adding real IP  = 54.186.64.182
+2016-06-16 17:27:47,498 : Adding real IP  = 54.68.83.30
+2016-06-16 17:28:02,786 : Non spoofing imap.gmail.com
+2016-06-16 17:28:02,787 : Non spoofing to 127.0.0.1
+2016-06-16 17:28:02,787 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-16 17:28:02,787 : DNS Forwarding activado....
+2016-06-16 17:28:02,787 : binded to UDP port 53.
+2016-06-16 17:28:09,939 : Client IP: 10.0.0.20
+2016-06-16 17:28:09,939 : request is connectivitycheck.android.com. IN AAAA
+2016-06-16 17:28:09,939 : 1 questions.
+2016-06-16 17:28:09,939 : Host: connectivitycheck.android.com.
+2016-06-16 17:28:10,036 : Adding 2a00:1450:4007:80c::200e
+2016-06-16 17:28:10,036 : Client IP: 10.0.0.20
+2016-06-16 17:28:10,036 : request is edge-mqtt.facebook.com. IN A
+2016-06-16 17:28:10,056 : Adding real IP  = 179.60.192.2
+2016-06-16 17:28:10,056 : Client IP: 10.0.0.20
+2016-06-16 17:28:10,057 : request is connectivitycheck.android.com. IN A
+2016-06-16 17:28:10,078 : Adding real IP  = 216.58.211.110
+2016-06-16 17:28:10,282 : Client IP: 10.0.0.20
+2016-06-16 17:28:10,283 : request is mtalk.google.com. IN A
+2016-06-16 17:28:10,309 : Adding real IP  = 74.125.71.188
+2016-06-16 17:28:29,947 : Client IP: 10.0.0.20
+2016-06-16 17:28:29,947 : request is b-graph.facebook.com. IN A
+2016-06-16 17:28:29,966 : Adding real IP  = 179.60.192.37
+2016-06-16 17:32:58,476 : Client IP: 10.0.0.20
+2016-06-16 17:32:58,476 : request is www.googleapis.com. IN A
+2016-06-16 17:32:58,502 : Adding real IP  = 172.217.20.42
+2016-06-16 17:33:07,640 : Client IP: 10.0.0.20
+2016-06-16 17:33:07,641 : request is play.googleapis.com. IN A
+2016-06-16 17:33:07,669 : Adding real IP  = 216.58.208.234
+2016-06-16 17:33:25,354 : Non spoofing imap.gmail.com
+2016-06-16 17:33:25,355 : Non spoofing to 127.0.0.1
+2016-06-16 17:33:25,355 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-16 17:33:25,355 : DNS Forwarding activado....
+2016-06-16 17:33:25,355 : binded to UDP port 53.
+2016-06-16 17:33:29,921 : Client IP: 10.0.0.20
+2016-06-16 17:33:29,921 : request is connectivitycheck.android.com. IN AAAA
+2016-06-16 17:33:29,921 : 1 questions.
+2016-06-16 17:33:29,921 : Host: connectivitycheck.android.com.
+2016-06-16 17:33:29,950 : Adding 2a00:1450:4007:80c::200e
+2016-06-16 17:33:30,029 : Client IP: 10.0.0.20
+2016-06-16 17:33:30,029 : request is edge-mqtt.facebook.com. IN A
+2016-06-16 17:33:30,057 : Adding real IP  = 179.60.192.2
+2016-06-16 17:33:30,057 : Client IP: 10.0.0.20
+2016-06-16 17:33:30,057 : request is connectivitycheck.android.com. IN A
+2016-06-16 17:33:30,084 : Adding real IP  = 216.58.211.110
+2016-06-16 17:33:31,938 : Client IP: 10.0.0.20
+2016-06-16 17:33:31,938 : request is mtalk.google.com. IN A
+2016-06-16 17:33:31,965 : Adding real IP  = 74.125.71.188
+2016-06-16 17:33:34,607 : Client IP: 10.0.0.20
+2016-06-16 17:33:34,607 : request is settings.crashlytics.com. IN A
+2016-06-16 17:33:34,625 : Adding real IP  = 54.197.255.113
+2016-06-16 17:33:34,625 : Adding real IP  = 54.197.235.216
+2016-06-16 17:33:34,625 : Adding real IP  = 23.23.184.36
+2016-06-16 17:33:34,625 : Adding real IP  = 50.19.122.55
+2016-06-16 17:33:34,625 : Adding real IP  = 23.23.116.35
+2016-06-16 17:33:34,625 : Adding real IP  = 23.23.99.56
+2016-06-16 17:33:34,626 : Adding real IP  = 23.23.129.71
+2016-06-16 17:33:34,626 : Adding real IP  = 50.16.244.33
+2016-06-16 17:35:09,068 : Non spoofing imap.gmail.com
+2016-06-16 17:35:09,068 : Non spoofing to 127.0.0.1
+2016-06-16 17:35:09,068 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-16 17:35:09,068 : DNS Forwarding activado....
+2016-06-16 17:35:09,068 : binded to UDP port 53.
+2016-06-16 17:37:03,709 : Non spoofing imap.gmail.com
+2016-06-16 17:37:03,710 : Non spoofing to 127.0.0.1
+2016-06-16 17:37:03,710 : Specific domain IP .domain.com with 192.168.1.1
+2016-06-16 17:37:03,710 : DNS Forwarding activado....
+2016-06-16 17:37:03,710 : binded to UDP port 53.
+2016-06-16 17:37:19,753 : Client IP: 10.0.0.20
+2016-06-16 17:37:19,753 : request is connectivitycheck.android.com. IN AAAA
+2016-06-16 17:37:19,754 : 1 questions.
+2016-06-16 17:37:19,754 : Host: connectivitycheck.android.com.
+2016-06-16 17:37:19,785 : Adding 2a00:1450:4007:80c::200e
+2016-06-16 17:37:19,835 : Client IP: 10.0.0.20
+2016-06-16 17:37:19,836 : request is mtalk.google.com. IN A
+2016-06-16 17:37:19,864 : Adding real IP  = 74.125.206.188
+2016-06-16 17:37:19,864 : Client IP: 10.0.0.20
+2016-06-16 17:37:19,864 : request is edge-mqtt.facebook.com. IN A
+2016-06-16 17:37:19,882 : Adding real IP  = 179.60.192.2
+2016-06-16 17:37:20,105 : Client IP: 10.0.0.20
+2016-06-16 17:37:20,105 : request is connectivitycheck.android.com. IN A
+2016-06-16 17:37:20,131 : Adding real IP  = 216.58.211.110
+2016-06-16 17:42:17,608 : Client IP: 10.0.0.20
+2016-06-16 17:42:17,609 : request is www.googleapis.com. IN A
+2016-06-16 17:42:17,634 : Adding real IP  = 172.217.18.234

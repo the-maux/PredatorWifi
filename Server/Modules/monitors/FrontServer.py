@@ -6,18 +6,23 @@ import time
 class LogSniffer(QtCore.QThread):
     def __init__(self, parent):
         QtCore.QThread.__init__(self, parent)
-        self.listLogs = [open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r'), open('Logs/LogProbeScan', 'r')]
+        self.listLogs = [open('LogProbeScan', 'r')]
         QtCore.QObject.connect(parent, QtCore.SIGNAL("stop"), self.stop)
 
     def run(self):
+        rcx = 0
         while 1:
-            rcx = 0
             for log in self.listLogs:
                 self.logString = log.readline()
-                if not self.logString: rcx += 1
-                else: self.emit(QtCore.SIGNAL("LogToSend"))
+                if not self.logString:
+                    rcx += 1
+                else :
+                    self.emit(QtCore.SIGNAL("LogToSend"))
+                    time.sleep(1)
             if rcx == 4:
                 time.sleep(2)
+                rcx = 0
+
     def stop(self):
         print "Log:Sniffer Stop"
 
@@ -25,7 +30,7 @@ class FrontServer(QtCore.QObject):
     def __init__(self):
         super(FrontServer, self).__init__()
         self.tcpServer = QtNetwork.QTcpServer()
-        self.tcpServer.listen(QtNetwork.QHostAddress("127.0.0.1"), 1234)
+        self.tcpServer.listen(QtNetwork.QHostAddress.Any, 1234)
         print "FrontServer: Listening"
         self.tcpServer.newConnection.connect(self.addConnection)
         self.logger = LogSniffer(self)
@@ -41,7 +46,8 @@ class FrontServer(QtCore.QObject):
             self.clientConnection.error.connect(self.socketError)
             self.stream = QtCore.QDataStream(self.clientConnection)
             self.stream.setVersion(QtCore.QDataStream.Qt_4_2)
-            self.logger.start()
+            if not self.logger.isRunning():
+                self.logger.start()
         except Exception as ex:
             QtGui.QMessageBox.information(None, "Error", ex.message)
 
@@ -51,12 +57,12 @@ class FrontServer(QtCore.QObject):
             self.Message = self.stream.readRawData(self.clientConnection.bytesAvailable())
             print "Received Message :" + str(self.Message)
             self.clientConnection.nextBlockSize = 0
-
-            self.emit(QtCore.SIGNAL('DataReceived'))
-            self.clientConnection.nextBlockSize = 0
+            if "Ack" in str(self.Message):
+                print "Acknowledge client"
+            else:
+                self.emit(QtCore.SIGNAL('DataReceived'))
 
     def sendMessage(self):
-        print "FrontServer: in sendMessage"
         self.request = QtCore.QByteArray()
         self.stream.writeRawData(self.logger.logString)
 

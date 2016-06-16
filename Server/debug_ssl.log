@@ -6196,3 +6196,39 @@ GET http://62.210.237.134/wp-content/uploads/NoLimitSecu-D%C3%A9veloppement-s%C3
 GET https://62.210.237.134/wp-content/uploads/NoLimitSecu-D%c3%a9veloppement-s%c3%a9curis%c3%a9-des-applications-web-2-512.png
 {'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.nolimitsecu.fr/', 'host': 'www.nolimitsecu.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 4 Build/LMY48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36'}
 
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://178.79.176.239/android.php
+{'host': 'geoip.overlooksoft.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'fingdroid/3.03'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+

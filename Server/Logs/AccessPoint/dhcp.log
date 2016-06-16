@@ -208,3 +208,288 @@
 2016-06-14 20:41:20,415 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
 2016-06-14 20:46:08,797 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
 2016-06-14 20:46:08,797 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 16:46:42,929 : ---[ Start DHCP Wed Jun 15 16:46:42 2016]---
+2016-06-15 16:46:43,317 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 16:46:43,317 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 16:46:43,317 : All rights reserved.
+2016-06-15 16:46:43,317 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 16:46:43,317 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 16:46:43,317 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 16:46:43,317 : PID file: /var/run/dhcpd.pid
+2016-06-15 16:46:43,436 : Wrote 0 leases to leases file.
+2016-06-15 16:46:43,877 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 16:46:43,877 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 16:46:43,877 : Sending on   Socket/fallback/fallback-net
+2016-06-15 16:46:43,877 : Server starting service.
+2016-06-15 16:47:10,059 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 16:47:10,059 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 16:47:10,060 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 16:47:10,060 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 16:47:11,253 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 16:47:12,255 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 16:47:12,277 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 16:47:12,277 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 16:47:12,278 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 16:47:12,278 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:43:55,614 : ---[ Start DHCP Wed Jun 15 17:43:55 2016]---
+2016-06-15 17:43:55,804 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 17:43:55,805 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 17:43:55,806 : All rights reserved.
+2016-06-15 17:43:55,806 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 17:43:55,806 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 17:43:55,806 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 17:43:55,806 : PID file: /var/run/dhcpd.pid
+2016-06-15 17:43:56,006 : Wrote 0 leases to leases file.
+2016-06-15 17:43:57,510 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:43:57,511 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:43:57,511 : Sending on   Socket/fallback/fallback-net
+2016-06-15 17:43:57,511 : Server starting service.
+2016-06-15 17:44:04,542 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:44:04,542 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:44:04,543 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:44:04,543 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:44:05,809 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:44:06,772 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:44:06,786 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:44:06,789 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:44:06,789 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:44:06,789 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:46:37,528 : ---[ Start DHCP Wed Jun 15 17:46:37 2016]---
+2016-06-15 17:46:37,546 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 17:46:37,593 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 17:46:37,593 : All rights reserved.
+2016-06-15 17:46:37,593 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 17:46:37,593 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 17:46:37,593 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 17:46:37,593 : PID file: /var/run/dhcpd.pid
+2016-06-15 17:46:37,606 : Wrote 0 leases to leases file.
+2016-06-15 17:46:38,488 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:46:38,488 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:46:38,488 : Sending on   Socket/fallback/fallback-net
+2016-06-15 17:46:38,488 : Server starting service.
+2016-06-15 17:46:44,004 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:46:44,004 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:46:44,005 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:46:44,005 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:46:45,171 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:46:46,173 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:46:46,185 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:46:46,185 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:46:46,185 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:46:46,185 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:49:02,237 : ---[ Start DHCP Wed Jun 15 17:49:02 2016]---
+2016-06-15 17:49:02,801 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 17:49:02,802 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 17:49:02,802 : All rights reserved.
+2016-06-15 17:49:02,802 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 17:49:02,802 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 17:49:02,802 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 17:49:02,802 : PID file: /var/run/dhcpd.pid
+2016-06-15 17:49:02,807 : Wrote 0 leases to leases file.
+2016-06-15 17:49:03,097 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:49:03,097 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:49:03,097 : Sending on   Socket/fallback/fallback-net
+2016-06-15 17:49:03,098 : Server starting service.
+2016-06-15 17:49:09,727 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:49:09,727 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:49:09,727 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:49:09,727 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:52:24,005 : ---[ Start DHCP Wed Jun 15 17:52:23 2016]---
+2016-06-15 17:52:24,849 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 17:52:24,850 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 17:52:24,850 : All rights reserved.
+2016-06-15 17:52:24,850 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 17:52:24,850 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 17:52:24,850 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 17:52:24,850 : PID file: /var/run/dhcpd.pid
+2016-06-15 17:52:24,914 : Wrote 0 leases to leases file.
+2016-06-15 17:52:24,968 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:52:24,968 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 17:52:24,968 : Sending on   Socket/fallback/fallback-net
+2016-06-15 17:52:24,968 : Server starting service.
+2016-06-15 17:52:29,336 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:52:29,336 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:52:29,336 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 17:52:29,336 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:52:30,576 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:52:31,577 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:52:31,593 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:52:31,593 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:52:31,593 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 17:52:31,593 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:57:20,142 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 17:57:20,142 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:09:15,256 : ---[ Start DHCP Wed Jun 15 18:09:15 2016]---
+2016-06-15 18:09:15,830 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 18:09:15,830 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 18:09:15,830 : All rights reserved.
+2016-06-15 18:09:15,831 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 18:09:15,831 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 18:09:15,831 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 18:09:15,863 : PID file: /var/run/dhcpd.pid
+2016-06-15 18:09:17,007 : Wrote 0 leases to leases file.
+2016-06-15 18:09:17,180 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:09:17,208 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:09:17,211 : Sending on   Socket/fallback/fallback-net
+2016-06-15 18:09:17,212 : Server starting service.
+2016-06-15 18:09:48,239 : ---[ Start DHCP Wed Jun 15 18:09:48 2016]---
+2016-06-15 18:09:48,244 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 18:09:48,244 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 18:09:48,245 : All rights reserved.
+2016-06-15 18:09:48,245 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 18:09:48,245 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 18:09:48,245 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 18:09:48,246 : PID file: /var/run/dhcpd.pid
+2016-06-15 18:09:48,339 : Wrote 0 leases to leases file.
+2016-06-15 18:09:49,123 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:09:49,123 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:09:49,123 : Sending on   Socket/fallback/fallback-net
+2016-06-15 18:09:49,124 : Server starting service.
+2016-06-15 18:09:52,131 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 18:09:52,131 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:09:52,131 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 18:09:52,131 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:09:53,344 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:09:54,346 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:09:54,359 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:09:54,359 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:09:54,359 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:09:54,359 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:20:24,726 : ---[ Start DHCP Wed Jun 15 18:20:24 2016]---
+2016-06-15 18:20:24,729 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-15 18:20:24,735 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-15 18:20:24,735 : All rights reserved.
+2016-06-15 18:20:24,735 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-15 18:20:24,735 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-15 18:20:24,735 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-15 18:20:24,735 : PID file: /var/run/dhcpd.pid
+2016-06-15 18:20:24,761 : Wrote 0 leases to leases file.
+2016-06-15 18:20:25,291 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:20:25,291 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-15 18:20:25,291 : Sending on   Socket/fallback/fallback-net
+2016-06-15 18:20:25,292 : Server starting service.
+2016-06-15 18:20:45,223 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 18:20:45,223 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:20:45,223 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-15 18:20:45,223 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:20:46,463 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:20:47,465 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:20:47,474 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:20:47,474 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:20:47,474 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:20:47,474 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:25:36,100 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-15 18:25:36,100 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:30:24,658 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 18:30:24,658 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-15 19:30:31,301 : receive_packet failed on wlan1: Network is down
+2016-06-16 17:25:26,714 : ---[ Start DHCP Thu Jun 16 17:25:26 2016]---
+2016-06-16 17:25:27,264 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-16 17:25:27,265 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-16 17:25:27,265 : All rights reserved.
+2016-06-16 17:25:27,265 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-16 17:25:27,265 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-16 17:25:27,265 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-16 17:25:27,265 : PID file: /var/run/dhcpd.pid
+2016-06-16 17:25:27,298 : Wrote 1 leases to leases file.
+2016-06-16 17:25:27,505 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:25:27,505 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:25:27,505 : Sending on   Socket/fallback/fallback-net
+2016-06-16 17:25:27,505 : Server starting service.
+2016-06-16 17:25:33,240 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-16 17:25:33,240 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:25:33,240 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-16 17:25:33,240 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:25:34,454 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:25:35,455 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:25:35,466 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:25:35,466 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:25:35,466 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:25:35,466 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:28:02,627 : ---[ Start DHCP Thu Jun 16 17:28:02 2016]---
+2016-06-16 17:28:02,635 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-16 17:28:02,636 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-16 17:28:02,636 : All rights reserved.
+2016-06-16 17:28:02,636 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-16 17:28:02,636 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-16 17:28:02,636 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-16 17:28:02,637 : PID file: /var/run/dhcpd.pid
+2016-06-16 17:28:02,653 : Wrote 0 leases to leases file.
+2016-06-16 17:28:03,233 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:28:03,234 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:28:03,234 : Sending on   Socket/fallback/fallback-net
+2016-06-16 17:28:03,234 : Server starting service.
+2016-06-16 17:28:09,190 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:28:09,190 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:28:09,190 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:28:09,190 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:32:57,833 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:32:57,833 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:33:25,286 : ---[ Start DHCP Thu Jun 16 17:33:25 2016]---
+2016-06-16 17:33:26,110 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-16 17:33:26,110 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-16 17:33:26,110 : All rights reserved.
+2016-06-16 17:33:26,110 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-16 17:33:26,110 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-16 17:33:26,110 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-16 17:33:26,110 : PID file: /var/run/dhcpd.pid
+2016-06-16 17:33:26,121 : Wrote 0 leases to leases file.
+2016-06-16 17:33:26,134 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:33:26,135 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:33:26,135 : Sending on   Socket/fallback/fallback-net
+2016-06-16 17:33:26,135 : Server starting service.
+2016-06-16 17:33:29,338 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:33:29,340 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:33:29,346 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:33:29,347 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:35:08,964 : ---[ Start DHCP Thu Jun 16 17:35:08 2016]---
+2016-06-16 17:35:08,975 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-16 17:35:08,999 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-16 17:35:08,999 : All rights reserved.
+2016-06-16 17:35:08,999 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-16 17:35:09,000 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-16 17:35:09,000 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-16 17:35:09,000 : PID file: /var/run/dhcpd.pid
+2016-06-16 17:35:09,007 : Wrote 0 leases to leases file.
+2016-06-16 17:35:09,025 : 
+2016-06-16 17:35:09,025 : No subnet declaration for wlan1 (no IPv4 addresses).
+2016-06-16 17:35:09,025 : ** Ignoring requests on wlan1.  If this is not what
+2016-06-16 17:35:09,025 :    you want, please write a subnet declaration
+2016-06-16 17:35:09,026 :    in your dhcpd.conf file for the network segment
+2016-06-16 17:35:09,026 :    to which interface wlan1 is attached. **
+2016-06-16 17:35:09,026 : 
+2016-06-16 17:35:09,026 : 
+2016-06-16 17:35:09,026 : Not configured to listen on any interfaces!
+2016-06-16 17:35:09,027 : 
+2016-06-16 17:35:09,027 : If you think you have received this message due to a bug rather
+2016-06-16 17:35:09,027 : than a configuration issue please read the section on submitting
+2016-06-16 17:35:09,027 : bugs on either our web page at www.isc.org or in the README file
+2016-06-16 17:35:09,027 : before submitting a bug.  These pages explain the proper
+2016-06-16 17:35:09,027 : process and the information we find helpful for debugging..
+2016-06-16 17:35:09,027 : 
+2016-06-16 17:35:09,028 : exiting.
+2016-06-16 17:37:03,624 : ---[ Start DHCP Thu Jun 16 17:37:03 2016]---
+2016-06-16 17:37:03,651 : Internet Systems Consortium DHCP Server 4.3.1
+2016-06-16 17:37:03,651 : Copyright 2004-2014 Internet Systems Consortium.
+2016-06-16 17:37:03,651 : All rights reserved.
+2016-06-16 17:37:03,651 : For info, please visit https://www.isc.org/software/dhcp/
+2016-06-16 17:37:03,651 : Config file: /etc/dhcp/dhcpd.conf
+2016-06-16 17:37:03,651 : Database file: /root/Travaille/PredatorWifi/Server/Settings/dhcp/dhcpd.leases
+2016-06-16 17:37:03,651 : PID file: /var/run/dhcpd.pid
+2016-06-16 17:37:03,651 : Wrote 0 leases to leases file.
+2016-06-16 17:37:04,141 : Listening on LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:37:04,141 : Sending on   LPF/wlan1/00:24:01:10:0c:70/10.0.0.0/24
+2016-06-16 17:37:04,141 : Sending on   Socket/fallback/fallback-net
+2016-06-16 17:37:04,141 : Server starting service.
+2016-06-16 17:37:16,059 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-16 17:37:16,060 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:37:16,060 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-06-16 17:37:16,060 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:37:17,282 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:37:18,283 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:37:18,315 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:37:18,315 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:37:18,315 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-06-16 17:37:18,315 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:42:06,897 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-06-16 17:42:06,897 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
