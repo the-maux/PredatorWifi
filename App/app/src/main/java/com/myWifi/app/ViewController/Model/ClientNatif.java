@@ -2,7 +2,7 @@ package com.myWifi.app.ViewController.Model;
 
 import com.myWifi.app.ViewController.Controler.BonjourService.Service;
 import com.myWifi.app.ViewController.Controler.UtilsNetwork;
-import com.myWifi.app.ViewController.View.FragmentDiscoverWifi;
+import com.myWifi.app.ViewController.View.FragmentWifiDiscovery;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class            ClientNatif {
 
     enum                clientType { Router, Mac, Pc, Android, Ios, Unknow,  }
     public              ClientNatif(String ip, UtilsNetwork utils,
-                                    FragmentDiscoverWifi instanceF, StackClientNatif listClient) {
+                                    FragmentWifiDiscovery instanceF, StackClientNatif listClient) {
         this.ip = ip;
         //TODO: maybe obsolete cause of ServiceDiscovery et JmDNS
         Hostname = utils.getHostnameReverseDns(ip);

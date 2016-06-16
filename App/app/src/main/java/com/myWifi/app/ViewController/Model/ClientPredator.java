@@ -134,12 +134,19 @@ public class            ClientPredator {
         else
             ssid++;
     }
+    public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param[]) {
+        records.add(new Record(typeHTTP, hostname, path, param));
+        if (http > 100)
+            removeM(99, Record.recordType.HttpGET, records);
+        else
+            http++;
+    }
     public void         addHttpLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
             return ;
-        records.add(new Record(newRecord, Record.recordType.HTTP));
+        records.add(new Record(newRecord, Record.recordType.HttpCredit));
         if (http > 100)
-            removeM(99, Record.recordType.HTTP, records);
+            removeM(99, Record.recordType.HttpGET, records);
         else
             http++;
     }

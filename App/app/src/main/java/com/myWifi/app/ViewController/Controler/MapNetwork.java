@@ -1,18 +1,14 @@
 package com.myWifi.app.ViewController.Controler;
 
 import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.util.Log;
 import com.myWifi.app.ViewController.Model.ClientNatif;
 import com.myWifi.app.ViewController.Model.StackClientNatif;
-import com.myWifi.app.ViewController.View.FragmentDiscoverWifi;
+import com.myWifi.app.ViewController.View.FragmentWifiDiscovery;
 
 import javax.jmdns.JmDNS;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.*;
-import java.util.ArrayList;
 
 public class                        MapNetwork {
     private String                  TAG = "MapNetwork";
@@ -20,11 +16,11 @@ public class                        MapNetwork {
     private String                  routerIp;
     private Context                 context;
     private static MapNetwork       instance = null;
-    private FragmentDiscoverWifi    instanceF;
+    private FragmentWifiDiscovery   instanceF;
 
     private                         MapNetwork(Context context,
                                                String routerIp,
-                                               FragmentDiscoverWifi instanceF,
+                                               FragmentWifiDiscovery instanceF,
                                                StackClientNatif listClient) {
         this.context = context;
         this.instanceF = instanceF;
@@ -34,7 +30,7 @@ public class                        MapNetwork {
     }
     public static synchronized MapNetwork getInstance(Context context,
                                                       String routerIp,
-                                                      FragmentDiscoverWifi instanceF,
+                                                      FragmentWifiDiscovery instanceF,
                                                       StackClientNatif listClient) {
         if (instance == null) {
             instance = new MapNetwork(context, routerIp, instanceF, listClient);

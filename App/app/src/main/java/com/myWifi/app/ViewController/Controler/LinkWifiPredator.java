@@ -3,14 +3,14 @@ package com.myWifi.app.ViewController.Controler;
 import android.os.AsyncTask;
 import android.util.Log;
 import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.View.FragmentLinkWifiPredator;
+import com.myWifi.app.ViewController.Model.Record;
+import com.myWifi.app.ViewController.View.FragmentWifiPredator;
 
 import java.io.*;
 import java.net.ConnectException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
-
 
 public class                    LinkWifiPredator extends AsyncTask<Void, Void, Void> {
     private String              TAG = "LinkWifiPredator";
@@ -20,12 +20,15 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     private ArrayList           listClient;
     private int                 nbrClient = 0;
     private int                 nbrClientTarget = 0;
-    private FragmentLinkWifiPredator instance;
+    private FragmentWifiPredator instance;
     private Socket              socket = null;
     private PrintStream         outputStream;
+    private ClientPredator      lastClientUpdated = null;
+    private String              lastHostnameSniffed = null;
+    private String              lastPathSniffed = null;
 
     public                      LinkWifiPredator(String addr, int port, ArrayList listClientFrag,
-                                                 FragmentLinkWifiPredator instance){
+                                                 FragmentWifiPredator instance){
         dstAddress = addr;
         dstPort = port;
         this.listClient = listClientFrag;
@@ -90,47 +93,119 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
              }
         });
     }
-    private void                parseHTTPRecord(final String line) {
+    private void                parseHttpCredidential(final String line) {
+        //HTTP-Credidential:[10.0.0.20:55146 > 91.216.107.211:80] [93mHTTP password: pwd=password[0m
+        //print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
         this.instance.getActivity().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                String          ip = line.substring(0, line.indexOf("}"));
-                String          msg = line.substring(line.indexOf("}")+1, line.length());
-
-                if (ip.contains(":"))
-                    ip = ip.substring(0, ip.indexOf(":"));
-                ClientPredator clientPredatorTmp = getClientByIp(ip);
+            @Override public void run() {
+                String Ip = line.substring(line.indexOf("[")+1, line.indexOf(":")-1);
+                ClientPredator clientPredatorTmp = getClientByIp(Ip);
                 if (clientPredatorTmp != null) {
-                    msg = msg.substring(0, msg.indexOf("DNS"));
-                    if (!msg.contains("connectivitycheck.android.com/generate_204"))
-                        clientPredatorTmp.addHttpLog(msg);
-                    Log.w(TAG, "HTTP:(" + ip + ") " + msg);
+                    String Log = "[" + line.substring(line.indexOf(">") + 2, line.length());
+                    clientPredatorTmp.addHttpLog(Log);
                 }
-        }});
-        }
-    private void                parseDhcpRecord(final String line) {
-        this.instance.getActivity().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                //Log.w(TAG, "DHCP: " + line);
             }});
     }
-    private void                parseDnsRecord(final String line) {
+    private void                parseHttpUrl(final String httpRecord) {
+        //HTTP-Url:[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L150xH150/rwhiteGrand-048ea.png?1465816508
+        //HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-login.php?redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&reauth=1
+        //HTTP-Url:[10.0.0.20] POST load: log=Afmin&pwd=password&wp-submit=Se+connecter&redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&testcookie=1
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                    if (line.contains(".com") || line.contains(".org") || line.contains(".eu") ||
-                            line.contains(".fr") || line.contains(".bz") || line.contains(".info")) {
-                        String Ip = line.substring(0, line.indexOf("#"));
-                        String dnsRecord = line.substring(line.indexOf("#")+1, line.length());
+                Log.d(TAG, "HttpRequest:" + httpRecord);
+                String Ip = "", HttpType = "", httpRecordTmp = "", param[] = null;
+                Record.recordType typeHTTP = Record.recordType.HttpGET;
+
+                Ip = httpRecord.substring(1, httpRecord.indexOf("]"));
+                httpRecordTmp = httpRecord.substring(httpRecord.indexOf("]")+2, httpRecord.length());
+                HttpType = httpRecordTmp.substring(0, httpRecordTmp.indexOf(" "));
+                httpRecordTmp = httpRecordTmp.substring(httpRecordTmp.indexOf(" "), httpRecordTmp.length());
+                if (HttpType.contains("GET")) {
+                    typeHTTP = Record.recordType.HttpGET;
+                    lastHostnameSniffed = httpRecordTmp.substring(1, httpRecordTmp.indexOf("/"));
+                    lastPathSniffed = httpRecordTmp.substring(httpRecordTmp.indexOf("/"), httpRecordTmp.length());
+                    Log.d(TAG, "Record: Ip:[" + Ip +
+                            "] typeHTTP:[" + typeHTTP +
+                            "] Hostname:[" + lastHostnameSniffed +
+                            "] Path:[" + lastPathSniffed + "]");
+                } else if (HttpType.contains("POST")) {
+                    typeHTTP = Record.recordType.HttpPost;
+                    if (httpRecordTmp.contains("load:"))
+                        httpRecordTmp = httpRecordTmp.substring(httpRecordTmp.indexOf("load: "), httpRecordTmp.length());
+                    param = httpRecordTmp.split("&");
+                    Log.d(TAG, "Record: Ip:[" + Ip +
+                            "] typeHTTP:[" + typeHTTP +
+                            "] Hostname:[" + lastHostnameSniffed +
+                            "] Path:[" + lastPathSniffed + "] param[" + param.toString()+ "]");
+                } else {
+                    Log.d(TAG, "unknow HTTP TYPE : " + HttpType);
+                }
+                ClientPredator clientPredatorTmp = getClientByIp(Ip);
+                if (clientPredatorTmp != null)
+                    clientPredatorTmp.addHttpLog(typeHTTP, lastHostnameSniffed, lastPathSniffed, param);
+            }});
+    }
+    private void                parseDhcpRecord(final String dhcpRecord) {
+        //DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+        //DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+        this.instance.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                String DHCPRecord;
+                //TODO:seeking client by ip not by last taken
+                if (lastClientUpdated != null) {
+                    lastClientUpdated.addDhcpLog(dhcpRecord);
+                }
+                Log.w(TAG, "DHCP: " + dhcpRecord);
+            }});
+    }
+    private void                parseDnsRequest(final String request) {
+        //DNS-Request:10.0.0.20#cdn1.smartadserver.com. IN A
+        this.instance.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                    String dnsRecord;
+                    if (request.contains(".com") || request.contains(".org") || request.contains(".eu") ||
+                            request.contains(".fr") || request.contains(".bz") || request.contains(".info") ||
+                            request.contains(".net") || request.contains(".tv")) {
+
+                        String Ip = request.substring(0, request.indexOf("#"));
+
+                        if (request.contains(" "))
+                            dnsRecord = request.substring(request.indexOf("#")+1, request.indexOf(" ")-1);
+                        else
+                            dnsRecord = request.substring(request.indexOf("#")+1, request.length());
                         ClientPredator clientPredatorTmp = getClientByIp(Ip);
                         if (clientPredatorTmp != null) {
+                            Log.d(TAG, "dnsRequest:" + dnsRecord);
+                            lastClientUpdated = clientPredatorTmp;
                             clientPredatorTmp.addDnsLog(dnsRecord);
                         }
                     }
             }});
     }
-    private ClientPredator getClientByIp(String ip) {
+    private void                parseDnsSSLStrip(final String record) {
+        //DNS-SSLStrip:webatout.email-match.com#atout.email-match.com
+        this.instance.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (record.contains(".com") || record.contains(".org") || record.contains(".eu") ||
+                        record.contains(".fr") || record.contains(".bz") || record.contains(".info") ||
+                        record.contains(".net") ) {
+                    String dnsRecord = "SSLStrip: https://" +
+                             record.substring(record.indexOf("#")+1, record.length()) +
+                                "  to http://" +
+                            record.substring(0, record.indexOf("#"));
+                    if (lastClientUpdated != null) {
+                        Log.d(TAG, dnsRecord);
+                        lastClientUpdated.addDnsLog(dnsRecord);
+                    }
+                }
+            }
+        });
+    }
+    private ClientPredator      getClientByIp(String ip) {
         for (Object client : listClient) {
             if (((ClientPredator) client).getIP() != null && ip != null &&
                     ((ClientPredator) client).getIP().contains(ip))
@@ -142,31 +217,36 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         for (String line : data) {
             if (instance == null || instance.getActivity() == null)
                 break;
-            if (line.contains("TargetConnection")) {
-                parseNewTargetConnection(line.substring("TargetConnection#".length(), line.length()));
-            } else if (line.contains("HTTP:")) {
-                parseHTTPRecord(line.substring("HTTP:".length(), line.length()));
-            } else if (line.contains("DHCP:")) {
-                parseDhcpRecord(line.substring("DHCP:".length(), line.length()));
-            } else if (line.contains("DNS:")) {
-                parseDnsRecord(line.substring("DNS:".length(), line.length()));
-            } else {
-                parseDataClientProbe(line);
+            if (!line.contains("connectivitycheck.android.com")) {
+                if (line.contains("TargetConnection")) {
+                    parseNewTargetConnection(line.substring("TargetConnection#".length(), line.length()));
+                } else if (line.contains("HTTP-Credidential:")) {
+                    parseHttpCredidential(line.substring("HTTP-Credidential:".length(), line.length()));
+                } else if (line.contains("HTTP-Url:")) {
+                    parseHttpUrl(line.substring("HTTP-Url:".length(), line.length()));
+                } else if (line.contains("DHCP:")) {
+                    parseDhcpRecord(line.substring("DHCP:".length(), line.length()));
+                } else if (line.contains("DNS-Request:")) {
+                    parseDnsRequest(line.substring("DNS-Request:".length(), line.length()));
+                } else if (line.contains("DNS-SSLStrip:")) {
+                    parseDnsSSLStrip(line.substring("DNS-SSLStrip:".length(), line.length()));
+                } else {
+                    parseDataClientProbe(line);
+                }
             }
         }
     }
     private void                sendCallBackToServer(PrintStream outputStream) {
-        outputStream.print("0\n");
-        //printStream.close();
+        outputStream.print("Ack\n");
     }
     private void                myListen(InputStream inputStream, PrintStream outputStream) throws IOException {
         int                     bytesRead;
         byte[]                  buffer = new byte[1024];
         String                  bufferTmp;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(1024);
+        ByteArrayOutputStream   byteArrayOutputStream = new ByteArrayOutputStream(1024);
+
         this.outputStream = outputStream;
         outputStream.print("Ack\n");
-
         while ((bytesRead = inputStream.read(buffer)) != -1) {//* inputStream.read() will block if no data return
             byteArrayOutputStream.write(buffer, 0, bytesRead);
             bufferTmp = byteArrayOutputStream.toString("UTF-8");
@@ -180,10 +260,9 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
 
     @Override
     protected Void              doInBackground(Void... arg0) {
-
         Log.w(TAG, "doInBackground");
         try {
-            socket = new Socket(dstAddress, dstPort);
+            socket = new Socket("10.0.0.1", 1234);
             myListen(socket.getInputStream(), new PrintStream(socket.getOutputStream()));
         } catch (UnknownHostException e) {
             e.printStackTrace();

@@ -6,7 +6,7 @@ import android.net.nsd.NsdManager;
 import android.net.nsd.NsdServiceInfo;
 
 import com.myWifi.app.ViewController.Model.StackClientNatif;
-import com.myWifi.app.ViewController.View.FragmentDiscoverWifi;
+import com.myWifi.app.ViewController.View.FragmentWifiDiscovery;
 
 import java.util.HashMap;
 
@@ -39,10 +39,10 @@ public class                    BonjourManager  {
                 "_mdnsresponder._tcp",
                 "_ssh._tcp"});
     }
-    private FragmentDiscoverWifi fragment;
+    private FragmentWifiDiscovery fragment;
     private StackClientNatif    listClient;
 
-    public                      BonjourManager(Activity activity, FragmentDiscoverWifi fragment,
+    public                      BonjourManager(Activity activity, FragmentWifiDiscovery fragment,
                                                StackClientNatif listClient) {
         mNsdManager = (NsdManager) activity.getSystemService(Context.NSD_SERVICE);
         this.listServiceType = getAllType();

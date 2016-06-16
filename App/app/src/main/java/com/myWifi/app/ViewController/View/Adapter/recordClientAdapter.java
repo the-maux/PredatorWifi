@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class                    recordClientAdapter extends ArrayAdapter<Record> {
     private ArrayList<Record>   records;
     private StackClientPredator clientStack;
-    private ClientPredator clientPredator;
+    private ClientPredator      clientPredator;
 
     public                      recordClientAdapter(Context context, ClientPredator clientPredator,
                                                     StackClientPredator clientStack) {
@@ -29,11 +29,19 @@ public class                    recordClientAdapter extends ArrayAdapter<Record>
     }
     private  void               initView(View convertView, Record record) {
         TextView recordTxtView = (TextView) convertView.findViewById(R.id.idrecordTxt);
+
+        Record.recordType type = record.getRecordType();
+        if (type == Record.recordType.HttpCredit ||
+                type == Record.recordType.HttpGET ||
+                type == Record.recordType.HttpPost) {
+            recordTxtView.setTextColor(Color.WHITE);
+            recordTxtView.setText(record.getRecord());
+            return ;
+        }
+        else if (type == Record.recordType.DNS) recordTxtView.setTextColor(Color.GREEN);
+        else if (type == Record.recordType.DHCP) recordTxtView.setTextColor(Color.YELLOW);
+        else if (type == Record.recordType.SSID) recordTxtView.setTextColor(Color.RED);
         recordTxtView.setText(record.getRecord());
-        if (record.getRecordType() == Record.recordType.HTTP) recordTxtView.setTextColor(Color.WHITE);
-        else if (record.getRecordType() == Record.recordType.DNS) recordTxtView.setTextColor(Color.GREEN);
-        else if (record.getRecordType() == Record.recordType.DHCP) recordTxtView.setTextColor(Color.YELLOW);
-        else if (record.getRecordType() == Record.recordType.SSID) recordTxtView.setTextColor(Color.RED);
     }
     @Override
     public View                 getView(final int position, View convertView, ViewGroup parent) {
@@ -51,7 +59,7 @@ public class                    recordClientAdapter extends ArrayAdapter<Record>
     @Override
     public int                  getCount() {
         int retMe = 0;
-        if (clientStack.isAllowed(Record.recordType.HTTP))
+        if (clientStack.isAllowed(Record.recordType.HttpPost))
             retMe += clientPredator.getHttp();
         if (clientStack.isAllowed(Record.recordType.SSID))
             retMe += clientPredator.getSsid();
