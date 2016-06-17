@@ -13,11 +13,11 @@ import com.myWifi.app.ViewController.Model.NavDrawerItem;
 
 import java.util.ArrayList;
 
-public class                    NavDrawerListAdapter extends BaseAdapter {
+public class AdapterNavDrawerMenu extends BaseAdapter {
     private Context             context;
     private ArrayList<NavDrawerItem> navDrawerItems;
 
-    public                      NavDrawerListAdapter(Context context, ArrayList<NavDrawerItem> navDrawerItems) {
+    public AdapterNavDrawerMenu(Context context, ArrayList<NavDrawerItem> navDrawerItems) {
         this.context = context;
         this.navDrawerItems = navDrawerItems;
     }

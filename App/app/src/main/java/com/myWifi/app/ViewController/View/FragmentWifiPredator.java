@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
-import com.myWifi.app.ViewController.View.Adapter.ClientProbeAdapter;
+import com.myWifi.app.ViewController.View.Adapter.AdapterLinkWifiPredator;
 import com.myWifi.app.ViewController.Controler.LinkWifiPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
 
@@ -41,7 +41,7 @@ public class                FragmentWifiPredator extends android.support.v4.app.
             ((MainActivityToFragment) getActivity()).myListClient = listClient;
         } else listClient = ((MainActivityToFragment) getActivity()).myListClient;
 
-        ClientProbeAdapter adapter = new ClientProbeAdapter(getContext(), listClient, nbDevicesOnNetWork, serverVizu,
+        AdapterLinkWifiPredator adapter = new AdapterLinkWifiPredator(getContext(), listClient, nbDevicesOnNetWork, serverVizu,
                 nbDevicesProbe, (MainActivityToFragment) getActivity());
         listClient.setAdapter(adapter);
         if (((MainActivityToFragment)getActivity()).getLinkWifiPredator() == null) {

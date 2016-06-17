@@ -113,7 +113,6 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Log.d(TAG, "HttpRequest:" + httpRecord);
                 String Ip = "", HttpType = "", httpRecordTmp = "", param[] = null;
                 Record.recordType typeHTTP = Record.recordType.HttpGET;
 

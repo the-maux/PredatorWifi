@@ -4,7 +4,8 @@
         <item>Wifi Detail</item>
         <item>WifiPredator</item>
         <item>Wifi Discovery</item>
-
+        <item>Client Detail </item>
+        <item>Client Detail </item>
     </string-array>
 
     <string name="ip">ip</string>

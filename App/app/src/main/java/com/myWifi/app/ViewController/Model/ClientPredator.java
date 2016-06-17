@@ -1,5 +1,7 @@
 package com.myWifi.app.ViewController.Model;
 
+import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
+
 import java.util.ArrayList;
 
 public class            ClientPredator {
@@ -13,6 +15,7 @@ public class            ClientPredator {
     private boolean     error = false;
     private ArrayList   records;
     private int         dhcp = 0, http = 0, ssid = 0, dns = 0;
+    private AdapterClientDetail adapter = null;
 
     public              ClientPredator(String rcvStr) {
         try {
@@ -115,6 +118,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.DHCP, records);
         else
             dhcp++;
+        onAddRecordAdapter();
     }
     public void         addDnsLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
@@ -124,6 +128,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.DNS, records);
         else
             dns++;
+        onAddRecordAdapter();
     }
     public void         addSsidLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
@@ -133,6 +138,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.SSID, records);
         else
             ssid++;
+        onAddRecordAdapter();
     }
     public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param[]) {
         records.add(new Record(typeHTTP, hostname, path, param));
@@ -140,6 +146,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.HttpGET, records);
         else
             http++;
+        onAddRecordAdapter();
     }
     public void         addHttpLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
@@ -149,6 +156,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.HttpGET, records);
         else
             http++;
+        onAddRecordAdapter();
     }
     public int          getDhcp() {
         return dhcp;
@@ -163,5 +171,11 @@ public class            ClientPredator {
         return ssid;
     }
     public ArrayList<Record> getRecords() { return records; }
-
+    private void        onAddRecordAdapter() {
+        if (adapter != null)
+            adapter.notifyDataSetChanged();
+    }
+    public void         setAdapterDetailClient(AdapterClientDetail adapter) {
+        this.adapter = adapter;
+    }
 }

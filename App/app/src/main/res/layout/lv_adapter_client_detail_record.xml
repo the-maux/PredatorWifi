@@ -2,14 +2,116 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="90dp"
+                android:background="#535251"
+                android:id="@+id/layoutDetailClientPredator">
 
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
-            android:id="@+id/idrecordTxt" android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" android:layout_alignParentTop="true" android:textStyle="bold"
-            android:minHeight="40sp" android:gravity="center_vertical" android:layout_marginRight="8sp"/>
+        android:id="@+id/typeBtn"
+
+        android:text="HTTP"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape_http"
+        android:shadowColor="#0A0A0A"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/httpType"
+        android:text="GET"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/buttonshape_http"
+        android:shadowColor="#0A0A0A"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:gravity="center"
+        android:layout_below="@+id/typeBtn"
+        android:layout_alignLeft="@+id/typeBtn"
+        android:layout_alignStart="@+id/typeBtn"
+        android:layout_alignRight="@+id/typeBtn"
+        android:layout_alignEnd="@+id/typeBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="google.com"
+        android:id="@+id/hostname"
+        android:layout_toRightOf="@+id/typeBtn"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:layout_marginLeft="4dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/buttonshape_http_param"
+
+        android:layout_alignRight="@+id/alertImg"
+        android:layout_alignEnd="@+id/alertImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="/image/get/losange?"
+        android:id="@+id/path"
+        android:layout_below="@+id/hostname"
+        android:layout_marginTop="4dp"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/hostname"
+        android:background="@drawable/buttonshape_http_param"
+        android:paddingLeft="5dp"
+        android:layout_alignRight="@+id/hostname"
+        android:layout_alignEnd="@+id/hostname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="key=4242&amp;param=redrectTo&amp;CRSF=4253384255"
+        android:id="@+id/param"
+        android:layout_below="@+id/path"
+        android:layout_marginTop="4dp"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/path"
+        android:background="@drawable/buttonshape_http_param"
+        android:paddingLeft="5dp"
+        android:layout_alignRight="@+id/path"
+        android:layout_alignEnd="@+id/hostname"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertImg"
+        android:src="@drawable/icon_alert"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"/>
 </RelativeLayout>

@@ -15,12 +15,12 @@ import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
 
 
-public class                ClientProbeAdapter extends ArrayAdapter<ClientPredator> {
+public class AdapterLinkWifiPredator extends ArrayAdapter<ClientPredator> {
     private StackClientPredator listClient;
     private TextView        nbDevicesOnNetwork, nbDevicesProbe, serverVizu;
     private MainActivityToFragment instance;
 
-    public                  ClientProbeAdapter(
+    public AdapterLinkWifiPredator(
             Context context, StackClientPredator listClient, TextView nbDevicesOnNetWork, TextView serverVizu, TextView nbDeviceProbe, MainActivityToFragment instance) {
         super(context, 0, listClient);
         this.listClient = listClient;
@@ -49,16 +49,8 @@ public class                ClientProbeAdapter extends ArrayAdapter<ClientPredat
         serverVizu.setBackgroundColor(Color.GREEN);
         return convertView;
     }
-    private void            setDetailclientFragmentLauncher(final ClientPredator clientPredator, RelativeLayout rel) {
-        if (!clientPredator.isProbe()) {
-            rel.setOnClickListener(new AdapterView.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    instance.setActualClientPredator(clientPredator);
-                    instance.displayView(5);
-                }
-            });
-        } else rel.setOnClickListener(new AdapterView.OnClickListener() {
+    private AdapterView.OnClickListener initBehaviorKarmaAttack(final ClientPredator clientPredator) {
+        return new AdapterView.OnClickListener() {
             @Override
             public void             onClick(View v) {
                 final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(instance);
@@ -83,7 +75,19 @@ public class                ClientProbeAdapter extends ArrayAdapter<ClientPredat
                         .setPositiveButton("Yes", behaviorSsidOK)
                         .setNegativeButton("No", behaviorSsidKO);
             }
-        });
+        };
+    }
+    private void            setDetailclientFragmentLauncher(final ClientPredator clientPredator, RelativeLayout rel) {
+        AdapterView.OnClickListener AttackKarmaProbeRequest = initBehaviorKarmaAttack(clientPredator);
+        if (!clientPredator.isProbe()) {
+            rel.setOnClickListener(new AdapterView.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    instance.setActualClientPredator(clientPredator);
+                    instance.displayView(4);
+                }
+            });
+        } else rel.setOnClickListener(AttackKarmaProbeRequest);
     }
     private void            setUIClient(View convertView, ClientPredator clientPredator,
                                         TextView SSID, TextView time, ImageView idType) {
@@ -98,4 +102,5 @@ public class                ClientProbeAdapter extends ArrayAdapter<ClientPredat
             idType.setBackgroundResource(R.drawable.account);
         }
     }
+
 }

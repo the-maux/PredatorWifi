@@ -8,7 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
-import com.myWifi.app.ViewController.View.Adapter.clientDiscoverNetAdapter;
+import com.myWifi.app.ViewController.View.Adapter.AdapterClientDiscoveryService;
 import com.myWifi.app.ViewController.Controler.BonjourService.BonjourManager;
 import com.myWifi.app.ViewController.Controler.MapNetwork;
 import com.myWifi.app.ViewController.Model.StackClientNatif;
@@ -18,7 +18,7 @@ public class FragmentWifiDiscovery extends android.support.v4.app.Fragment {
     private MapNetwork              mapNetwork;
     private StackClientNatif        listClient;
     private ListView                listViewClientNatifs;
-    private clientDiscoverNetAdapter adapter;
+    private AdapterClientDiscoveryService adapter;
     private BonjourManager          BonjourManager;
 
     @Override
@@ -35,7 +35,7 @@ public class FragmentWifiDiscovery extends android.support.v4.app.Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.fgmt_discover_wifi, container, false);
         listViewClientNatifs = (ListView) rootView.findViewById(R.id.LVNatifClient);
-        adapter = new clientDiscoverNetAdapter(getContext(), mapNetwork.getStackclient());
+        adapter = new AdapterClientDiscoveryService(getContext(), mapNetwork.getStackclient());
         listViewClientNatifs.setAdapter(adapter);
         return rootView;
     }

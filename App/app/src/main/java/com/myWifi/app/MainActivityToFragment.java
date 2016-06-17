@@ -18,7 +18,7 @@ import com.myWifi.app.ViewController.Controler.InfoNetWork;
 import com.myWifi.app.ViewController.Controler.LinkWifiPredator;
 import com.myWifi.app.ViewController.Model.MyTextView;
 import com.myWifi.app.ViewController.Model.NavDrawerItem;
-import com.myWifi.app.ViewController.View.Adapter.NavDrawerListAdapter;
+import com.myWifi.app.ViewController.View.Adapter.AdapterNavDrawerMenu;
 import com.myWifi.app.ViewController.View.Adapter.SlideMenuClickListener;
 import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
@@ -33,7 +33,7 @@ public class                            MainActivityToFragment extends AppCompat
     private ListView                    mDrawerList = null;
     private String[]                    navMenuTitles = null;
     private ArrayList<NavDrawerItem>    navDrawerItems = null;
-    private NavDrawerListAdapter        adapter = null;
+    private AdapterNavDrawerMenu adapter = null;
     private List<Fragment>              myStack = new ArrayList<>();
     private List<String>                myStackTitre = new ArrayList<>();
     public StackClientPredator          myListClient = null;
@@ -82,7 +82,7 @@ public class                            MainActivityToFragment extends AppCompat
         mDrawerList.setOnItemClickListener(new SlideMenuClickListener(this));//handler click menu
         mDrawerList.addHeaderView(View.inflate(getApplicationContext(), R.layout.header_nav_drawer, null));//logo au dessus du menu
         /*        * Load l'adapter et donc le mDrawerList        */
-        adapter = new NavDrawerListAdapter(getApplicationContext(), navDrawerItems);
+        adapter = new AdapterNavDrawerMenu(getApplicationContext(), navDrawerItems);
         adapter.notifyDataSetChanged();
         mDrawerList.setAdapter(adapter);
         mDrawerList.setDividerHeight(10);
@@ -162,10 +162,10 @@ public class                            MainActivityToFragment extends AppCompat
             case 3:
                 actualFragment = new FragmentWifiDiscovery();
                 break;
-            case 5:
+            case 4:
                 actualFragment = (actualClientPredator != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
                 break;
-            case 4:
+            case 5:
                 actualFragment = new FragmentObsoletForApScan();
                 break;
         }
