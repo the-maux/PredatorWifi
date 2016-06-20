@@ -52,9 +52,9 @@ public  class                   UtilsNetwork {
         String                  hostname = "";
         try {
             hostname = InetAddress.getByName(ip).getHostAddress();
-            //Log.d("ReverseDNS", "Reverse DNS for 8.8.8.8 is: " + hostname);
+            //Log.d("ReverseDNS", "Reverse DnsService for 8.8.8.8 is: " + hostname);
         } catch (UnknownHostException e) {
-            Log.e("ReverseDNS", "Oh no, 8.8.8.8 has no reverse DNS record!");
+            Log.e("ReverseDNS", "Oh no, 8.8.8.8 has no reverse DnsService record!");
         }
         return hostname;
     }

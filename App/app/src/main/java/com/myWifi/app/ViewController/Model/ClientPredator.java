@@ -13,7 +13,7 @@ public class            ClientPredator {
     private String      time = null;
     private String      TAG = "ClientObj";
     private boolean     error = false;
-    private ArrayList   records;
+    private ArrayList<Record> records;
     private int         dhcp = 0, http = 0, ssid = 0, dns = 0;
     private AdapterClientDetail adapter = null;
 
@@ -32,10 +32,10 @@ public class            ClientPredator {
         }
         error = true;
     }
-    public Object       removeM(int offsett, Record.recordType type, ArrayList records) {
+    public Object       removeM(int offsett, Record.recordType type, ArrayList<Record> records) {
         Object tmp = records.get(offsett);
         for (; offsett < records.size(); offsett++) {
-            if (((Record)records.get(offsett)).getRecordType() == type) {
+            if ((records.get(offsett)).getTypeRecord() == type) {
                 tmp = records.get(offsett);
                 break;
             }
@@ -120,12 +120,22 @@ public class            ClientPredator {
             dhcp++;
         onAddRecordAdapter();
     }
-    public void         addDnsLog(String newRecord) {
+    public void         addDnsService(String newRecord) {
         if (isAlreadyOnit(newRecord))
             return ;
-        records.add(new Record(newRecord, Record.recordType.DNS));
+        records.add(new Record(newRecord, Record.recordType.DnsService));
         if (dns > 100)
-            removeM(99, Record.recordType.DNS, records);
+            removeM(99, Record.recordType.DnsService, records);
+        else
+            dns++;
+        onAddRecordAdapter();
+    }
+    public void         addDnsStrip(String realHost, String newHost) {
+       /* if (isAlreadyOnit(newRecord))
+            return ;*/
+        records.add(new Record(realHost, newHost, Record.recordType.DnsStrip));
+        if (dns > 100)
+            removeM(99, Record.recordType.DnsStrip, records);
         else
             dns++;
         onAddRecordAdapter();
@@ -140,7 +150,7 @@ public class            ClientPredator {
             ssid++;
         onAddRecordAdapter();
     }
-    public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param[]) {
+    public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param) {
         records.add(new Record(typeHTTP, hostname, path, param));
         if (http > 100)
             removeM(99, Record.recordType.HttpGET, records);

@@ -3,33 +3,38 @@ package com.myWifi.app.ViewController.Model;
 
 public class                Record {
     private String          record;
-    private recordType      recordType;
+    private recordType      typeRecord;
     private String          host;
     private String          httpRecordTmp;
     private String          path;
-    private String          param[];
+    private String          param;
 
+    public enum recordType { HttpPost, HttpGET, HttpCredit, DnsService, DnsStrip, DHCP, SSID}
 
+    public          Record(String realHost, String newHost, recordType dnsStrip) {
+        typeRecord = dnsStrip;
+        path = realHost;
+        param = newHost;
+    }
 
-    public enum recordType { HttpPost, HttpGET, HttpCredit, DNS, DHCP, SSID}
-
-    public Record(recordType typeHTTP, String hostname, String path, String[] param) {
-        recordType = typeHTTP;
+    public          Record(recordType typeHTTP, String hostname, String path, String param) {
+        typeRecord = typeHTTP;
         host = hostname;
         this.path = path;
         this.param = param;
-        record = recordType + ": " + hostname + path;
+        record = typeRecord + ": " + hostname + path;
     }
 
-    public                  Record(String record, recordType type) {
+    public          Record(String record, recordType type) {
         this.record = record;
-        this.recordType = type;
+        this.typeRecord = type;
+
     }
     public String           getRecord() {
         return record;
     }
-    public recordType       getRecordType() {
-        return recordType;
+    public recordType       getTypeRecord() {
+        return typeRecord;
     }
     public String           getHost() {
         return host;
@@ -37,7 +42,7 @@ public class                Record {
     public String           getPath() {
         return path;
     }
-    public String[]         getParam() {
+    public String           getParam() {
         return param;
     }
 }

@@ -13,6 +13,7 @@ import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Model.Record;
 import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.View.Dialog.DialogDetailFactory;
 
 import java.util.ArrayList;
 
@@ -29,13 +30,22 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
         this.clientStack = clientStack;
         this.clientPredator = clientPredator;
     }
-    private View.OnClickListener behaviorClickRecordDetail() {
+    private View.OnClickListener onClickRecordDetail(final Record record) {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                (new DialogDetailFactory(getContext()))
+                        .DialogDetailDetailClient(record).show();
             }
         };
+    }
+    private  void               initViewDnsStrip(TextView typeBtn, TextView path, TextView param,
+                                                 TextView hostname, Record record) {
+        typeBtn.setTextColor(Color.GREEN);
+        typeBtn.setText("DnsStrip");
+        path.setText(record.getPath());
+        param.setText(record.getParam());
+        hostname.setVisibility(View.INVISIBLE);
     }
     private  void               initViewGlobal(View convertView, Record record) {
         ImageView alertGG = (ImageView) convertView.findViewById(R.id.alertImg) ;
@@ -44,20 +54,25 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
         TextView hostname = (TextView) convertView.findViewById(R.id.hostname);
         TextView path = (TextView) convertView.findViewById(R.id.path);
         TextView param = (TextView) convertView.findViewById(R.id.param);
-        RelativeLayout layoutDetailClientPredator = (RelativeLayout) convertView.findViewById(R.id.layoutDetailClientPredator);
+        RelativeLayout RelLayoutDetailClienPreda = (RelativeLayout)
+                convertView.findViewById(R.id.RelLayoutDetailClienPreda);
 
-
-        layoutDetailClientPredator.setOnClickListener(behaviorClickRecordDetail());
-        Record.recordType recordType = record.getRecordType();
+        Record.recordType recordType = record.getTypeRecord();
         if (recordType == Record.recordType.HttpCredit ||
                 recordType == Record.recordType.HttpGET ||
                 recordType == Record.recordType.HttpPost) {
-            initViewHttp(recordType, record, typeBtn, httpType, hostname, path, param, alertGG);
+            initViewHttp(recordType, record, typeBtn, httpType,
+                            hostname, path, param, alertGG);
+            RelLayoutDetailClienPreda.setOnClickListener(onClickRecordDetail(record));
             return ;
         }
-        else if (recordType == Record.recordType.DNS) {
+        else if (recordType == Record.recordType.DnsStrip) {
+            initViewDnsStrip(typeBtn, path, param, hostname, record);
+            return ;
+        }
+        else if (recordType == Record.recordType.DnsService) {
             typeBtn.setTextColor(Color.GREEN);
-            typeBtn.setText("DNS");
+            typeBtn.setText("DnsService");
         }
         else if (recordType == Record.recordType.DHCP) {
             typeBtn.setTextColor(Color.YELLOW);
@@ -84,11 +99,8 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
     }
     private void                initViewHttpPost(TextView httpType, Record record,
                                                  ImageView alertGG, TextView param) {
-        String paramString = "";
+        String paramString = record.getParam();
         httpType.setText("Post");
-        for (String s : record.getParam()) {
-            param.append(s);
-        }
         param.setText(paramString);
         if (paramString.contains("pass") || paramString.contains("key") ||
                 paramString.contains("admin") || paramString.contains("login") ||
@@ -122,7 +134,7 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.lv_adapter_client_detail_record, parent, false);
         }
         for (int rcx = position; rcx < this.records.size(); rcx++) {
-            if (this.clientStack.isAllowed(this.records.get(rcx).getRecordType())) {
+            if (this.clientStack.isAllowed(this.records.get(rcx).getTypeRecord())) {
                 initViewGlobal(convertView, this.records.get(rcx));
                 break;
             }
@@ -136,7 +148,7 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
             retMe += clientPredator.getHttp();
         if (clientStack.isAllowed(Record.recordType.SSID))
             retMe += clientPredator.getSsid();
-        if (clientStack.isAllowed(Record.recordType.DNS))
+        if (clientStack.isAllowed(Record.recordType.DnsService))
             retMe += clientPredator.getDns();
         if (clientStack.isAllowed(Record.recordType.DHCP))
             retMe += clientPredator.getDhcp();

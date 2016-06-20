@@ -113,7 +113,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                String Ip = "", HttpType = "", httpRecordTmp = "", param[] = null;
+                String Ip = "", HttpType = "", httpRecordTmp = "", param = "";
                 Record.recordType typeHTTP = Record.recordType.HttpGET;
 
                 Ip = httpRecord.substring(1, httpRecord.indexOf("]"));
@@ -132,11 +132,11 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                     typeHTTP = Record.recordType.HttpPost;
                     if (httpRecordTmp.contains("load:"))
                         httpRecordTmp = httpRecordTmp.substring(httpRecordTmp.indexOf("load: "), httpRecordTmp.length());
-                    param = httpRecordTmp.split("&");
+                    param = httpRecordTmp;
                     Log.d(TAG, "Record: Ip:[" + Ip +
                             "] typeHTTP:[" + typeHTTP +
                             "] Hostname:[" + lastHostnameSniffed +
-                            "] Path:[" + lastPathSniffed + "] param[" + param.toString()+ "]");
+                            "] Path:[" + lastPathSniffed + "] param[" + param + "]");
                 } else {
                     Log.d(TAG, "unknow HTTP TYPE : " + HttpType);
                 }
@@ -159,8 +159,8 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                 Log.w(TAG, "DHCP: " + dhcpRecord);
             }});
     }
-    private void                parseDnsRequest(final String request) {
-        //DNS-Request:10.0.0.20#cdn1.smartadserver.com. IN A
+    private void                parseDnsService(final String request) {
+        //DnsService-Request:10.0.0.20#cdn1.smartadserver.com. IN A
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -179,26 +179,26 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                         if (clientPredatorTmp != null) {
                             Log.d(TAG, "dnsRequest:" + dnsRecord);
                             lastClientUpdated = clientPredatorTmp;
-                            clientPredatorTmp.addDnsLog(dnsRecord);
+                            clientPredatorTmp.addDnsService(dnsRecord);
                         }
                     }
             }});
     }
     private void                parseDnsSSLStrip(final String record) {
-        //DNS-SSLStrip:webatout.email-match.com#atout.email-match.com
+        //DnsService-SSLStrip:webatout.email-match.com#atout.email-match.com
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 if (record.contains(".com") || record.contains(".org") || record.contains(".eu") ||
                         record.contains(".fr") || record.contains(".bz") || record.contains(".info") ||
                         record.contains(".net") ) {
-                    String dnsRecord = "SSLStrip: https://" +
-                             record.substring(record.indexOf("#")+1, record.length()) +
-                                "  to http://" +
+                    String realHost = "SSLStrip: https://" +
+                            record.substring(record.indexOf("#")+1, record.length());
+                    String newHost = "http://" +
                             record.substring(0, record.indexOf("#"));
                     if (lastClientUpdated != null) {
-                        Log.d(TAG, dnsRecord);
-                        lastClientUpdated.addDnsLog(dnsRecord);
+                        Log.d(TAG, "DnsStrip: " + realHost + " to " + newHost);
+                        lastClientUpdated.addDnsStrip(realHost, newHost);
                     }
                 }
             }
@@ -225,10 +225,10 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                     parseHttpUrl(line.substring("HTTP-Url:".length(), line.length()));
                 } else if (line.contains("DHCP:")) {
                     parseDhcpRecord(line.substring("DHCP:".length(), line.length()));
-                } else if (line.contains("DNS-Request:")) {
-                    parseDnsRequest(line.substring("DNS-Request:".length(), line.length()));
-                } else if (line.contains("DNS-SSLStrip:")) {
-                    parseDnsSSLStrip(line.substring("DNS-SSLStrip:".length(), line.length()));
+                } else if (line.contains("DnsService-Request:")) {
+                    parseDnsService(line.substring("DnsService-Request:".length(), line.length()));
+                } else if (line.contains("DnsService-SSLStrip:")) {
+                    parseDnsSSLStrip(line.substring("DnsService-SSLStrip:".length(), line.length()));
                 } else {
                     parseDataClientProbe(line);
                 }

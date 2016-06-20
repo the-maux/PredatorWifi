@@ -42,7 +42,7 @@ public class StackClientPredator extends ArrayList {
         return ((type == Record.recordType.HttpCredit && http)  ||
                  (type == Record.recordType.HttpPost && http)   ||
                  (type == Record.recordType.HttpGET && http)    ||
-                 (type == Record.recordType.DNS && dns)         ||
+                 (type == Record.recordType.DnsService && dns)         ||
                  (type == Record.recordType.SSID && ssid)       ||
                  (type == Record.recordType.DHCP && dhcp));
     }

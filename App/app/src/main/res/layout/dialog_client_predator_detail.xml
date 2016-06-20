@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffffd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="HTTP GET REQUEST "
+        android:id="@+id/requestType"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_below="@+id/requestType"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/layouthostname">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Hostname:"
+            android:id="@+id/HostnameText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="www.google.com"
+            android:id="@+id/Hostname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/HostnameText"
+            android:layout_toEndOf="@+id/HostnameText"
+            android:textColor="#050301"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouthostname"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+
+        android:id="@+id/PathLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Path:"
+            android:id="@+id/PathText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="/questions/7811117/custom-objects-in-alertdialog-list-how-to-get-a-display-string-and-then-the-act"
+            android:id="@+id/Path"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#050301"
+            android:gravity="center_vertical|right"
+            android:layout_marginTop="4dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/PathText"
+            android:layout_toEndOf="@+id/PathText"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/PathLayout"
+        android:layout_alignLeft="@+id/PathLayout"
+        android:layout_alignStart="@+id/PathLayout"
+        android:layout_alignRight="@+id/PathLayout"
+        android:layout_alignEnd="@+id/PathLayout"
+        android:id="@+id/layoutListViewParam"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewParam"
+            />
+    </RelativeLayout>
+</RelativeLayout>
