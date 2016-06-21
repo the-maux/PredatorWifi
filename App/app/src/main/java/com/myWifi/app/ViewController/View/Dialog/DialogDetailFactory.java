@@ -54,18 +54,20 @@ public class                DialogDetailFactory  {
     }
     private ListAdapter     createCustomAdapter(final Record record) {
         final Record[] items = { record };
+
+        class ViewHolder {
+            TextView hostname;
+            TextView path;
+            ListView param;
+        }
         ListAdapter adapter = new ArrayAdapter<Record>(context, R.layout.dialog_client_predator_detail, items) {
-            class ViewHolder {
-                TextView hostname;
-                TextView path;
-                ListView param;
-            }
-            ViewHolder      holder;
+
             public View     getView(int position, View convertView,
                                 ViewGroup parent) {
                 final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
+                ViewHolder      holder;
                 if (convertView == null) {
+                    holder = new ViewHolder();
                     convertView = inflater.inflate(R.layout.dialog_client_predator_detail, null);
 
                     holder.hostname = (TextView) convertView

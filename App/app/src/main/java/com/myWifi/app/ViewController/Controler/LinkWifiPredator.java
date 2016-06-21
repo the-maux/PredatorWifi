@@ -113,7 +113,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                String Ip = "", HttpType = "", httpRecordTmp = "", param = "";
+                String Ip, HttpType, httpRecordTmp, param = "";
                 Record.recordType typeHTTP = Record.recordType.HttpGET;
 
                 Ip = httpRecord.substring(1, httpRecord.indexOf("]"));
@@ -124,19 +124,19 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                     typeHTTP = Record.recordType.HttpGET;
                     lastHostnameSniffed = httpRecordTmp.substring(1, httpRecordTmp.indexOf("/"));
                     lastPathSniffed = httpRecordTmp.substring(httpRecordTmp.indexOf("/"), httpRecordTmp.length());
-                    Log.d(TAG, "Record: Ip:[" + Ip +
+                    /*Log.d(TAG, "Record: Ip:[" + Ip +
                             "] typeHTTP:[" + typeHTTP +
                             "] Hostname:[" + lastHostnameSniffed +
-                            "] Path:[" + lastPathSniffed + "]");
+                            "] Path:[" + lastPathSniffed + "]");*/
                 } else if (HttpType.contains("POST")) {
                     typeHTTP = Record.recordType.HttpPost;
                     if (httpRecordTmp.contains("load:"))
                         httpRecordTmp = httpRecordTmp.substring(httpRecordTmp.indexOf("load: "), httpRecordTmp.length());
                     param = httpRecordTmp;
-                    Log.d(TAG, "Record: Ip:[" + Ip +
+                    /*Log.d(TAG, "Record: Ip:[" + Ip +
                             "] typeHTTP:[" + typeHTTP +
                             "] Hostname:[" + lastHostnameSniffed +
-                            "] Path:[" + lastPathSniffed + "] param[" + param + "]");
+                            "] Path:[" + lastPathSniffed + "] param[" + param + "]");*/
                 } else {
                     Log.d(TAG, "unknow HTTP TYPE : " + HttpType);
                 }

@@ -166,7 +166,7 @@ public class                            MainActivityToFragment extends AppCompat
                 actualFragment = (actualClientPredator != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
                 break;
             case 5:
-                actualFragment = new FragmentObsoletForApScan();
+                actualFragment = new FragmentMenuAttack();
                 break;
         }
         Predator = (actualFragment.getClass() == FragmentWifiPredator.class);
@@ -200,7 +200,7 @@ public class                            MainActivityToFragment extends AppCompat
     private void                        paramMenuBehavior(typeMenuBehavior type) {
         if (actualFragment.getClass() == FragmentWifiDetails.class ||
                 actualFragment.getClass() == FragmentWifiDiscovery.class ||
-                actualFragment.getClass() == FragmentObsoletForApScan.class) {
+                actualFragment.getClass() == FragmentMenuAttack.class) {
             if (type == typeMenuBehavior.INIT) menu.findItem(R.id.img_param).setVisible(false);
         }  else if (actualFragment.getClass() == FragmentWifiPredator.class) {
             if (type == typeMenuBehavior.INIT) menu.findItem(R.id.img_param).setVisible(true);
