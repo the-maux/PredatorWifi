@@ -11,12 +11,13 @@ public class                Record {
 
     public enum recordType { HttpPost, HttpGET, HttpCredit, DnsService, DnsStrip, DHCP, SSID}
 
+    /** DNS Strip **/
     public          Record(String realHost, String newHost, recordType dnsStrip) {
         typeRecord = dnsStrip;
         path = realHost;
         param = newHost;
     }
-
+    /** HTTP**/
     public          Record(recordType typeHTTP, String hostname, String path, String param) {
         typeRecord = typeHTTP;
         host = hostname;
@@ -24,7 +25,7 @@ public class                Record {
         this.param = param;
         record = typeRecord + ": " + hostname + path;
     }
-
+    /** BASIC : SSID DHCP **/
     public          Record(String record, recordType type) {
         this.record = record;
         this.typeRecord = type;

@@ -99,10 +99,10 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         this.instance.getActivity().runOnUiThread(new Runnable() {
             @Override public void run() {
                 String Ip = line.substring(line.indexOf("[")+1, line.indexOf(":")-1);
-                ClientPredator clientPredatorTmp = getClientByIp(Ip);
-                if (clientPredatorTmp != null) {
+                lastClientUpdated = getClientByIp(Ip);
+                if (lastClientUpdated != null) {
                     String Log = "[" + line.substring(line.indexOf(">") + 2, line.length());
-                    clientPredatorTmp.addHttpLog(Log);
+                    lastClientUpdated.addHttpLog(Log);
                 }
             }});
     }
@@ -124,25 +124,17 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                     typeHTTP = Record.recordType.HttpGET;
                     lastHostnameSniffed = httpRecordTmp.substring(1, httpRecordTmp.indexOf("/"));
                     lastPathSniffed = httpRecordTmp.substring(httpRecordTmp.indexOf("/"), httpRecordTmp.length());
-                    /*Log.d(TAG, "Record: Ip:[" + Ip +
-                            "] typeHTTP:[" + typeHTTP +
-                            "] Hostname:[" + lastHostnameSniffed +
-                            "] Path:[" + lastPathSniffed + "]");*/
                 } else if (HttpType.contains("POST")) {
                     typeHTTP = Record.recordType.HttpPost;
                     if (httpRecordTmp.contains("load:"))
                         httpRecordTmp = httpRecordTmp.substring(httpRecordTmp.indexOf("load: "), httpRecordTmp.length());
                     param = httpRecordTmp;
-                    /*Log.d(TAG, "Record: Ip:[" + Ip +
-                            "] typeHTTP:[" + typeHTTP +
-                            "] Hostname:[" + lastHostnameSniffed +
-                            "] Path:[" + lastPathSniffed + "] param[" + param + "]");*/
                 } else {
                     Log.d(TAG, "unknow HTTP TYPE : " + HttpType);
                 }
-                ClientPredator clientPredatorTmp = getClientByIp(Ip);
-                if (clientPredatorTmp != null)
-                    clientPredatorTmp.addHttpLog(typeHTTP, lastHostnameSniffed, lastPathSniffed, param);
+                lastClientUpdated = getClientByIp(Ip);
+                if (lastClientUpdated != null)
+                    lastClientUpdated.addHttpLog(typeHTTP, lastHostnameSniffed, lastPathSniffed, param);
             }});
     }
     private void                parseDhcpRecord(final String dhcpRecord) {
@@ -225,10 +217,10 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
                     parseHttpUrl(line.substring("HTTP-Url:".length(), line.length()));
                 } else if (line.contains("DHCP:")) {
                     parseDhcpRecord(line.substring("DHCP:".length(), line.length()));
-                } else if (line.contains("DnsService-Request:")) {
-                    parseDnsService(line.substring("DnsService-Request:".length(), line.length()));
-                } else if (line.contains("DnsService-SSLStrip:")) {
-                    parseDnsSSLStrip(line.substring("DnsService-SSLStrip:".length(), line.length()));
+                } else if (line.contains("DNS-Request:")) {
+                    parseDnsService(line.substring("DNS-Request:".length(), line.length()));
+                } else if (line.contains("DNS-SSLStrip:")) {
+                    parseDnsSSLStrip(line.substring("DNS-SSLStrip:".length(), line.length()));
                 } else {
                     parseDataClientProbe(line);
                 }

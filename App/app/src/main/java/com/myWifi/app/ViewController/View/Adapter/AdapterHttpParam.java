@@ -28,7 +28,7 @@ public class            AdapterHttpParam extends ArrayAdapter<Param> {
         TextView key, value;
         key = (TextView) convertView.findViewById(R.id.key);
         value = (TextView) convertView.findViewById(R.id.value);
-        key.setText(param.getKey());
+        key.setText(param.getKey() + ":");
         value.setText(param.getValue());
         return convertView;
     }

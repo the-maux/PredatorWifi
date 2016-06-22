@@ -2,6 +2,7 @@ package com.myWifi.app.ViewController.View.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
     private ArrayList<Record>   records;
     private StackClientPredator clientStack;
     private ClientPredator      clientPredator;
+    private String              TAG = "AdapterClientDetail";
 
     public                      AdapterClientDetail(Context context, ClientPredator clientPredator,
                                     StackClientPredator clientStack) {
@@ -40,12 +42,14 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
         };
     }
     private  void               initViewDnsStrip(TextView typeBtn, TextView path, TextView param,
-                                                 TextView hostname, Record record) {
+                                                 TextView hostname, Record record, TextView httpType) {
+        Log.d(TAG, "DnsStrip: INIT:" + record.getPath());
         typeBtn.setTextColor(Color.GREEN);
-        typeBtn.setText("DnsStrip");
+        typeBtn.setText("HTTPS");
         path.setText(record.getPath());
         param.setText(record.getParam());
         hostname.setVisibility(View.INVISIBLE);
+        httpType.setText("Strip");
     }
     private  void               initViewGlobal(View convertView, Record record) {
         ImageView alertGG = (ImageView) convertView.findViewById(R.id.alertImg) ;
@@ -63,11 +67,12 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
                 recordType == Record.recordType.HttpPost) {
             initViewHttp(recordType, record, typeBtn, httpType,
                             hostname, path, param, alertGG);
+            typeBtn.setTextColor(Color.WHITE);
             RelLayoutDetailClienPreda.setOnClickListener(onClickRecordDetail(record));
             return ;
         }
         else if (recordType == Record.recordType.DnsStrip) {
-            initViewDnsStrip(typeBtn, path, param, hostname, record);
+            initViewDnsStrip(typeBtn, path, param, hostname, record, httpType);
             return ;
         }
         else if (recordType == Record.recordType.DnsService) {
@@ -94,8 +99,12 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
                 pathString.contains("admin") || pathString.contains("login") ||
                 pathString.contains("user") || pathString.contains("log") ||
                 pathString.contains("pwd") || pathString.contains("nickname") ||
-                pathString.contains("id"))
+                pathString.contains("id")) {
             alertGG.setVisibility(View.VISIBLE);
+        }
+        else {
+            alertGG.setVisibility(View.INVISIBLE);
+        }
     }
     private void                initViewHttpPost(TextView httpType, Record record,
                                                  ImageView alertGG, TextView param) {
@@ -106,20 +115,27 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
                 paramString.contains("admin") || paramString.contains("login") ||
                 paramString.contains("user") || paramString.contains("log") ||
                 paramString.contains("pwd") || paramString.contains("nickname") ||
-                paramString.contains("id"))
+                paramString.contains("id")) {
             alertGG.setVisibility(View.VISIBLE);
+        }
+        else {
+            alertGG.setVisibility(View.INVISIBLE);
+        }
     }
     private void                initViewHttp(Record.recordType type, Record record,
                                              TextView typeBtn, TextView httpType,
                                              TextView hostname, TextView path,
                                              TextView param, ImageView alertGG) {
         String pathString = record.getPath();
-        typeBtn.setTextColor(Color.BLUE);
         typeBtn.setText("HTTP");
+        hostname.setVisibility(View.VISIBLE);
         httpType.setVisibility(View.VISIBLE);
         if (type == Record.recordType.HttpCredit) {
             param.setVisibility(View.INVISIBLE);
-            httpType.setText("Credidential");
+            httpType.setText("Credit");
+            hostname.setVisibility(View.INVISIBLE);
+            path.setText(record.getRecord());
+            return ;
         }
         else if (type == Record.recordType.HttpGET)
             initViewHttpGet(param, httpType, pathString, alertGG);

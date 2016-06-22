@@ -56,48 +56,71 @@ public class                DialogDetailFactory  {
         final Record[] items = { record };
 
         class ViewHolder {
+            TextView requestType;
             TextView hostname;
             TextView path;
+            RelativeLayout layoutListView;
             ListView param;
         }
         ListAdapter adapter = new ArrayAdapter<Record>(context, R.layout.dialog_client_predator_detail, items) {
 
             public View     getView(int position, View convertView,
                                 ViewGroup parent) {
-                final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                final LayoutInflater inflater = (LayoutInflater) context
+                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewHolder      holder;
+
                 if (convertView == null) {
                     holder = new ViewHolder();
                     convertView = inflater.inflate(R.layout.dialog_client_predator_detail, null);
 
+                    holder.layoutListView = (RelativeLayout) convertView.findViewById(R.id.layoutListViewParam);
+                    holder.requestType = (TextView) convertView
+                            .findViewById(R.id.requestType);
                     holder.hostname = (TextView) convertView
                             .findViewById(R.id.Hostname);
                     holder.path = (TextView) convertView
                             .findViewById(R.id.Path);
                     holder.param = (ListView) convertView
                             .findViewById(R.id.listViewParam);
-                    convertView.setTag(record);
+                    convertView.setTag(holder);
                 } else {
                     holder = (ViewHolder) convertView.getTag();
                 }
+                if (items[0].getTypeRecord() == Record.recordType.HttpGET)
+                    holder.requestType.setText("HTTP GET REQUEST");
+                else if (items[0].getTypeRecord() == Record.recordType.HttpPost)
+                    holder.requestType.setText("HTTP Post REQUEST");
+                else if (items[0].getTypeRecord() == Record.recordType.HttpCredit) {
+                    holder.requestType.setText("HTTP Credentials REQUEST");
+                    holder.hostname.setText(items[0].getRecord());
+                    holder.path.setVisibility(View.INVISIBLE);
+                    initListViewParamHttp(holder.param, items[0].getParam(), holder.layoutListView);
+                    return convertView;
+                }
                 holder.hostname.setText(items[0].getHost());
                 holder.path.setText(items[0].getPath());
-                initListViewParamHttp(holder.param, items[0].getParam());
+                initListViewParamHttp(holder.param, items[0].getParam(), holder.layoutListView);
                 return convertView;
             }
         };
         return adapter;
     }
 
-    private void            initListViewParamHttp(ListView param, String params) {
-        ArrayList<Param> listParam = new ArrayList<>();
-        for (String paramTmp : params.split("&")) {
-            listParam.add(
-                    new Param(
-                            paramTmp.substring(0, paramTmp.indexOf("")),
-                            paramTmp.substring(paramTmp.indexOf("")+1, paramTmp.length())));
+    private void            initListViewParamHttp(ListView param, String params, RelativeLayout layoutListView) {
+        if (params != null && !params.isEmpty() && params.contains("&")) {
+            Log.d(TAG, "voici les param: " + params);
+            ArrayList<Param> listParam = new ArrayList<>();
+            for (String paramTmp : params.split("&")) {
+                listParam.add(
+                        new Param(
+                                paramTmp.substring(0, paramTmp.indexOf("=")),
+                                paramTmp.substring(paramTmp.indexOf("=") + 1, paramTmp.length())));
+            }
+            param.setAdapter(new AdapterHttpParam(context, listParam));
+        } else {
+            layoutListView.setVisibility(View.GONE);
         }
-        param.setAdapter(new AdapterHttpParam(context, listParam));
     }
 
     public AlertDialog      DialogDetailDetailClient(Record record) {
@@ -107,6 +130,5 @@ public class                DialogDetailFactory  {
         setNegativeButton(builderDialog, "Ok");
         setAdapter(builderDialog, createCustomAdapter(record));
         return builderDialog.create();
-//        builderDialog.show();
     }
 }

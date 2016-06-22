@@ -33,7 +33,7 @@
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:layout_width="40dp"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/buttonshape_http"
         android:shadowColor="#0A0A0A"
         android:shadowDx="5"

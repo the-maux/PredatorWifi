@@ -105,6 +105,7 @@ public class            ClientPredator {
     }
     private boolean     isAlreadyOnit(String record) {
         for (Object line : records) {
+            if (((Record)line).getRecord() != null)
             if (((Record)line).getRecord().contains(record))
                 return true;
         }
@@ -158,6 +159,7 @@ public class            ClientPredator {
             http++;
         onAddRecordAdapter();
     }
+
     public void         addHttpLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
             return ;

@@ -4,7 +4,7 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#fffffd">
+    android:background="#424140">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         android:id="@+id/requestType"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:padding="4dp"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
             android:id="@+id/HostnameText"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:textColor="#000000"
+            android:textColor="#ffffff"
             android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -53,7 +53,7 @@
             android:layout_alignParentEnd="true"
             android:layout_toRightOf="@+id/HostnameText"
             android:layout_toEndOf="@+id/HostnameText"
-            android:textColor="#050301"
+            android:textColor="#ffffff"
             android:gravity="center_vertical|right"
             android:layout_marginRight="10dp"
             android:textSize="15dp"
@@ -80,7 +80,7 @@
             android:id="@+id/PathText"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="false"
-            android:textColor="#000000"
+            android:textColor="#ffffff"
             android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -95,7 +95,7 @@
             android:id="@+id/Path"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:textColor="#050301"
+            android:textColor="#ffffff"
             android:gravity="center_vertical|right"
             android:layout_marginTop="4dp"
             android:textSize="15dp"
@@ -114,12 +114,17 @@
         android:layout_alignEnd="@+id/PathLayout"
         android:id="@+id/layoutListViewParam"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:background="@drawable/abc_list_pressed_holo_dark">
 
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/listViewParam"
-            />
+            android:dividerHeight="1px"
+            android:divider="#000000"
+            android:background="#535251"
+            android:padding="4dp"
+            android:layout_margin="5dp"/>
     </RelativeLayout>
 </RelativeLayout>
