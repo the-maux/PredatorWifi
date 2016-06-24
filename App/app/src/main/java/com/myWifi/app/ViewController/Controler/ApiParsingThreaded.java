@@ -1,48 +1,36 @@
 package com.myWifi.app.ViewController.Controler;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
 import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.Record;
-import com.myWifi.app.ViewController.View.FragmentWifiPredator;
 
 import java.io.*;
-import java.net.ConnectException;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-public class                    LinkWifiPredator extends AsyncTask<Void, Void, Void> {
-    private String              TAG = "LinkWifiPredator";
-    private String              dstAddress;
+public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
+    private String              TAG = "ApiParsingThreaded";
     private String              response = "";
-    private int                 dstPort;
     private ArrayList           listClient;
     private int                 nbrClient = 0;
     private int                 nbrClientTarget = 0;
-    private FragmentWifiPredator instance;
+    private Activity            MainActivity;
     private Socket              socket = null;
+    private InputStream         inputStream;
     private PrintStream         outputStream;
     private ClientPredator      lastClientUpdated = null;
     private String              lastHostnameSniffed = null;
     private String              lastPathSniffed = null;
+    private boolean             onlyProbeRequest = false;
 
-    public                      LinkWifiPredator(String addr, int port, ArrayList listClientFrag,
-                                                 FragmentWifiPredator instance){
-        dstAddress = addr;
-        dstPort = port;
+    public ApiParsingThreaded(ArrayList listClientFrag, Activity activity,
+                              InputStream inputStream, PrintStream outputStream) {
         this.listClient = listClientFrag;
-        this.instance = instance;
-    }
-    public void                 closeconnection() {
-        this.cancel(true);
-        try {
-            socket.close();
-        } catch (IOException e) {
-            Log.w(TAG, "close error");
-            e.printStackTrace();
-
-        }
+        MainActivity = activity;
+        this.inputStream = inputStream;
+        this.outputStream = outputStream;
     }
     public void                 updateClient(ClientPredator clientPredator) {
         if (!this.listClient.isEmpty()) {
@@ -63,7 +51,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         }
     }
     private void                parseDataClientProbe(final String line) {
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 ClientPredator clientPredatorTmp = new ClientPredator(line);
@@ -78,7 +66,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         });
     }
     private void                parseNewTargetConnection(final String line) {
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 ClientPredator clientPredatorTmp = new ClientPredator(line, 0);
@@ -96,7 +84,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     private void                parseHttpCredidential(final String line) {
         //HTTP-Credidential:[10.0.0.20:55146 > 91.216.107.211:80] [93mHTTP password: pwd=password[0m
         //print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override public void run() {
                 String Ip = line.substring(line.indexOf("[")+1, line.indexOf(":")-1);
                 lastClientUpdated = getClientByIp(Ip);
@@ -110,7 +98,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         //HTTP-Url:[10.0.0.20] GET wwww.root-me.org/local/cache-vignettes/L150xH150/rwhiteGrand-048ea.png?1465816508
         //HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-login.php?redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&reauth=1
         //HTTP-Url:[10.0.0.20] POST load: log=Afmin&pwd=password&wp-submit=Se+connecter&redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&testcookie=1
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 String Ip, HttpType, httpRecordTmp, param = "";
@@ -140,7 +128,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     private void                parseDhcpRecord(final String dhcpRecord) {
         //DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
         //DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 String DHCPRecord;
@@ -153,7 +141,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     }
     private void                parseDnsService(final String request) {
         //DnsService-Request:10.0.0.20#cdn1.smartadserver.com. IN A
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                     String dnsRecord;
@@ -178,7 +166,7 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     }
     private void                parseDnsSSLStrip(final String record) {
         //DnsService-SSLStrip:webatout.email-match.com#atout.email-match.com
-        this.instance.getActivity().runOnUiThread(new Runnable() {
+        MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 if (record.contains(".com") || record.contains(".org") || record.contains(".eu") ||
@@ -206,20 +194,20 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     }
     private void                parseAndAddFifo(String[] data){
         for (String line : data) {
-            if (instance == null || instance.getActivity() == null)
+            if (MainActivity == null)
                 break;
             if (!line.contains("connectivitycheck.android.com")) {
-                if (line.contains("TargetConnection")) {
+                if (line.contains("TargetConnection") && !onlyProbeRequest) {
                     parseNewTargetConnection(line.substring("TargetConnection#".length(), line.length()));
-                } else if (line.contains("HTTP-Credidential:")) {
+                } else if (line.contains("HTTP-Credidential:") && !onlyProbeRequest) {
                     parseHttpCredidential(line.substring("HTTP-Credidential:".length(), line.length()));
-                } else if (line.contains("HTTP-Url:")) {
+                } else if (line.contains("HTTP-Url:") && !onlyProbeRequest) {
                     parseHttpUrl(line.substring("HTTP-Url:".length(), line.length()));
-                } else if (line.contains("DHCP:")) {
+                } else if (line.contains("DHCP:") && !onlyProbeRequest) {
                     parseDhcpRecord(line.substring("DHCP:".length(), line.length()));
-                } else if (line.contains("DNS-Request:")) {
+                } else if (line.contains("DNS-Request:") && !onlyProbeRequest) {
                     parseDnsService(line.substring("DNS-Request:".length(), line.length()));
-                } else if (line.contains("DNS-SSLStrip:")) {
+                } else if (line.contains("DNS-SSLStrip:") && !onlyProbeRequest) {
                     parseDnsSSLStrip(line.substring("DNS-SSLStrip:".length(), line.length()));
                 } else {
                     parseDataClientProbe(line);
@@ -230,60 +218,32 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
     private void                sendCallBackToServer(PrintStream outputStream) {
         outputStream.print("Ack\n");
     }
-    private void                myListen(InputStream inputStream, PrintStream outputStream) throws IOException {
+
+    @Override
+    protected Void              doInBackground(Void... arg0)  {
         int                     bytesRead;
         byte[]                  buffer = new byte[1024];
         String                  bufferTmp;
         ByteArrayOutputStream   byteArrayOutputStream = new ByteArrayOutputStream(1024);
 
-        this.outputStream = outputStream;
+
         outputStream.print("Ack\n");
-        while ((bytesRead = inputStream.read(buffer)) != -1) {//* inputStream.read() will block if no data return
-            byteArrayOutputStream.write(buffer, 0, bytesRead);
-            bufferTmp = byteArrayOutputStream.toString("UTF-8");
-            response += bufferTmp;
-            parseAndAddFifo(response.split(System.getProperty("line.separator")));
-            byteArrayOutputStream.reset();
-            sendCallBackToServer(outputStream);
-        }
-
-    }
-
-    @Override
-    protected Void              doInBackground(Void... arg0) {
-        Log.w(TAG, "doInBackground");
         try {
-            socket = new Socket("10.0.0.1", 1234);
-            myListen(socket.getInputStream(), new PrintStream(socket.getOutputStream()));
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-            response = "UnknownHostException: " + e.toString();
-        }  catch (ConnectException e) {
-            Log.w(TAG, "ConnectException");
-            this.instance.getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    instance.errorConnection();
+            while ((bytesRead = inputStream.read(buffer)) != -1) {//* inputStream.read() will block if no data return
+                byteArrayOutputStream.write(buffer, 0, bytesRead);
+                try {
+                    bufferTmp = byteArrayOutputStream.toString("UTF-8");
+                    response += bufferTmp;
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
                 }
-            });
-            e.printStackTrace();
+                parseAndAddFifo(response.split(System.getProperty("line.separator")));
+                byteArrayOutputStream.reset();
+                sendCallBackToServer(outputStream);
+            }
         } catch (IOException e) {
             e.printStackTrace();
-            response = "IOException: " + e.toString();
-        } finally {
-            try {
-                 if(socket != null) socket.close();
-            } catch (IOException e) {
-                 e.printStackTrace();
-            }
         }
-        Log.w(TAG, "leaving socket");
-        this.instance.getActivity().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                instance.errorConnection();
-            }
-        });
         return null;
     }
     @Override
@@ -291,6 +251,13 @@ public class                    LinkWifiPredator extends AsyncTask<Void, Void, V
         if (outputStream != null)
             outputStream.close();
         super.onPostExecute(result);
+    }
+
+    public void                 setOnlyProbe() {
+        onlyProbeRequest = true;
+    }
+    public void                 avoidOnlyProbe() {
+        onlyProbeRequest = false;
     }
 }
 

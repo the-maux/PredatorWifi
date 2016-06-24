@@ -14,7 +14,7 @@ import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Model.Record;
 import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
-import com.myWifi.app.ViewController.View.Dialog.DialogDetailFactory;
+import com.myWifi.app.ViewController.View.Dialog.DialogDetailHttpRequest;
 
 import java.util.ArrayList;
 
@@ -36,7 +36,7 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                (new DialogDetailFactory(getContext()))
+                (new DialogDetailHttpRequest(getContext()))
                         .DialogDetailDetailClient(record).show();
             }
         };

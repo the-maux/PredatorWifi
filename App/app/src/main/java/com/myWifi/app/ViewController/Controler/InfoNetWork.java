@@ -27,7 +27,6 @@ public class                    InfoNetWork {
     private void                initInfoNet() {
        WifiManager wifi = (WifiManager) Instance.getSystemService(Context.WIFI_SERVICE);
         if (wifi != null) {
-            Log.w(TAG, "init info net");
             this.info = wifi.getConnectionInfo();
             this.speed = this.info.getLinkSpeed();
             this.ssid = this.info.getSSID();
@@ -36,11 +35,9 @@ public class                    InfoNetWork {
             this.gatewayIp = getIpFromIntSigned(wifi.getDhcpInfo().gateway);
             this.ipAddress = getMyIp(this.info.getIpAddress());
             this.netmaskIp = getIpFromIntSigned(wifi.getDhcpInfo().netmask);
-            debugLog();
         }
     }
-    private void                debugLog() {
-        Log.w(TAG, "speed: " + speed);
+    public void                debugLog() {
         Log.w(TAG, "ssid: " + ssid);
         Log.w(TAG, "bssid: " + bssid);
         Log.w(TAG, "macAddress: " + macAddress);

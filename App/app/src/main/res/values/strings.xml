@@ -6,6 +6,8 @@
         <item>Wifi Discovery</item>
         <item>Client Detail </item>
         <item>Client Detail </item>
+        <item>Menu Attack</item>
+        <item>Probe Request Sniffer</item>
     </string-array>
 
     <string name="ip">ip</string>

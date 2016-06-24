@@ -17,11 +17,11 @@ import com.myWifi.app.ViewController.View.Adapter.AdapterHttpParam;
 
 import java.util.ArrayList;
 
-public class                DialogDetailFactory  {
+public class                DialogDetailHttpRequest {
     private Context         context;
-    private String          TAG = "DialogDetailFactory";
+    private String          TAG = "DialogDetailHttpRequest";
 
-    public                  DialogDetailFactory(Context context) {
+    public                  DialogDetailHttpRequest(Context context) {
         this.context = context;
     }
     private void            setNegativeButton(AlertDialog.Builder builderDialog, String TextNegation) {
@@ -32,16 +32,6 @@ public class                DialogDetailFactory  {
                         dialog.dismiss();
                     }
                 });
-    }
-    private ArrayAdapter<String> initArrayAdapter(Context context) {
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(context,
-                android.R.layout.select_dialog_singlechoice);
-        arrayAdapter.add("Hardik");
-        arrayAdapter.add("Archit");
-        arrayAdapter.add("Jignesh");
-        arrayAdapter.add("Umang");
-        arrayAdapter.add("Gatti");
-        return arrayAdapter;
     }
     private void            setAdapter(AlertDialog.Builder builderDialog, final ListAdapter arrayAdapter) {
         builderDialog.setAdapter(arrayAdapter,
@@ -106,7 +96,6 @@ public class                DialogDetailFactory  {
         };
         return adapter;
     }
-
     private void            initListViewParamHttp(ListView param, String params, RelativeLayout layoutListView) {
         if (params != null && !params.isEmpty() && params.contains("&")) {
             Log.d(TAG, "voici les param: " + params);
@@ -122,7 +111,6 @@ public class                DialogDetailFactory  {
             layoutListView.setVisibility(View.GONE);
         }
     }
-
     public AlertDialog      DialogDetailDetailClient(Record record) {
         AlertDialog.Builder builderDialog = new AlertDialog.Builder(context);
         builderDialog.setIcon(R.drawable.icon);

@@ -5,30 +5,32 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Toast;
+import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
+import com.myWifi.app.ViewController.Controler.ManagerWifi;
+import com.myWifi.app.ViewController.View.Dialog.DialogDetailReconnectWifi;
 
 
 public class                FragmentMenuAttack extends android.support.v4.app.Fragment {
     private final String    TAG = "FragmentMenuAttack";
+    private ManagerWifi     wifiManager;
+    private FragmentMenuAttack instance = this;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.w("FragmentMenuAttack", "createView");
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.fgmt_menu_attack, container, false);
-        Log.w("FragmentMenuAttack", "createView");
+        wifiManager = ((MainActivityToFragment)getActivity()).getManagerWifi();
 
         rootView.findViewById(R.id.KarmaButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
-                TODO:
-                        1. Sync avec le server
-                        2. ListView ProbeRequest Sniffed
-                        3. OnClickedProbeRequest
-                        4. Launch a new AP with new new APNAME
-                        5. Sync with Server
-                        6. Go to Fragment wifi Predator
-                 */
+
+                DialogDetailReconnectWifi dialog = new DialogDetailReconnectWifi(getContext(), getActivity());
+                dialog.create().show();
+                wifiManager.waitSyncServer(instance, dialog);
             }
         });
         rootView.findViewById(R.id.evillTwinAttack).setOnClickListener(new View.OnClickListener() {
@@ -48,5 +50,22 @@ public class                FragmentMenuAttack extends android.support.v4.app.Fr
             }
         });
         return rootView;
+    }
+    public void             errorConnection(final String errorMsg) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    public void             successConnection() {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, "sucess connection");
+                ((MainActivityToFragment)getActivity()).displayView(6);
+            }
+        });
     }
 }

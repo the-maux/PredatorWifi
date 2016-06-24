@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
+import com.myWifi.app.ViewController.Controler.ApiConnectionManager;
 import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
 import com.myWifi.app.ViewController.Model.ClientPredator;
 import com.myWifi.app.ViewController.Model.StackClientPredator;
@@ -68,7 +69,7 @@ public class                FragmentDetailsClient extends android.support.v4.app
             }           });
     }
     private void            initialize(View rootView) {
-        this.clientStack = ((MainActivityToFragment)getActivity()).myListClient;
+        clientStack = ApiConnectionManager.getInstance(getContext(), getActivity()).getListClients();
         initializeBtns(rootView);
         ListView clientRecordListView = (ListView) rootView.findViewById(R.id.listViewRedcordClient);
         ClientPredator actualClientPredator = ((MainActivityToFragment) getActivity()).getActualClientPredator();

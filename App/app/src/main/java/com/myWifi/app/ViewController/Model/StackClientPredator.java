@@ -1,14 +1,16 @@
 package com.myWifi.app.ViewController.Model;
 
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import com.myWifi.app.MainActivityToFragment;
-import com.myWifi.app.ViewController.View.Adapter.AdapterLinkWifiPredator;
+import com.myWifi.app.ViewController.View.Adapter.AdapterSnifClients;
 
 import java.util.ArrayList;
 
 
-public class StackClientPredator extends ArrayList {
+public class                    StackClientPredator extends ArrayList {
     public boolean              dhcp = true, dns = true, ssid = true, http = true;
-    private AdapterLinkWifiPredator adapter;
+    private ArrayAdapter        adapter;
     private MainActivityToFragment activity;
     private int                 nbrPersonneConnected = 0, nbrPersonneSearching = 0;
 
@@ -35,7 +37,7 @@ public class StackClientPredator extends ArrayList {
         adapter.notifyDataSetChanged();
         return ret;
     }
-    public      void            setAdapter(AdapterLinkWifiPredator adapter) {
+    public      void            setAdapter(ArrayAdapter adapter) {
         this.adapter = adapter;
     }
     public      boolean         isAllowed(Record.recordType type) {
