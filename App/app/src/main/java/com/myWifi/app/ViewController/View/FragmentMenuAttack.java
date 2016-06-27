@@ -59,11 +59,11 @@ public class                FragmentMenuAttack extends android.support.v4.app.Fr
             }
         });
     }
-    public void             successConnection() {
+    public void             successConnection(final int rcx) {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Log.d(TAG, "sucess connection");
+                Log.d(TAG, "sucess connection in " + rcx * 2+ "s");
                 ((MainActivityToFragment)getActivity()).displayView(6);
             }
         });

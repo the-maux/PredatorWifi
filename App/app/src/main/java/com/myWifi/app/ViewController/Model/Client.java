@@ -1,10 +1,11 @@
 package com.myWifi.app.ViewController.Model;
 
+import android.util.Log;
 import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
 
 import java.util.ArrayList;
 
-public class            ClientPredator {
+public class            Client {
     private String      macAddres = null;
     private String      IP = null;
     private String      nameDevice = "Device unknow";
@@ -17,7 +18,8 @@ public class            ClientPredator {
     private int         dhcp = 0, http = 0, ssid = 0, dns = 0;
     private AdapterClientDetail adapter = null;
 
-    public              ClientPredator(String rcvStr) {
+    public              Client(String rcvStr) {
+        //Log.d(TAG, "StringToParse : " + rcvStr);
         try {
             if (rcvStr.contains("#") && rcvStr.contains("*") && rcvStr.contains(";") && rcvStr.contains("_")) {
                 setProbe(true);
@@ -25,6 +27,7 @@ public class            ClientPredator {
                 setNameDevice(rcvStr.substring(rcvStr.indexOf("*") + 1, rcvStr.indexOf(";")));
                 setSSID(rcvStr.substring(rcvStr.indexOf(";") + 1, rcvStr.indexOf("_")));
                 setMacAddres(rcvStr.substring(rcvStr.indexOf("_") + 1, rcvStr.length()));
+                records = new ArrayList<Record>();
                 return ;
             }
         } catch (StringIndexOutOfBoundsException e) {
@@ -42,7 +45,7 @@ public class            ClientPredator {
         }
         return records.remove(tmp);
     }
-    public              ClientPredator(String rcvStr, int osef) {
+    public Client(String rcvStr, int osef) {
         try {
             if (rcvStr.contains("*") && rcvStr.contains(";")) {
                 setProbe(false);
@@ -159,7 +162,6 @@ public class            ClientPredator {
             http++;
         onAddRecordAdapter();
     }
-
     public void         addHttpLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
             return ;

@@ -12,8 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Model.Record;
-import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.Model.Client;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 import com.myWifi.app.ViewController.View.Dialog.DialogDetailHttpRequest;
 
 import java.util.ArrayList;
@@ -21,16 +21,16 @@ import java.util.ArrayList;
 
 public class AdapterClientDetail extends ArrayAdapter<Record> {
     private ArrayList<Record>   records;
-    private StackClientPredator clientStack;
-    private ClientPredator      clientPredator;
+    private StackClientSniffed clientStack;
+    private Client client;
     private String              TAG = "AdapterClientDetail";
 
-    public                      AdapterClientDetail(Context context, ClientPredator clientPredator,
-                                    StackClientPredator clientStack) {
-        super(context, 0,  clientPredator.getRecords());
-        this.records = clientPredator.getRecords();
+    public                      AdapterClientDetail(Context context, Client client,
+                                    StackClientSniffed clientStack) {
+        super(context, 0,  client.getRecords());
+        this.records = client.getRecords();
         this.clientStack = clientStack;
-        this.clientPredator = clientPredator;
+        this.client = client;
     }
     private View.OnClickListener onClickRecordDetail(final Record record) {
         return new View.OnClickListener() {
@@ -161,13 +161,13 @@ public class AdapterClientDetail extends ArrayAdapter<Record> {
     public int                  getCount() {
         int retMe = 0;
         if (clientStack.isAllowed(Record.recordType.HttpPost))
-            retMe += clientPredator.getHttp();
+            retMe += client.getHttp();
         if (clientStack.isAllowed(Record.recordType.SSID))
-            retMe += clientPredator.getSsid();
+            retMe += client.getSsid();
         if (clientStack.isAllowed(Record.recordType.DnsService))
-            retMe += clientPredator.getDns();
+            retMe += client.getDns();
         if (clientStack.isAllowed(Record.recordType.DHCP))
-            retMe += clientPredator.getDhcp();
+            retMe += client.getDhcp();
         return retMe;
     }
     @Override

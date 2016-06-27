@@ -3,64 +3,77 @@ package com.myWifi.app.ViewController.Controler;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import com.myWifi.app.ViewController.Model.ClientPredator;
+import com.myWifi.app.ViewController.Model.Client;
 import com.myWifi.app.ViewController.Model.Record;
+import com.myWifi.app.ViewController.Model.StackClientProbe;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.ArrayList;
 
 public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
     private String              TAG = "ApiParsingThreaded";
     private String              response = "";
-    private ArrayList           listClient;
+    private StackClientSniffed  listSniffedTarget;
+    private StackClientProbe    listTargetProbe;
     private int                 nbrClient = 0;
     private int                 nbrClientTarget = 0;
     private Activity            MainActivity;
     private Socket              socket = null;
     private InputStream         inputStream;
     private PrintStream         outputStream;
-    private ClientPredator      lastClientUpdated = null;
+    private Client lastClientUpdated = null;
     private String              lastHostnameSniffed = null;
     private String              lastPathSniffed = null;
     private boolean             onlyProbeRequest = false;
 
-    public ApiParsingThreaded(ArrayList listClientFrag, Activity activity,
-                              InputStream inputStream, PrintStream outputStream) {
-        this.listClient = listClientFrag;
+    public ApiParsingThreaded(StackClientSniffed listClientFrag, StackClientProbe listClientProbe, Activity activity,
+                              InputStream inputStream, PrintStream outputStream, boolean probe) {
+        this.listSniffedTarget = listClientFrag;
         MainActivity = activity;
         this.inputStream = inputStream;
         this.outputStream = outputStream;
+        this.listTargetProbe = listClientProbe;
     }
-    public void                 updateClient(ClientPredator clientPredator) {
-        if (!this.listClient.isEmpty()) {
-            for (Object clientTmp : this.listClient)
-                if (clientPredator.getMacAddres().contains(((ClientPredator) clientTmp).getMacAddres())) {
-                    if (((ClientPredator) clientTmp).getSSID().contains("Hidden") && !clientPredator.getSSID().contains("Hidden"))
-                        ((ClientPredator) clientTmp).setSSID(clientPredator.getSSID());
-                    if (((ClientPredator) clientTmp).getNameDevice().contains("Device unknow") && !clientPredator.getNameDevice().contains("Device unknow"))
-                        ((ClientPredator) clientTmp).setNameDevice(clientPredator.getNameDevice());
+    public void                 updateClient(Client client) {
+  //      Log.d(TAG, "Updating Client : " + client.getMacAddres());
+        if (!this.listTargetProbe.isEmpty()) {
+            for (Object clientTmp : this.listTargetProbe)
+                if (client.getMacAddres().contains(((Client) clientTmp).getMacAddres())) {
+                    if (!client.getSSID().contains("Hidden")) {
+                        ((Client) clientTmp).addSsidLog(((Client) clientTmp).getSSID());
+                        ((Client) clientTmp).setSSID(client.getSSID());
+                    }
+                    if (((Client) clientTmp).getNameDevice().contains("Device unknow") && !client.getNameDevice().contains("Device unknow"))
+                        ((Client) clientTmp).setNameDevice(client.getNameDevice());
                     return;
                 }
         }
     }
-    private void                addHistorySsid(ClientPredator clientPredator) {
-        for (int i = 0; i < this.listClient.size(); i++) {
-            if (((ClientPredator)this.listClient.get(i)).getMacAddres().contains(clientPredator.getMacAddres()))
-                clientPredator.addSsidLog(((ClientPredator)this.listClient.get(i)).getSSID());
+    private void                addHistorySsid(Client client) {
+        Log.d(TAG,
+                "Adding Ssid" + client.getSsid() +
+                        " to history at client :" + client.getMacAddres());
+        for (int i = 0; i < this.listTargetProbe.size(); i++) {
+            if (((Client)this.listTargetProbe.get(i)).getMacAddres().contains(client.getMacAddres()))
+                client.addSsidLog(((Client)this.listTargetProbe.get(i)).getSSID());
         }
     }
     private void                parseDataClientProbe(final String line) {
         MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ClientPredator clientPredatorTmp = new ClientPredator(line);
-                if (!clientPredatorTmp.isError() && !clientPredatorTmp.getSSID().contains("Hidden")){
-                    if (nbrClient++ > 0 && listClient.contains(clientPredatorTmp)) {
-                        updateClient(clientPredatorTmp);
+                Client client = new Client(line);
+                if (!client.isError() && !client.getSSID().contains("Hidden")){
+                    if (!listTargetProbe.isEmpty() && listTargetProbe.contains(client)) {
+                        updateClient(client);
                     } else {
-                        listClient.add(clientPredatorTmp);
+//                        Log.d(TAG, "Adding client :[" + client.getMacAddres() + "] To the list");
+                        listTargetProbe.add(client);
                     }
+                } else {
+/*                    Log.d(TAG, "Error : client isError : " + client.isError() +
+                            " with SSID: " + client.getSSID());*/
                 }
             }
         });
@@ -69,13 +82,13 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
         MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ClientPredator clientPredatorTmp = new ClientPredator(line, 0);
-                if (!clientPredatorTmp.isError()) {
-                    if (nbrClientTarget++ > 0 && listClient.contains(clientPredatorTmp)) {
-                        updateClient(clientPredatorTmp);
+                Client clientTmp = new Client(line, 0);
+                if (!clientTmp.isError()) {
+                    if (nbrClientTarget++ > 0 && listSniffedTarget.contains(clientTmp)) {
+                        updateClient(clientTmp);
                     } else{
-                        addHistorySsid(clientPredatorTmp);
-                        listClient.add(clientPredatorTmp);
+                        addHistorySsid(clientTmp);
+                        listSniffedTarget.add(clientTmp);
                     }
                 }
              }
@@ -155,11 +168,11 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
                             dnsRecord = request.substring(request.indexOf("#")+1, request.indexOf(" ")-1);
                         else
                             dnsRecord = request.substring(request.indexOf("#")+1, request.length());
-                        ClientPredator clientPredatorTmp = getClientByIp(Ip);
-                        if (clientPredatorTmp != null) {
+                        Client clientTmp = getClientByIp(Ip);
+                        if (clientTmp != null) {
                             Log.d(TAG, "dnsRequest:" + dnsRecord);
-                            lastClientUpdated = clientPredatorTmp;
-                            clientPredatorTmp.addDnsService(dnsRecord);
+                            lastClientUpdated = clientTmp;
+                            clientTmp.addDnsService(dnsRecord);
                         }
                     }
             }});
@@ -184,11 +197,11 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
             }
         });
     }
-    private ClientPredator      getClientByIp(String ip) {
-        for (Object client : listClient) {
-            if (((ClientPredator) client).getIP() != null && ip != null &&
-                    ((ClientPredator) client).getIP().contains(ip))
-                return (ClientPredator) client;
+    private Client              getClientByIp(String ip) {
+        for (Object client : listSniffedTarget) {
+            if (((Client) client).getIP() != null && ip != null &&
+                    ((Client) client).getIP().contains(ip))
+                return (Client) client;
         }
         return null;
     }
@@ -209,16 +222,12 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
                     parseDnsService(line.substring("DNS-Request:".length(), line.length()));
                 } else if (line.contains("DNS-SSLStrip:") && !onlyProbeRequest) {
                     parseDnsSSLStrip(line.substring("DNS-SSLStrip:".length(), line.length()));
-                } else {
-                    parseDataClientProbe(line);
+                } else if (line.contains("Probe:") && onlyProbeRequest) {
+                    parseDataClientProbe(line.substring("Probe:".length()));
                 }
             }
         }
     }
-    private void                sendCallBackToServer(PrintStream outputStream) {
-        outputStream.print("Ack\n");
-    }
-
     @Override
     protected Void              doInBackground(Void... arg0)  {
         int                     bytesRead;
@@ -226,10 +235,8 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
         String                  bufferTmp;
         ByteArrayOutputStream   byteArrayOutputStream = new ByteArrayOutputStream(1024);
 
-
-        outputStream.print("Ack\n");
         try {
-            while ((bytesRead = inputStream.read(buffer)) != -1) {//* inputStream.read() will block if no data return
+            while (!isCancelled() && (bytesRead = inputStream.read(buffer)) != -1) {//* inputStream.read() will block if no data return
                 byteArrayOutputStream.write(buffer, 0, bytesRead);
                 try {
                     bufferTmp = byteArrayOutputStream.toString("UTF-8");
@@ -239,12 +246,11 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
                 }
                 parseAndAddFifo(response.split(System.getProperty("line.separator")));
                 byteArrayOutputStream.reset();
-                sendCallBackToServer(outputStream);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
-        return null;
+    return null;
     }
     @Override
     protected void              onPostExecute(Void result) {
@@ -252,7 +258,6 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
             outputStream.close();
         super.onPostExecute(result);
     }
-
     public void                 setOnlyProbe() {
         onlyProbeRequest = true;
     }

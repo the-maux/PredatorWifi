@@ -19,13 +19,11 @@ public class                    InfoNetWork {
     private String              bssid = "coucouBSSID";
     private String              ssid = "coucouSSID";
     private String              gatewayIp = "192.168.0.53";
+    WifiManager                 wifi;
 
     public                      InfoNetWork(Activity activity) {
         Instance = activity;
-        initInfoNet();
-    }
-    private void                initInfoNet() {
-       WifiManager wifi = (WifiManager) Instance.getSystemService(Context.WIFI_SERVICE);
+        wifi = (WifiManager) Instance.getSystemService(Context.WIFI_SERVICE);
         if (wifi != null) {
             this.info = wifi.getConnectionInfo();
             this.speed = this.info.getLinkSpeed();
@@ -37,13 +35,15 @@ public class                    InfoNetWork {
             this.netmaskIp = getIpFromIntSigned(wifi.getDhcpInfo().netmask);
         }
     }
+
     public void                debugLog() {
-        Log.w(TAG, "ssid: " + ssid);
-        Log.w(TAG, "bssid: " + bssid);
-        Log.w(TAG, "macAddress: " + macAddress);
-        Log.w(TAG, "gatewayIp: " + gatewayIp);
-        Log.w(TAG, "my Ip: " + ipAddress);
-        Log.w(TAG, "netmask: " + netmaskIp);
+        Log.d(TAG, "ssid: " + ssid);
+        Log.d(TAG, "bssid: " + bssid);
+        Log.d(TAG, "macAddress: " + macAddress);
+        Log.d(TAG, "gatewayIp: " + gatewayIp);
+        Log.d(TAG, "my Ip: " + ipAddress);
+        Log.d(TAG, "netmask: " + netmaskIp);
+        Log.d(TAG, "wifi State :" + wifi.getWifiState());
     }
     private static String       getIpFromIntSigned(int ip_int) {
         String ip = "";

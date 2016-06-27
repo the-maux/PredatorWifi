@@ -3,6 +3,7 @@ package com.myWifi.app.ViewController.View;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +15,13 @@ import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Controler.ApiConnectionManager;
 import com.myWifi.app.ViewController.View.Adapter.AdapterProbeClients;
-import com.myWifi.app.ViewController.View.Adapter.AdapterSnifClients;
 
 public class                FragmentPredatorProbe extends android.support.v4.app.Fragment {
     private final String    TAG = "FragLinkWifiPredator";
     private TextView        serverVizu, nbDevicesProbe;
     private ListView        listViewClient;
     private ImageView       replay;
+    private ApiConnectionManager ManageApi;
 
     private void            initXML(View rootView) {
         rootView.findViewById(R.id.NbDevicesOnNetWork).setVisibility(View.INVISIBLE);
@@ -32,12 +33,12 @@ public class                FragmentPredatorProbe extends android.support.v4.app
             @Override
             public void onClick(View v) {
                 /* TODO: display new displayView*/
-                ((MainActivityToFragment)getActivity()).displayView(2);
+                ((MainActivityToFragment)getActivity()).displayView(6);
             }
         });
     }
     private void            initialisation(View rootView) {
-        ApiConnectionManager ManageApi = ApiConnectionManager.getInstance(getContext(), getActivity());
+        ManageApi = ApiConnectionManager.getInstance(getContext(), getActivity());
 
         initXML(rootView);
         if (!ManageApi.HasClients())
@@ -46,16 +47,16 @@ public class                FragmentPredatorProbe extends android.support.v4.app
         AdapterProbeClients adapter =
                 new AdapterProbeClients(
                         getContext(),
-                        ManageApi.getListClients(),
+                        ManageApi.getListClientProbe(),
                         serverVizu,
                         nbDevicesProbe,
                         (MainActivityToFragment) getActivity(),
                         ManageApi, this);
-        ManageApi.linkAdapterListClient(adapter);
+        ManageApi.linkAdapterProbeClients(adapter);
         if (!ManageApi.isApiLinked()) {
-            ManageApi.connectApi();
+            Log.d(TAG, "on Connect To Api");
+            ManageApi.connectApi(this, true);
         }
-        ManageApi.startProbeMonitor();
         listViewClient.setAdapter(adapter);
     }
     @Override
@@ -64,6 +65,10 @@ public class                FragmentPredatorProbe extends android.support.v4.app
         View rootView = inflater.inflate(R.layout.fgmt_wifi_predator, container, false);
         initialisation(rootView);
         return rootView;
+    }
+    public void             onApiConnected() {
+        Log.d(TAG, "onApiConnected");
+        ManageApi.startProbeMonitor();
     }
     public void             errorConnection(String msg) {
         Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG).show();

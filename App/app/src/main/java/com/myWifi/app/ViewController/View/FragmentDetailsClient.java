@@ -12,14 +12,14 @@ import android.widget.TextView;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Controler.ApiConnectionManager;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
-import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.Model.Client;
 
 
 public class                FragmentDetailsClient extends android.support.v4.app.Fragment {
     private final String    TAG = "FragmentMyNetWork";
-    private StackClientPredator clientStack;
+    private StackClientSniffed clientStack;
     private AdapterClientDetail adapter;
     private TextView        nameDevice;
     private LinearLayout    layoutFilter;
@@ -69,16 +69,16 @@ public class                FragmentDetailsClient extends android.support.v4.app
             }           });
     }
     private void            initialize(View rootView) {
-        clientStack = ApiConnectionManager.getInstance(getContext(), getActivity()).getListClients();
+        clientStack = ApiConnectionManager.getInstance(getContext(), getActivity()).getListClientsSniff();
         initializeBtns(rootView);
         ListView clientRecordListView = (ListView) rootView.findViewById(R.id.listViewRedcordClient);
-        ClientPredator actualClientPredator = ((MainActivityToFragment) getActivity()).getActualClientPredator();
-        if (actualClientPredator == null) ((MainActivityToFragment) getActivity()).displayView(2);
+        Client actualClient = ((MainActivityToFragment) getActivity()).getActualClient();
+        if (actualClient == null) ((MainActivityToFragment) getActivity()).displayView(2);
         else {
-            ((TextView) rootView.findViewById(R.id.nameDevice)).setText(actualClientPredator.getNameDevice());
-            adapter = new AdapterClientDetail(getContext(), actualClientPredator, clientStack);
+            ((TextView) rootView.findViewById(R.id.nameDevice)).setText(actualClient.getNameDevice());
+            adapter = new AdapterClientDetail(getContext(), actualClient, clientStack);
             clientRecordListView.setAdapter(adapter);
-            actualClientPredator.setAdapterDetailClient(adapter);
+            actualClient.setAdapterDetailClient(adapter);
         }
     }
     @Override

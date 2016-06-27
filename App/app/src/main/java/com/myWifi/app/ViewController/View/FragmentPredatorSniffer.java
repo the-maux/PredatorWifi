@@ -44,13 +44,13 @@ public class                FragmentPredatorSniffer extends android.support.v4.a
         AdapterSnifClients adapter =
                 new AdapterSnifClients(
                         getContext(),
-                        ManageApi.getListClients(),
+                        ManageApi.getListClientsSniff(),
                         nbDevicesOnNetWork,
                         serverVizu,
                         nbDevicesProbe,
                         (MainActivityToFragment) getActivity());
-        ManageApi.linkAdapterListClient(adapter);
-        ManageApi.connectApi();
+        ManageApi.linkadapterSniffClients(adapter);
+        ManageApi.connectApi(this, false);
         listViewClient.setAdapter(adapter);
     }
     @Override

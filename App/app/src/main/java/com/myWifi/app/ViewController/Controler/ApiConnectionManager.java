@@ -6,7 +6,8 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import com.myWifi.app.MainActivityToFragment;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.Model.StackClientProbe;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 import com.myWifi.app.ViewController.View.Dialog.DialogDetailReconnectWifi;
 import com.myWifi.app.ViewController.View.FragmentPredatorProbe;
 
@@ -14,7 +15,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.net.Socket;
 
-public class ApiConnectionManager {
+public class                                ApiConnectionManager {
     private static Context                  context;
     private static ApiConnectionManager     ourInstance = null;
     private static ApiParsingThreaded       apiLink;
@@ -22,7 +23,8 @@ public class ApiConnectionManager {
     private static String                   TAG = "ApiConnectionManager";
     private static boolean                  isApiLinked = false;
     private static boolean                  HasListClient = false;
-    private static StackClientPredator      listClient = null;
+    private static StackClientSniffed       listClientSniff = null;
+    private static StackClientProbe         listClientProbe = null;
     private static Activity                 activity = null;
     private static String                   Ip = "10.0.0.1";
     private static int                      Port = 1234;
@@ -59,8 +61,7 @@ public class ApiConnectionManager {
             e.printStackTrace();
         }
     }
-
-    public void                             connectApi() {
+    public void                             connectApi(final android.support.v4.app.Fragment fragment, final boolean wichFragment) {
         (new Thread() {
             @Override
             public void run() {
@@ -69,11 +70,21 @@ public class ApiConnectionManager {
                     outPutSocket = new PrintStream(socket.getOutputStream());
                     apiLink =
                             new ApiParsingThreaded(
-                                    listClient,
+                                    listClientSniff,
+                                    listClientProbe,
                                     activity,
-                                    socket.getInputStream(), outPutSocket);
+                                    socket.getInputStream(), outPutSocket, wichFragment);
                     isApiLinked = true;
                     apiLink.execute();
+                    if (wichFragment) {
+                        apiLink.setOnlyProbe();
+                        fragment.getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                ((FragmentPredatorProbe)fragment).onApiConnected();
+                            };
+                    });
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -84,30 +95,37 @@ public class ApiConnectionManager {
         return HasListClient;
     }
     public void                             createListClient() {
-        listClient = new StackClientPredator((MainActivityToFragment) activity);
+        listClientSniff = new StackClientSniffed((MainActivityToFragment) activity);
+        listClientProbe = new StackClientProbe((MainActivityToFragment) activity);
         HasListClient = true;
     }
-    public void                             linkAdapterListClient(ArrayAdapter adapter) {
-        listClient.setAdapter(adapter);
+    public void                             linkadapterSniffClients(ArrayAdapter adapter) {
+        listClientSniff.setAdapter(adapter);
     }
-    public StackClientPredator              getListClients() {
-        return listClient;
+    public void                             linkAdapterProbeClients(ArrayAdapter adapter) {
+        listClientProbe.setAdapter(adapter);
     }
-
+    public StackClientSniffed               getListClientsSniff() {
+        return listClientSniff;
+    }
+    public StackClientProbe                 getListClientProbe() { return listClientProbe; }
     public void                             startProbeMonitor() {
         outPutSocket.print("/start ProbeMonitor\n");
-        apiLink.setOnlyProbe();
     }
     public void                             stopProbeMonitor() {
+        Log.d(TAG, "/stop ProbeMonitor sended");
         outPutSocket.print("/stop ProbeMonitor\n");
         apiLink.avoidOnlyProbe();
     }
     public void                             changeApName(String ApName) {
+        Log.d(TAG, "changing ApName by :" + ApName);
         ((MainActivityToFragment) activity).getManagerWifi().setSsid(ApName);
         outPutSocket.print("/ApName " + ApName + "\n");
     }
     public void                             stopServer() {
-        outPutSocket.print("/stop ApServer\n");
+        Log.d(TAG, "stop server");
+        apiLink.cancel(true);
+        outPutSocket.print("/restart ApServer\n");
         outPutSocket.close();
         try {
             socket.close();
@@ -116,9 +134,17 @@ public class ApiConnectionManager {
         }
         isApiLinked = false;
         HasListClient = false;
+        Log.d(TAG, "all closed");
     }
-    public void                             reconnectToserverProbe(FragmentPredatorProbe fragment, DialogDetailReconnectWifi alert) {
-        stopServer();
-        ((MainActivityToFragment) activity).getManagerWifi().reconnectToServerProbe(fragment, alert);
+    public void                             reconnectToserverProbe(final FragmentPredatorProbe fragment
+                                                                   ) {
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                stopServer();
+                ((MainActivityToFragment) activity).getManagerWifi().reconnectToServerProbe(fragment);
+
+            }
+            });
     }
 }

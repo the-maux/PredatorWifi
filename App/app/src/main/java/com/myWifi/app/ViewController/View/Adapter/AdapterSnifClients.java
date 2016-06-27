@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import android.widget.*;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
-import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.Model.Client;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 
 
-public class AdapterSnifClients extends ArrayAdapter<ClientPredator> {
-    private StackClientPredator listClient;
+public class AdapterSnifClients extends ArrayAdapter<Client> {
+    private StackClientSniffed listClient;
     private TextView        nbDevicesOnNetwork, nbDevicesProbe, serverVizu;
     private MainActivityToFragment instance;
 
     public AdapterSnifClients(
-            Context context, StackClientPredator listClient, TextView nbDevicesOnNetWork, TextView serverVizu, TextView nbDeviceProbe, MainActivityToFragment instance) {
+            Context context, StackClientSniffed listClient, TextView nbDevicesOnNetWork, TextView serverVizu, TextView nbDeviceProbe, MainActivityToFragment instance) {
         super(context, 0, listClient);
         this.listClient = listClient;
         this.nbDevicesOnNetwork = nbDevicesOnNetWork;
@@ -29,7 +29,7 @@ public class AdapterSnifClients extends ArrayAdapter<ClientPredator> {
 
     @Override
     public View             getView(final int position, View convertView, ViewGroup parent) {
-        final ClientPredator clientPredator = (ClientPredator) this.listClient.get(position);
+        final Client client = (Client) this.listClient.get(position);
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.lv_client_predator, parent, false);
         }
@@ -38,15 +38,15 @@ public class AdapterSnifClients extends ArrayAdapter<ClientPredator> {
         ImageView idType = (ImageView) convertView.findViewById(R.id.idType);
         RelativeLayout rel = (RelativeLayout) convertView.findViewById(R.id.AllLayout);
 
-        setUIClient(convertView, clientPredator, SSID, time, idType);
-        setDetailclientFragmentLauncher(clientPredator, rel);
+        setUIClient(convertView, client, SSID, time, idType);
+        setDetailclientFragmentLauncher(client, rel);
 
         nbDevicesOnNetwork.setText("" + listClient.getNbrPersonneConnected());
         nbDevicesProbe.setText("" + listClient.getNbrPersonneSearching());
         serverVizu.setBackgroundColor(Color.GREEN);
         return convertView;
     }/*
-    private AdapterView.OnClickListener initBehaviorKarmaAttack(final ClientPredator clientPredator) {
+    private AdapterView.OnClickListener initBehaviorKarmaAttack(final Client clientPredator) {
         return new AdapterView.OnClickListener() {
             @Override
             public void             onClick(View v) {
@@ -74,28 +74,28 @@ public class AdapterSnifClients extends ArrayAdapter<ClientPredator> {
             }
         };
     }*/
-    private void            setDetailclientFragmentLauncher(final ClientPredator clientPredator, RelativeLayout rel) {
-        //AdapterView.OnClickListener AttackKarmaProbeRequest = initBehaviorKarmaAttack(clientPredator);
-        if (!clientPredator.isProbe()) {
+    private void            setDetailclientFragmentLauncher(final Client client, RelativeLayout rel) {
+        //AdapterView.OnClickListener AttackKarmaProbeRequest = initBehaviorKarmaAttack(client);
+        if (!client.isProbe()) {
             rel.setOnClickListener(new AdapterView.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    instance.setActualClientPredator(clientPredator);
+                    instance.setActualClient(client);
                     instance.displayView(4);
                 }
             });
         }// else rel.setOnClickListener(AttackKarmaProbeRequest);
     }
-    private void            setUIClient(View convertView, ClientPredator clientPredator,
+    private void            setUIClient(View convertView, Client client,
                                         TextView SSID, TextView time, ImageView idType) {
-        ((TextView) convertView.findViewById(R.id.nameDevice)).setText(clientPredator.getNameDevice());
-        ((TextView) convertView.findViewById(R.id.macAddr)).setText(clientPredator.getMacAddres());
-        if (clientPredator.isProbe()) {
-            SSID.setText(clientPredator.getSSID());
-            time.setText(clientPredator.getTime());
+        ((TextView) convertView.findViewById(R.id.nameDevice)).setText(client.getNameDevice());
+        ((TextView) convertView.findViewById(R.id.macAddr)).setText(client.getMacAddres());
+        if (client.isProbe()) {
+            SSID.setText(client.getSSID());
+            time.setText(client.getTime());
             idType.setBackgroundResource(R.drawable.access_point);
         } else {
-            SSID.setText(clientPredator.getIP());
+            SSID.setText(client.getIP());
             idType.setBackgroundResource(R.drawable.account);
         }
     }

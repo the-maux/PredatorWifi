@@ -16,12 +16,12 @@ import android.support.v4.app.Fragment;
 import com.larvalabs.svgandroid.SVGParser;
 import com.myWifi.app.ViewController.Controler.InfoNetWork;
 import com.myWifi.app.ViewController.Controler.ManagerWifi;
+import com.myWifi.app.ViewController.Model.Client;
 import com.myWifi.app.ViewController.Model.MyTextView;
 import com.myWifi.app.ViewController.Model.NavDrawerItem;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
 import com.myWifi.app.ViewController.View.Adapter.AdapterNavDrawerMenu;
 import com.myWifi.app.ViewController.View.Adapter.SlideMenuClickListener;
-import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
 import com.myWifi.app.ViewController.View.*;
 
 import java.util.ArrayList;
@@ -36,8 +36,8 @@ public class                            MainActivityToFragment extends AppCompat
     private AdapterNavDrawerMenu adapter = null;
     private List<Fragment>              myStack = new ArrayList<>();
     private List<String>                myStackTitre = new ArrayList<>();
-    public StackClientPredator          myListClient = null;
-    private ClientPredator              actualClientPredator = null;
+    public StackClientSniffed myListClient = null;
+    private Client actualClient = null;
     public boolean                      Predator = false;
     public InfoNetWork                  infoNetWork;
     private Menu                        menu;
@@ -164,7 +164,7 @@ public class                            MainActivityToFragment extends AppCompat
                 actualFragment = new FragmentWifiDiscovery();
                 break;
             case 4:
-                actualFragment = (actualClientPredator != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
+                actualFragment = (actualClient != null) ? new FragmentDetailsClient() : new FragmentWifiDetails();
                 break;
             case 5:
                 actualFragment = new FragmentMenuAttack();
@@ -264,11 +264,11 @@ public class                            MainActivityToFragment extends AppCompat
         }
         return super.onOptionsItemSelected(item);
     }
-    public ClientPredator               getActualClientPredator() {
-        return actualClientPredator;
+    public Client getActualClient() {
+        return actualClient;
     }
-    public void                         setActualClientPredator(ClientPredator actualClientPredator) {
-        this.actualClientPredator = actualClientPredator;
+    public void setActualClient(Client actualClient) {
+        this.actualClient = actualClient;
     }
 
     public ManagerWifi                  getManagerWifi() {

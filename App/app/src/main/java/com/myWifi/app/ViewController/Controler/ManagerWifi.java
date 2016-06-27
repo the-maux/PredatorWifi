@@ -23,7 +23,6 @@ public class                    ManagerWifi {
     private String              passwd = "";
     private Context             context;
     private FragmentActivity    activity;
-    private boolean             probeReconnect = false;
     private FragmentPredatorProbe fragment;
     private DialogDetailReconnectWifi alertDialog;
     private String              TAG = "ManagerWifi";
@@ -33,6 +32,7 @@ public class                    ManagerWifi {
         this.activity = activity;
     }
     private void                lauchWifi(networkType type) {
+        Log.d(TAG, "launch wifi");
         conf.SSID = "\"" + ssid + "\"";
         switch (type) {
             case OPEN:
@@ -49,11 +49,9 @@ public class                    ManagerWifi {
                 break;
         }
         wifiManager = (WifiManager)context.getSystemService(Context.WIFI_SERVICE);
+//        wifiManager.disconnect();
         int netId = wifiManager.addNetwork(conf);
         wifiManager.enableNetwork(netId, true);
-        if (probeReconnect) {
-            waitReSyncServer();
-        }
     }
     public void                 setPasswd(String passwd) {
         this.passwd = passwd;
@@ -69,14 +67,24 @@ public class                    ManagerWifi {
     }
     public boolean              isItMyRadar() {
         InfoNetWork infoNet = new InfoNetWork(activity);
-        for (String addrMac : ArrayMac) {
-            if (infoNet.getBssid().contains(addrMac)) {
+
+        try
+        {
+            for (String addrMac : ArrayMac) {
+                if (infoNet.getBssid().contains(addrMac)) {
+                    if (infoNet.getBssid().contains("00:00:00:00:00:00") ||
+                            infoNet.getRealIp().contains("0.0.0.0") ||
+                            infoNet.getGatewayIp().contains("0.0.0.0"))
+                        return false;
+                    return true;
+                }
+            }
+            if (infoNet.getSsid().contains("PumpAP") ||
+                    infoNet.getMacAddress().contains("00:24:01:10:0c:70")) {
                 return true;
             }
-        }
-        if (infoNet.getSsid().contains("PumpAP") ||
-                infoNet.getMacAddress().contains("00:24:01:10:0c:70")) {
-            return true;
+        } catch (java.lang.NullPointerException e) {
+            return false;
         }
         return false;
     }
@@ -84,7 +92,9 @@ public class                    ManagerWifi {
                                                final DialogDetailReconnectWifi alert) {
         if (isItMyRadar()) {
             Log.d(TAG, "Sucess connection first");
-            MenuAttack.successConnection();
+            (new InfoNetWork(activity)).debugLog();
+            alert.dismiss();
+            MenuAttack.successConnection(0);
         }
         else  {
             lauchWifi(networkType.OPEN);
@@ -96,7 +106,9 @@ public class                    ManagerWifi {
                         while(true) {
                             sleep(2000);
                             if (isItMyRadar())  {
-                                MenuAttack.successConnection();
+                                (new InfoNetWork(activity)).debugLog();
+                                alert.dismiss();
+                                MenuAttack.successConnection(rcx);
                                 return ;
                             } else if (++rcx == 30) {
                                 wifiManager.disconnect();
@@ -117,7 +129,12 @@ public class                    ManagerWifi {
         }
     }
     private void                waitReSyncServer() {
-        if (isItMyRadar()) ((MainActivityToFragment)activity).displayView(2);
+        Log.d(TAG, "waitReSyncServer");
+        if (isItMyRadar()) {
+            Log.d(TAG, "Re synchronization succeed first time");
+            (new InfoNetWork(activity)).debugLog();
+            ((MainActivityToFragment)activity).displayView(2);
+        }
         else  {
             lauchWifi(networkType.OPEN);
             (new Thread() {
@@ -128,6 +145,8 @@ public class                    ManagerWifi {
                         while(true) {
                             sleep(2000);
                             if (isItMyRadar())  {
+                                Log.d(TAG, "Re synchronization succeed");
+                                (new InfoNetWork(activity)).debugLog();
                                 ((MainActivityToFragment)activity).displayView(2);
                                 return ;
                             } else if (rcx == 30) {
@@ -149,10 +168,11 @@ public class                    ManagerWifi {
         }
     }
 
-    public void                   reconnectToServerProbe(FragmentPredatorProbe fragment, DialogDetailReconnectWifi alert) {
-        wifiManager.disconnect();
+    public void                   reconnectToServerProbe(FragmentPredatorProbe fragment) {
         lauchWifi(networkType.OPEN);
         this.fragment = fragment;
-        alertDialog = alert;
+        alertDialog = new DialogDetailReconnectWifi(fragment.getContext(), fragment.getActivity());
+        alertDialog.create().show();
+        waitReSyncServer();
     }
 }

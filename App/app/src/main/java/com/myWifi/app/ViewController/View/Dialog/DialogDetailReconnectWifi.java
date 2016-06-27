@@ -14,6 +14,7 @@ import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Model.Record;
 
 public class                DialogDetailReconnectWifi {
+    private AlertDialog     instance;
     private Context         context;
     private Activity        activity;
     private AlertDialog.Builder builderDialog;
@@ -68,9 +69,10 @@ public class                DialogDetailReconnectWifi {
         };
     }
     public AlertDialog      create() {
-        return builderDialog.create();
+        this.instance = builderDialog.create();
+        return this.instance;
     }
-    public   void               addTimeToWaitBar(final int progress) {
+    public   void           addTimeToWaitBar(final int progress) {
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -80,5 +82,8 @@ public class                DialogDetailReconnectWifi {
                 adapter.notifyDataSetChanged();
             }
         });
+    }
+    public void             dismiss() {
+        this.instance.dismiss();
     }
 }
