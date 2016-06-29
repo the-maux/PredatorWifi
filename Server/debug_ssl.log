@@ -6232,3 +6232,882 @@ GET http://216.58.211.78/generate_204
 GET http://172.217.16.78/generate_204
 {'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
 
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4355770/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/plus_partages/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/a_la_une/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1669088/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4415198/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4524739/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4887831/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3210/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3242/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4500055/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1650684/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3244/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3232/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3260/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3476/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3246/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3236/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1657007/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1473685/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4401467/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3234/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1698637/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4408996/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3224/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/823448/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3212/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://184.72.33.254/p14/phone/upgrade/?q=A491F0868594D110DE5BAC6CFCCCAD536BEE530526B6864D7126E5A3D1BC898810610B757FBD45DF7BC6B144B5D9E79D4204C7C1950AF93CD4A2FC4A3DBC9748E0F1634A38D4E76A9480709C9A9E442537BE2E3DB3BC233A3F7C99150D2FB858080BD359406967AF41F4E28FEC5D9938173B0E13DD400BC30DE9ED88BE18C910E8A69F6862EEBC1F4E4B0822872ABC8AAF2F737769B09A9428D54BB72F5E01FF0C34BEBBC0670B4597073A361C887E0B89DD07C24C1849619D6B9CDCDDB3747E2B498D01E21E964B665A5A4A3BE6E30E012649FC29C2C5D764BD965DD8389752004841C0011425F3FEF3B7F5730A295E3FC549A0E6B204BF0F959B86A49C5997D16FE2D2D3F9AEBD80CD49F7885D43597400EBC923C7B8D3214A82A4F6A4C12B469C1ACDEFD2202EF2D75B06BF98E3DC0738F91624863806B9C9F535205C90C825BFD9300E04AFF21190868D7BD02A0791C12396676E5F0D4DE9F77B9583CE79130DBD4B8A03FAC1EC1266A24FF04331AD02F623658B3326D07CFE20EB8D8997E516317EF518A20736E770BE5B8406321A4B318EE76D77BC889C96E7755EE93FB97B5CD9751BB380&ver=20153
+{'host': 'srv3.airdroid.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Apache-HttpClient/UNAVAILABLE (java 1.4)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://103.235.46.17/adunion/slot/getSrcPrio?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=168&vn=6.0.8&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&sid=10971&res=1080*460%2C244*244%2C170*170%2C108*108
+{'connection': 'Keep-Alive', 'user-agent': 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.18) Gecko/20110628 Ubuntu/10.04 (lucid) Firefox/3.6.18', 'host': 'api.mobula.sdk.duapps.com', 'content-length': '0'}
+
+POST http://103.235.46.17/appLock/getConf?tk=8b005558e83e4ecf&sdk=22&dpi=320&vn=lockscreen_pub&locale=fr_FR&op=20810&h=1184&w=768&ntt=WIFI&lc=pub&v=1&pkg=mobi.infolife.taskmanager&vendor=LGE&model=Nexus+4&module=lockscreen
+{'content-length': '34', 'host': 'common.duapps.com', 'content-type': 'application/x-www-form-urlencoded', 'connection': 'Keep-Alive', 'accept': '*/*', 'user-agent': 'dianxinos-user-agent'}
+{"pkg_utime":"0","conf_utime":"0"}
+GET http://172.217.16.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3212/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3210/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/plus_partages/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4355770/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/823448/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/en_continu/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1669088/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/a_la_une/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3260/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4887831/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4500055/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1650684/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3242/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4524739/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4415198/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3246/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3236/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1657007/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4408996/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3244/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3476/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3232/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1698637/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3234/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/1473685/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/3224/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/rubrique/4401467/index.json
+{'host': 'api-cdn.lemonde.fr', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)', 'connection': 'Keep-Alive', 'content-length': '0'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://31.13.90.2/mobile/status.php
+{'content-length': '0', 'host': 'portal.fb.com', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T) [FBAN/Orca-Android;FBAV/73.0.0.15.70;FBPN/com.facebook.orca;FBLC/fr_FR;FBBV/31077064;FBCR/F SFR;FBMF/LGE;FBBD/google;FBDV/Nexus 4;FBSV/5.1.1;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=768,height=1184};FB_FW/1;]', 'connection': 'keep-alive', 'x-fb-sim-hni': '20810', 'x-fb-http-engine': 'Liger', 'x-fb-net-hni': '20810', 'x-fb-background-state': '1'}
+
+GET http://93.184.220.20/
+{'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'host': 'www.lemonde.fr', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'connection': 'keep-alive', 'referer': 'https://www.google.fr/', 'upgrade-insecure-requests': '1'}
+
+GET http://93.184.220.239/bootstrap/list-early-load.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias/web/1.2.694/js/lib/require/core/current/require.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/bootstrap/www/main.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/644x322/4952895_3_48d8_british-prime-minister-david-cameron-2r-and_bcb6ba547e8b282b45272c8404e0de8c.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/312x156/4952980_3_12ae_le-marcheur-russe-sergey-kyrdiapkin-aux-jeux_fed56568b27516e904bf8baa30fc4ec7.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/312x156/4952851_3_2f0b_nolwenn-guillou-institutrice-dans-la_2d5f6d25d56687300d9b7754368a7364.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/312x156/4952938_3_c98a_la-maire-de-paris-anne-hidalgo-souhaite_425894ee85b3afac2c96978cb829cb32.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/312x156/4952982_3_916a_apres-leur-victoire-sur-la-turquie-les_c7ee8ed5b473378210e414a0450fc266.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias/web/4e079d767f7665eed53e4592229e0c55/js/lmd/core/mobile-redirect.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/conf.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias/web/80424277255f6c135bdc1ea48f1b531a/js/lmd/module/abonnes/redirection.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/img/marketing/bloc_une_matinale.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/main-10604beff46575c6fd11da6bd8e1632f.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//f47f849c0ae1fd5c34f50b8ef86237d6/css/marketing/meter.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//41f29a4a972377640fc8cef5639dc117/css/evenementiel/coupe-du-monde.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/livescore-tennis-9d9243132bcaafd07f190bbcd9175f6e.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//18a57807a13415dca11ef310f9398009/css/une.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/574ea939adba69.93503489/314x214.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/5756975eb4e0f5.11159624/jeu-BBK-bloc.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/574efc1c2b6b19.40585674/jeu-SISCO-bloc.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/575eb5bfeb7f09.57022193/jeu-PBDS-bloc.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/13/314x157/4949160_7_f6f8_2016-06-13-4af141e-17517-128840f_ad8090b9e5eab7058d93a94f4661891e.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/06/314x157/4938496_7_0d85_2016-05-18-58e847e-6322-i1oyr4_b48b1dacf7b4dd96c76806e0b6419438.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/05/30/314x157/4928765_7_7af4_2016-05-17-2e45837-27486-k11dcl_ff6ab9f460a5fd82ad1b13eeafdca93e.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/js/lmd/module/meter/toggle-off.js?14661807
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//ecbc72508ed5be13d69a461de9e53189/js/afrique/lma-cookie.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/dispatcher-c4d91da98011d47398e6da51347a0feb.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//76f5986997539210ea49c34b9a19a243/img/sprites/sprite.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//2392b0788aab8ff2bdb9d80b0664b096/js/lib/require/plugin/domReady.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/base-7293aec1ea28885fcfa16a739488f2d6.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//143c3f30f361f1357bd2812501b438d7/js/lmd/core/login-register.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//font/the_serif_office/TheSerifOffice-TT7_.woff2
+{'origin': 'http://www.lemonde.fr', 'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'connection': 'keep-alive', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'host': 's1.lemde.fr', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css'}
+
+GET http://93.184.220.239/medias//1.2.694/js/lmd/core/ux/sync.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//377b1d170a2cb5acc1528e4687d1b34f/img/mmag/m_nav.svg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//font/fette_engschrift/FetteEngschrift.woff2
+{'origin': 'http://www.lemonde.fr', 'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'connection': 'keep-alive', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'host': 's1.lemde.fr', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css'}
+
+GET http://93.184.220.239/min/medias//46e979d85d08109f6b9f847ebafbb619/js/lmd/core/crm.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//24f112202c579c398f9c362b9c1400ab/js/lmd/module/user/alerte_tracking.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET https://52.85.221.197/static/snippet.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 'cdn.pulpix.co', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.58.211.72/gtm.js?id=GTM-MS62MT
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 'www.googletagmanager.com', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//font/the_serif_office/TheSerifOffice-TT7_.woff
+{'origin': 'http://www.lemonde.fr', 'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'connection': 'keep-alive', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'host': 's1.lemde.fr', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css'}
+
+GET http://93.184.220.239/package/www/header_utilisateur-26e6438896dc6540e171e18a27fafd92.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/core-c696c011988bc1724e06fd7138a117bd.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//font/fette_engschrift/FetteEngschrift.woff
+{'origin': 'http://www.lemonde.fr', 'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'connection': 'keep-alive', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'host': 's1.lemde.fr', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css'}
+
+GET http://93.184.220.239/medias//1.2.694/img/marketing/bloc_une_matinale.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//f44632262c411eb7b118dff29c3aa712/js/lmd/core/metrics/ignition-one.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//e29b645dc041a9bceb0901a27cfc30ed/js/lmd/ui/tableau-cliquable.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/package/www/libs-5f5ac021d8e536cee9ad8326e66e2e0f.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//a18d35f93453658d9f14274bdd1fbc91/js/lmd/ui/newsletter-subscription.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//4c61ba8f6f699837b1ea09b8622c903e/js/lmd/module/xiti/zone.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/574c3d187ec543.30196805/ma_loute.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//d33f52b58896f0919bd4e65c53537b7d/js/lmd/module/marketing/offre-decouverte-zen.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//d24596c1beecb7460eb3394e161f6ab0/js/lib/xitistatus/xitistatus.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/312x156/4952575_3_b348_cite-des-lauriers-a-marseille-apres_a5efa6c9e34e04addc0574cf9de647e0.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952503_7_d474_arnaud-montebourg-et-cecile-duflot-alors_469d59e19a17d472688c018516dd5ed3.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//fcbf91b0eaeb8a5d7c6928d53b9b3156/js/lmd/core/footer-tracking.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/mmpub/img/widget/574c3b70779734.17984063/mona.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/js/lib/xiti/4.4.007/xtclicks.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//31b5f009e6c5098de3649c3dd8caf85f/img/textes/decodeurs/decodeurs200x24.svg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952475_7_3922_chez-les-haredim-une-communaute-en-plein-boom_1094e689c99877ea2c18b77d8b2ccbb3.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//4371d6df04cf6c5f7cd8a8c3263032af/img/evenementiel/sport/euro-2016/logo_euro_2016_1000.svg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/min/medias//52d16e147b5346147d0f3269cd4d0f80/js/lib/jquery/core/1.11.0/jquery.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//f5767dae36794b2594a925ff83836df5/img/textes/elections/election_americaines_2016.svg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/16/92x61/4952154_7_14e0_le-club-de-charlotteager-tente-de-reinserer_c2d55176967371223f1638fb15c5ce43.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//c0d414c977e3635b6df8f1d758f8be5c/img/habillage/pixels_deroule_nl.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//76f5986997539210ea49c34b9a19a243/img/sprites/sprite.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952242_7_e2c9_2016-06-17-8770ced-22446-1dpalcw_240083bab50541d555ffd51d28ed1376.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias/afrique/8038b8a81c833325b646008a01a26869/img/logos/lemonde-afrique.svg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1c69830b0269b14816c228084cfd65c8/img/evenementiel/monde-festival/marqueur-festival_103x29.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//b465178d21386f5755ebdb24e3bfb903/img/friends/logos/marqueur-campus.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//928ed031bf0fb793dbe80c0abc391960/img/textes/m-le-mag/logo_M_lemagazine-horizontal-bloc-1000px.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/f23/b67/a12/09bd71bbe65912a14e6525c12a6eddd/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9FMVwvODRcLzM4XC9FMTg0MzgwMzMuanBnIiwibWF4V2lkdGgiOjE5MCwibWF4SGVpZ2h0IjoxMjB9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//44ad4953b9e77be49691e3ab8a51228a/img/friends/logos/logo_chef_simon_97x22.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://s1.lemde.fr/package/www/main-10604beff46575c6fd11da6bd8e1632f.css', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/ee9/129/a8c/06e2c0ee3afd94f518c5612751b559e/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9FMVwvODBcLzM0XC9FMTgwMzQ0NDcuanBnIiwibWF4V2lkdGgiOjE5MCwibWF4SGVpZ2h0IjoxMjB9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/journalelectronique/vignettes/la_une/20160618/QUO_208_coupee.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/journalelectronique/vignettes/la_une/20160618/MAG_104.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/journalelectronique/vignettes/la_une/20160618/SCQ_125_coupee.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/journalelectronique/vignettes/la_une/20160618/SPH_125_coupee.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/journalelectronique/vignettes/la_une/20160618/IDH_125_coupee.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/hgn/www/templates/module/meter/toaster.html.mu.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/4f0/a1c/6d0/529e33bfc097fd12c2a089ac3aafd39/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9FMVwvODRcLzUzXC9FMTg0NTM5NjguanBnIiwibWF4V2lkdGgiOjE5MCwibWF4SGVpZ2h0IjoxMjB9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/65d/1b6/882/4d1851fc32d58bc633e1854750a4fce/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9XMVwvMDBcLzA3XC9XMTAwMDc1Mzk5LmpwZyIsIm1heFdpZHRoIjoxOTAsIm1heEhlaWdodCI6MTIwfQ--.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/hgn/www/templates/module/meter/wall.html.mu.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/hgn/www/partials/pave/onglets.html.mu.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://31.13.90.6/en_US/fbevents.js
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 'connect.facebook.net', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/d3f/ef7/304/a7386ea6ddc00d46889b7c9a2a6297d/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9FMVwvODRcLzQ2XC9FMTg0NDY5MDguanBnIiwibWF4V2lkdGgiOjE5MCwibWF4SGVpZ2h0IjoxMjB9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's2.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952621_7_f0fb_des-eoliennes-a-guanting-pres-de-pekin-le_66a66b48954ca3b0911128b39707425d.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952668_7_acfe_un-convoi-d-aide-humanitaire-des-nations_1ee3236b451f62602859b11e602d0cb9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952519_7_ba0f_reforme-de-la-sante_206acee8134a262a62ba36d5bf0cca1a.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/2016/06/17/92x61/4952637_7_6f18_conference-de-presse-du-president-du-medef_3f3526741fcbf86d07b3ab2cc6c7945f.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/image/proxy/d5b/e7c/3af/413d0976ab086cf4544362d739b6381/eyJ1cmwiOiJodHRwOlwvXC9waG90bzIubGFjZW50cmFsZS5mclwvcGhvdG9cL2xjXC9FMVwvODNcLzUwXC9FMTgzNTA0MDcuanBnIiwibWF4V2lkdGgiOjE5MCwibWF4SGVpZ2h0IjoxMjB9.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/img/friends/monster/bandeau-categorie-finance-droite.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/img/marketing/bloc_une_matinale.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://93.184.220.239/medias//1.2.694/ico/favicon.ico
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.lemonde.fr/', 'host': 's1.lemde.fr', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/
+{'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'host': 'www.maximummotors.net', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'connection': 'keep-alive', 'referer': 'https://www.google.fr/', 'upgrade-insecure-requests': '1'}
+
+GET http://216.52.185.206/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'www.maximummotors.net', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/combine?n=/Scripts/jquery.validate.min.js&n=/Scripts/jquery.form.min.js&n=/Scripts/all.js&n=/Scripts/swfobject.js&n=/Scripts/Coupon.js&n=/scripts/jquery.qtip-1.0.0-rc3.min.js&n=/scripts/home.js&n=/scripts/jcarousellite_1.0.1.min.js&n=/scripts/jquery.selectboxes.js&n=/scripts/Featured/layout1.js&v=2643549
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'www.maximummotors.net', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.58.208.202/ajax/libs/jquery/1.3.2/jquery.min.js
+{'content-length': '0', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'host': 'ajax.googleapis.com', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 'connection': 'keep-alive', 'referer': 'http://www.maximummotors.net/', 'x-client-data': 'CIi2yQEIprbJAQj9lcoBCJOXygEI75zKAQ=='}
+
+GET http://216.52.185.206/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/634406236561531617.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'mothership.autorevo-powersites.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/scripts/start_chat/1.0.0/start_chat.css
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'assets.autorevo-powersites.com', 'accept': 'text/css,*/*;q=0.1', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/vehicle.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/facebook.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/bg.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/maincontent_bg.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2014-harley-davidson-flhtkse-cvo-jackson-ga-5898893/1416946-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2008-harley-davidson-flhr-jackson-ga-5905079/1417868-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2002-harley-davidson-flhtcui-jackson-ga-5892334/1406477-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2006-harley-davidson-flhxi-jackson-ga-5892336/1409413-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2015-harley-davidson-fxdl-jackson-ga-5893829/1408486-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2013-harley-davidson-flhtcu-jackson-ga-5892333/1409420-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/middle.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/menu.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2012-harley-davidson-flstse3-jackson-ga-5886990/1409431-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2012-harley-davidson-flhxse3-jackson-ga-5886980/1406383-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2007-harley-davidson-flhr-jackson-ga-5876203/1401364-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2007-harley-davidson-flhx-jackson-ga-5867044/1398980-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2012-harley-davidson-flhtc-jackson-ga-5865763/1415992-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2006-harley-davidson-fltri-jackson-ga-5864200/1401376-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2007-harley-davidson-flhrci-jackson-ga-5861350/1398996-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://54.231.80.168/2014-harley-davidson-flhx-jackson-ga-5861351/1415980-0-thumb.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'x-img.autorevo.com', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/Content/Assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/featured_bg.jpg
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/content/skins/gloss-orange/images/featured_arrow.png
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/combine?n=/Content/Skins/Default/fonts.css&n=/Content/Skins/Default/layout_all.css&n=/Content/Skins/Default/layout_coupon.css&n=/Content/Skins/Default/layout_home.css&n=/Content/Skins/Default/layout1_featured.css&n=/Content/Skins/Default/layout5_home.css&n=/Content/Skins/Gloss-Orange/skin.css&n=/Content/Skins/Default/layout_chrome.css&n=/content/assets/clients/8995b754-ee4a-492e-a0c9-bbb0f60352c0/custom.css&v=2643549', 'host': 'www.maximummotors.net', 'accept': 'image/webp,image/*,*/*;q=0.8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.52.185.206/content/assets/favicon.ico
+{'connection': 'keep-alive', 'accept-language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'referer': 'http://www.maximummotors.net/', 'host': 'mothership.autorevo-powersites.com', 'accept': '*/*', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://31.13.90.2/mobile/status.php
+{'content-length': '0', 'host': 'portal.fb.com', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T) [FBAN/Orca-Android;FBAV/73.0.0.15.70;FBPN/com.facebook.orca;FBLC/fr_FR;FBBV/31077064;FBCR/F SFR;FBMF/LGE;FBBD/google;FBDV/Nexus 4;FBSV/5.1.1;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=768,height=1184};FB_FW/1;]', 'connection': 'keep-alive', 'x-fb-sim-hni': '20810', 'x-fb-http-engine': 'Liger', 'x-fb-net-hni': '20810', 'x-fb-background-state': '1'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://103.235.46.17/adunion/slot/getSrcPrio?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=168&vn=6.0.8&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&sid=10971&res=1080*460%2C244*244%2C170*170%2C108*108
+{'connection': 'Keep-Alive', 'user-agent': 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.18) Gecko/20110628 Ubuntu/10.04 (lucid) Firefox/3.6.18', 'host': 'api.mobula.sdk.duapps.com', 'content-length': '0'}
+
+POST http://103.235.46.17/appLock/getConf?tk=8b005558e83e4ecf&sdk=22&dpi=320&vn=lockscreen_pub&locale=fr_FR&op=20810&h=1184&w=768&ntt=WIFI&lc=pub&v=1&pkg=mobi.infolife.taskmanager&vendor=LGE&model=Nexus+4&module=lockscreen
+{'content-length': '34', 'host': 'common.duapps.com', 'content-type': 'application/x-www-form-urlencoded', 'connection': 'Keep-Alive', 'accept': '*/*', 'user-agent': 'dianxinos-user-agent'}
+{"pkg_utime":"0","conf_utime":"0"}
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+POST http://103.235.46.17/appLock/getConf?tk=8b005558e83e4ecf&sdk=22&dpi=320&vn=lockscreen_pub&locale=fr_FR&op=20810&h=1184&w=768&ntt=WIFI&lc=pub&v=1&pkg=mobi.infolife.taskmanager&vendor=LGE&model=Nexus+4&module=lockscreen
+{'content-length': '34', 'host': 'common.duapps.com', 'content-type': 'application/x-www-form-urlencoded', 'connection': 'Keep-Alive', 'accept': '*/*', 'user-agent': 'dianxinos-user-agent'}
+{"pkg_utime":"0","conf_utime":"0"}
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.238/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+POST http://103.235.46.18/orts/rpb?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=168&vn=6.0.8&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&mdu=adsdk&rv=1.0&ts=1466617171754&seq=74&stype=behavior&s=51d82152bfdbea7dafd61b0de31a6f6f
+{'content-length': '56', 'content-encoding': 'gzip', 'host': 'rts.mobula.sdk.duapps.com', 'connection': 'Keep-Alive', 'user-agent': 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.18) Gecko/20110628 Ubuntu/10.04 (lucid) Firefox/3.6.18'}
+ã       ãÆV N≠T≤R*.JNU“QJŒW≤“5‘Q*)ŒT≤24026´ç ΩZ∏Ñ$   
+GET http://216.58.208.206/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/element/4956118/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://172.217.19.142/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://93.184.220.20/ws/6/mobile/www/android-phone/element/4959170/index.json
+{'host': 'api-cdn.lemonde.fr', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.198.46/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.198.46/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.110/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+
+GET http://216.58.211.78/generate_204
+{'host': 'connectivitycheck.android.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; Nexus 4 Build/LMY48T)'}
+

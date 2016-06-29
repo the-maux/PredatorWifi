@@ -11,22 +11,39 @@ from Modules.monitors.FrontServer import *
 def nothing():
     print "nothingToo"
 
+def launchApiProbe():
+    app.form_widget.btn_probe.trigger()
+    app.form_widget.Fprobe.StartProbeResquest()
+
+def stopApiProbe():
+    print "Stop Probe"
+    app.form_widget.Fprobe.StopProbeResquest()
+    app.form_widget.Fprobe.close()
+
+def restartApServer():
+    print "RESTARTING AP EVIL"
+    app.form_widget.btn_cancelar.click()
+    QtCore.QTimer.singleShot(4000, lambda: app.form_widget.btn_start_attack.click())
+
+
 def RemoteControl():
     print "Entering Remote Control\t\t\t[+]"
-    if "/launch" in server.Message :
-        print "switcher"
+    if "/start" or "/stop" or "/restart" in server.Message:
         switcher = {
-            "/launch ProbeMonitor\n": app.form_widget.btn_probe.trigger,
-            "/launch StartAttack\n": app.form_widget.btn_start_attack.click,
-            "/launch StopAttack\n": app.form_widget.btn_cancelar.click,
+            "/start ApServer": app.form_widget.btn_start_attack.click,
+            "/stop ApServer": app.form_widget.btn_cancelar.click,
+            "/restart ApServer": restartApServer,
+            "/start ProbeMonitor": launchApiProbe,
+            "/stop ProbeMonitor": stopApiProbe,
         }
         print "launching Control=>" + server.Message
         switcher.get(server.Message, nothing)()
 
-    elif "/ApName" in server.Message:
+    if "/ApName" in server.Message:
         app.form_widget.EditApName.setText(server.Message[len("/ApName "):])
+        print "APNAME MAIN:" + app.form_widget.EditApName.text() + " For :" + server.Message[len("/ApName "):]
     elif "/Channel" in server.Message:
-        app.form_widget.EditChannel.setText(server.Message[len("/ApName "):])
+        app.form_widget.EditChannel.setText(server.Message[len("/Channel "):])
 
 
 if __name__ == '__main__':
