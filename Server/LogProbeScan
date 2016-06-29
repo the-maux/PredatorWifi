@@ -1,223 +1,211 @@
 TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DNS-Request:10.0.0.20#cdn.jsdelivr.net. IN A
-HTTP-Url:[10.0.0.20] GET maximum-motors.com/
-DNS-Request:10.0.0.20#romnskhsajxdnsi. IN A
-HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-admin/
-HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-login.php?redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&reauth=1
-DNS-Request:10.0.0.20#fonts.gstatic.com. IN A
-HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-login.php?redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&reauth=1
-DNS-Request:10.0.0.20#maximum-motors.com. IN A
-HTTP-Credidential:[10.0.0.20:55146 > 91.216.107.211:80] [93mHTTP password: pwd=password[0m
-HTTP-Url:[10.0.0.20] POST load: log=Afmin&pwd=password&wp-submit=Se+connecter&redirect_to=http%3A%2F%2Fmaximum-motors.com%2Fwp-admin%2F&testcookie=1
-HTTP-Url:[10.0.0.20] GET maximum-motors.com/wp-login.php
-DNS-Request:10.0.0.20#plus.google.com. IN A
-DNS-Request:10.0.0.20#www.google.com.PumpAP. IN A
-DNS-Request:10.0.0.20#www.nolimitsecu.fr. IN A
-HTTP-Url:[10.0.0.20] GET www.nolimitsecu.fr/
-DNS-Request:10.0.0.20#wwww.nolimitsecu.fr. IN A
-DNS-SSLStrip:wwww.nolimitsecu.fr#www.nolimitsecu.fr
-HTTP-Url:[10.0.0.20] GET wwww.nolimitsecu.fr/
-DNS-Request:10.0.0.20#webfonts.googleapis.com. IN A
-HTTP-Url:[10.0.0.20] GET wwww.nolimitsecu.fr//wp-content/plugins/search-google/css/search-google.css?ver=1.9
-DNS-Request:10.0.0.20#clients4.google.com. IN A
-DNS-Request:10.0.0.20#webimagetragick.com. IN A
-HTTP-Url:[10.0.0.20] GET wwww.nolimitsecu.fr/wp-content/plugins/powerpress/player.min.js?ver=4.5.2
-DNS-SSLStrip:webimagetragick.com#imagetragick.com
-DNS-Request:10.0.0.20#webitunes.apple.com. IN A
-DNS-SSLStrip:webitunes.apple.com#itunes.apple.com
-DNS-Request:10.0.0.20#websubscribeonandroid.com. IN A
-DNS-SSLStrip:websubscribeonandroid.com#subscribeonandroid.com
-DNS-Request:10.0.0.20#wwww.google.com. IN A
-DNS-SSLStrip:wwww.google.com#www.google.com
-DNS-Request:10.0.0.20#websubscribeonandroid.com. IN A
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#cloudconfig.googleapis.com. IN A
-DNS-Request:10.0.0.20#www.gstatic.com. IN A
-DNS-Request:10.0.0.20#android.clients.google.com. IN A
-DNS-Request:10.0.0.20#mclients.googleapis.com. IN A
-DNS-Request:10.0.0.20#android.clients.google.com. IN A
-DNS-Request:10.0.0.20#csi.gstatic.com. IN A
-DNS-Request:10.0.0.20#www.googleadservices.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#cast.google.com. IN A
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#android.clients.google.com. IN A
-DNS-Request:10.0.0.20#e.crashlytics.com. IN A
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
 DNS-Request:10.0.0.20#mtalk.google.com. IN A
 HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
 DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DNS-Request:10.0.0.20#files.acompli.net. IN A
-DNS-Request:10.0.0.20#data.flurry.com. IN A
-DNS-Request:10.0.0.20#geoip.overlooksoft.com. IN A
-DNS-Request:10.0.0.20#20.0.0.10.in-addr.arpa. IN PTR
-HTTP-Url:[10.0.0.20] GET geoip.overlooksoft.com/android.php
-DNS-Request:10.0.0.20#1.0.0.10.in-addr.arpa. IN PTR
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:46009] [93mHTTP username: log=Afmin[0m
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:46009] [93mHTTP password: pwd=password[0m
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#play.googleapis.com. IN A
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:56247] [93mHTTP username: log=Afmin[0m
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:56247] [93mHTTP password: pwd=password[0m
-DNS-Request:10.0.0.20#files.acompli.net. IN A
-DNS-Request:10.0.0.20#play.googleapis.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#api.periscope.tv. IN A
-DNS-Request:10.0.0.20#pool.ntp.org. IN A
-DNS-Request:10.0.0.20#api.twitter.com. IN A
-DNS-Request:10.0.0.20#api.branch.io. IN A
-DNS-Request:10.0.0.20#clients4.google.com. IN A
-DNS-Request:10.0.0.20#analytics.localytics.com. IN A
-DNS-Request:10.0.0.20#csi.gstatic.com. IN A
-DNS-Request:10.0.0.20#pbs.twimg.com. IN A
-DNS-Request:10.0.0.20#tn.periscope.tv. IN A
-DNS-Request:10.0.0.20#clients4.google.com. IN A
-DNS-Request:10.0.0.20#clients4.google.com. IN A
-DNS-Request:10.0.0.20#pbs.twimg.com.PumpAP. IN A
-DNS-Request:10.0.0.20#pbs.twimg.com. IN A
-DNS-Request:10.0.0.20#tn.periscope.tv. IN A
-DNS-Request:10.0.0.20#tn.periscope.tv.PumpAP. IN A
-DNS-Request:10.0.0.20#clients4.google.com. IN A
-DNS-Request:10.0.0.20#clients4.google.com.PumpAP. IN A
-DNS-Request:10.0.0.20#pbs.twimg.com.PumpAP. IN A
-DNS-Request:10.0.0.20#prod-periscope-profile.s3-us-west-2.amazonaws.com. IN A
-TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#android.clients.google.com. IN A
-DNS-Request:10.0.0.20#settings.crashlytics.com. IN A
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com.PumpAP. IN A
 DNS-Request:10.0.0.20#www.googleapis.com.PumpAP. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DNS-Request:10.0.0.20#settings.crashlytics.com.PumpAP. IN A
-DNS-Request:10.0.0.20#mtalk.google.com.PumpAP. IN A
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:51904] [93mHTTP username: log=Afmin[0m
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:51904] [93mHTTP password: pwd=password[0m
-DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#files.acompli.net. IN A
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
 DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
-HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
 DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#b-graph.facebook.com. IN A
 DNS-Request:10.0.0.20#www.googleapis.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:01#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+Probe:17:04#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+Probe:17:04#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+DNS-Request:10.0.0.20#graph.facebook.com. IN A
+DNS-Request:10.0.0.20#www.googleapis.com. IN A
+Probe:17:07#true*Inconnu;SFR-4328/e8:b1:fc:a6:cf:11
+Probe:17:07#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:10#true*Inconnu;SFR-4328/60:67:20:0d:cb:8c
 DNS-Request:10.0.0.20#play.googleapis.com. IN A
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
-DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+Probe:17:12#true*Inconnu;SFR-4328/60:67:20:0d:cb:8c
+Probe:17:13#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+DNS-Request:10.0.0.20#www.googleapis.com. IN A
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
 HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
 DNS-Request:10.0.0.20#mtalk.google.com. IN A
-DNS-Request:10.0.0.20#settings.crashlytics.com. IN A
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:53314] [93mHTTP username: log=Afmin[0m
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:53314] [93mHTTP password: pwd=password[0m
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+Probe:17:16#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:23#true*Inconnu;tuktuk/fc:fc:48:08:a7:13
+DNS-Request:10.0.0.20#www.googleapis.com. IN A
+Probe:17:24#true*Inconnu;SFR-4328/f8:16:54:13:22:98
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
 TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
 DNS-Request:10.0.0.20#mtalk.google.com. IN A
 DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
 DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
 HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:54790] [93mHTTP username: log=Afmin[0m
-HTTP-Credidential:[10.0.0.1:1234 > 10.0.0.20:54790] [93mHTTP password: pwd=password[0m
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#android.googleapis.com. IN A
+DNS-Request:10.0.0.20#www.google.fr. IN A
+DNS-Request:10.0.0.20#www.google.com. IN A
+DNS-Request:10.0.0.20#www.google.com.tuktuk. IN A
 DNS-Request:10.0.0.20#www.googleapis.com. IN A
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
-DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
-DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+TargetConnection#10.0.0.20*(android-8b005558e83e4ecf);10:68:3f:7a:65:ef
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#play.googleapis.com. IN A
+DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan0: wrong network.
+DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN AAAA
+DNS-Request:10.0.0.20#edge-mqtt.facebook.com. IN A
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+DNS-Request:10.0.0.20#mtalk.google.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#www.googleapis.com. IN A
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+DNS-Request:10.0.0.20#connectivitycheck.android.com. IN A
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP-Url:[10.0.0.20] GET connectivitycheck.android.com/generate_204
+TargetConnection#10.0.0.21*(galass_a);f8:16:54:13:22:98
+DNS-Request:10.0.0.21#isatap.tuktuk. IN A
+DNS-Request:10.0.0.21#www.msftncsi.com. IN A
+HTTP-Url:[10.0.0.21] GET www.msftncsi.com/ncsi.txt
+DNS-Request:10.0.0.21#jwgpiryn.tuktuk. IN A
+DNS-Request:10.0.0.21#_ldap._tcp.dc._msdcs.WORKGROUP.tuktuk. IN SRV
+DNS-Request:10.0.0.21#win8.ipv6.microsoft.com. IN A
+DNS-Request:10.0.0.21#isatap.tuktuk. IN A
+DNS-Request:10.0.0.21#win8.ipv6.microsoft.com. IN A
+DNS-Request:10.0.0.21#wpad.tuktuk. IN A
+DNS-Request:10.0.0.21#wpad.tuktuk. IN A
+DNS-Request:10.0.0.21#xirrtrjos.tuktuk. IN A
+DNS-Request:10.0.0.21#gfmeugsrdkt.tuktuk. IN A
+DNS-Request:10.0.0.21#uiczvuzyd.tuktuk. IN A
+DNS-Request:10.0.0.21#www.google.com. IN A
+DNS-Request:10.0.0.21#clients4.google.com. IN A
+DNS-Request:10.0.0.21#mtalk.google.com. IN A
+DNS-Request:10.0.0.21#wpad.tuktuk. IN A
+DNS-Request:10.0.0.21#0-edge-chat.facebook.com. IN A
+DNS-Request:10.0.0.21#_ldap._tcp.dc._msdcs.WORKGROUP.tuktuk. IN SRV
+DNS-Request:10.0.0.21#www.google.com. IN A
+DNS-Request:10.0.0.21#www.gstatic.com. IN A
+DNS-Request:10.0.0.21#mtalk.google.com. IN A
+DNS-Request:10.0.0.21#www.google.fr. IN A
+DNS-Request:10.0.0.21#plus.google.com. IN A
+DNS-Request:10.0.0.21#id.google.fr. IN A
+DNS-Request:10.0.0.21#lh3.googleusercontent.com. IN A
+DNS-Request:10.0.0.21#clients5.google.com. IN A
+DNS-Request:10.0.0.21#apis.google.com. IN A
+DNS-Request:10.0.0.21#ssl.gstatic.com. IN A
+DNS-Request:10.0.0.21#ifyliwhaxuenco.tuktuk. IN A
+DNS-Request:10.0.0.21#chpzuojusfsibb.tuktuk. IN A
+DNS-Request:10.0.0.21#ygyxatszebhrck.tuktuk. IN A
+DNS-Request:10.0.0.21#s2.googleusercontent.com. IN A
+DNS-Request:10.0.0.21#0-edge-chat.facebook.com. IN A
+DNS-Request:10.0.0.21#lemonde.fr. IN A
+HTTP-Url:[10.0.0.21] GET lemonde.fr/
+DNS-Request:10.0.0.21#www.facebook.com. IN A
+DNS-Request:10.0.0.21#clients4.google.com. IN A
+DNS-Request:10.0.0.21#cmp-cdn.ghostery.com. IN A
+HTTP-Url:[10.0.0.21] GET lemonde.fr/
+DNS-Request:10.0.0.21#www.msftncsi.com. IN A
+HTTP-Url:[10.0.0.21] GET www.msftncsi.com/ncsi.txt
+HTTP-Url:[10.0.0.21] GET lemonde.fr/
+DNS-Request:10.0.0.21#github.com. IN A
+DNS-Request:10.0.0.21#assets-cdn.github.com. IN A
+DNS-Request:10.0.0.21#avatars0.githubusercontent.com. IN A
+DNS-Request:10.0.0.21#avatars2.githubusercontent.com. IN A
+DNS-Request:10.0.0.21#clients4.google.com. IN A
+DNS-Request:10.0.0.21#www.msftncsi.com. IN A
+HTTP-Url:[10.0.0.21] GET www.msftncsi.com/ncsi.txt
+DNS-Request:10.0.0.21#www.google.fr. IN A
+DNS-Request:10.0.0.21#apis.google.com. IN A
+DNS-Request:10.0.0.21#clients5.google.com. IN A
+DNS-Request:10.0.0.21#id.google.fr. IN A
+DNS-Request:10.0.0.21#lh3.googleusercontent.com. IN A
+DNS-Request:10.0.0.21#plus.google.com. IN A
+DNS-Request:10.0.0.21#ssl.gstatic.com. IN A
+DNS-Request:10.0.0.21#www.google.com. IN A
+DNS-Request:10.0.0.21#www.gstatic.com. IN A
+DNS-Request:10.0.0.21#csi.gstatic.com. IN A
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#ocsp.comodoca.com. IN A
+HTTP-Url:[10.0.0.21] GET ocsp.comodoca.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBReAhtobFzTvhaRmVeJ38QUchY9AwQUu69%2BAj36pvE8hI6t7jiY7NkyMtQCEAanQ4DU6%2F7UNbWj9%2BFqvdg%3D
+HTTP-Url:[10.0.0.21] GET lemonde.fr/
+DNS-Request:10.0.0.20#files.acompli.net. IN A
+DNS-Request:10.0.0.21#crl.comodoca.com. IN A
+HTTP-Url:[10.0.0.21] GET crl.comodoca.com/COMODORSACertificationAuthority.crl
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#ocsp.comodoca.com. IN A
+HTTP-Url:[10.0.0.21] GET ocsp.comodoca.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBT0MXB3rveIElndnl0j8v4md2bQRgQUOdr%2FyigUiqh0Ewi55A6p0vp%2BnWkCEAag9n8G5uEc%2FVN%2BGJxZe%2F0%3D
+DNS-Request:10.0.0.21#clients4.google.com. IN A
+DNS-Request:10.0.0.21#crl.comodoca.com. IN A
+HTTP-Url:[10.0.0.21] GET crl.comodoca.com/COMODORSAExtendedValidationSecureServerCA.crl
+HTTP-Url:[10.0.0.21] GET lemonde.fr/
+DNS-Request:10.0.0.21#www.msftncsi.com. IN A
+HTTP-Url:[10.0.0.21] GET www.msftncsi.com/ncsi.txt
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#fonts.googleapis.com. IN A
+DNS-Request:10.0.0.21#maxcdn.bootstrapcdn.com. IN A
+DNS-Request:10.0.0.21#fonts.gstatic.com. IN A
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#maxcdn.bootstrapcdn.com. IN A
+DNS-Request:10.0.0.21#www.doctolib.fr. IN A
+DNS-Request:10.0.0.21#maps.googleapis.com. IN A
+DNS-Request:10.0.0.21#csi.gstatic.com. IN A
+DNS-Request:10.0.0.21#maps.gstatic.com. IN A
+DNS-Request:10.0.0.20#www.googleapis.com. IN A
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPREQUEST for 10.0.0.21 (10.0.0.1) from f8:16:54:13:22:98 (galass_a) via wlan0
+DHCPACK on 10.0.0.21 to f8:16:54:13:22:98 (galass_a) via wlan0
+DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0
+DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan0

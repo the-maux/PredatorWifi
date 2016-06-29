@@ -35,7 +35,7 @@ class Initialize(QMainWindow):
         self.form_widget = SubMain(self)
         self.FSettings = frm_Settings()
         self.setCentralWidget(self.form_widget)
-        self.setWindowTitle('Epitech Sniffer' + version)
+        self.setWindowTitle('Wifi Predator' + version)
         self.loadtheme(self.FSettings.XmlThemeSelected())
 
     def loadtheme(self, theme):
@@ -674,7 +674,7 @@ class SubMain(QWidget):
         self.selectCard.clear()
         n = Refactor.get_interfaces()['all']
         for i, j in enumerate(n):
-            if search('wlan', j):
+            if search('wlan1', j):
                 self.selectCard.addItem(n[i])
 
     def kill(self):
@@ -735,6 +735,7 @@ class SubMain(QWidget):
         QMessageBox.information(self, 'driftnet', 'driftnet not found.')
 
     def CoreSettings(self):
+        print "APNAME:" + self.EditApName.text()
         range_dhcp = self.FSettings.xmlSettings('Iprange', 'range', None, False)
         self.ConfigTwin['PortRedirect'] = self.FSettings.xmlSettings('redirect', 'port', None, False)
         self.SettingsAP = {
@@ -782,6 +783,7 @@ class SubMain(QWidget):
                     'dhcp-option=6, 10.0.0.1\n',
                 ]
         }
+        print "APNAME:" + self.EditApName.text()
         Refactor.set_ip_forward(1)
         for i in self.SettingsAP['kill']: popen(i)
         for i in self.SettingsAP['interface']: popen(i)
@@ -801,7 +803,7 @@ class SubMain(QWidget):
                 dhcp.close()
 
     def StartApFake(self):
-        print 'Enterring StartApFake'
+        print 'Enterring StartApFake : ' + self.EditApName.text()
         if len(self.selectCard.currentText()) == 0:
             return QMessageBox.warning(self, 'Error interface', 'Network interface not supported :(')
         if len(self.EditGateway.text()) == 0:
@@ -835,6 +837,7 @@ class SubMain(QWidget):
         ignore = ('interface=', 'ssid=', 'channel=')
         with open('Settings/hostapd.conf', 'w') as apconf:
             for i in self.SettingsAP['hostapd']: apconf.write(i)
+            for i in self.SettingsAP['hostapd']: print 'hostapd:' + i
             for config in str(self.FSettings.ListHostapd.toPlainText()).split('\n'):
                 if not config.startswith('#') and len(config) > 0:
                     if not config.startswith(ignore):
@@ -898,6 +901,7 @@ class SubMain(QWidget):
                 popen(rules.replace('$$', str(Refactor.get_interfaces()['activated'])))
             else:
                 popen(rules)
+        print "APNAME:" + self.EditApName.text()
 
     def create_sys_tray(self):
         self.sysTray = QSystemTrayIcon(self)

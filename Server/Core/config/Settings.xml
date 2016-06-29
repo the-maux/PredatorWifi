@@ -17,7 +17,7 @@
         <AP name="PumpAP"/>
         <Iprange range="10.0.0.20 10.0.0.50"/>
         <redirect port="10000"/>
-        <netcreds interface="wlan1"/>
+        <netcreds interface="wlan0"/>
     </configure>
 
     <configure>

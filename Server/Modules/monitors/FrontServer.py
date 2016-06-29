@@ -60,11 +60,15 @@ class FrontServer(QtCore.QObject):
             if "Ack" in str(self.Message):
                 print "Acknowledge client"
             else:
-                self.emit(QtCore.SIGNAL('DataReceived'))
+                MsgTmp = self.Message
+                for message in MsgTmp.split("\n"):
+                    self.Message = message
+                    self.emit(QtCore.SIGNAL('DataReceived'))
 
     def sendMessage(self):
         self.request = QtCore.QByteArray()
         self.stream.writeRawData(self.logger.logString)
+        print "Sended : " + self.logger.logString
 
     def removeConnection(self):
         pass

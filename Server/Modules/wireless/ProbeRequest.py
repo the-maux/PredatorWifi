@@ -11,7 +11,7 @@ class frm_PMonitor(PumpkinModule):
         self.data       = {'Devices':[],'MacAddress': [], 'SSIDs':[]}
         self.interface  = str(self.configure.xmlSettings("interface", "monitor_mode", None, False))
         self.loadtheme(self.configure.XmlThemeSelected())
-        self.setWindowTitle("Probe Request wifi Monitor")
+        self.setWindowTitle("Probe Request wifi Predator")
         self.setWindowIcon(QIcon('rsc/icon.ico'))
         self.setupGUI()
 
@@ -65,10 +65,13 @@ class frm_PMonitor(PumpkinModule):
 
         self.setLayout(self.Main)
 
+
+
+
     def loadCard(self):
         n = Refactor.get_interfaces()['all']
         for i,j in enumerate(n):
-            if search("wlan", j):
+            if search("wlan1", j):
                 self.get_placa.addItem(n[i])
 
     def StartedProbe(self,bool):
@@ -112,6 +115,7 @@ class frm_PMonitor(PumpkinModule):
         self.ThreadProbe.stop()
         self.StartedProbe(False)
         set_monitor_mode(self.get_placa.currentText()).setDisable()
+
     def StartProbeResquest(self):
         if self.get_placa.currentText() == '':
             return QMessageBox.information(self, 'Network Adapter', 'Network Adapter Not found try again.')

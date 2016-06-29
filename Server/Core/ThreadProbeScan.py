@@ -42,12 +42,11 @@ class ThreadProbeScan(QThread):
               pass
 
     def LogServerMobile(self, mac_address, ssid, devices):
-    	if ssid != 'Hidden':
-    		time = str(datetime.now())
-    		time = (time[time.find(" ")+1:time.find(".")])[:-3]
-    		print "%s#%s*%s;%s_%s\n" % (time, "true", devices, ssid, mac_address)
-    		self.myLogProbeScan.write("%s#%s*%s;%s_%s\n" % (time, "true", devices, ssid, mac_address));
-        	self.myLogProbeScan.flush()
+        if ssid != 'Hidden':
+            time = str(datetime.now())
+            time = (time[time.find(" ")+1:time.find(".")])[:-3]
+            self.myLogProbeScan.write("Probe:%s#%s*%s;%s/%s\n" % (time, "true", devices, ssid, mac_address));
+            self.myLogProbeScan.flush()
 
     def sniff_probe(self,p):
         if (p.haslayer(Dot11ProbeReq)):
