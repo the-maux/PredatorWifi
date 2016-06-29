@@ -1,8 +1,11 @@
 package com.myWifi.app.ViewController.Model;
 
+import android.util.Log;
+import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
+
 import java.util.ArrayList;
 
-public class            ClientPredator {
+public class            Client {
     private String      macAddres = null;
     private String      IP = null;
     private String      nameDevice = "Device unknow";
@@ -11,10 +14,12 @@ public class            ClientPredator {
     private String      time = null;
     private String      TAG = "ClientObj";
     private boolean     error = false;
-    private ArrayList   records;
+    private ArrayList<Record> records;
     private int         dhcp = 0, http = 0, ssid = 0, dns = 0;
+    private AdapterClientDetail adapter = null;
 
-    public              ClientPredator(String rcvStr) {
+    public              Client(String rcvStr) {
+        //Log.d(TAG, "StringToParse : " + rcvStr);
         try {
             if (rcvStr.contains("#") && rcvStr.contains("*") && rcvStr.contains(";") && rcvStr.contains("_")) {
                 setProbe(true);
@@ -22,6 +27,7 @@ public class            ClientPredator {
                 setNameDevice(rcvStr.substring(rcvStr.indexOf("*") + 1, rcvStr.indexOf(";")));
                 setSSID(rcvStr.substring(rcvStr.indexOf(";") + 1, rcvStr.indexOf("_")));
                 setMacAddres(rcvStr.substring(rcvStr.indexOf("_") + 1, rcvStr.length()));
+                records = new ArrayList<Record>();
                 return ;
             }
         } catch (StringIndexOutOfBoundsException e) {
@@ -29,17 +35,17 @@ public class            ClientPredator {
         }
         error = true;
     }
-    public Object       removeM(int offsett, Record.recordType type, ArrayList records) {
+    public Object       removeM(int offsett, Record.recordType type, ArrayList<Record> records) {
         Object tmp = records.get(offsett);
         for (; offsett < records.size(); offsett++) {
-            if (((Record)records.get(offsett)).getRecordType() == type) {
+            if ((records.get(offsett)).getTypeRecord() == type) {
                 tmp = records.get(offsett);
                 break;
             }
         }
         return records.remove(tmp);
     }
-    public              ClientPredator(String rcvStr, int osef) {
+    public Client(String rcvStr, int osef) {
         try {
             if (rcvStr.contains("*") && rcvStr.contains(";")) {
                 setProbe(false);
@@ -102,6 +108,7 @@ public class            ClientPredator {
     }
     private boolean     isAlreadyOnit(String record) {
         for (Object line : records) {
+            if (((Record)line).getRecord() != null)
             if (((Record)line).getRecord().contains(record))
                 return true;
         }
@@ -115,15 +122,27 @@ public class            ClientPredator {
             removeM(99, Record.recordType.DHCP, records);
         else
             dhcp++;
+        onAddRecordAdapter();
     }
-    public void         addDnsLog(String newRecord) {
+    public void         addDnsService(String newRecord) {
         if (isAlreadyOnit(newRecord))
             return ;
-        records.add(new Record(newRecord, Record.recordType.DNS));
+        records.add(new Record(newRecord, Record.recordType.DnsService));
         if (dns > 100)
-            removeM(99, Record.recordType.DNS, records);
+            removeM(99, Record.recordType.DnsService, records);
         else
             dns++;
+        onAddRecordAdapter();
+    }
+    public void         addDnsStrip(String realHost, String newHost) {
+       /* if (isAlreadyOnit(newRecord))
+            return ;*/
+        records.add(new Record(realHost, newHost, Record.recordType.DnsStrip));
+        if (dns > 100)
+            removeM(99, Record.recordType.DnsStrip, records);
+        else
+            dns++;
+        onAddRecordAdapter();
     }
     public void         addSsidLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
@@ -133,13 +152,15 @@ public class            ClientPredator {
             removeM(99, Record.recordType.SSID, records);
         else
             ssid++;
+        onAddRecordAdapter();
     }
-    public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param[]) {
+    public void         addHttpLog(Record.recordType typeHTTP, String hostname, String path, String param) {
         records.add(new Record(typeHTTP, hostname, path, param));
         if (http > 100)
             removeM(99, Record.recordType.HttpGET, records);
         else
             http++;
+        onAddRecordAdapter();
     }
     public void         addHttpLog(String newRecord) {
         if (isAlreadyOnit(newRecord))
@@ -149,6 +170,7 @@ public class            ClientPredator {
             removeM(99, Record.recordType.HttpGET, records);
         else
             http++;
+        onAddRecordAdapter();
     }
     public int          getDhcp() {
         return dhcp;
@@ -163,5 +185,11 @@ public class            ClientPredator {
         return ssid;
     }
     public ArrayList<Record> getRecords() { return records; }
-
+    private void        onAddRecordAdapter() {
+        if (adapter != null)
+            adapter.notifyDataSetChanged();
+    }
+    public void         setAdapterDetailClient(AdapterClientDetail adapter) {
+        this.adapter = adapter;
+    }
 }

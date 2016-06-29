@@ -11,10 +11,10 @@ import com.myWifi.app.R;
 import com.myWifi.app.ViewController.Model.ClientNatif;
 import com.myWifi.app.ViewController.Model.StackClientNatif;
 
-public class                        clientDiscoverNetAdapter extends ArrayAdapter<ClientNatif> {
+public class AdapterClientDiscoveryService extends ArrayAdapter<ClientNatif> {
     StackClientNatif                stackClient;
 
-    public                          clientDiscoverNetAdapter(Context context, StackClientNatif stackclient) {
+    public AdapterClientDiscoveryService(Context context, StackClientNatif stackclient) {
         super(context, 0, stackclient);
         this.stackClient = stackclient;
     }

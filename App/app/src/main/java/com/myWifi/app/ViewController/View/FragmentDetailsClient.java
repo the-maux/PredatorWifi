@@ -5,27 +5,32 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import com.myWifi.app.MainActivityToFragment;
 import com.myWifi.app.R;
-import com.myWifi.app.ViewController.View.Adapter.recordClientAdapter;
-import com.myWifi.app.ViewController.Model.ClientPredator;
-import com.myWifi.app.ViewController.Model.StackClientPredator;
+import com.myWifi.app.ViewController.Controler.ApiConnectionManager;
+import com.myWifi.app.ViewController.Model.StackClientSniffed;
+import com.myWifi.app.ViewController.View.Adapter.AdapterClientDetail;
+import com.myWifi.app.ViewController.Model.Client;
 
 
 public class                FragmentDetailsClient extends android.support.v4.app.Fragment {
     private final String    TAG = "FragmentMyNetWork";
-    private StackClientPredator clientStack;
-    private recordClientAdapter adapter;
+    private StackClientSniffed clientStack;
+    private AdapterClientDetail adapter;
     private TextView        nameDevice;
+    private LinearLayout    layoutFilter;
 
     private void            initializeBtns(View rootView) {
         final RadioButton btnDHCP = (RadioButton) rootView.findViewById(R.id.radioButtonDHCP);
         final RadioButton btnSSID = (RadioButton) rootView.findViewById(R.id.radioButtonSSI);
         final RadioButton btnDNS = (RadioButton) rootView.findViewById(R.id.radioButtonDNS);
         final RadioButton btnHTTP = (RadioButton) rootView.findViewById(R.id.radioButtonHTTP);
+        layoutFilter = (LinearLayout) rootView.findViewById(R.id.layoutFilter);
+
         btnDHCP.setChecked(true);
         btnSSID.setChecked(true);
         btnDNS.setChecked(true);
@@ -64,16 +69,16 @@ public class                FragmentDetailsClient extends android.support.v4.app
             }           });
     }
     private void            initialize(View rootView) {
-        this.clientStack = ((MainActivityToFragment)getActivity()).myListClient;
+        clientStack = ApiConnectionManager.getInstance(getContext(), getActivity()).getListClientsSniff();
         initializeBtns(rootView);
         ListView clientRecordListView = (ListView) rootView.findViewById(R.id.listViewRedcordClient);
-        ClientPredator actualClientPredator = ((MainActivityToFragment) getActivity()).getActualClientPredator();
-        if (actualClientPredator == null) {
-            ((MainActivityToFragment) getActivity()).displayView(2);
-        } else {
-            ((TextView) rootView.findViewById(R.id.nameDevice)).setText(actualClientPredator.getNameDevice());
-            adapter = new recordClientAdapter(getContext(), actualClientPredator, clientStack);
+        Client actualClient = ((MainActivityToFragment) getActivity()).getActualClient();
+        if (actualClient == null) ((MainActivityToFragment) getActivity()).displayView(2);
+        else {
+            ((TextView) rootView.findViewById(R.id.nameDevice)).setText(actualClient.getNameDevice());
+            adapter = new AdapterClientDetail(getContext(), actualClient, clientStack);
             clientRecordListView.setAdapter(adapter);
+            actualClient.setAdapterDetailClient(adapter);
         }
     }
     @Override
@@ -84,6 +89,10 @@ public class                FragmentDetailsClient extends android.support.v4.app
         return rootView;
     }
     public void             paramMenuClick() {
-        //TODO: show dialog to enter param
+        if (layoutFilter.isShown()) {
+            layoutFilter.setVisibility(View.GONE);
+        } else {
+            layoutFilter.setVisibility(View.VISIBLE);
+        }
     }
 }

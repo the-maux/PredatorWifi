@@ -20,12 +20,13 @@
             android:background="@drawable/simple_border_black"
             android:id="@+id/relativeLayout3" android:layout_below="@+id/nameDevice">
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
-                android:baselineAligned="false" android:id="@+id/linearLayout" android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp" android:background="@drawable/simple_border">
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:baselineAligned="false" android:id="@+id/layoutFilter" android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" android:background="@drawable/simple_border"
+            android:visibility="visible">
             <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -57,22 +58,23 @@
                     android:layout_weight="1" android:paddingLeft="8dp" android:allowUndo="true"
                     android:checked="false" android:clickable="true"/>
             <RadioButton
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="SSID"
-                    android:id="@+id/radioButtonSSI" android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:minWidth="90dp" android:background="@drawable/simple_border_black_little_corn"
-                    android:paddingLeft="8dp" android:clickable="true"/>
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="SSID"
+                android:id="@+id/radioButtonSSI" android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:minWidth="90dp" android:background="@drawable/simple_border_black_little_corn"
+                android:paddingLeft="8dp" android:clickable="true"
+                />
         </LinearLayout>
         <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/listViewRedcordClient"
-                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
-                android:layout_below="@+id/linearLayout" android:background="@drawable/simple_border"
-                android:layout_marginTop="2sp" android:layout_margin="8dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewRedcordClient"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_below="@+id/layoutFilter" android:background="@drawable/simple_border"
+            android:layout_marginTop="2sp" android:layout_margin="8dp"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -19,15 +19,12 @@ public class                    InfoNetWork {
     private String              bssid = "coucouBSSID";
     private String              ssid = "coucouSSID";
     private String              gatewayIp = "192.168.0.53";
+    WifiManager                 wifi;
 
     public                      InfoNetWork(Activity activity) {
         Instance = activity;
-        initInfoNet();
-    }
-    private void                initInfoNet() {
-       WifiManager wifi = (WifiManager) Instance.getSystemService(Context.WIFI_SERVICE);
+        wifi = (WifiManager) Instance.getSystemService(Context.WIFI_SERVICE);
         if (wifi != null) {
-            Log.w(TAG, "init info net");
             this.info = wifi.getConnectionInfo();
             this.speed = this.info.getLinkSpeed();
             this.ssid = this.info.getSSID();
@@ -36,17 +33,17 @@ public class                    InfoNetWork {
             this.gatewayIp = getIpFromIntSigned(wifi.getDhcpInfo().gateway);
             this.ipAddress = getMyIp(this.info.getIpAddress());
             this.netmaskIp = getIpFromIntSigned(wifi.getDhcpInfo().netmask);
-            debugLog();
         }
     }
-    private void                debugLog() {
-        Log.w(TAG, "speed: " + speed);
-        Log.w(TAG, "ssid: " + ssid);
-        Log.w(TAG, "bssid: " + bssid);
-        Log.w(TAG, "macAddress: " + macAddress);
-        Log.w(TAG, "gatewayIp: " + gatewayIp);
-        Log.w(TAG, "my Ip: " + ipAddress);
-        Log.w(TAG, "netmask: " + netmaskIp);
+
+    public void                debugLog() {
+        Log.d(TAG, "ssid: " + ssid);
+        Log.d(TAG, "bssid: " + bssid);
+        Log.d(TAG, "macAddress: " + macAddress);
+        Log.d(TAG, "gatewayIp: " + gatewayIp);
+        Log.d(TAG, "my Ip: " + ipAddress);
+        Log.d(TAG, "netmask: " + netmaskIp);
+        Log.d(TAG, "wifi State :" + wifi.getWifiState());
     }
     private static String       getIpFromIntSigned(int ip_int) {
         String ip = "";
