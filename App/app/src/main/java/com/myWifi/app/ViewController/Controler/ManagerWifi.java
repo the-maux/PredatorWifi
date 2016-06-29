@@ -3,6 +3,7 @@ package com.myWifi.app.ViewController.Controler;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.support.v4.app.FragmentActivity;
@@ -16,7 +17,7 @@ import com.myWifi.app.ViewController.View.FragmentPredatorProbe;
 
 public class                    ManagerWifi {
     private WifiConfiguration   conf = new WifiConfiguration();
-    private String[]            ArrayMac = {"00:24:01:10:0c:70"};
+    private String[]            ArrayMac = {"00:24:01:10:0c:70", "a0:63:91:64:bf:f6"};
     public enum                 networkType { OPEN, WEP, WPA}
     private WifiManager         wifiManager;
     private String              ssid = "PumpAP";
@@ -32,7 +33,7 @@ public class                    ManagerWifi {
         this.activity = activity;
     }
     private void                lauchWifi(networkType type) {
-        Log.d(TAG, "launch wifi");
+        Log.d(TAG, "launch wifi : " + ssid);
         conf.SSID = "\"" + ssid + "\"";
         switch (type) {
             case OPEN:
@@ -52,6 +53,7 @@ public class                    ManagerWifi {
 //        wifiManager.disconnect();
         int netId = wifiManager.addNetwork(conf);
         wifiManager.enableNetwork(netId, true);
+        wifiManager.startScan();
     }
     public void                 setPasswd(String passwd) {
         this.passwd = passwd;
@@ -70,19 +72,18 @@ public class                    ManagerWifi {
 
         try
         {
-            for (String addrMac : ArrayMac) {
-                if (infoNet.getBssid().contains(addrMac)) {
-                    if (infoNet.getBssid().contains("00:00:00:00:00:00") ||
-                            infoNet.getRealIp().contains("0.0.0.0") ||
-                            infoNet.getGatewayIp().contains("0.0.0.0"))
-                        return false;
-                    return true;
+            if (infoNet.getSsid().contains(ssid)) {
+                if (infoNet.getBssid().contains("00:00:00:00:00:00") ||
+                        infoNet.getRealIp().contains("0.0.0.0") ||
+                        infoNet.getGatewayIp().contains("0.0.0.0"))
+                    return false;
+                for (String mac : this.ArrayMac) {
+                    if (infoNet.getBssid().contains(mac))
+                        return true;
                 }
+                return false;
             }
-            if (infoNet.getSsid().contains("PumpAP") ||
-                    infoNet.getMacAddress().contains("00:24:01:10:0c:70")) {
-                return true;
-            }
+
         } catch (java.lang.NullPointerException e) {
             return false;
         }
@@ -111,10 +112,13 @@ public class                    ManagerWifi {
                                 MenuAttack.successConnection(rcx);
                                 return ;
                             } else if (++rcx == 30) {
+
                                 wifiManager.disconnect();
                                 alert.addTimeToWaitBar(20);
                             } else if (rcx > 60){
+                                (new InfoNetWork(activity)).debugLog();
                                 alert.addTimeToWaitBar(20);
+                                alert.dismiss();
                                 MenuAttack.errorConnection("ApWifi Unreachable: Timeout");
                                 return ;
                             }
@@ -128,14 +132,15 @@ public class                    ManagerWifi {
             }).start();
         }
     }
+    private void                displayView(final int fragment) {
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                ((MainActivityToFragment)activity).displayView(fragment);
+            }
+        });
+    }
     private void                waitReSyncServer() {
-        Log.d(TAG, "waitReSyncServer");
-        if (isItMyRadar()) {
-            Log.d(TAG, "Re synchronization succeed first time");
-            (new InfoNetWork(activity)).debugLog();
-            ((MainActivityToFragment)activity).displayView(2);
-        }
-        else  {
             lauchWifi(networkType.OPEN);
             (new Thread() {
                 @Override
@@ -147,14 +152,21 @@ public class                    ManagerWifi {
                             if (isItMyRadar())  {
                                 Log.d(TAG, "Re synchronization succeed");
                                 (new InfoNetWork(activity)).debugLog();
-                                ((MainActivityToFragment)activity).displayView(2);
+                                alertDialog.dismiss();
+                                displayView(2);
                                 return ;
-                            } else if (rcx == 30) {
+                            } else if (++rcx == 30) {
+                                (new InfoNetWork(activity)).debugLog();
                                 wifiManager.disconnect();
                                 alertDialog.addTimeToWaitBar(20);
-                            } else if (++rcx > 60){
+                                for (ScanResult scanResult : wifiManager.getScanResults()) {
+                                    Log.d(TAG, "Result Wifi:" + scanResult.SSID);
+                                }
+                            } else if (rcx > 60){
+                                (new InfoNetWork(activity)).debugLog();
                                 alertDialog.addTimeToWaitBar(20);
-                                fragment.errorConnection("ApWifi Unreachable: Timed out");
+                                alertDialog.dismiss();
+                                displayView(5);
                                 return ;
                             }
                             alertDialog.addTimeToWaitBar(1);
@@ -165,7 +177,7 @@ public class                    ManagerWifi {
                     }
                 }
             }).start();
-        }
+
     }
 
     public void                   reconnectToServerProbe(FragmentPredatorProbe fragment) {

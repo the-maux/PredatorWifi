@@ -60,6 +60,7 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
         }
     }
     private void                parseDataClientProbe(final String line) {
+        //Log.d(TAG, line);
         MainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -68,12 +69,12 @@ public class ApiParsingThreaded extends AsyncTask<Void, Void, Void> {
                     if (!listTargetProbe.isEmpty() && listTargetProbe.contains(client)) {
                         updateClient(client);
                     } else {
-//                        Log.d(TAG, "Adding client :[" + client.getMacAddres() + "] To the list");
+                        Log.d(TAG, "Adding client :[" + client.getMacAddres() + "] To the list");
                         listTargetProbe.add(client);
                     }
                 } else {
-/*                    Log.d(TAG, "Error : client isError : " + client.isError() +
-                            " with SSID: " + client.getSSID());*/
+                    Log.d(TAG, "Error : client isError : " + client.isError() +
+                            " with SSID: " + client.getSSID());
                 }
             }
         });
