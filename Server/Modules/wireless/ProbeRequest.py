@@ -1,7 +1,28 @@
 from re import search
 from Core.Utils import set_monitor_mode
-from Core.ThreadProbeScan import ThreadProbeScan
+from Core.packets.wireless import ThreadProbeScan
 from Core.loaders.Stealth.PackagesUI import *
+
+"""
+Description:
+    This program is a module for wifi-pumpkin.py file which includes functionality
+    for monitor probe request AP.
+
+Copyright:
+    Copyright (C) 2015 Marcos Nesster P0cl4bs Team
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+"""
 
 class frm_PMonitor(PumpkinModule):
     def __init__(self, parent=None):
@@ -9,10 +30,9 @@ class frm_PMonitor(PumpkinModule):
         self.Main       = QVBoxLayout()
         self.Requests   = []
         self.data       = {'Devices':[],'MacAddress': [], 'SSIDs':[]}
-        self.interface  = str(self.configure.xmlSettings("interface", "monitor_mode", None, False))
         self.loadtheme(self.configure.XmlThemeSelected())
-        self.setWindowTitle("Probe Request wifi Predator")
-        self.setWindowIcon(QIcon('rsc/icon.ico'))
+        self.setWindowTitle("Probe Request wifi Monitor")
+        self.setWindowIcon(QIcon('Icons/icon.ico'))
         self.setupGUI()
 
     def setupGUI(self):
@@ -25,6 +45,8 @@ class frm_PMonitor(PumpkinModule):
         self.tables = QTableWidget(5,3)
         self.tables.setRowCount(100)
         self.tables.setFixedHeight(300)
+        self.tables.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.tables.horizontalHeader().setStretchLastSection(True)
         self.tables.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.tables.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.tables.resizeColumnsToContents()
@@ -37,6 +59,7 @@ class frm_PMonitor(PumpkinModule):
         for key in reversed(self.data.keys()):
             Headers.append(key)
         self.tables.setHorizontalHeaderLabels(Headers)
+        self.tables.verticalHeader().setDefaultSectionSize(23)
 
         self.btn_scan = QPushButton('Start')
         self.btn_stop = QPushButton('Stop')
@@ -44,9 +67,9 @@ class frm_PMonitor(PumpkinModule):
         self.btn_refrash.clicked.connect(self.refrash_interface)
         self.btn_stop.clicked.connect(self.StopProbeResquest)
         self.btn_scan.clicked.connect(self.StartProbeResquest)
-        self.btn_scan.setIcon(QIcon('rsc/network.png'))
-        self.btn_stop.setIcon(QIcon('rsc/network_off.png'))
-        self.btn_refrash.setIcon(QIcon('rsc/refresh.png'))
+        self.btn_scan.setIcon(QIcon('Icons/network.png'))
+        self.btn_stop.setIcon(QIcon('Icons/network_off.png'))
+        self.btn_refrash.setIcon(QIcon('Icons/refresh.png'))
         self.get_placa = QComboBox(self)
         self.loadCard()
 
@@ -65,13 +88,10 @@ class frm_PMonitor(PumpkinModule):
 
         self.setLayout(self.Main)
 
-
-
-
     def loadCard(self):
         n = Refactor.get_interfaces()['all']
         for i,j in enumerate(n):
-            if search("wlan1", j):
+            if search("wl", j):
                 self.get_placa.addItem(n[i])
 
     def StartedProbe(self,bool):
@@ -115,7 +135,6 @@ class frm_PMonitor(PumpkinModule):
         self.ThreadProbe.stop()
         self.StartedProbe(False)
         set_monitor_mode(self.get_placa.currentText()).setDisable()
-
     def StartProbeResquest(self):
         if self.get_placa.currentText() == '':
             return QMessageBox.information(self, 'Network Adapter', 'Network Adapter Not found try again.')

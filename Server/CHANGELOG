@@ -1,0 +1,110 @@
+Version 0.7.5
+-------------
+- fixed size QTableWidget on modules
+- fixed scanner fast ipaddress devices
+- added new QSettings Core/modules::Configure
+- added mac address interface to exclude NetworkManager
+- added dockArea Monitor -> Pumpkin-Settings
+- added progressBar for starting Thread
+- removed privillege.py: execute root app
+- added support to start AP with wireless connection
+    * Kali Linux (Apparently not work, need some tests) :(
+    * support kubuntu 15.10
+    * support wifislax - 4.11.1
+    * support parrot - 2.0.5
+- fixed performance start GUI::Core
+- fixed Qwidgets which already has a layout, add Exception get_network_scan() #36
+- fixed error when executed from symlink file #50
+- fixed error: too many open files, added ulimit
+- added Tab Pump-Settings -> [Class Ranges] options
+- fixed Pump-Settings->Advanced Mode:: allow run after started AP
+- some improvements on module DnsSpoof,ArpPoison and Core::main closeEvent
+
+Version 0.7.3
+-------------
+- added new Pump-Logo default
+- added PumpSettings TAB DHCP configure
+- fixed no share internet with plugins sslstrip disabled
+- added new Modular Transparent Proxy tranks @xtr4nge sslstrip::mod
+- added new bypass HSTS by LeonardoNve sslstrip feature
+- fixed set router IP DHCP - Pump-Settings
+- added new plugins sergio-proxy
+- fixed logger duplicate injection::proxy
+- fixed get_interfaces method (netifaces module)
+- added new Tab Pump-Monitor Clients::RequestsAP
+- changed organizational structure::Core, fixed bug when logging in PumpkinProxy::url
+
+Version 0.7.1
+-------------
+- added update commits from repository
+- added QTableWidget filter (mac,ip,hostname) clients connected on AP.
+- added count of clients connected no AP.
+- changed name Tool Wifi-Pumpkin
+- locked dnsmasq support  temporarily
+- added new modules Phishing Manager
+- some improvements in modules
+
+Version 0.6.8
+-------------
+- fixed network card as wifi hotspot,some improvements
+    * remove aircrack-ng dependency
+    * added plus conf hostapd
+    * fixed deauth Attack (o exercito BR deu like kkkk)
+- fixed run modules (ARPposion,DNSspoof) on AP started
+- added new plugins dns2proxy
+- added xml session plugins activated
+- removed rule  iptables dns gateway local
+- added view->Monitor dns2proxy
+- removed (add redirect rules) button
+- added custom directory on Templates Phishing fixed #10
+- added Qthread on scanner AP functions
+- changed structure files
+
+Version 0.6.7
+-------------
+- added Probe Request discovery mac Devices
+- added plugins options
+- added PopUpServer options
+- added Java Update Fake
+- code improvements
+- fixed Page Phishing Facebook  resp (BeautifulSoup)
+- fixed small bugs
+    * phishing error directory
+    * fixed resolve host select adpter
+    * fixed rules iptables redirect
+    * fixed arp posion cache
+- added support hostapd to create AP
+- added (settings -> hostapd) options
+- changed hostapd for default
+- fixed bug path dhcp.conf
+
+Version 0.6.4
+-------------
+- added support kali 2.0
+- added iptables Settings
+- change design main
+- fixed some bug with AP internet share
+- fixed dhcp install
+
+Version 0.6.3
+-------------
+- Netcreds Plugin
+- New DHCP (dnsmasq)
+- New module DNS spoof
+- Beef API Hook on Phishing
+- export html report attack
+- Advanced Settings
+- sslstrip on default
+- Credentials Monitor
+- Credentials Phising
+
+Version 0.5.9
+-----------
+- Added thread fast scan
+- Fixed same bugs
+- added theme 2
+- added airodump scan network
+- fixed error kali 1.1.0
+- added Function DNS Spoof with ettercap
+- added funcion Settings AP
+- added thread and remove xterm window

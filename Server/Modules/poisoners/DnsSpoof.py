@@ -6,6 +6,7 @@ from re import search
 from socket import gethostbyname
 from Core.loaders.Stealth.PackagesUI import *
 from Modules.spreads.UpdateFake import frm_update_attack
+from Core.packets.network import ThARP_posion,ThSpoofAttack
 threadloading = {'template':[],'dnsspoof':[],'arps':[]}
 
 """
@@ -52,7 +53,7 @@ class frm_DnsSpoof(PumpkinModule):
                 for i in threadloading['template']:
                     i.stop(),i.join()
                     threadloading['template'] = []
-                if self.configure.xmlSettings('statusAP','value',None,False) == 'False':
+                if not self.configure.Settings.get_setting('accesspoint','statusAP'):
                     Refactor.set_ip_forward(0)
             self.deleteLater()
             return
@@ -62,7 +63,7 @@ class frm_DnsSpoof(PumpkinModule):
     def GUI(self):
         self.form           = QFormLayout()
         self.layoutform     = QFormLayout()
-        self.movie          = QMovie('rsc/loading2.gif', QByteArray(), self)
+        self.movie          = QMovie('Icons/loading2.gif', QByteArray(), self)
         size                = self.movie.scaledSize()
         self.movie_screen   = QLabel()
         self.setGeometry(200, 200, size.width(), size.height())
@@ -78,19 +79,22 @@ class frm_DnsSpoof(PumpkinModule):
         self.tables = QTableWidget(5,3)
         self.tables.setRowCount(100)
         self.tables.setFixedHeight(200)
+        self.tables.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.tables.horizontalHeader().setStretchLastSection(True)
         self.tables.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.tables.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.tables.clicked.connect(self.list_clicked_scan)
         self.tables.resizeColumnsToContents()
         self.tables.resizeRowsToContents()
         self.tables.horizontalHeader().resizeSection(1,120)
-        self.tables.horizontalHeader().resizeSection(0,145)
-        self.tables.horizontalHeader().resizeSection(2,158)
+        self.tables.horizontalHeader().resizeSection(0,135)
+        self.tables.horizontalHeader().resizeSection(2,150)
         self.tables.verticalHeader().setVisible(False)
         Headers = []
         for key in reversed(self.data.keys()):
             Headers.append(key)
         self.tables.setHorizontalHeaderLabels(Headers)
+        self.tables.verticalHeader().setDefaultSectionSize(23)
 
         self.ip_range = QLineEdit(self)
         self.txt_gateway = QLineEdit(self)
@@ -107,7 +111,7 @@ class frm_DnsSpoof(PumpkinModule):
         self.myListDns = QListWidget(self)
         self.SettingsGUI()
 
-        self.myListDns.setMinimumWidth(self.myListDns.sizeHintForColumn(100))
+
         self.myListDns.setContextMenuPolicy(Qt.CustomContextMenu)
         self.myListDns.connect(self.myListDns,
         SIGNAL('customContextMenuRequested(QPoint)' ),
@@ -120,7 +124,7 @@ class frm_DnsSpoof(PumpkinModule):
         self.StatusMonitor(False,'stas_scan')
         self.StatusMonitor(False,'dns_spoof')
         self.StatusMonitor(False,'stas_phishing')
-        scan_range = self.configure.xmlSettings('scan','rangeIP',None,False)
+        scan_range = self.configure.Settings.get_setting('settings','scanner_rangeIP')
         self.ip_range.setText(scan_range)
 
         # button conf
@@ -136,7 +140,7 @@ class frm_DnsSpoof(PumpkinModule):
         self.btn_start_scanner.setFixedHeight(22)
         self.btn_stop_scanner.setFixedHeight(22)
         self.btn_windows_update.setFixedHeight(22)
-        self.btn_server.setIcon(QIcon('rsc/page.png'))
+        self.btn_server.setIcon(QIcon('Icons/page.png'))
 
 
         # connet buttons
@@ -148,11 +152,11 @@ class frm_DnsSpoof(PumpkinModule):
         self.btn_windows_update.clicked.connect(self.show_frm_fake)
 
         #icons
-        self.btn_start_scanner.setIcon(QIcon('rsc/network.png'))
-        self.btn_Attack_Posion.setIcon(QIcon('rsc/start.png'))
-        self.btn_Stop_Posion.setIcon(QIcon('rsc/Stop.png'))
-        self.btn_stop_scanner.setIcon(QIcon('rsc/network_off.png'))
-        self.btn_windows_update.setIcon(QIcon('rsc/winUp.png'))
+        self.btn_start_scanner.setIcon(QIcon('Icons/network.png'))
+        self.btn_Attack_Posion.setIcon(QIcon('Icons/start.png'))
+        self.btn_Stop_Posion.setIcon(QIcon('Icons/Stop.png'))
+        self.btn_stop_scanner.setIcon(QIcon('Icons/network_off.png'))
+        self.btn_windows_update.setIcon(QIcon('Icons/winUp.png'))
 
         # grid status modules
         self.grid0 = QGridLayout()
@@ -211,6 +215,9 @@ class frm_DnsSpoof(PumpkinModule):
                 self.myListDns.addItem(item)
         except Exception:
             pass
+        if self.configure.Settings.get_setting('accesspoint','statusAP',format=bool):
+            self.ComboIface.setCurrentIndex(ifaces['all'].index(self.configure.Settings.get_setting('accesspoint',
+            'interfaceAP')))
 
     def listItemclicked(self,pos):
         item = self.myListDns.selectedItems()
@@ -246,12 +253,12 @@ class frm_DnsSpoof(PumpkinModule):
         elif action == clearitem:
             self.myListDns.clear()
 
-    def discoveryIface(self):
-        iface = str(self.ComboIface.currentText())
-        if self.configure.xmlSettings('statusAP','value',None,False) == 'True':
-            self.txt_gateway.setText('10.0.0.1')
-        ip = Refactor.get_Ipaddr(iface)
-        self.txt_redirect.setText(ip)
+    @pyqtSlot(QModelIndex)
+    def discoveryIface(self,iface):
+        if self.configure.Settings.get_setting('accesspoint','interfaceAP') == str(iface):
+            if self.configure.Settings.get_setting('accesspoint','statusAP',format=bool):
+                self.txt_gateway.setText(self.configure.Settings.get_setting('dhcp','router'))
+        self.txt_redirect.setText(Refactor.get_Ipaddr(str(iface)))
 
 
     def thread_scan_reveice(self,info_ip):
@@ -332,7 +339,7 @@ class frm_DnsSpoof(PumpkinModule):
                             self.domains.append(str(self.myListDns.item(index).text()))
                         for i in self.domains:
                             self.targets[i.split(':')[0]] = (i.split(':')[1]).replace('\n','')
-                    if self.configure.xmlSettings('statusAP','value',None,False) == 'False':
+                    if not self.configure.Settings.get_setting('accesspoint','statusAP'):
                         Refactor.set_ip_forward(1)
 
                         arp_gateway = ThARP_posion(str(self.txt_target.text()),str(self.txt_gateway.text()),
@@ -350,7 +357,7 @@ class frm_DnsSpoof(PumpkinModule):
                     if self.myListDns.count() == 0:self.targets = ''
                     thr = ThSpoofAttack(self.targets,
                     str(self.ComboIface.currentText()),'udp port 53',True,str(self.txt_redirect.text()))
-                    if self.configure.xmlSettings('statusAP','value',None,False) == 'False':thr.redirection()
+                    if not self.configure.Settings.get_setting('accesspoint','statusAP'):thr.redirection()
                     else:thr.redirectionAP()
                     self.connect(thr,SIGNAL('Activated ( QString ) '), self.StopArpAttack)
                     thr.setObjectName('Dns Spoof')
@@ -361,7 +368,7 @@ class frm_DnsSpoof(PumpkinModule):
 
     def Start_scan(self):
         self.StatusMonitor(True,'stas_scan')
-        threadscan_check = self.configure.xmlSettings('advanced','Function_scan',None,False)
+        threadscan_check = self.configure.Settings.get_setting('settings','Function_scan')
         self.tables.clear()
         self.data = {'IPaddress':[], 'Hostname':[], 'MacAddress':[]}
         if threadscan_check == 'Nmap':
@@ -403,8 +410,10 @@ class frm_DnsSpoof(PumpkinModule):
             result=Popen(['ping', '-c', '1', '-n', '-W', '1', ip],
             stdout=limbo, stderr=limbo).wait()
             if not result:
-                print('online',ip)
-                lista[ip] = ip + '|' + self.module_network.get_mac(ip)
+                if Refactor.get_mac(ip) == None:
+                    lista[ip] = ip + '|' + 'not found'
+                else:
+                    lista[ip] = ip + '|' + Refactor.get_mac(ip)
 
     def scanner_network(self,gateway):
         scan = ''

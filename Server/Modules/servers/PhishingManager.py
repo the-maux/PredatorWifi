@@ -1,11 +1,12 @@
-from PyQt4.QtGui import *
 from PyQt4.QtCore import *
+from PyQt4.QtGui import *
 from os import popen,chdir,getcwd
 from urllib2 import urlopen,URLError
 from BeautifulSoup import BeautifulSoup
-from Core.config.Settings import frm_Settings
-from Core.Utils import Beef_Hook_url,ThreadPhishingServer
-from Modules.servers.ServerHTTP  import ServerThreadHTTP,ServerHandler
+from Core.Utils import ThreadPhishingServer
+from Core.utility.extract import Beef_Hook_url
+from Core.utility.settings import frm_Settings
+from Modules.servers.ServerHTTP  import ServerThreadHTTP
 """
 Description:
     This program is a module for wifi-pumpkin.py file which includes functionality
@@ -60,22 +61,22 @@ class frm_PhishingManager(QWidget):
             self.statusLabel.setStyleSheet("QLabel {  color : red; }")
 
     def UI(self):
-        self.statusBar   = QStatusBar(self)
+        self.statusBar   = QStatusBar()
         self.statusLabel = QLabel('')
         self.statusBar.addWidget(QLabel('Status HTTP Server::'))
         self.StatusServer(False)
         self.statusBar.addWidget(self.statusLabel)
         # left page
-        self.frmHtml     = QFormLayout(self)
-        self.frmOutput   = QFormLayout(self)
+        self.frmHtml     = QFormLayout()
+        self.frmOutput   = QFormLayout()
 
         # right page
-        self.frmSettings = QFormLayout(self)
-        self.frmCheckBox = QFormLayout(self)
-        self.frmClone    = QFormLayout(self)
-        self.frmButtons  = QFormLayout(self)
-        self.frmright    = QFormLayout(self)
-        self.frmleft     = QFormLayout(self)
+        self.frmSettings = QFormLayout()
+        self.frmCheckBox = QFormLayout()
+        self.frmClone    = QFormLayout()
+        self.frmButtons  = QFormLayout()
+        self.frmright    = QFormLayout()
+        self.frmleft     = QFormLayout()
 
         #group checkbox
         self.check_custom   = QRadioButton('index.html  ')
@@ -113,8 +114,8 @@ class frm_PhishingManager(QWidget):
         # button stop,start
         self.btn_start_template = QPushButton('Start Server')
         self.btn_stop_template  = QPushButton('Stop Server')
-        self.btn_start_template.setIcon(QIcon('rsc/start.png'))
-        self.btn_stop_template.setIcon(QIcon('rsc/Stop.png'))
+        self.btn_start_template.setIcon(QIcon('Icons/start.png'))
+        self.btn_stop_template.setIcon(QIcon('Icons/Stop.png'))
         self.btn_stop_template.setEnabled(False)
         self.btn_start_template.setFixedWidth(110)
         self.btn_stop_template.setFixedWidth(110)
@@ -125,7 +126,7 @@ class frm_PhishingManager(QWidget):
         self.GroupCheckBox  = QGroupBox(self)
         self.GroupCloneSite = QGroupBox(self)
         self.GroupSettings.setTitle('Settings:')
-        self.GroupCheckBox.setTitle('Modules:')
+        self.GroupCheckBox.setTitle('Options:')
         self.GroupCloneSite.setTitle('clone:')
 
 
@@ -178,7 +179,7 @@ class frm_PhishingManager(QWidget):
         self.frmleft.addRow(self.Group_Html)
         self.frmleft.addRow(self.Group_List)
 
-        layout = QHBoxLayout(self)
+        layout = QHBoxLayout()
         layout.addLayout(self.frmleft)
         layout.addLayout(self.frmright)
 

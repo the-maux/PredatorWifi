@@ -58,13 +58,13 @@ NTLMSSP3_re = 'NTLMSSP\x00\x03\x00\x00\x00.+'
 http_search_re = '((search|query|&q|\?q|search\?p|searchterm|keywords|keyword|command|terms|keys|question|kwd|searchPhrase)=([^&][^&]*))'
 
 #Console colors
-W = '\033[0m'  # white (normal)
-T = '\033[93m'  # tan
-
+W = ''  # white (normal)
+T = ''  # tan
 
 
 '''http://stackoverflow.com/questions/17035077/python-logging-to-multiple-log-files-from-different-classes'''
 def setup_logger(logger_name, log_file, level=logging.INFO):
+
     l = logging.getLogger(logger_name)
     formatter = logging.Formatter('%(asctime)s : %(message)s')
     fileHandler = logging.FileHandler(log_file, mode='a')
@@ -584,9 +584,6 @@ def other_parser(src_ip_port, dst_ip_port, full_load, ack, seq, pkt, verbose):
         method, path = parse_http_line(http_line, http_methods)
         http_url_req = get_http_url(method, host, path, headers)
         if http_url_req != None:
-            if verbose == False:
-                if len(http_url_req) > 98:
-                    http_url_req = http_url_req
             printer(src_ip_port, None, http_url_req)
 
     # Print search terms
@@ -604,7 +601,6 @@ def other_parser(src_ip_port, dst_ip_port, full_load, ack, seq, pkt, verbose):
                 # Set a limit on how long they can be prevent false+
                 if len(http_user) > 75 or len(http_pass) > 75:
                     return
-
                 user_msg = 'HTTP username: %s' % http_user
                 printer(src_ip_port, dst_ip_port, user_msg)
                 pass_msg = 'HTTP password: %s' % http_pass
@@ -616,11 +612,7 @@ def other_parser(src_ip_port, dst_ip_port, full_load, ack, seq, pkt, verbose):
     # ocsp is a common SSL post load that's never interesting
     if method == 'POST' and 'ocsp.' not in host:
         try:
-            if verbose == False and len(body) > 99:
-                # If it can't decode to utf8 we're probably not interested in it
-                msg = 'POST load: %s' % body.encode('utf8')
-            else:
-                msg = 'POST load: %s' % body.encode('utf8')
+            msg = 'POST load: %s' % body.encode('utf8')
             printer(src_ip_port, None, msg)
         except UnicodeDecodeError:
             pass
@@ -945,11 +937,11 @@ def get_login_pass(body):
 
 
 def printer(src_ip_port, dst_ip_port, msg):
-    myLogProbeScan = open("./LogProbeScan", 'a')
+    logFront = open("Logs/LogProbeScan", 'a')
     if dst_ip_port != None:
         print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
         # All credentials will have dst_ip_port, URLs will not
-        myLogProbeScan.write("HTTP-Credidential:" + print_str + "\n")
+
         # Prevent identical outputs unless it's an HTTP search or POST load
         skip = ['Searched ', 'POST load:']
         for s in skip:
@@ -960,21 +952,23 @@ def printer(src_ip_port, dst_ip_port, msg):
                         if msg in contents:
                             return
         print('[*] Capture Salved on: Logs/credentials.txt')
-        print print_str
 
         # Escape colors like whatweb has
-        #ansi_escape = re.compile(r'\x1b[^m]*m')
-        #print_str = ansi_escape.sub('', print_str)
+        ansi_escape = re.compile(r'\x1b[^m]*m')
+        print_str = ansi_escape.sub('', print_str)
 
         # Log the creds
+
+        #print "NETCRED:" + print_str
+        logFront.write("HTTP:" + print_str + "\n")
         creds.info(print_str)
     else:
         print_str = '[%s] %s' % (src_ip_port.split(':')[0], msg)
-        myLogProbeScan.write("HTTP-Url:" + print_str + "\n")
         url.info(print_str)
-        print print_str
-    myLogProbeScan.flush()
-    myLogProbeScan.close()
+        logFront.write("HTTP:" + print_str + "\n")
+        #//print "NETCRED:" + print_str
+    logFront.flush()
+    logFront.close()
 
 def main(args):
     ##################### DEBUG ##########################

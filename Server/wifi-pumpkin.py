@@ -1,63 +1,47 @@
 #!/usr/bin/env python2.7
-from sys import argv, exit
-from os import getuid
-from PyQt4.QtGui import QApplication, QIcon
-from Core.Main import Initialize
-from Core.loaders.checker.Privilege import frm_privelege
-from Core.loaders.checker.check_depen import check_dependencies
-from Core.Utils import Refactor
-from Modules.monitors.FrontServer import *
+"""
+Author : Marcos Nesster - mh4root@gmail.com  PocL4bs Team
+Licence : GPL v3
 
-def nothing():
-    print "nothingToo"
+Description:
+    WiFi-Pumpkin - Framework for Rogue Wi-Fi Access Point Attack.
 
-def launchApiProbe():
-    app.form_widget.btn_probe.trigger()
-    app.form_widget.Fprobe.StartProbeResquest()
+Copyright:
+    Copyright (C) 2015 Marcos Nesster P0cl4bs Team
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-def stopApiProbe():
-    print "Stop Probe"
-    app.form_widget.Fprobe.StopProbeResquest()
-    app.form_widget.Fprobe.close()
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-def restartApServer():
-    print "RESTARTING AP EVIL"
-    app.form_widget.btn_cancelar.click()
-    QtCore.QTimer.singleShot(4000, lambda: app.form_widget.btn_start_attack.click())
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+"""
 
-
-def RemoteControl():
-    print "Entering Remote Control\t\t\t[+]"
-    if "/start" or "/stop" or "/restart" in server.Message:
-        switcher = {
-            "/start ApServer": app.form_widget.btn_start_attack.click,
-            "/stop ApServer": app.form_widget.btn_cancelar.click,
-            "/restart ApServer": restartApServer,
-            "/start ProbeMonitor": launchApiProbe,
-            "/stop ProbeMonitor": stopApiProbe,
-        }
-        print "launching Control=>" + server.Message
-        switcher.get(server.Message, nothing)()
-
-    if "/ApName" in server.Message:
-        app.form_widget.EditApName.setText(server.Message[len("/ApName "):])
-        print "APNAME MAIN:" + app.form_widget.EditApName.text() + " For :" + server.Message[len("/ApName "):]
-    elif "/Channel" in server.Message:
-        app.form_widget.EditChannel.setText(server.Message[len("/Channel "):])
-
+from sys import argv,exit,version_info
+if version_info.major != 2:
+    exit('[!] WiFi-Pumpkin need Python 2 :(')
 
 if __name__ == '__main__':
-    check_dependencies()
-    main = QApplication(argv)
+    from Core.loaders.checker.check_depen import check_dep_pumpkin,RED,ENDC
+    check_dep_pumpkin()
+    from os import getuid
     if not getuid() == 0:
-        priv = frm_privelege()
-        priv.setWindowIcon(QIcon('rsc/icon.ico'))
-        priv.show(), main.exec_()
-        exit(Refactor.threadRoot(priv.Editpassword.text()))
+        exit('[{}!{}] WiFi-Pumpkin must be run as root.'.format(RED,ENDC))
+
+    from PyQt4.QtGui import QApplication,QIcon
+    main = QApplication(argv)
+
+    from Core.Main import Initialize
+    print('Loading GUI...')
     app = Initialize()
-    server = FrontServer()
-    QtCore.QObject.connect(server, QtCore.SIGNAL("DataReceived"), RemoteControl)
-    app.setWindowIcon(QIcon('rsc/icon.ico'))
+    app.setWindowIcon(QIcon('Icons/icon.ico'))
     app.center()
     app.show()
+
+    print('WiFi-Pumpkin Running!')
     exit(main.exec_())

