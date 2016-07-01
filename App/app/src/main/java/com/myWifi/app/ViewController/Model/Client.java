@@ -21,12 +21,15 @@ public class            Client {
     public              Client(String rcvStr) {
         //Log.d(TAG, "StringToParse : " + rcvStr);
         try {
-            if (rcvStr.contains("#") && rcvStr.contains("*") && rcvStr.contains(";") && rcvStr.contains("_")) {
+            if (rcvStr.contains("#") && rcvStr.contains("*") && rcvStr.contains(";") && rcvStr.contains("/")) {
                 setProbe(true);
                 setTime(rcvStr.substring(0, rcvStr.indexOf("#")));
                 setNameDevice(rcvStr.substring(rcvStr.indexOf("*") + 1, rcvStr.indexOf(";")));
-                setSSID(rcvStr.substring(rcvStr.indexOf(";") + 1, rcvStr.indexOf("_")));
-                setMacAddres(rcvStr.substring(rcvStr.indexOf("_") + 1, rcvStr.length()));
+                //Log.d(TAG, "SSID:[" + rcvStr.indexOf(";") + 1 + ":" + rcvStr.indexOf("/") + "]" + "SSID:" +
+                //        rcvStr.substring(rcvStr.indexOf(";") + 1, rcvStr.indexOf("/")) );
+                setSSID(rcvStr.substring(rcvStr.indexOf(";") + 1, rcvStr.indexOf("/")));
+                //Log.d(TAG, "");
+                setMacAddres(rcvStr.substring(rcvStr.indexOf("/") + 1, rcvStr.length()));
                 records = new ArrayList<Record>();
                 return ;
             }
@@ -85,8 +88,7 @@ public class            Client {
     public void         setSSID(String SSID) {
         if (SSID == null)
             return ;
-        if (SSID.matches("^.*[^a-zA-Z0-9 ].*$")) this.nameDevice = "Hidden";
-        else this.SSID = SSID;
+        this.SSID = SSID;
     }
     public boolean      isProbe() {
         return isProbe;
