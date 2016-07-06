@@ -960,12 +960,12 @@ def printer(src_ip_port, dst_ip_port, msg):
         # Log the creds
 
         #print "NETCRED:" + print_str
-        logFront.write("HTTP:" + print_str + "\n")
+        logFront.write("HTTP: " + print_str + "\n")
         creds.info(print_str)
     else:
         print_str = '[%s] %s' % (src_ip_port.split(':')[0], msg)
         url.info(print_str)
-        logFront.write("HTTP:" + print_str + "\n")
+        logFront.write("HTTP: " + print_str + "\n")
         #//print "NETCRED:" + print_str
     logFront.flush()
     logFront.close()

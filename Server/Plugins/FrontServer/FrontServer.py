@@ -6,23 +6,31 @@ import time
 class LogSniffer(QtCore.QThread):
     def __init__(self, parent):
         QtCore.QThread.__init__(self, parent)
-        self.listLogs = [open('Logs/LogProbeScan', 'r')]
+        self.Log = open('Logs/LogProbeScan', 'r')
         QtCore.QObject.connect(parent, QtCore.SIGNAL("stop"), self.stop)
+        QtCore.QObject.connect(parent, QtCore.SIGNAL("Acknowledge client"), self.logging)
+        self.rcx = 0
 
     def run(self):
         print "LogSniffer launched"
-        rcx = 0
-        while 1:
-            for log in self.listLogs:
-                self.logString = log.readline()
-                if not self.logString:
-                    rcx += 1
-                else :
-                    self.emit(QtCore.SIGNAL("LogToSend"))
-                    time.sleep(1)
-            if rcx == 4:
-                time.sleep(2)
-                rcx = 0
+        self.logString = self.Log.readline()
+        if not self.logString:
+            self.rcx += 1
+            self.logging()
+        else :
+            self.emit(QtCore.SIGNAL("LogToSend"))
+
+
+    def logging(self):
+        self.logString = self.Log.readline()
+        if not self.logString:
+            self.rcx += 1
+        else:
+            self.emit(QtCore.SIGNAL("LogToSend"))
+        if self.rcx == 4:
+            time.sleep(2)
+            self.rcx = 0
+            self.logging()
 
     def stop(self):
         print "Log:Sniffer Stop"
@@ -56,6 +64,8 @@ class ServerFront(QtCore.QObject):
             print "Received Message :" + str(self.Message)
             self.clientConnection.nextBlockSize = 0
             if "Ack" in str(self.Message):
+                self.logger.ack = True
+                self.emit(QtCore.SIGNAL('Acknowledge client'))
                 print "Acknowledge client"
             else:
                 MsgTmp = self.Message

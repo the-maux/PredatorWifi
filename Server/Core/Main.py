@@ -546,7 +546,7 @@ class WifiPumpkin(QWidget):
         self.EditChannel.setText(self.FSettings.Settings.get_setting('accesspoint','channel'))
         self.ConfigTwin['PortRedirect'] = self.FSettings.redirectport.text()
         for i,j in enumerate(self.get_interfaces['all']):
-            if search('wl', j):self.selectCard.addItem(self.get_interfaces['all'][i])
+            if search('wlan1', j):self.selectCard.addItem(self.get_interfaces['all'][i])
         driftnet = popen('which driftnet').read().split('\n')
         ettercap = popen('which ettercap').read().split('\n')
         dhcpd = popen('which dhcpd').read().split("\n")
