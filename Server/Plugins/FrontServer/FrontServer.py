@@ -28,7 +28,6 @@ class LogSniffer(QtCore.QThread):
         else:
             self.emit(QtCore.SIGNAL("LogToSend"))
         if self.rcx == 4:
-            time.sleep(2)
             self.rcx = 0
             self.logging()
 
@@ -58,7 +57,6 @@ class ServerFront(QtCore.QObject):
             QtGui.QMessageBox.information(None, "Error", ex.message)
 
     def receiveMessage(self):
-        print "FrontServer: in Received"
         if self.clientConnection.bytesAvailable() > 0:
             self.Message = self.stream.readRawData(self.clientConnection.bytesAvailable())
             print "Received Message :" + str(self.Message)
@@ -66,7 +64,6 @@ class ServerFront(QtCore.QObject):
             if "Ack" in str(self.Message):
                 self.logger.ack = True
                 self.emit(QtCore.SIGNAL('Acknowledge client'))
-                print "Acknowledge client"
             else:
                 MsgTmp = self.Message
                 for message in MsgTmp.split("\n"):

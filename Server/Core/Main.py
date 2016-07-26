@@ -46,26 +46,7 @@ from Core.widgets.docks.DockMonitor import dockAreaAPI
 from Core.utility.settings import frm_Settings
 from Core.utility.progressBarWid import ProgressBarWid
 
-"""
-Description:
-    This program is a Core for wifi-pumpkin.py. file which includes functionality
-    for mount Access point.
 
-Copyright:
-    Copyright (C) 2015-2016 Marcos Nesster P0cl4bs Team
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>
-"""
 
 
 author      = 'Marcos Nesster (@mh4x0f)  P0cl4bs Team'
@@ -340,47 +321,47 @@ class WifiPumpkin(QWidget):
 
         #menu module
         Menu_module = self.myQMenuBar.addMenu('&Modules')
-        btn_deauth = QAction('Deauth Attack', self)
-        btn_probe = QAction('Probe Request',self)
-        btn_mac = QAction('Mac Changer', self)
-        btn_dhcpStar = QAction('DHCP S. Attack',self)
-        btn_winup = QAction('Windows Update',self)
-        btn_arp = QAction('Arp Posion Attack',self)
-        btn_dns = QAction('Dns Spoof Attack',self)
-        btn_phishing = QAction('Phishing Manager',self)
+        self.btn_deauth = QAction('Deauth Attack', self)
+        self.btn_probe = QAction('Probe Request',self)
+        self.btn_mac = QAction('Mac Changer', self)
+        self.btn_dhcpStar = QAction('DHCP S. Attack',self)
+        self.btn_winup = QAction('Windows Update',self)
+        self.btn_arp = QAction('Arp Posion Attack',self)
+        self.btn_dns = QAction('Dns Spoof Attack',self)
+        self.btn_phishing = QAction('Phishing Manager',self)
         action_settings = QAction('Settings',self)
 
         #connect buttons
-        btn_probe.triggered.connect(self.showProbe)
-        btn_deauth.triggered.connect(self.formDauth)
-        btn_mac.triggered.connect(self.form_mac)
-        btn_dhcpStar.triggered.connect(self.show_dhcpDOS)
-        btn_winup.triggered.connect(self.show_windows_update)
-        btn_arp.triggered.connect(self.show_arp_posion)
-        btn_dns.triggered.connect(self.show_dns_spoof)
-        btn_phishing.triggered.connect(self.show_PhishingManager)
+        self.btn_probe.triggered.connect(self.showProbe)
+        self.btn_deauth.triggered.connect(self.formDauth)
+        self.btn_mac.triggered.connect(self.form_mac)
+        self.btn_dhcpStar.triggered.connect(self.show_dhcpDOS)
+        self.btn_winup.triggered.connect(self.show_windows_update)
+        self.btn_arp.triggered.connect(self.show_arp_posion)
+        self.btn_dns.triggered.connect(self.show_dns_spoof)
+        self.btn_phishing.triggered.connect(self.show_PhishingManager)
         action_settings.triggered.connect(self.show_settings)
 
         #icons Modules
-        btn_arp.setIcon(QIcon('Icons/arp_.png'))
-        btn_winup.setIcon(QIcon('Icons/arp.png'))
-        btn_dhcpStar.setIcon(QIcon('Icons/dhcp.png'))
-        btn_mac.setIcon(QIcon('Icons/mac.png'))
-        btn_probe.setIcon(QIcon('Icons/probe.png'))
-        btn_deauth.setIcon(QIcon('Icons/deauth.png'))
-        btn_dns.setIcon(QIcon('Icons/dns_spoof.png'))
-        btn_phishing.setIcon(QIcon('Icons/page.png'))
+        self.btn_arp.setIcon(QIcon('Icons/arp_.png'))
+        self.btn_winup.setIcon(QIcon('Icons/arp.png'))
+        self.btn_dhcpStar.setIcon(QIcon('Icons/dhcp.png'))
+        self.btn_mac.setIcon(QIcon('Icons/mac.png'))
+        self.btn_probe.setIcon(QIcon('Icons/probe.png'))
+        self.btn_deauth.setIcon(QIcon('Icons/deauth.png'))
+        self.btn_dns.setIcon(QIcon('Icons/dns_spoof.png'))
+        self.btn_phishing.setIcon(QIcon('Icons/page.png'))
         action_settings.setIcon(QIcon('Icons/setting.png'))
 
         # add modules menu
-        Menu_module.addAction(btn_deauth)
-        Menu_module.addAction(btn_probe)
-        Menu_module.addAction(btn_mac)
-        Menu_module.addAction(btn_dhcpStar)
-        Menu_module.addAction(btn_winup)
-        Menu_module.addAction(btn_arp)
-        Menu_module.addAction(btn_dns)
-        Menu_module.addAction(btn_phishing)
+        Menu_module.addAction(self.btn_deauth)
+        Menu_module.addAction(self.btn_probe)
+        Menu_module.addAction(self.btn_mac)
+        Menu_module.addAction(self.btn_dhcpStar)
+        Menu_module.addAction(self.btn_winup)
+        Menu_module.addAction(self.btn_arp)
+        Menu_module.addAction(self.btn_dns)
+        Menu_module.addAction(self.btn_phishing)
         Menu_module.addAction(action_settings)
 
         #menu extra

@@ -962,3 +962,1513 @@
 2016-07-06 18:19:48,429 : DHCPOFFER on 10.0.0.21 to e8:80:2e:eb:d4:01 (iPhone) via wlan1
 2016-07-06 18:19:49,501 : DHCPREQUEST for 10.0.0.21 (10.0.0.1) from e8:80:2e:eb:d4:01 (iPhone) via wlan1
 2016-07-06 18:19:49,501 : DHCPACK on 10.0.0.21 to e8:80:2e:eb:d4:01 (iPhone) via wlan1
+2016-07-07 17:02:56,836 : ---[ Start DHCP Thu Jul  7 17:02:56 2016]---
+2016-07-07 17:02:56,935 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-07 17:02:56,935 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-07 17:02:56,935 : All rights reserved.
+2016-07-07 17:02:56,935 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-07 17:02:56,935 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-07 17:02:56,935 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-07 17:02:56,935 : PID file: /var/run/dhcpd.pid
+2016-07-07 17:02:57,008 : Wrote 0 leases to leases file.
+2016-07-07 17:02:57,032 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-07 17:02:57,032 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-07 17:02:57,032 : Sending on   Socket/fallback/fallback-net
+2016-07-07 17:02:57,032 : Server starting service.
+2016-07-07 17:04:03,970 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-07 17:04:03,970 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-07 17:04:05,223 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-07 17:04:06,225 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:04:06,302 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:04:06,303 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:08:55,196 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:08:55,196 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:13:44,046 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:13:44,047 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:18:32,526 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:18:32,526 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:23:21,286 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-07 17:23:21,286 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 15:20:29,391 : ---[ Start DHCP Fri Jul  8 15:20:29 2016]---
+2016-07-08 15:20:29,400 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:20:29,401 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:20:29,401 : All rights reserved.
+2016-07-08 15:20:29,401 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:20:29,401 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:20:29,401 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:20:29,401 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:20:29,402 : Wrote 0 leases to leases file.
+2016-07-08 15:20:29,422 : Listening on LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:20:29,422 : Sending on   LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:20:29,422 : Sending on   Socket/fallback/fallback-net
+2016-07-08 15:20:29,422 : Server starting service.
+2016-07-08 15:22:26,374 : ---[ Start DHCP Fri Jul  8 15:22:26 2016]---
+2016-07-08 15:22:26,374 : ---[ Start DHCP Fri Jul  8 15:22:26 2016]---
+2016-07-08 15:22:28,378 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:22:28,378 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:22:28,379 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:22:28,379 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:22:28,379 : All rights reserved.
+2016-07-08 15:22:28,379 : All rights reserved.
+2016-07-08 15:22:28,379 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:22:28,379 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:22:28,379 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:22:28,379 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:22:28,379 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:22:28,379 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:22:28,379 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:22:28,379 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:22:28,412 : Wrote 0 leases to leases file.
+2016-07-08 15:22:28,412 : Wrote 0 leases to leases file.
+2016-07-08 15:22:28,419 : 
+2016-07-08 15:22:28,419 : 
+2016-07-08 15:22:28,419 : No subnet declaration for wlan2 (no IPv4 addresses).
+2016-07-08 15:22:28,419 : No subnet declaration for wlan2 (no IPv4 addresses).
+2016-07-08 15:22:28,420 : ** Ignoring requests on wlan2.  If this is not what
+2016-07-08 15:22:28,420 : ** Ignoring requests on wlan2.  If this is not what
+2016-07-08 15:22:28,420 :    you want, please write a subnet declaration
+2016-07-08 15:22:28,420 :    you want, please write a subnet declaration
+2016-07-08 15:22:28,420 :    in your dhcpd.conf file for the network segment
+2016-07-08 15:22:28,420 :    in your dhcpd.conf file for the network segment
+2016-07-08 15:22:28,420 :    to which interface wlan2 is attached. **
+2016-07-08 15:22:28,420 :    to which interface wlan2 is attached. **
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : Not configured to listen on any interfaces!
+2016-07-08 15:22:28,420 : Not configured to listen on any interfaces!
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : 
+2016-07-08 15:22:28,420 : If you think you have received this message due to a bug rather
+2016-07-08 15:22:28,420 : If you think you have received this message due to a bug rather
+2016-07-08 15:22:28,420 : than a configuration issue please read the section on submitting
+2016-07-08 15:22:28,420 : than a configuration issue please read the section on submitting
+2016-07-08 15:22:28,420 : bugs on either our web page at www.isc.org or in the README file
+2016-07-08 15:22:28,420 : bugs on either our web page at www.isc.org or in the README file
+2016-07-08 15:22:28,420 : before submitting a bug.  These pages explain the proper
+2016-07-08 15:22:28,420 : before submitting a bug.  These pages explain the proper
+2016-07-08 15:22:28,421 : process and the information we find helpful for debugging..
+2016-07-08 15:22:28,421 : process and the information we find helpful for debugging..
+2016-07-08 15:22:28,421 : 
+2016-07-08 15:22:28,421 : 
+2016-07-08 15:22:28,421 : exiting.
+2016-07-08 15:22:28,421 : exiting.
+2016-07-08 15:23:52,782 : ---[ Start DHCP Fri Jul  8 15:23:52 2016]---
+2016-07-08 15:23:54,475 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:23:54,476 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:23:54,476 : All rights reserved.
+2016-07-08 15:23:54,476 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:23:54,476 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:23:54,476 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:23:54,476 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:23:54,482 : Wrote 0 leases to leases file.
+2016-07-08 15:23:55,475 : Error getting interface address for 'wlan2'; No such device
+2016-07-08 15:23:55,475 : Error getting interface information.
+2016-07-08 15:23:55,475 : 
+2016-07-08 15:23:55,475 : If you think you have received this message due to a bug rather
+2016-07-08 15:23:55,475 : than a configuration issue please read the section on submitting
+2016-07-08 15:23:55,475 : bugs on either our web page at www.isc.org or in the README file
+2016-07-08 15:23:55,475 : before submitting a bug.  These pages explain the proper
+2016-07-08 15:23:55,476 : process and the information we find helpful for debugging..
+2016-07-08 15:23:55,476 : 
+2016-07-08 15:23:55,476 : exiting.
+2016-07-08 15:32:10,626 : ---[ Start DHCP Fri Jul  8 15:32:10 2016]---
+2016-07-08 15:32:13,366 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:32:13,366 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:32:13,366 : All rights reserved.
+2016-07-08 15:32:13,366 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:32:13,366 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:32:13,366 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:32:13,366 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:32:13,438 : Wrote 0 leases to leases file.
+2016-07-08 15:32:13,490 : Listening on LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:32:13,490 : Sending on   LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:32:13,490 : Sending on   Socket/fallback/fallback-net
+2016-07-08 15:32:13,490 : Server starting service.
+2016-07-08 15:52:28,325 : ---[ Start DHCP Fri Jul  8 15:52:28 2016]---
+2016-07-08 15:52:28,337 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:52:28,337 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:52:28,337 : All rights reserved.
+2016-07-08 15:52:28,337 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:52:28,337 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:52:28,337 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:52:28,337 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:52:28,409 : Wrote 0 leases to leases file.
+2016-07-08 15:52:28,450 : Listening on LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:52:28,450 : Sending on   LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:52:28,451 : Sending on   Socket/fallback/fallback-net
+2016-07-08 15:52:28,451 : Server starting service.
+2016-07-08 15:54:33,241 : ---[ Start DHCP Fri Jul  8 15:54:33 2016]---
+2016-07-08 15:54:33,241 : ---[ Start DHCP Fri Jul  8 15:54:33 2016]---
+2016-07-08 15:54:33,248 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:54:33,248 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 15:54:33,248 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:54:33,248 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 15:54:33,248 : All rights reserved.
+2016-07-08 15:54:33,248 : All rights reserved.
+2016-07-08 15:54:33,248 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:54:33,248 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 15:54:33,248 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:54:33,248 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 15:54:33,248 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:54:33,248 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 15:54:33,248 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:54:33,248 : PID file: /var/run/dhcpd.pid
+2016-07-08 15:54:33,380 : Wrote 0 leases to leases file.
+2016-07-08 15:54:33,380 : Wrote 0 leases to leases file.
+2016-07-08 15:54:33,397 : Listening on LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:54:33,397 : Listening on LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:54:33,398 : Sending on   LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:54:33,398 : Sending on   LPF/wlan0/00:24:01:10:0c:70/10.0.0.0/8
+2016-07-08 15:54:33,398 : Sending on   Socket/fallback/fallback-net
+2016-07-08 15:54:33,398 : Sending on   Socket/fallback/fallback-net
+2016-07-08 15:54:33,398 : Server starting service.
+2016-07-08 15:54:33,398 : Server starting service.
+2016-07-08 16:12:46,111 : ---[ Start DHCP Fri Jul  8 16:12:46 2016]---
+2016-07-08 16:12:46,115 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 16:12:46,116 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 16:12:46,116 : All rights reserved.
+2016-07-08 16:12:46,116 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 16:12:46,116 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 16:12:46,116 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 16:12:46,116 : PID file: /var/run/dhcpd.pid
+2016-07-08 16:12:46,225 : Wrote 0 leases to leases file.
+2016-07-08 16:12:46,248 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 16:12:46,248 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 16:12:46,249 : Sending on   Socket/fallback/fallback-net
+2016-07-08 16:12:46,249 : Server starting service.
+2016-07-08 16:12:53,168 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-08 16:12:53,168 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-08 16:12:54,387 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 16:12:55,390 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:12:55,430 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:12:55,431 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:17:43,955 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:17:43,956 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:22:32,696 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:22:32,697 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:27:21,355 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:27:21,355 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:32:09,850 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:32:09,850 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:37:10,238 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:37:10,239 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:37:17,537 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:37:17,538 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-08 16:42:16,912 : ---[ Start DHCP Fri Jul  8 16:42:16 2016]---
+2016-07-08 16:42:16,970 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 16:42:16,971 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 16:42:16,971 : All rights reserved.
+2016-07-08 16:42:16,971 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 16:42:16,971 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 16:42:16,971 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 16:42:16,971 : PID file: /var/run/dhcpd.pid
+2016-07-08 16:42:17,005 : Wrote 0 leases to leases file.
+2016-07-08 16:42:17,013 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 16:42:17,013 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 16:42:17,013 : Sending on   Socket/fallback/fallback-net
+2016-07-08 16:42:17,024 : Server starting service.
+2016-07-08 16:42:19,533 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 16:42:19,534 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:47:08,068 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:47:08,068 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:51:56,612 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:51:56,613 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:56:45,666 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 16:56:45,666 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 17:01:18,222 : ---[ Start DHCP Fri Jul  8 17:01:18 2016]---
+2016-07-08 17:01:18,259 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 17:01:18,259 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 17:01:18,259 : All rights reserved.
+2016-07-08 17:01:18,259 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 17:01:18,259 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 17:01:18,259 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 17:01:18,259 : PID file: /var/run/dhcpd.pid
+2016-07-08 17:01:18,279 : Wrote 0 leases to leases file.
+2016-07-08 17:01:18,301 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:01:18,301 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:01:18,301 : Sending on   Socket/fallback/fallback-net
+2016-07-08 17:01:18,301 : Server starting service.
+2016-07-08 17:01:26,430 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 17:01:26,447 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 17:02:36,530 : ---[ Start DHCP Fri Jul  8 17:02:36 2016]---
+2016-07-08 17:02:36,562 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 17:02:36,562 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 17:02:36,563 : All rights reserved.
+2016-07-08 17:02:36,563 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 17:02:36,563 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 17:02:36,563 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 17:02:36,563 : PID file: /var/run/dhcpd.pid
+2016-07-08 17:02:36,574 : Wrote 0 leases to leases file.
+2016-07-08 17:02:36,590 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:02:36,590 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:02:36,590 : Sending on   Socket/fallback/fallback-net
+2016-07-08 17:02:36,590 : Server starting service.
+2016-07-08 17:02:40,491 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 17:02:40,491 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 17:05:51,657 : ---[ Start DHCP Fri Jul  8 17:05:51 2016]---
+2016-07-08 17:05:51,657 : ---[ Start DHCP Fri Jul  8 17:05:51 2016]---
+2016-07-08 17:05:51,682 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 17:05:51,682 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-08 17:05:51,683 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 17:05:51,683 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-08 17:05:51,683 : All rights reserved.
+2016-07-08 17:05:51,683 : All rights reserved.
+2016-07-08 17:05:51,683 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 17:05:51,683 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-08 17:05:51,683 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 17:05:51,683 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-08 17:05:51,683 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 17:05:51,683 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-08 17:05:51,683 : PID file: /var/run/dhcpd.pid
+2016-07-08 17:05:51,683 : PID file: /var/run/dhcpd.pid
+2016-07-08 17:05:51,687 : Wrote 0 leases to leases file.
+2016-07-08 17:05:51,687 : Wrote 0 leases to leases file.
+2016-07-08 17:05:51,706 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:05:51,706 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:05:51,706 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:05:51,706 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-08 17:05:51,706 : Sending on   Socket/fallback/fallback-net
+2016-07-08 17:05:51,706 : Sending on   Socket/fallback/fallback-net
+2016-07-08 17:05:51,706 : Server starting service.
+2016-07-08 17:05:51,706 : Server starting service.
+2016-07-08 17:05:54,642 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 17:05:54,642 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-08 17:05:54,642 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-08 17:05:54,642 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-21 15:29:48,582 : ---[ Start DHCP Thu Jul 21 15:29:48 2016]---
+2016-07-21 15:29:48,703 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-21 15:29:48,703 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-21 15:29:48,703 : All rights reserved.
+2016-07-21 15:29:48,703 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-21 15:29:48,703 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-21 15:29:48,703 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-21 15:29:48,703 : PID file: /var/run/dhcpd.pid
+2016-07-21 15:29:48,828 : Wrote 0 leases to leases file.
+2016-07-21 15:29:48,859 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:29:48,859 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:29:48,859 : Sending on   Socket/fallback/fallback-net
+2016-07-21 15:29:48,859 : Server starting service.
+2016-07-21 15:52:23,850 : ---[ Start DHCP Thu Jul 21 15:52:23 2016]---
+2016-07-21 15:52:23,904 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-21 15:52:23,904 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-21 15:52:23,904 : All rights reserved.
+2016-07-21 15:52:23,904 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-21 15:52:23,905 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-21 15:52:23,905 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-21 15:52:23,905 : PID file: /var/run/dhcpd.pid
+2016-07-21 15:52:23,928 : Wrote 0 leases to leases file.
+2016-07-21 15:52:23,953 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:52:23,953 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:52:23,953 : Sending on   Socket/fallback/fallback-net
+2016-07-21 15:52:23,953 : Server starting service.
+2016-07-21 15:55:51,779 : ---[ Start DHCP Thu Jul 21 15:55:51 2016]---
+2016-07-21 15:55:51,779 : ---[ Start DHCP Thu Jul 21 15:55:51 2016]---
+2016-07-21 15:55:51,800 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-21 15:55:51,800 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-21 15:55:51,800 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-21 15:55:51,800 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-21 15:55:51,800 : All rights reserved.
+2016-07-21 15:55:51,800 : All rights reserved.
+2016-07-21 15:55:51,801 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-21 15:55:51,801 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-21 15:55:51,801 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-21 15:55:51,801 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-21 15:55:51,801 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-21 15:55:51,801 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-21 15:55:51,801 : PID file: /var/run/dhcpd.pid
+2016-07-21 15:55:51,801 : PID file: /var/run/dhcpd.pid
+2016-07-21 15:55:51,808 : Wrote 0 leases to leases file.
+2016-07-21 15:55:51,808 : Wrote 0 leases to leases file.
+2016-07-21 15:55:51,841 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:55:51,841 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:55:51,842 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:55:51,842 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 15:55:51,842 : Sending on   Socket/fallback/fallback-net
+2016-07-21 15:55:51,842 : Sending on   Socket/fallback/fallback-net
+2016-07-21 15:55:51,842 : Server starting service.
+2016-07-21 15:55:51,842 : Server starting service.
+2016-07-21 17:19:09,057 : ---[ Start DHCP Thu Jul 21 17:19:09 2016]---
+2016-07-21 17:19:09,064 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-21 17:19:09,064 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-21 17:19:09,064 : All rights reserved.
+2016-07-21 17:19:09,064 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-21 17:19:09,064 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-21 17:19:09,064 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-21 17:19:09,064 : PID file: /var/run/dhcpd.pid
+2016-07-21 17:19:09,073 : Wrote 0 leases to leases file.
+2016-07-21 17:19:09,095 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 17:19:09,095 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-21 17:19:09,096 : Sending on   Socket/fallback/fallback-net
+2016-07-21 17:19:09,096 : Server starting service.
+2016-07-21 17:20:16,515 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-21 17:20:16,519 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-21 17:20:17,715 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-21 17:20:18,717 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-21 17:20:18,753 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-21 17:20:18,815 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:06:47,546 : ---[ Start DHCP Fri Jul 22 16:06:47 2016]---
+2016-07-22 16:06:47,740 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:06:47,741 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:06:47,741 : All rights reserved.
+2016-07-22 16:06:47,741 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:06:47,741 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:06:47,741 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:06:47,742 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:06:47,807 : Wrote 0 leases to leases file.
+2016-07-22 16:06:47,827 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:06:47,828 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:06:47,828 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:06:47,828 : Server starting service.
+2016-07-22 16:07:00,568 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:07:00,569 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:07:01,788 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:07:02,790 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:07:02,815 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:07:02,815 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:07:52,308 : ---[ Start DHCP Fri Jul 22 16:07:52 2016]---
+2016-07-22 16:07:52,308 : ---[ Start DHCP Fri Jul 22 16:07:52 2016]---
+2016-07-22 16:07:52,324 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:07:52,324 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:07:52,324 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:07:52,324 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:07:52,324 : All rights reserved.
+2016-07-22 16:07:52,324 : All rights reserved.
+2016-07-22 16:07:52,324 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:07:52,324 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:07:52,324 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:07:52,324 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:07:52,325 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:07:52,325 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:07:52,325 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:07:52,325 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:07:52,334 : Wrote 0 leases to leases file.
+2016-07-22 16:07:52,334 : Wrote 0 leases to leases file.
+2016-07-22 16:07:52,361 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:07:52,361 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:07:52,361 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:07:52,361 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:07:52,362 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:07:52,362 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:07:52,362 : Server starting service.
+2016-07-22 16:07:52,362 : Server starting service.
+2016-07-22 16:08:34,590 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:08:34,590 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:08:34,591 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:34,591 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:38,990 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:08:38,990 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:08:38,991 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:38,991 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:39,395 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:39,395 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:08:40,395 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:08:40,395 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:08:40,457 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:08:40,457 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:08:40,458 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:08:40,458 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:28,973 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:28,973 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:28,974 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:28,974 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:33,649 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:33,649 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:13:33,650 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:33,650 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:40,572 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:40,572 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:40,572 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:40,572 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:57,240 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:57,240 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:57,240 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:13:57,240 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:34,717 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:15:34,717 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:15:34,718 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:34,718 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:35,934 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:35,934 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:36,935 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:15:36,935 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:15:37,046 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:15:37,046 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:15:37,047 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:15:37,047 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:43,343 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:18:43,343 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:18:43,344 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:43,344 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:44,559 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:44,559 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:45,560 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:18:45,560 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:18:45,678 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:18:45,678 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:18:45,678 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:18:45,678 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:21:07,062 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:21:07,062 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:21:07,062 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:21:07,062 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:21:10,281 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:21:10,281 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:21:10,281 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:21:10,281 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:24:54,652 : ---[ Start DHCP Fri Jul 22 16:24:54 2016]---
+2016-07-22 16:24:54,665 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:24:54,666 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:24:54,666 : All rights reserved.
+2016-07-22 16:24:54,666 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:24:54,666 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:24:54,666 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:24:54,666 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:24:54,676 : Wrote 0 leases to leases file.
+2016-07-22 16:24:54,710 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:24:54,711 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:24:54,711 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:24:54,712 : Server starting service.
+2016-07-22 16:25:50,611 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:25:50,613 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:25:51,839 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:25:52,840 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:25:52,962 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:25:52,964 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:30:41,562 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:30:41,563 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:35:30,029 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:35:30,030 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:37:03,928 : ---[ Start DHCP Fri Jul 22 16:37:03 2016]---
+2016-07-22 16:37:03,944 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:37:03,945 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:37:03,945 : All rights reserved.
+2016-07-22 16:37:03,946 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:37:03,946 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:37:03,946 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:37:03,946 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:37:03,965 : Wrote 0 leases to leases file.
+2016-07-22 16:37:03,980 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:37:03,980 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:37:03,981 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:37:03,981 : Server starting service.
+2016-07-22 16:37:06,392 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:37:06,392 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:38:53,641 : ---[ Start DHCP Fri Jul 22 16:38:53 2016]---
+2016-07-22 16:38:53,641 : ---[ Start DHCP Fri Jul 22 16:38:53 2016]---
+2016-07-22 16:38:53,912 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:38:53,912 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:38:53,913 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:38:53,913 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:38:53,913 : All rights reserved.
+2016-07-22 16:38:53,913 : All rights reserved.
+2016-07-22 16:38:53,913 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:38:53,913 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:38:53,914 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:38:53,914 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:38:53,914 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:38:53,914 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:38:53,914 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:38:53,914 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:38:53,934 : Wrote 0 leases to leases file.
+2016-07-22 16:38:53,934 : Wrote 0 leases to leases file.
+2016-07-22 16:38:53,954 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:38:53,954 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:38:53,954 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:38:53,954 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:38:53,954 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:38:53,954 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:38:53,955 : Server starting service.
+2016-07-22 16:38:53,955 : Server starting service.
+2016-07-22 16:38:59,162 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:38:59,162 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:38:59,162 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:38:59,162 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:40:22,364 : ---[ Start DHCP Fri Jul 22 16:40:22 2016]---
+2016-07-22 16:40:22,371 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:40:22,371 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:40:22,371 : All rights reserved.
+2016-07-22 16:40:22,371 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:40:22,371 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:40:22,371 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:40:22,371 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:40:22,379 : Wrote 0 leases to leases file.
+2016-07-22 16:40:22,422 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:40:22,423 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:40:22,423 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:40:22,423 : Server starting service.
+2016-07-22 16:42:34,397 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:42:34,399 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:42:35,612 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:42:36,614 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:42:36,643 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:42:36,643 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:42:59,488 : ---[ Start DHCP Fri Jul 22 16:42:59 2016]---
+2016-07-22 16:42:59,488 : ---[ Start DHCP Fri Jul 22 16:42:59 2016]---
+2016-07-22 16:42:59,535 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:42:59,535 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:42:59,535 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:42:59,535 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:42:59,535 : All rights reserved.
+2016-07-22 16:42:59,535 : All rights reserved.
+2016-07-22 16:42:59,535 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:42:59,535 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:42:59,535 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:42:59,535 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:42:59,536 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:42:59,536 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:42:59,536 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:42:59,536 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:42:59,544 : Wrote 0 leases to leases file.
+2016-07-22 16:42:59,544 : Wrote 0 leases to leases file.
+2016-07-22 16:42:59,575 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:42:59,575 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:42:59,575 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:42:59,575 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:42:59,575 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:42:59,575 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:42:59,576 : Server starting service.
+2016-07-22 16:42:59,576 : Server starting service.
+2016-07-22 16:47:26,345 : ---[ Start DHCP Fri Jul 22 16:47:26 2016]---
+2016-07-22 16:47:26,363 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:47:26,363 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:47:26,363 : All rights reserved.
+2016-07-22 16:47:26,364 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:47:26,364 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:47:26,364 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:47:26,364 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:47:26,401 : Wrote 0 leases to leases file.
+2016-07-22 16:47:26,448 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:47:26,449 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:47:26,449 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:47:26,449 : Server starting service.
+2016-07-22 16:47:47,156 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 16:47:47,159 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:47:48,297 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:47:49,299 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:47:49,326 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:47:49,329 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:48:25,065 : ---[ Start DHCP Fri Jul 22 16:48:25 2016]---
+2016-07-22 16:48:25,065 : ---[ Start DHCP Fri Jul 22 16:48:25 2016]---
+2016-07-22 16:48:25,073 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:48:25,073 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 16:48:25,073 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:48:25,073 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 16:48:25,073 : All rights reserved.
+2016-07-22 16:48:25,073 : All rights reserved.
+2016-07-22 16:48:25,073 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:48:25,073 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 16:48:25,073 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:48:25,073 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 16:48:25,073 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:48:25,073 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 16:48:25,074 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:48:25,074 : PID file: /var/run/dhcpd.pid
+2016-07-22 16:48:25,126 : Wrote 0 leases to leases file.
+2016-07-22 16:48:25,126 : Wrote 0 leases to leases file.
+2016-07-22 16:48:25,154 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:48:25,154 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:48:25,155 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:48:25,155 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 16:48:25,155 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:48:25,155 : Sending on   Socket/fallback/fallback-net
+2016-07-22 16:48:25,155 : Server starting service.
+2016-07-22 16:48:25,155 : Server starting service.
+2016-07-22 16:48:30,967 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:48:30,967 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 16:48:30,967 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:48:30,967 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:53:19,702 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:53:19,702 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:53:19,703 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:53:19,703 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:58:08,227 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:58:08,227 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:58:08,228 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 16:58:08,228 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:02:56,916 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:02:56,916 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:02:56,916 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:02:56,916 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:07:45,466 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:07:45,466 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:07:45,467 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:07:45,467 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:12:33,997 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:12:33,997 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:12:33,999 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:12:33,999 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:16:10,080 : ---[ Start DHCP Fri Jul 22 17:16:10 2016]---
+2016-07-22 17:16:10,109 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:16:10,109 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:16:10,109 : All rights reserved.
+2016-07-22 17:16:10,110 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:16:10,110 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:16:10,110 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:16:10,111 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:16:10,138 : Wrote 0 leases to leases file.
+2016-07-22 17:16:10,149 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:16:10,149 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:16:10,150 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:16:10,150 : Server starting service.
+2016-07-22 17:16:12,212 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:16:12,212 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:16:13,573 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:16:14,534 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:16:14,552 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:16:14,552 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:17:12,283 : ---[ Start DHCP Fri Jul 22 17:17:12 2016]---
+2016-07-22 17:17:12,283 : ---[ Start DHCP Fri Jul 22 17:17:12 2016]---
+2016-07-22 17:17:12,318 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:17:12,318 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:17:12,318 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:17:12,318 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:17:12,319 : All rights reserved.
+2016-07-22 17:17:12,319 : All rights reserved.
+2016-07-22 17:17:12,319 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:17:12,319 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:17:12,319 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:17:12,319 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:17:12,319 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:17:12,319 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:17:12,319 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:17:12,319 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:17:12,344 : Wrote 0 leases to leases file.
+2016-07-22 17:17:12,344 : Wrote 0 leases to leases file.
+2016-07-22 17:17:12,386 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:17:12,386 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:17:12,387 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:17:12,387 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:17:12,388 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:17:12,388 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:17:12,388 : Server starting service.
+2016-07-22 17:17:12,388 : Server starting service.
+2016-07-22 17:19:20,463 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:19:20,463 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:19:20,466 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:19:20,466 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:19:21,643 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:19:21,643 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:19:22,644 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:19:22,644 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:19:22,692 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:19:22,692 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:19:22,695 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:19:22,695 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:23:16,810 : ---[ Start DHCP Fri Jul 22 17:23:16 2016]---
+2016-07-22 17:23:16,865 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:23:16,866 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:23:16,867 : All rights reserved.
+2016-07-22 17:23:16,867 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:23:16,867 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:23:16,868 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:23:16,868 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:23:16,896 : Wrote 0 leases to leases file.
+2016-07-22 17:23:16,917 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:23:16,917 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:23:16,917 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:23:16,918 : Server starting service.
+2016-07-22 17:23:45,231 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:23:45,231 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:23:46,530 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:23:47,532 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:23:47,578 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:23:47,582 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:24:08,570 : ---[ Start DHCP Fri Jul 22 17:24:08 2016]---
+2016-07-22 17:24:08,570 : ---[ Start DHCP Fri Jul 22 17:24:08 2016]---
+2016-07-22 17:24:08,617 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:24:08,617 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:24:08,618 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:24:08,618 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:24:08,618 : All rights reserved.
+2016-07-22 17:24:08,618 : All rights reserved.
+2016-07-22 17:24:08,618 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:24:08,618 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:24:08,618 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:24:08,618 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:24:08,618 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:24:08,618 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:24:08,619 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:24:08,619 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:24:08,627 : Wrote 0 leases to leases file.
+2016-07-22 17:24:08,627 : Wrote 0 leases to leases file.
+2016-07-22 17:24:08,659 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:24:08,659 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:24:08,659 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:24:08,659 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:24:08,659 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:24:08,659 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:24:08,660 : Server starting service.
+2016-07-22 17:24:08,660 : Server starting service.
+2016-07-22 17:24:13,204 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:24:13,204 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:24:13,204 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:24:13,204 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:29:01,938 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:29:01,938 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:29:01,939 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:29:01,939 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:31:10,153 : ---[ Start DHCP Fri Jul 22 17:31:10 2016]---
+2016-07-22 17:31:10,169 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:31:10,169 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:31:10,170 : All rights reserved.
+2016-07-22 17:31:10,170 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:31:10,170 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:31:10,170 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:31:10,170 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:31:10,178 : Wrote 0 leases to leases file.
+2016-07-22 17:31:10,227 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:31:10,227 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:31:10,227 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:31:10,227 : Server starting service.
+2016-07-22 17:31:36,468 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:31:36,468 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:31:37,790 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:31:38,791 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:31:39,020 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:31:39,021 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:34:12,426 : ---[ Start DHCP Fri Jul 22 17:34:12 2016]---
+2016-07-22 17:34:12,463 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:34:12,463 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:34:12,464 : All rights reserved.
+2016-07-22 17:34:12,464 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:34:12,464 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:34:12,464 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:34:12,465 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:34:12,482 : Wrote 0 leases to leases file.
+2016-07-22 17:34:12,515 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:34:12,516 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:34:12,516 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:34:12,517 : Server starting service.
+2016-07-22 17:34:34,808 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:34:34,809 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:34:36,101 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:34:37,103 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:34:37,180 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:34:37,181 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:37:04,797 : ---[ Start DHCP Fri Jul 22 17:37:04 2016]---
+2016-07-22 17:37:04,854 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:37:04,855 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:37:04,855 : All rights reserved.
+2016-07-22 17:37:04,855 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:37:04,856 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:37:04,856 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:37:04,856 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:37:04,875 : Wrote 0 leases to leases file.
+2016-07-22 17:37:04,912 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:37:04,912 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:37:04,912 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:37:04,913 : Server starting service.
+2016-07-22 17:37:07,818 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:37:07,893 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:37:50,347 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:37:50,348 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:39:08,910 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:39:08,911 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:39:09,831 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:39:09,831 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:40:06,477 : ---[ Start DHCP Fri Jul 22 17:40:06 2016]---
+2016-07-22 17:40:06,528 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:40:06,528 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:40:06,528 : All rights reserved.
+2016-07-22 17:40:06,528 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:40:06,529 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:40:06,529 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:40:06,529 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:40:06,543 : Wrote 0 leases to leases file.
+2016-07-22 17:40:06,564 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:40:06,564 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:40:06,564 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:40:06,565 : Server starting service.
+2016-07-22 17:40:15,603 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:40:15,603 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:41:31,225 : ---[ Start DHCP Fri Jul 22 17:41:31 2016]---
+2016-07-22 17:41:31,240 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:41:31,241 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:41:31,241 : All rights reserved.
+2016-07-22 17:41:31,241 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:41:31,241 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:41:31,241 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:41:31,241 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:41:31,255 : Wrote 0 leases to leases file.
+2016-07-22 17:41:31,271 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:41:31,271 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:41:31,271 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:41:31,271 : Server starting service.
+2016-07-22 17:41:51,384 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:41:51,384 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:41:52,603 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:41:53,604 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:41:53,631 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:41:53,632 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:43:07,661 : ---[ Start DHCP Fri Jul 22 17:43:07 2016]---
+2016-07-22 17:43:07,661 : ---[ Start DHCP Fri Jul 22 17:43:07 2016]---
+2016-07-22 17:43:07,677 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:43:07,677 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:43:07,678 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:43:07,678 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:43:07,678 : All rights reserved.
+2016-07-22 17:43:07,678 : All rights reserved.
+2016-07-22 17:43:07,678 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:43:07,678 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:43:07,679 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:43:07,679 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:43:07,679 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:43:07,679 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:43:07,679 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:43:07,679 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:43:07,694 : Wrote 0 leases to leases file.
+2016-07-22 17:43:07,694 : Wrote 0 leases to leases file.
+2016-07-22 17:43:07,747 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:43:07,747 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:43:07,748 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:43:07,748 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:43:07,748 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:43:07,748 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:43:07,748 : Server starting service.
+2016-07-22 17:43:07,748 : Server starting service.
+2016-07-22 17:43:14,806 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:43:14,806 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:43:14,807 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:43:14,807 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:48:03,371 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:48:03,371 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:48:03,371 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:48:03,371 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:29,481 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:54:29,481 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:54:29,483 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:54:29,483 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:54:30,819 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:30,819 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:31,854 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:31,854 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:31,956 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:31,956 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:54:31,957 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:54:31,957 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:55:14,325 : ---[ Start DHCP Fri Jul 22 17:55:14 2016]---
+2016-07-22 17:55:14,341 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:55:14,342 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:55:14,342 : All rights reserved.
+2016-07-22 17:55:14,342 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:55:14,342 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:55:14,342 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:55:14,343 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:55:14,392 : Wrote 0 leases to leases file.
+2016-07-22 17:55:14,435 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:55:14,435 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:55:14,436 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:55:14,436 : Server starting service.
+2016-07-22 17:55:33,306 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:55:33,307 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:55:34,530 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:55:35,532 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:55:35,660 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:55:35,662 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:58:37,554 : ---[ Start DHCP Fri Jul 22 17:58:37 2016]---
+2016-07-22 17:58:37,600 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 17:58:37,600 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 17:58:37,601 : All rights reserved.
+2016-07-22 17:58:37,601 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 17:58:37,601 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 17:58:37,601 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 17:58:37,601 : PID file: /var/run/dhcpd.pid
+2016-07-22 17:58:37,615 : Wrote 0 leases to leases file.
+2016-07-22 17:58:37,650 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:58:37,650 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 17:58:37,651 : Sending on   Socket/fallback/fallback-net
+2016-07-22 17:58:37,651 : Server starting service.
+2016-07-22 17:59:23,839 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 17:59:23,840 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:59:25,040 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 17:59:26,042 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:59:26,189 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 17:59:26,190 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:00:49,444 : ---[ Start DHCP Fri Jul 22 18:00:49 2016]---
+2016-07-22 18:00:49,444 : ---[ Start DHCP Fri Jul 22 18:00:49 2016]---
+2016-07-22 18:00:49,456 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:00:49,456 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:00:49,456 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:00:49,456 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:00:49,457 : All rights reserved.
+2016-07-22 18:00:49,457 : All rights reserved.
+2016-07-22 18:00:49,457 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:00:49,457 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:00:49,457 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:00:49,457 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:00:49,458 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:00:49,458 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:00:49,458 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:00:49,458 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:00:49,504 : Wrote 0 leases to leases file.
+2016-07-22 18:00:49,504 : Wrote 0 leases to leases file.
+2016-07-22 18:00:49,547 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:00:49,547 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:00:49,547 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:00:49,547 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:00:49,548 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:00:49,548 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:00:49,548 : Server starting service.
+2016-07-22 18:00:49,548 : Server starting service.
+2016-07-22 18:00:54,076 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:00:54,076 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:00:54,077 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:00:54,077 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:05:43,036 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:05:43,036 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:05:43,037 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:05:43,037 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:06:47,027 : ---[ Start DHCP Fri Jul 22 18:06:47 2016]---
+2016-07-22 18:06:47,077 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:06:47,078 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:06:47,078 : All rights reserved.
+2016-07-22 18:06:47,078 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:06:47,078 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:06:47,079 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:06:47,079 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:06:47,097 : Wrote 0 leases to leases file.
+2016-07-22 18:06:47,145 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:06:47,146 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:06:47,146 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:06:47,146 : Server starting service.
+2016-07-22 18:07:09,716 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 18:07:09,716 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:07:10,900 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:07:11,902 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:07:11,930 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:07:11,931 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:08:42,982 : ---[ Start DHCP Fri Jul 22 18:08:42 2016]---
+2016-07-22 18:08:42,982 : ---[ Start DHCP Fri Jul 22 18:08:42 2016]---
+2016-07-22 18:08:43,001 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:08:43,001 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:08:43,002 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:08:43,002 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:08:43,002 : All rights reserved.
+2016-07-22 18:08:43,002 : All rights reserved.
+2016-07-22 18:08:43,002 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:08:43,002 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:08:43,002 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:08:43,002 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:08:43,003 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:08:43,003 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:08:43,003 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:08:43,003 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:08:43,009 : Wrote 0 leases to leases file.
+2016-07-22 18:08:43,009 : Wrote 0 leases to leases file.
+2016-07-22 18:08:43,034 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:08:43,034 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:08:43,035 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:08:43,035 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:08:43,035 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:08:43,035 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:08:43,035 : Server starting service.
+2016-07-22 18:08:43,035 : Server starting service.
+2016-07-22 18:09:37,059 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 18:09:37,059 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 18:09:37,060 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:09:37,060 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:09:38,379 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:09:38,379 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:09:39,380 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:09:39,380 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:09:39,399 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:09:39,399 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:09:39,400 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:09:39,400 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:13:08,727 : ---[ Start DHCP Fri Jul 22 18:13:08 2016]---
+2016-07-22 18:13:08,738 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-22 18:13:08,739 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-22 18:13:08,739 : All rights reserved.
+2016-07-22 18:13:08,739 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-22 18:13:08,740 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-22 18:13:08,740 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-22 18:13:08,740 : PID file: /var/run/dhcpd.pid
+2016-07-22 18:13:08,752 : Wrote 0 leases to leases file.
+2016-07-22 18:13:08,774 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:13:08,774 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-22 18:13:08,775 : Sending on   Socket/fallback/fallback-net
+2016-07-22 18:13:08,775 : Server starting service.
+2016-07-22 18:13:28,332 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-22 18:13:28,334 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:13:29,528 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:13:30,530 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:13:30,563 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:13:30,566 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:06,288 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:06,290 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:10,443 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:10,444 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:17:10,948 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:17:10,948 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:15,113 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:15,113 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:22,201 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:22,201 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:37,608 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-22 18:17:37,608 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:22:11,593 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-22 18:22:11,594 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:05:34,405 : ---[ Start DHCP Sun Jul 24 19:05:34 2016]---
+2016-07-24 19:05:34,510 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:05:34,510 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:05:34,510 : All rights reserved.
+2016-07-24 19:05:34,510 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:05:34,510 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:05:34,510 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:05:34,510 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:05:34,635 : Wrote 0 leases to leases file.
+2016-07-24 19:05:34,672 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:05:34,673 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:05:34,673 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:05:34,673 : Server starting service.
+2016-07-24 19:09:07,534 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 19:09:07,535 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:09:08,849 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:09:09,850 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:09:09,867 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:09:09,869 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:13:58,450 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:13:58,451 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:18:47,009 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:18:47,010 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:23:35,823 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:23:35,823 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:24:54,061 : ---[ Start DHCP Sun Jul 24 19:24:54 2016]---
+2016-07-24 19:24:54,061 : ---[ Start DHCP Sun Jul 24 19:24:54 2016]---
+2016-07-24 19:24:54,117 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:24:54,117 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:24:54,118 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:24:54,118 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:24:54,118 : All rights reserved.
+2016-07-24 19:24:54,118 : All rights reserved.
+2016-07-24 19:24:54,119 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:24:54,119 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:24:54,119 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:24:54,119 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:24:54,120 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:24:54,120 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:24:54,120 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:24:54,120 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:24:54,290 : Wrote 0 leases to leases file.
+2016-07-24 19:24:54,290 : Wrote 0 leases to leases file.
+2016-07-24 19:24:54,365 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:24:54,365 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:24:54,366 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:24:54,366 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:24:54,366 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:24:54,366 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:24:54,366 : Server starting service.
+2016-07-24 19:24:54,366 : Server starting service.
+2016-07-24 19:25:48,665 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 19:25:48,665 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 19:25:48,666 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:25:48,666 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:25:49,835 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:25:49,835 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:25:50,837 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:25:50,837 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:25:50,900 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:25:50,900 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:25:50,924 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:25:50,924 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:30:39,531 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:30:39,531 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:30:39,531 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:30:39,531 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:35:28,052 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:35:28,052 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:35:28,053 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:35:28,053 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:35:45,353 : ---[ Start DHCP Sun Jul 24 19:35:45 2016]---
+2016-07-24 19:35:45,372 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:35:45,372 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:35:45,376 : All rights reserved.
+2016-07-24 19:35:45,376 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:35:45,377 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:35:45,377 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:35:45,377 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:35:45,413 : Wrote 0 leases to leases file.
+2016-07-24 19:35:45,457 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:35:45,458 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:35:45,458 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:35:45,458 : Server starting service.
+2016-07-24 19:36:29,276 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 19:36:29,277 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:36:30,459 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:36:31,461 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:36:31,512 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:36:31,537 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:40:16,587 : ---[ Start DHCP Sun Jul 24 19:40:16 2016]---
+2016-07-24 19:40:16,587 : ---[ Start DHCP Sun Jul 24 19:40:16 2016]---
+2016-07-24 19:40:16,596 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:40:16,596 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:40:16,596 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:40:16,596 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:40:16,596 : All rights reserved.
+2016-07-24 19:40:16,596 : All rights reserved.
+2016-07-24 19:40:16,597 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:40:16,597 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:40:16,597 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:40:16,597 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:40:16,597 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:40:16,597 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:40:16,597 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:40:16,597 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:40:16,622 : Wrote 0 leases to leases file.
+2016-07-24 19:40:16,622 : Wrote 0 leases to leases file.
+2016-07-24 19:40:16,645 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:40:16,645 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:40:16,645 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:40:16,645 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:40:16,645 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:40:16,645 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:40:16,645 : Server starting service.
+2016-07-24 19:40:16,645 : Server starting service.
+2016-07-24 19:40:29,955 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:40:29,955 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:40:29,955 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:40:29,955 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:45:18,580 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:45:18,580 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:45:18,580 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:45:18,580 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:50:07,031 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:50:07,031 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:50:07,031 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:50:07,031 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:53:51,881 : ---[ Start DHCP Sun Jul 24 19:53:51 2016]---
+2016-07-24 19:53:51,881 : ---[ Start DHCP Sun Jul 24 19:53:51 2016]---
+2016-07-24 19:53:51,881 : ---[ Start DHCP Sun Jul 24 19:53:51 2016]---
+2016-07-24 19:53:51,901 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:53:51,901 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:53:51,901 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 19:53:51,902 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:53:51,902 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:53:51,902 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 19:53:51,902 : All rights reserved.
+2016-07-24 19:53:51,902 : All rights reserved.
+2016-07-24 19:53:51,902 : All rights reserved.
+2016-07-24 19:53:51,902 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:53:51,902 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:53:51,902 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 19:53:51,902 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:53:51,902 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:53:51,902 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 19:53:51,903 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:53:51,903 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:53:51,903 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 19:53:51,903 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:53:51,903 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:53:51,903 : PID file: /var/run/dhcpd.pid
+2016-07-24 19:53:51,915 : Wrote 0 leases to leases file.
+2016-07-24 19:53:51,915 : Wrote 0 leases to leases file.
+2016-07-24 19:53:51,915 : Wrote 0 leases to leases file.
+2016-07-24 19:53:51,954 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,954 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,954 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,955 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,955 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,955 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 19:53:51,955 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:53:51,955 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:53:51,955 : Sending on   Socket/fallback/fallback-net
+2016-07-24 19:53:51,955 : Server starting service.
+2016-07-24 19:53:51,955 : Server starting service.
+2016-07-24 19:53:51,955 : Server starting service.
+2016-07-24 19:53:51,956 : Discarding packet with bogus hlen.
+2016-07-24 19:53:51,956 : Discarding packet with bogus hlen.
+2016-07-24 19:53:51,956 : Discarding packet with bogus hlen.
+2016-07-24 19:54:36,532 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:54:36,532 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:54:36,532 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 19:54:36,533 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:54:36,533 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:54:36,533 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,162 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,162 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,162 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,164 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,164 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 19:59:25,164 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:00:21,851 : ---[ Start DHCP Sun Jul 24 20:00:21 2016]---
+2016-07-24 20:00:21,866 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:00:21,867 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:00:21,867 : All rights reserved.
+2016-07-24 20:00:21,869 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:00:21,869 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:00:21,869 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:00:21,869 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:00:21,878 : Wrote 0 leases to leases file.
+2016-07-24 20:00:21,921 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:00:21,921 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:00:21,921 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:00:21,921 : Server starting service.
+2016-07-24 20:00:23,937 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:00:23,937 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:01:05,195 : ---[ Start DHCP Sun Jul 24 20:01:05 2016]---
+2016-07-24 20:01:05,195 : ---[ Start DHCP Sun Jul 24 20:01:05 2016]---
+2016-07-24 20:01:05,211 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:01:05,211 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:01:05,212 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:01:05,212 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:01:05,212 : All rights reserved.
+2016-07-24 20:01:05,212 : All rights reserved.
+2016-07-24 20:01:05,213 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:01:05,213 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:01:05,213 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:01:05,213 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:01:05,213 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:01:05,213 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:01:05,213 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:01:05,213 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:01:05,245 : Wrote 0 leases to leases file.
+2016-07-24 20:01:05,245 : Wrote 0 leases to leases file.
+2016-07-24 20:01:05,264 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:01:05,264 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:01:05,264 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:01:05,264 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:01:05,264 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:01:05,264 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:01:05,265 : Server starting service.
+2016-07-24 20:01:05,265 : Server starting service.
+2016-07-24 20:01:13,942 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:01:13,942 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:01:13,942 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:01:13,942 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:06:02,405 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:06:02,405 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:06:02,406 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:06:02,406 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:10:51,199 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:10:51,199 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:10:51,199 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:10:51,199 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:15:39,577 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:15:39,577 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:15:39,578 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:15:39,578 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:20:28,055 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:20:28,055 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:20:28,056 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:20:28,056 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:23:46,445 : ---[ Start DHCP Sun Jul 24 20:23:46 2016]---
+2016-07-24 20:23:46,462 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:23:46,462 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:23:46,462 : All rights reserved.
+2016-07-24 20:23:46,463 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:23:46,463 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:23:46,463 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:23:46,463 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:23:46,477 : Wrote 0 leases to leases file.
+2016-07-24 20:23:46,495 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:23:46,496 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:23:46,496 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:23:46,496 : Server starting service.
+2016-07-24 20:24:07,842 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 20:24:07,843 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:24:09,045 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:24:10,047 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:24:10,181 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:24:10,182 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:24:52,200 : ---[ Start DHCP Sun Jul 24 20:24:52 2016]---
+2016-07-24 20:24:52,200 : ---[ Start DHCP Sun Jul 24 20:24:52 2016]---
+2016-07-24 20:24:52,205 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:24:52,205 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:24:52,205 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:24:52,205 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:24:52,205 : All rights reserved.
+2016-07-24 20:24:52,205 : All rights reserved.
+2016-07-24 20:24:52,205 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:24:52,205 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:24:52,205 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:24:52,205 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:24:52,205 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:24:52,205 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:24:52,205 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:24:52,205 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:24:52,211 : Wrote 0 leases to leases file.
+2016-07-24 20:24:52,211 : Wrote 0 leases to leases file.
+2016-07-24 20:24:52,225 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:24:52,225 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:24:52,225 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:24:52,225 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:24:52,225 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:24:52,225 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:24:52,225 : Server starting service.
+2016-07-24 20:24:52,225 : Server starting service.
+2016-07-24 20:25:46,391 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 20:25:46,391 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 20:25:46,391 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:25:46,391 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:25:47,614 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:25:47,614 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:25:48,617 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:25:48,617 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:25:48,636 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:25:48,636 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:25:48,637 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:25:48,637 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:30:37,317 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:30:37,317 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:30:37,318 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:30:37,318 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:35:26,004 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:35:26,004 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:35:26,005 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:35:26,005 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:37:18,426 : ---[ Start DHCP Sun Jul 24 20:37:18 2016]---
+2016-07-24 20:37:18,436 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:37:18,437 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:37:18,437 : All rights reserved.
+2016-07-24 20:37:18,437 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:37:18,437 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:37:18,437 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:37:18,438 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:37:18,448 : Wrote 0 leases to leases file.
+2016-07-24 20:37:18,497 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:37:18,497 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:37:18,497 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:37:18,497 : Server starting service.
+2016-07-24 20:37:22,526 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:37:22,526 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:38:40,547 : ---[ Start DHCP Sun Jul 24 20:38:40 2016]---
+2016-07-24 20:38:40,547 : ---[ Start DHCP Sun Jul 24 20:38:40 2016]---
+2016-07-24 20:38:40,560 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:38:40,560 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:38:40,561 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:38:40,561 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:38:40,561 : All rights reserved.
+2016-07-24 20:38:40,561 : All rights reserved.
+2016-07-24 20:38:40,561 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:38:40,561 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:38:40,561 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:38:40,561 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:38:40,609 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:38:40,609 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:38:40,609 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:38:40,609 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:38:40,636 : Wrote 0 leases to leases file.
+2016-07-24 20:38:40,636 : Wrote 0 leases to leases file.
+2016-07-24 20:38:40,673 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:38:40,673 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:38:40,674 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:38:40,674 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:38:40,674 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:38:40,674 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:38:40,674 : Server starting service.
+2016-07-24 20:38:40,674 : Server starting service.
+2016-07-24 20:39:35,348 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 20:39:35,348 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 20:39:35,350 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:39:35,350 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:39:36,560 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:39:36,560 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:39:37,561 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:39:37,561 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:39:37,583 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:39:37,583 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:39:37,585 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:39:37,585 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:44:26,156 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:44:26,156 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:44:26,157 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:44:26,157 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:49:14,705 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:49:14,705 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:49:14,707 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:49:14,707 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:52:49,098 : ---[ Start DHCP Sun Jul 24 20:52:49 2016]---
+2016-07-24 20:52:49,112 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 20:52:49,113 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 20:52:49,113 : All rights reserved.
+2016-07-24 20:52:49,113 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 20:52:49,113 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 20:52:49,113 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 20:52:49,113 : PID file: /var/run/dhcpd.pid
+2016-07-24 20:52:49,123 : Wrote 0 leases to leases file.
+2016-07-24 20:52:49,146 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:52:49,146 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 20:52:49,146 : Sending on   Socket/fallback/fallback-net
+2016-07-24 20:52:49,146 : Server starting service.
+2016-07-24 20:52:54,655 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 20:52:54,655 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:57:43,218 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 20:57:43,219 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:02:33,304 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:02:33,305 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:07:22,507 : ---[ Start DHCP Sun Jul 24 21:07:22 2016]---
+2016-07-24 21:07:22,523 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 21:07:22,524 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 21:07:22,524 : All rights reserved.
+2016-07-24 21:07:22,524 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 21:07:22,524 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 21:07:22,524 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 21:07:22,525 : PID file: /var/run/dhcpd.pid
+2016-07-24 21:07:22,537 : Wrote 0 leases to leases file.
+2016-07-24 21:07:22,590 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:07:22,590 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:07:22,590 : Sending on   Socket/fallback/fallback-net
+2016-07-24 21:07:22,590 : Server starting service.
+2016-07-24 21:07:59,083 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 21:07:59,084 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:08:00,301 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:08:01,303 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:08:01,415 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:08:01,416 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:12:49,926 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:12:49,927 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:14:01,354 : ---[ Start DHCP Sun Jul 24 21:14:01 2016]---
+2016-07-24 21:14:01,371 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 21:14:01,372 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 21:14:01,372 : All rights reserved.
+2016-07-24 21:14:01,372 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 21:14:01,373 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 21:14:01,373 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 21:14:01,373 : PID file: /var/run/dhcpd.pid
+2016-07-24 21:14:01,387 : Wrote 0 leases to leases file.
+2016-07-24 21:14:01,403 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:14:01,404 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:14:01,404 : Sending on   Socket/fallback/fallback-net
+2016-07-24 21:14:01,405 : Server starting service.
+2016-07-24 21:14:07,861 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:14:07,862 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:17:53,238 : ---[ Start DHCP Sun Jul 24 21:17:53 2016]---
+2016-07-24 21:17:53,252 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 21:17:53,253 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 21:17:53,253 : All rights reserved.
+2016-07-24 21:17:53,253 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 21:17:53,253 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 21:17:53,253 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 21:17:53,253 : PID file: /var/run/dhcpd.pid
+2016-07-24 21:17:53,262 : Wrote 0 leases to leases file.
+2016-07-24 21:17:53,277 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:17:53,278 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:17:53,278 : Sending on   Socket/fallback/fallback-net
+2016-07-24 21:17:53,278 : Server starting service.
+2016-07-24 21:17:55,963 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:17:55,964 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:22:44,670 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:22:44,671 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:25:17,423 : ---[ Start DHCP Sun Jul 24 21:25:17 2016]---
+2016-07-24 21:25:17,439 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-24 21:25:17,440 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-24 21:25:17,440 : All rights reserved.
+2016-07-24 21:25:17,440 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-24 21:25:17,440 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-24 21:25:17,440 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-24 21:25:17,441 : PID file: /var/run/dhcpd.pid
+2016-07-24 21:25:17,460 : Wrote 0 leases to leases file.
+2016-07-24 21:25:17,483 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:25:17,483 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-24 21:25:17,483 : Sending on   Socket/fallback/fallback-net
+2016-07-24 21:25:17,483 : Server starting service.
+2016-07-24 21:25:20,425 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-24 21:25:20,427 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:25:21,576 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-24 21:25:22,577 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:25:22,594 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:25:22,594 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:30:11,246 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-24 21:30:11,246 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1

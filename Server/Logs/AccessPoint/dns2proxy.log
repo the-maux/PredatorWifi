@@ -7448,3 +7448,465 @@
 2016-07-06 18:14:27,292 : DNS Forwarding activado....
 2016-07-06 18:14:27,292 : binded to UDP port 53.
 2016-07-06 18:14:27,292 : waiting requests.
+2016-07-07 17:03:02,984 : Non spoofing imap.gmail.com
+2016-07-07 17:03:02,994 : Non spoofing to 127.0.0.1
+2016-07-07 17:03:02,995 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-07 17:03:02,995 : DNS Forwarding activado....
+2016-07-07 17:03:02,995 : binded to UDP port 53.
+2016-07-07 17:03:02,995 : waiting requests.
+2016-07-08 15:20:35,590 : Non spoofing imap.gmail.com
+2016-07-08 15:20:35,591 : Non spoofing to 127.0.0.1
+2016-07-08 15:20:35,591 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:20:35,591 : DNS Forwarding activado....
+2016-07-08 15:20:35,591 : binded to UDP port 53.
+2016-07-08 15:20:35,591 : waiting requests.
+2016-07-08 15:22:32,449 : Non spoofing imap.gmail.com
+2016-07-08 15:22:32,449 : Non spoofing imap.gmail.com
+2016-07-08 15:22:32,450 : Non spoofing to 127.0.0.1
+2016-07-08 15:22:32,450 : Non spoofing to 127.0.0.1
+2016-07-08 15:22:32,450 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:22:32,450 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:22:32,450 : DNS Forwarding activado....
+2016-07-08 15:22:32,450 : DNS Forwarding activado....
+2016-07-08 15:22:32,450 : binded to UDP port 53.
+2016-07-08 15:22:32,450 : binded to UDP port 53.
+2016-07-08 15:22:32,450 : waiting requests.
+2016-07-08 15:22:32,450 : waiting requests.
+2016-07-08 15:23:58,820 : Non spoofing imap.gmail.com
+2016-07-08 15:23:58,820 : Non spoofing to 127.0.0.1
+2016-07-08 15:23:58,820 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:23:58,820 : DNS Forwarding activado....
+2016-07-08 15:23:58,820 : binded to UDP port 53.
+2016-07-08 15:23:58,820 : waiting requests.
+2016-07-08 15:32:16,987 : Non spoofing imap.gmail.com
+2016-07-08 15:32:17,007 : Non spoofing to 127.0.0.1
+2016-07-08 15:32:17,007 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:32:17,007 : DNS Forwarding activado....
+2016-07-08 15:32:17,007 : binded to UDP port 53.
+2016-07-08 15:32:17,007 : waiting requests.
+2016-07-08 15:52:34,785 : Non spoofing imap.gmail.com
+2016-07-08 15:52:34,795 : Non spoofing to 127.0.0.1
+2016-07-08 15:52:34,795 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:52:34,795 : DNS Forwarding activado....
+2016-07-08 15:52:34,795 : binded to UDP port 53.
+2016-07-08 15:52:34,795 : waiting requests.
+2016-07-08 15:54:39,368 : Non spoofing imap.gmail.com
+2016-07-08 15:54:39,368 : Non spoofing imap.gmail.com
+2016-07-08 15:54:39,369 : Non spoofing to 127.0.0.1
+2016-07-08 15:54:39,369 : Non spoofing to 127.0.0.1
+2016-07-08 15:54:39,369 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:54:39,369 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 15:54:39,369 : DNS Forwarding activado....
+2016-07-08 15:54:39,369 : DNS Forwarding activado....
+2016-07-08 15:54:39,369 : binded to UDP port 53.
+2016-07-08 15:54:39,369 : binded to UDP port 53.
+2016-07-08 15:54:39,369 : waiting requests.
+2016-07-08 15:54:39,369 : waiting requests.
+2016-07-08 16:12:52,229 : Non spoofing imap.gmail.com
+2016-07-08 16:12:52,229 : Non spoofing to 127.0.0.1
+2016-07-08 16:12:52,229 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 16:12:52,229 : DNS Forwarding activado....
+2016-07-08 16:12:52,229 : binded to UDP port 53.
+2016-07-08 16:12:52,229 : waiting requests.
+2016-07-08 16:42:23,061 : Non spoofing imap.gmail.com
+2016-07-08 16:42:23,061 : Non spoofing to 127.0.0.1
+2016-07-08 16:42:23,062 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 16:42:23,062 : DNS Forwarding activado....
+2016-07-08 16:42:23,062 : binded to UDP port 53.
+2016-07-08 16:42:23,062 : waiting requests.
+2016-07-08 17:01:24,355 : Non spoofing imap.gmail.com
+2016-07-08 17:01:24,355 : Non spoofing to 127.0.0.1
+2016-07-08 17:01:24,355 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 17:01:24,355 : DNS Forwarding activado....
+2016-07-08 17:01:24,355 : binded to UDP port 53.
+2016-07-08 17:01:24,355 : waiting requests.
+2016-07-08 17:02:42,570 : Non spoofing imap.gmail.com
+2016-07-08 17:02:42,570 : Non spoofing to 127.0.0.1
+2016-07-08 17:02:42,570 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 17:02:42,571 : DNS Forwarding activado....
+2016-07-08 17:02:42,571 : binded to UDP port 53.
+2016-07-08 17:02:42,571 : waiting requests.
+2016-07-08 17:05:57,954 : Non spoofing imap.gmail.com
+2016-07-08 17:05:57,954 : Non spoofing imap.gmail.com
+2016-07-08 17:05:57,954 : Non spoofing to 127.0.0.1
+2016-07-08 17:05:57,954 : Non spoofing to 127.0.0.1
+2016-07-08 17:05:57,954 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 17:05:57,954 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-08 17:05:57,954 : DNS Forwarding activado....
+2016-07-08 17:05:57,954 : DNS Forwarding activado....
+2016-07-08 17:05:57,954 : binded to UDP port 53.
+2016-07-08 17:05:57,954 : binded to UDP port 53.
+2016-07-08 17:05:57,954 : waiting requests.
+2016-07-08 17:05:57,954 : waiting requests.
+2016-07-21 15:29:54,936 : Non spoofing imap.gmail.com
+2016-07-21 15:29:54,939 : Non spoofing to 127.0.0.1
+2016-07-21 15:29:54,941 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-21 15:29:54,941 : DNS Forwarding activado....
+2016-07-21 15:29:54,941 : binded to UDP port 53.
+2016-07-21 15:29:54,941 : waiting requests.
+2016-07-21 15:52:29,920 : Non spoofing imap.gmail.com
+2016-07-21 15:52:29,920 : Non spoofing to 127.0.0.1
+2016-07-21 15:52:29,920 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-21 15:52:29,920 : DNS Forwarding activado....
+2016-07-21 15:52:29,920 : binded to UDP port 53.
+2016-07-21 15:52:29,920 : waiting requests.
+2016-07-21 15:55:57,842 : Non spoofing imap.gmail.com
+2016-07-21 15:55:57,842 : Non spoofing imap.gmail.com
+2016-07-21 15:55:57,842 : Non spoofing to 127.0.0.1
+2016-07-21 15:55:57,842 : Non spoofing to 127.0.0.1
+2016-07-21 15:55:57,842 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-21 15:55:57,842 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-21 15:55:57,843 : DNS Forwarding activado....
+2016-07-21 15:55:57,843 : DNS Forwarding activado....
+2016-07-21 15:55:57,843 : binded to UDP port 53.
+2016-07-21 15:55:57,843 : binded to UDP port 53.
+2016-07-21 15:55:57,844 : waiting requests.
+2016-07-21 15:55:57,844 : waiting requests.
+2016-07-21 17:19:15,259 : Non spoofing imap.gmail.com
+2016-07-21 17:19:15,259 : Non spoofing to 127.0.0.1
+2016-07-21 17:19:15,259 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-21 17:19:15,259 : DNS Forwarding activado....
+2016-07-21 17:19:15,259 : binded to UDP port 53.
+2016-07-21 17:19:15,259 : waiting requests.
+2016-07-22 16:06:53,787 : Non spoofing imap.gmail.com
+2016-07-22 16:06:53,819 : Non spoofing to 127.0.0.1
+2016-07-22 16:06:53,820 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:06:53,820 : DNS Forwarding activado....
+2016-07-22 16:06:53,820 : binded to UDP port 53.
+2016-07-22 16:06:53,820 : waiting requests.
+2016-07-22 16:07:58,389 : Non spoofing imap.gmail.com
+2016-07-22 16:07:58,389 : Non spoofing imap.gmail.com
+2016-07-22 16:07:58,389 : Non spoofing to 127.0.0.1
+2016-07-22 16:07:58,389 : Non spoofing to 127.0.0.1
+2016-07-22 16:07:58,389 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:07:58,389 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:07:58,389 : DNS Forwarding activado....
+2016-07-22 16:07:58,389 : DNS Forwarding activado....
+2016-07-22 16:07:58,389 : binded to UDP port 53.
+2016-07-22 16:07:58,389 : binded to UDP port 53.
+2016-07-22 16:07:58,389 : waiting requests.
+2016-07-22 16:07:58,389 : waiting requests.
+2016-07-22 16:25:00,792 : Non spoofing imap.gmail.com
+2016-07-22 16:25:00,793 : Non spoofing to 127.0.0.1
+2016-07-22 16:25:00,793 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:25:00,793 : DNS Forwarding activado....
+2016-07-22 16:25:00,793 : binded to UDP port 53.
+2016-07-22 16:25:00,793 : waiting requests.
+2016-07-22 16:37:10,013 : Non spoofing imap.gmail.com
+2016-07-22 16:37:10,014 : Non spoofing to 127.0.0.1
+2016-07-22 16:37:10,014 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:37:10,014 : DNS Forwarding activado....
+2016-07-22 16:37:10,014 : binded to UDP port 53.
+2016-07-22 16:37:10,014 : waiting requests.
+2016-07-22 16:38:59,709 : Non spoofing imap.gmail.com
+2016-07-22 16:38:59,709 : Non spoofing imap.gmail.com
+2016-07-22 16:38:59,709 : Non spoofing to 127.0.0.1
+2016-07-22 16:38:59,709 : Non spoofing to 127.0.0.1
+2016-07-22 16:38:59,710 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:38:59,710 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:38:59,710 : DNS Forwarding activado....
+2016-07-22 16:38:59,710 : DNS Forwarding activado....
+2016-07-22 16:38:59,710 : binded to UDP port 53.
+2016-07-22 16:38:59,710 : binded to UDP port 53.
+2016-07-22 16:38:59,710 : waiting requests.
+2016-07-22 16:38:59,710 : waiting requests.
+2016-07-22 16:40:28,533 : Non spoofing imap.gmail.com
+2016-07-22 16:40:28,534 : Non spoofing to 127.0.0.1
+2016-07-22 16:40:28,534 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:40:28,534 : DNS Forwarding activado....
+2016-07-22 16:40:28,534 : binded to UDP port 53.
+2016-07-22 16:40:28,534 : waiting requests.
+2016-07-22 16:43:05,621 : Non spoofing imap.gmail.com
+2016-07-22 16:43:05,621 : Non spoofing imap.gmail.com
+2016-07-22 16:43:05,622 : Non spoofing to 127.0.0.1
+2016-07-22 16:43:05,622 : Non spoofing to 127.0.0.1
+2016-07-22 16:43:05,622 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:43:05,622 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:43:05,622 : DNS Forwarding activado....
+2016-07-22 16:43:05,622 : DNS Forwarding activado....
+2016-07-22 16:43:05,622 : binded to UDP port 53.
+2016-07-22 16:43:05,622 : binded to UDP port 53.
+2016-07-22 16:43:05,622 : waiting requests.
+2016-07-22 16:43:05,622 : waiting requests.
+2016-07-22 16:47:32,416 : Non spoofing imap.gmail.com
+2016-07-22 16:47:32,417 : Non spoofing to 127.0.0.1
+2016-07-22 16:47:32,417 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:47:32,417 : DNS Forwarding activado....
+2016-07-22 16:47:32,417 : binded to UDP port 53.
+2016-07-22 16:47:32,417 : waiting requests.
+2016-07-22 16:48:31,121 : Non spoofing imap.gmail.com
+2016-07-22 16:48:31,121 : Non spoofing imap.gmail.com
+2016-07-22 16:48:31,121 : Non spoofing to 127.0.0.1
+2016-07-22 16:48:31,121 : Non spoofing to 127.0.0.1
+2016-07-22 16:48:31,121 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:48:31,121 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 16:48:31,121 : DNS Forwarding activado....
+2016-07-22 16:48:31,121 : DNS Forwarding activado....
+2016-07-22 16:48:31,122 : binded to UDP port 53.
+2016-07-22 16:48:31,122 : binded to UDP port 53.
+2016-07-22 16:48:31,122 : waiting requests.
+2016-07-22 16:48:31,122 : waiting requests.
+2016-07-22 17:16:16,189 : Non spoofing imap.gmail.com
+2016-07-22 17:16:16,190 : Non spoofing to 127.0.0.1
+2016-07-22 17:16:16,190 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:16:16,190 : DNS Forwarding activado....
+2016-07-22 17:16:16,190 : binded to UDP port 53.
+2016-07-22 17:16:16,190 : waiting requests.
+2016-07-22 17:17:18,363 : Non spoofing imap.gmail.com
+2016-07-22 17:17:18,363 : Non spoofing imap.gmail.com
+2016-07-22 17:17:18,364 : Non spoofing to 127.0.0.1
+2016-07-22 17:17:18,364 : Non spoofing to 127.0.0.1
+2016-07-22 17:17:18,364 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:17:18,364 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:17:18,364 : DNS Forwarding activado....
+2016-07-22 17:17:18,364 : DNS Forwarding activado....
+2016-07-22 17:17:18,364 : binded to UDP port 53.
+2016-07-22 17:17:18,364 : binded to UDP port 53.
+2016-07-22 17:17:18,364 : waiting requests.
+2016-07-22 17:17:18,364 : waiting requests.
+2016-07-22 17:23:22,851 : Non spoofing imap.gmail.com
+2016-07-22 17:23:22,851 : Non spoofing to 127.0.0.1
+2016-07-22 17:23:22,851 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:23:22,851 : DNS Forwarding activado....
+2016-07-22 17:23:22,852 : binded to UDP port 53.
+2016-07-22 17:23:22,852 : waiting requests.
+2016-07-22 17:24:14,645 : Non spoofing imap.gmail.com
+2016-07-22 17:24:14,645 : Non spoofing imap.gmail.com
+2016-07-22 17:24:14,645 : Non spoofing to 127.0.0.1
+2016-07-22 17:24:14,645 : Non spoofing to 127.0.0.1
+2016-07-22 17:24:14,645 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:24:14,645 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:24:14,645 : DNS Forwarding activado....
+2016-07-22 17:24:14,645 : DNS Forwarding activado....
+2016-07-22 17:24:14,645 : binded to UDP port 53.
+2016-07-22 17:24:14,645 : binded to UDP port 53.
+2016-07-22 17:24:14,645 : waiting requests.
+2016-07-22 17:24:14,645 : waiting requests.
+2016-07-22 17:31:16,355 : Non spoofing imap.gmail.com
+2016-07-22 17:31:16,355 : Non spoofing to 127.0.0.1
+2016-07-22 17:31:16,355 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:31:16,355 : DNS Forwarding activado....
+2016-07-22 17:31:16,355 : binded to UDP port 53.
+2016-07-22 17:31:16,355 : waiting requests.
+2016-07-22 17:34:18,532 : Non spoofing imap.gmail.com
+2016-07-22 17:34:18,532 : Non spoofing to 127.0.0.1
+2016-07-22 17:34:18,532 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:34:18,532 : DNS Forwarding activado....
+2016-07-22 17:34:18,533 : binded to UDP port 53.
+2016-07-22 17:34:18,533 : waiting requests.
+2016-07-22 17:37:10,971 : Non spoofing imap.gmail.com
+2016-07-22 17:37:10,971 : Non spoofing to 127.0.0.1
+2016-07-22 17:37:10,971 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:37:10,971 : DNS Forwarding activado....
+2016-07-22 17:37:10,971 : binded to UDP port 53.
+2016-07-22 17:37:10,972 : waiting requests.
+2016-07-22 17:40:12,645 : Non spoofing imap.gmail.com
+2016-07-22 17:40:12,645 : Non spoofing to 127.0.0.1
+2016-07-22 17:40:12,645 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:40:12,645 : DNS Forwarding activado....
+2016-07-22 17:40:12,645 : binded to UDP port 53.
+2016-07-22 17:40:12,645 : waiting requests.
+2016-07-22 17:41:37,323 : Non spoofing imap.gmail.com
+2016-07-22 17:41:37,323 : Non spoofing to 127.0.0.1
+2016-07-22 17:41:37,323 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:41:37,323 : DNS Forwarding activado....
+2016-07-22 17:41:37,323 : binded to UDP port 53.
+2016-07-22 17:41:37,323 : waiting requests.
+2016-07-22 17:43:13,801 : Non spoofing imap.gmail.com
+2016-07-22 17:43:13,801 : Non spoofing imap.gmail.com
+2016-07-22 17:43:13,802 : Non spoofing to 127.0.0.1
+2016-07-22 17:43:13,802 : Non spoofing to 127.0.0.1
+2016-07-22 17:43:13,802 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:43:13,802 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:43:13,802 : DNS Forwarding activado....
+2016-07-22 17:43:13,802 : DNS Forwarding activado....
+2016-07-22 17:43:13,802 : binded to UDP port 53.
+2016-07-22 17:43:13,802 : binded to UDP port 53.
+2016-07-22 17:43:13,802 : waiting requests.
+2016-07-22 17:43:13,802 : waiting requests.
+2016-07-22 17:55:20,409 : Non spoofing imap.gmail.com
+2016-07-22 17:55:20,409 : Non spoofing to 127.0.0.1
+2016-07-22 17:55:20,409 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:55:20,409 : DNS Forwarding activado....
+2016-07-22 17:55:20,409 : binded to UDP port 53.
+2016-07-22 17:55:20,410 : waiting requests.
+2016-07-22 17:58:43,628 : Non spoofing imap.gmail.com
+2016-07-22 17:58:43,628 : Non spoofing to 127.0.0.1
+2016-07-22 17:58:43,628 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 17:58:43,628 : DNS Forwarding activado....
+2016-07-22 17:58:43,628 : binded to UDP port 53.
+2016-07-22 17:58:43,628 : waiting requests.
+2016-07-22 18:00:55,503 : Non spoofing imap.gmail.com
+2016-07-22 18:00:55,503 : Non spoofing imap.gmail.com
+2016-07-22 18:00:55,504 : Non spoofing to 127.0.0.1
+2016-07-22 18:00:55,504 : Non spoofing to 127.0.0.1
+2016-07-22 18:00:55,504 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:00:55,504 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:00:55,504 : DNS Forwarding activado....
+2016-07-22 18:00:55,504 : DNS Forwarding activado....
+2016-07-22 18:00:55,504 : binded to UDP port 53.
+2016-07-22 18:00:55,504 : binded to UDP port 53.
+2016-07-22 18:00:55,504 : waiting requests.
+2016-07-22 18:00:55,504 : waiting requests.
+2016-07-22 18:06:53,109 : Non spoofing imap.gmail.com
+2016-07-22 18:06:53,109 : Non spoofing to 127.0.0.1
+2016-07-22 18:06:53,109 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:06:53,109 : DNS Forwarding activado....
+2016-07-22 18:06:53,110 : binded to UDP port 53.
+2016-07-22 18:06:53,110 : waiting requests.
+2016-07-22 18:08:49,040 : Non spoofing imap.gmail.com
+2016-07-22 18:08:49,040 : Non spoofing imap.gmail.com
+2016-07-22 18:08:49,041 : Non spoofing to 127.0.0.1
+2016-07-22 18:08:49,041 : Non spoofing to 127.0.0.1
+2016-07-22 18:08:49,041 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:08:49,041 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:08:49,041 : DNS Forwarding activado....
+2016-07-22 18:08:49,041 : DNS Forwarding activado....
+2016-07-22 18:08:49,041 : binded to UDP port 53.
+2016-07-22 18:08:49,041 : binded to UDP port 53.
+2016-07-22 18:08:49,041 : waiting requests.
+2016-07-22 18:08:49,041 : waiting requests.
+2016-07-22 18:13:14,805 : Non spoofing imap.gmail.com
+2016-07-22 18:13:14,805 : Non spoofing to 127.0.0.1
+2016-07-22 18:13:14,806 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-22 18:13:14,806 : DNS Forwarding activado....
+2016-07-22 18:13:14,806 : binded to UDP port 53.
+2016-07-22 18:13:14,806 : waiting requests.
+2016-07-24 19:05:41,285 : Non spoofing imap.gmail.com
+2016-07-24 19:05:41,317 : Non spoofing to 127.0.0.1
+2016-07-24 19:05:41,318 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:05:41,318 : DNS Forwarding activado....
+2016-07-24 19:05:41,318 : binded to UDP port 53.
+2016-07-24 19:05:41,318 : waiting requests.
+2016-07-24 19:25:01,404 : Non spoofing imap.gmail.com
+2016-07-24 19:25:01,404 : Non spoofing imap.gmail.com
+2016-07-24 19:25:01,405 : Non spoofing to 127.0.0.1
+2016-07-24 19:25:01,405 : Non spoofing to 127.0.0.1
+2016-07-24 19:25:01,405 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:25:01,405 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:25:01,405 : DNS Forwarding activado....
+2016-07-24 19:25:01,405 : DNS Forwarding activado....
+2016-07-24 19:25:01,405 : binded to UDP port 53.
+2016-07-24 19:25:01,405 : binded to UDP port 53.
+2016-07-24 19:25:01,405 : waiting requests.
+2016-07-24 19:25:01,405 : waiting requests.
+2016-07-24 19:35:51,583 : Non spoofing imap.gmail.com
+2016-07-24 19:35:51,584 : Non spoofing to 127.0.0.1
+2016-07-24 19:35:51,584 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:35:51,584 : DNS Forwarding activado....
+2016-07-24 19:35:51,584 : binded to UDP port 53.
+2016-07-24 19:35:51,584 : waiting requests.
+2016-07-24 19:40:22,643 : Non spoofing imap.gmail.com
+2016-07-24 19:40:22,643 : Non spoofing imap.gmail.com
+2016-07-24 19:40:22,644 : Non spoofing to 127.0.0.1
+2016-07-24 19:40:22,644 : Non spoofing to 127.0.0.1
+2016-07-24 19:40:22,644 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:40:22,644 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:40:22,644 : DNS Forwarding activado....
+2016-07-24 19:40:22,644 : DNS Forwarding activado....
+2016-07-24 19:40:22,644 : binded to UDP port 53.
+2016-07-24 19:40:22,644 : binded to UDP port 53.
+2016-07-24 19:40:22,644 : waiting requests.
+2016-07-24 19:40:22,644 : waiting requests.
+2016-07-24 19:53:57,964 : Non spoofing imap.gmail.com
+2016-07-24 19:53:57,964 : Non spoofing imap.gmail.com
+2016-07-24 19:53:57,964 : Non spoofing imap.gmail.com
+2016-07-24 19:53:57,965 : Non spoofing to 127.0.0.1
+2016-07-24 19:53:57,965 : Non spoofing to 127.0.0.1
+2016-07-24 19:53:57,965 : Non spoofing to 127.0.0.1
+2016-07-24 19:53:57,965 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:53:57,965 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:53:57,965 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 19:53:57,965 : DNS Forwarding activado....
+2016-07-24 19:53:57,965 : DNS Forwarding activado....
+2016-07-24 19:53:57,965 : DNS Forwarding activado....
+2016-07-24 19:53:57,965 : binded to UDP port 53.
+2016-07-24 19:53:57,965 : binded to UDP port 53.
+2016-07-24 19:53:57,965 : binded to UDP port 53.
+2016-07-24 19:53:57,965 : waiting requests.
+2016-07-24 19:53:57,965 : waiting requests.
+2016-07-24 19:53:57,965 : waiting requests.
+2016-07-24 20:00:27,924 : Non spoofing imap.gmail.com
+2016-07-24 20:00:27,925 : Non spoofing to 127.0.0.1
+2016-07-24 20:00:27,925 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:00:27,925 : DNS Forwarding activado....
+2016-07-24 20:00:27,925 : binded to UDP port 53.
+2016-07-24 20:00:27,925 : waiting requests.
+2016-07-24 20:01:11,295 : Non spoofing imap.gmail.com
+2016-07-24 20:01:11,295 : Non spoofing imap.gmail.com
+2016-07-24 20:01:11,296 : Non spoofing to 127.0.0.1
+2016-07-24 20:01:11,296 : Non spoofing to 127.0.0.1
+2016-07-24 20:01:11,296 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:01:11,296 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:01:11,296 : DNS Forwarding activado....
+2016-07-24 20:01:11,296 : DNS Forwarding activado....
+2016-07-24 20:01:11,296 : binded to UDP port 53.
+2016-07-24 20:01:11,296 : binded to UDP port 53.
+2016-07-24 20:01:11,296 : waiting requests.
+2016-07-24 20:01:11,296 : waiting requests.
+2016-07-24 20:23:52,532 : Non spoofing imap.gmail.com
+2016-07-24 20:23:52,532 : Non spoofing to 127.0.0.1
+2016-07-24 20:23:52,532 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:23:52,532 : DNS Forwarding activado....
+2016-07-24 20:23:52,532 : binded to UDP port 53.
+2016-07-24 20:23:52,532 : waiting requests.
+2016-07-24 20:24:58,239 : Non spoofing imap.gmail.com
+2016-07-24 20:24:58,239 : Non spoofing imap.gmail.com
+2016-07-24 20:24:58,239 : Non spoofing to 127.0.0.1
+2016-07-24 20:24:58,239 : Non spoofing to 127.0.0.1
+2016-07-24 20:24:58,239 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:24:58,239 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:24:58,239 : DNS Forwarding activado....
+2016-07-24 20:24:58,239 : DNS Forwarding activado....
+2016-07-24 20:24:58,239 : binded to UDP port 53.
+2016-07-24 20:24:58,239 : binded to UDP port 53.
+2016-07-24 20:24:58,239 : waiting requests.
+2016-07-24 20:24:58,239 : waiting requests.
+2016-07-24 20:37:24,495 : Non spoofing imap.gmail.com
+2016-07-24 20:37:24,496 : Non spoofing to 127.0.0.1
+2016-07-24 20:37:24,496 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:37:24,496 : DNS Forwarding activado....
+2016-07-24 20:37:24,496 : binded to UDP port 53.
+2016-07-24 20:37:24,496 : waiting requests.
+2016-07-24 20:38:46,630 : Non spoofing imap.gmail.com
+2016-07-24 20:38:46,630 : Non spoofing imap.gmail.com
+2016-07-24 20:38:46,630 : Non spoofing to 127.0.0.1
+2016-07-24 20:38:46,630 : Non spoofing to 127.0.0.1
+2016-07-24 20:38:46,630 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:38:46,630 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:38:46,631 : DNS Forwarding activado....
+2016-07-24 20:38:46,631 : DNS Forwarding activado....
+2016-07-24 20:38:46,631 : binded to UDP port 53.
+2016-07-24 20:38:46,631 : binded to UDP port 53.
+2016-07-24 20:38:46,631 : waiting requests.
+2016-07-24 20:38:46,631 : waiting requests.
+2016-07-24 20:52:55,204 : Non spoofing imap.gmail.com
+2016-07-24 20:52:55,205 : Non spoofing to 127.0.0.1
+2016-07-24 20:52:55,205 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 20:52:55,205 : DNS Forwarding activado....
+2016-07-24 20:52:55,205 : binded to UDP port 53.
+2016-07-24 20:52:55,205 : waiting requests.
+2016-07-24 21:07:28,681 : Non spoofing imap.gmail.com
+2016-07-24 21:07:28,681 : Non spoofing to 127.0.0.1
+2016-07-24 21:07:28,681 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 21:07:28,681 : DNS Forwarding activado....
+2016-07-24 21:07:28,681 : binded to UDP port 53.
+2016-07-24 21:07:28,681 : waiting requests.
+2016-07-24 21:14:07,443 : Non spoofing imap.gmail.com
+2016-07-24 21:14:07,443 : Non spoofing to 127.0.0.1
+2016-07-24 21:14:07,443 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 21:14:07,443 : DNS Forwarding activado....
+2016-07-24 21:14:07,443 : binded to UDP port 53.
+2016-07-24 21:14:07,444 : waiting requests.
+2016-07-24 21:17:59,291 : Non spoofing imap.gmail.com
+2016-07-24 21:17:59,292 : Non spoofing to 127.0.0.1
+2016-07-24 21:17:59,292 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 21:17:59,292 : DNS Forwarding activado....
+2016-07-24 21:17:59,292 : binded to UDP port 53.
+2016-07-24 21:17:59,292 : waiting requests.
+2016-07-24 21:25:23,495 : Non spoofing imap.gmail.com
+2016-07-24 21:25:23,496 : Non spoofing to 127.0.0.1
+2016-07-24 21:25:23,496 : Specific domain IP .domain.com with 192.168.1.1
+2016-07-24 21:25:23,496 : DNS Forwarding activado....
+2016-07-24 21:25:23,496 : binded to UDP port 53.
+2016-07-24 21:25:23,496 : waiting requests.

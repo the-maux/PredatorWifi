@@ -4,27 +4,6 @@ import subprocess
 import random
 
 
-"""
-Description:
-    This program is a module for wifi-pumpkin.py file which includes functionality
-    for change mac system.
-
-Copyright:
-    Copyright (C) 2015 Marcos Nesster P0cl4bs Team
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>
-"""
-
 class frm_mac_generator(PumpkinModule):
     def __init__(self, parent=None):
         super(frm_mac_generator, self).__init__(parent)

@@ -1,3 +1,5 @@
+Probe:15:54#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
+Probe:15:54#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
 Probe:16:59#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
 Probe:16:59#true*Nintendo Co., Ltd.;SFR-4328/e8:b1:fc:a6:cf:11
 Probe:17:01#true*EnerAccess inc;SFR-4328/60:67:20:0d:cb:8c
@@ -100,7 +102,7 @@ HTTP: [10.0.0.20] GET www6.smartadserver.com/call2
 HTTP: [10.0.0.1:1234 > 10.0.0.20:35686] HTTP password: pwd=monpassword
 HTTP: [10.0.0.20] POST load: log=Monpseudo
 HTTP: [10.0.0.20] POST stat3.airdroid.com/phone/dataflow?ver=20153
-HTTP: [10.0.0.20] POST load: 
+HTTP: [10.0.0.20] POST load:
 HTTP: [10.0.0.20] POST stat3.airdroid.com/phone/dataflow?ver=20153
 HTTP: [10.0.0.20] POST load: 105DC23ABDACE1F542667B9C75ABC3E07FF2255F26419976FF613CA5E799847E5B8EDFBFB0A56457666FCEADDC37495F888173F66E52A8AD8407578BB1B9C221B5C72AB982105659AB7DF103018FD4EC45C343962FB67A47A6C862DB18ABF008974C1487B071C732B38374F322B0377D55617DC66335C9AAC11EF4E0D841D34BF60C9F88F2B89F61BC22DEBBCC3D049A14A4DBC03B53907D4077368F83560F08265EBF2C8CF204A0CE1B9ED2AB636F4E622640544FEA9953DBD86F3202116C9F360A3FCA6DA5F1FB71929B05C33CD7AB38553D857FDD783B03F5CB1B82673077B38374F322B0377D55617DC66335C9AAC11EF4E0D841D34BF60C9F88F2B89F61BC22DEBBCC3D049A14A4DBC03B53907D4077368F83560F08265EBF2C8CF204A0CE1B9ED2AB636F4E622640544FEA99530CD6461D0459943E360A3FCA6DA5F1FB9BF0DE463AD0D75538553D857FDD783B03F5CB1B82673077B38374F322B0377D55617DC66335C9AAC8D58936CF1DD8B0F60C9F88F2B89F61997082692AC9151D28F6A8F1F3C67044D669CF27055B5FFE425E4D520F8CF9F02B3AB2FE94893515FAE29E6C83A7E30A27903C1A34B06DA7F715C11C6D2EDD339C61511B689CF13138DDE26A3B8AFC83CEA961A82371F5BFA1D3B424E1203255B7A761BFCDF5A9E4777BD609162FD122E366ADDAE5128229A2620470DCFCB4AFE21EF9597427BD7C730734CC7665CC932DFDD9B9427FF9A799D190B14AF6BAE67F3440280C29CEF101F024B574D6C3EDC2A4DF78939AB74117A9F6CCF4BE5EA5EE6453C4F3A9B974B0BF7D340BD5415EDAFBA60AF40520A6CFF28AB91C837CD263D605606D45C12BCE1B9ED2AB636F4EE1362BFE00B0E1791E57C70D60C41A04360A3FCA6DA5F1FBCF7F04C486103A2CD1C09421AFD96CFB94B1AF87108B8F9010BBA0B0E90D9DDDC682
 HTTP: [10.0.0.20] POST stat3.airdroid.com/phone/dataflow?ver=20153
@@ -245,14 +247,14 @@ HTTP: [10.0.0.21] GET wamfactory.solution.weborama.fr/stream/?wamid=2446&Wvar=%7
 HTTP: [10.0.0.21] GET lmfranalytics.solution.weborama.fr/fcgi-bin/comptage_wreport.fcgi?WRP_ID=485197&WRP_SECTION=a-la-une&WRP_SUBSECTION=a-la-une&WRP_ID_GRP=485196&WRP_SECTION_GRP=Lemonde&WRP_SUBSECTION_GRP=Lemonde&ver=2&ta=1440x900&co=24&da2=1467822038801
 HTTP: [10.0.0.21] GET mobile.lemonde.fr/les-decodeurs/article/2016/05/10/qu-est-ce-que-l-article-49-3_4916730_4355770.html
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
-HTTP: [10.0.0.21] POST load: 
+HTTP: [10.0.0.21] POST load:
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
 HTTP: [10.0.0.21] POST load: {"id":"dae45450f37b","value":0,"type":"AdBlock","os":"iOS","os_version":"8.4.1","url":"http://mobile.lemonde.fr/?xtref=acc_dir","browser":"Safari","browser_version":"8.0","product":"iPhone","referrer":"www.lemonde.fr","screen":"375x667"}
 HTTP: [10.0.0.21] GET ping.chartbeat.net/ping?h=lemonde.fr&p=%2F&u=BBVwN6CfWObtC-fxbb&d=mobile.lemonde.fr&g=12231&n=1&f=00001&c=0&x=0&m=0&y=5485&o=375&w=475&j=45&R=1&W=0&I=0&E=0&e=0&r=http%3A%2F%2Fwww.lemonde.fr%2F&b=5749&t=DbR7GYCeYU2esIJO4DYWI8XB7uhEy&V=79&i=Le%20Monde.fr%20-%20Actualit%C3%A9%20%C3%A0%20la%20Une%20pour%20mobiles&tz=-120&sn=1&EE=0&_
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
-HTTP: [10.0.0.21] POST load: 
+HTTP: [10.0.0.21] POST load:
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
-HTTP: [10.0.0.21] POST load: 
+HTTP: [10.0.0.21] POST load:
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
 HTTP: [10.0.0.21] POST load: {"id":"dae45450f37b","value":0,"type":"Xiti","os":"iOS","os_version":"8.4.1","url":"http://mobile.lemonde.fr/?xtref=acc_dir","browser":"Safari","browser_version":"8.0","product":"iPhone","referrer":"www.lemonde.fr","screen":"375x667"}
 HTTP: [10.0.0.21] POST 112038398dc590fd910f04439eba2dc2.ovh/aisle
@@ -276,3 +278,288 @@ HTTP: [10.0.0.21] GET rpt.cedexis.com/f1/_CgJqMRASGBgiBQgBEJ1OKPeo1dIGMNrf9LsFON
 HTTP: [10.0.0.21] GET ping.chartbeat.net/ping?h=lemonde.fr&p=%2F&u=BBVwN6CfWObtC-fxbb&d=mobile.lemonde.fr&g=12231&n=1&f=00001&c=0.25&x=0&m=0&y=5485&o=375&w=475&j=30&R=1&W=0&I=0&E=5&e=5&r=http%3A%2F%2Fwww.lemonde.fr%2F&b=5749&t=DbR7GYCeYU2esIJO4DYWI8XB7uhEy&V=79&tz=-120&sn=2&EE=5&_
 HTTP: [10.0.0.21] GET ping.chartbeat.net/ping?h=lemonde.fr&p=%2F&u=BBVwN6CfWObtC-fxbb&d=mobile.lemonde.fr&g=12231&n=1&f=00001&c=0.5&x=0&m=0&y=5485&o=375&w=475&j=45&R=0&W=0&I=1&E=5&e=0&r=http%3A%2F%2Fwww.lemonde.fr%2F&b=5749&t=DbR7GYCeYU2esIJO4DYWI8XB7uhEy&V=79&tz=-120&sn=3&EE=5&_
 HTTP: [10.0.0.21] GET ping.chartbeat.net/ping?h=lemonde.fr&p=%2F&u=BBVwN6CfWObtC-fxbb&d=mobile.lemonde.fr&g=12231&n=1&f=00001&c=1&x=0&m=0&y=5485&o=375&w=475&j=60&R=0&W=0&I=1&E=5&e=0&r=http%3A%2F%2Fwww.lemonde.fr%2F&b=5749&t=DbR7GYCeYU2esIJO4DYWI8XB7uhEy&V=79&tz=-120&sn=4&EE=5&_
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.1:1234 > 10.0.0.20:51466] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:51466] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+Probe:16:38#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:34540] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:34540] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:19#true*Nintendo Co., Ltd.;SFR-4328/e8:b1:fc:a6:cf:11
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:40887] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:41770] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:41770] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET api-cdn.lemonde.fr/ws/6/mobile/www/android-phone/element/4973568/index.json
+HTTP: [10.0.0.20] GET api-cdn.lemonde.fr/ws/6/mobile/www/android-phone/element/4973568/index.json
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:32#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:35#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
+Probe:17:36#true*Nintendo Co., Ltd.;SFR-4328/e8:b1:fc:a6:cf:11
+Probe:17:37#true*DETRACOM;SFR-4328/f8:16:54:13:22:98
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:39#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:39#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:39#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:56#true*Nintendo Co., Ltd.;SFR-4328/e8:b1:fc:a6:cf:11
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+Probe:17:57#true*Korins Inc.;PumpAP/10:68:3f:7a:65:ef
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+Probe:17:59#true*Nintendo Co., Ltd.;SFR-4328/e8:b1:fc:a6:cf:11
+HTTP: [10.0.0.1:1234 > 10.0.0.20:44867] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:44867] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:47889] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:47889] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/6d179b7b7d9c695da09bd718a7ae031e.css?m[]=normalize%40screen&m[]=fonts%40screen&m[]=grille%40screen&m[]=base%40screen&m[]=header%40screen&m[]=footer%40screen&m[]=rubrique%40screen&m[]=article%40screen&m[]=friends%2Fpaves%40screen&m[]=col_droite%40screen&m[]=ticker%40screen&m[]=couleurs%40screen&m[]=marketing%2Fmeter%40screen&m[]=evenementiel%2Fcoupe-du-monde%40screen&m[]=friends%2Fnewsweb%2Flivescore%40screen&m[]=friends%2Fnewsweb%2Flivescore_tennis%40screen&m[]=une%40screen&m[]=friends%2Fnewsweb%2Fbase%40screen&m[]=friends%2Fnewsweb%2Fdatabox%40screen
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET www.lemonde.fr/
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/?xtref=acc_dir
+HTTP: [10.0.0.20] GET s1.lemde.fr/bootstrap/www/f23cefe6c8fd2a8cc3ff1cc67ee9d467.css?m[]=mobile%2Fmain%40screen&m[]=marketing%2Fmeter%40screen&m[]=mobile%2Fmultimedia-embed%40screen
+HTTP: [10.0.0.20] GET s1.lemde.fr/medias/web/1.2.694/js/lmd/module/meter/toggle-off.js?14692040
+HTTP: [10.0.0.20] GET www.googletagmanager.com/gtm.js?id=GTM-MS62MT
+HTTP: [10.0.0.20] GET www6.smartadserver.com/call2/pubmj/57556/431786/15187/M/9783979111/?
+HTTP: [10.0.0.20] GET www6.smartadserver.com/call2/pubmj/57556/431786/15187/M/9783979111/?
+HTTP: [10.0.0.20] GET www6.smartadserver.com/call2/pubmj/57556/431786/15188/S/9783979111/?
+HTTP: [10.0.0.20] GET amplifypixel.outbrain.com/pixel?mid=00362c93dde6be0206d528f719e48a61bc
+HTTP: [10.0.0.20] GET www6.smartadserver.com/diff/690/5115457/show15.asp?5115457;431786;4389606729022530327;9783979111;S;23;systemtarget=%24qc%3d1307971523%3b%24ql%3dmedium%3b%24qpc%3d93240%3b%24qpp%3d0%3b%24qt%3d184_1614_2343t%3b%24dma%3d0%3b%24b%3d16510%3b%24o%3d23051%3b%24sw%3d799%3b%24sh%3d600%3b%24mdwi%3d768t%3b%24mdhi%3d1200t;target=%3b%24mv%3dgooglet%3b%24mm%3d3941010t%3b%24mdw%3d768%3b%24mdh%3d1280%3b%24mdt%3d2t%3b%24mct%3d0t%3b%24t%3djs%3b%24mctQuova%3d1t%3b%24dt%3d2t%3b%24hc
+HTTP: [10.0.0.20] GET www6.smartadserver.com/diff/690/5115457/show15.asp?5115457;431786;4389606729022530327;9783979111;S;23;systemtarget=%24qc%3d1307971523%3b%24ql%3dmedium%3b%24qpc%3d93240%3b%24qpp%3d0%3b%24qt%3d184_1614_2343t%3b%24dma%3d0%3b%24b%3d16510%3b%24o%3d23051%3b%24sw%3d799%3b%24sh%3d600%3b%24mdwi%3d768t%3b%24mdhi%3d1200t;target=%3b%24mv%3dgooglet%3b%24mm%3d3941010t%3b%24mdw%3d768%3b%24mdh%3d1280%3b%24mdt%3d2t%3b%24mct%3d0t%3b%24t%3djs%3b%24mctQuova%3d1t%3b%24dt%3d2t%3b%24hc
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/ws/1/ticker/live/
+HTTP: [10.0.0.20] GET ib.adnxs.com/ttj?id=2295059&size=320x480&promo_sizes=&st=mobile_web&promo_alignment=center&referrer=lemonde.fr&psa=0&cb=6365830701&pt1=http%3A%2F%2Fww690.smartadserver.com%2F%2Fcall2%2Fpubj%2F50270%2F431786%2F15188%2FS%2F9783979111%2Forigine%253Dasq%3F
+HTTP: [10.0.0.20] GET d.ligatus.com/yield/srt?dt=1923
+HTTP: [10.0.0.20] GET logc2.xiti.com/hit.xiti?s=489989&s2=5&p=home::a_la_une&ac=&an=&x1=&x2=home&x4=2&lng=fr&idp=1814197179091&jv=0&re=384x511&vtag=4.6.4-32006&hl=18x14x19&r=768x1280x32x32&rn=1469204059286&stc={}&ref=
+HTTP: [10.0.0.20] GET static.criteo.net/js/px.js?ch=1
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/les-decodeurs/article/2016/07/22/securite-a-nice-quelles-questions-restent-en-suspens-apres-l-attentat-du-14-juillet_4973425_4355770.html
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/les-decodeurs/article/2016/07/22/securite-a-nice-quelles-questions-restent-en-suspens-apres-l-attentat-du-14-juillet_4973425_4355770.html
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/politique/article/2016/07/22/apres-nice-cazeneuve-dans-la-tourmente_4973329_823448.html
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/societe/article/2016/07/22/les-84-sont-morts-ensemble-ceux-qui-restent-doivent-continuer-a-vivre-ensemble_4973053_3224.html
+HTTP: [10.0.0.20] GET cstatic.weborama.fr/iframe/customers/premium.html?idEditeur=1173&idSite=257
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/societe/article/2016/07/22/la-justice-ordonne-a-la-ville-de-nice-de-supprimer-les-images-de-l-attentat-la-mairie-refuse_4973376_3224.html
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/idees/article/2016/07/22/donald-trump-dans-sa-radicalite_4973281_3232.html
+HTTP: [10.0.0.20] GET cstatic.weborama.fr/iframe/external_ids_sync.html?d.r=1469204067222
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/politique/article/2016/07/22/attentat-ce-qu-a-dit-francois-hollande-a-l-issue-du-conseil-restreint-de-securite_4973417_823448.html
+HTTP: [10.0.0.20] GET wamfactory.solution.weborama.fr/stream/?wamid=2446&Wvar=%7B%22cat1%22%3A%22a-la-une%22%2C%22contenu%22%3A%22Rubrique_Une%22%2C%22device%22%3A%22mobile%22%2C%22id_crm%22%3A%220%22%2C%22motclef%22%3A%22%22%2C%22site%22%3A%22Lemonde%22%2C%22user_age%22%3A%22%22%2C%22user_gender%22%3A%22%22%2C%22user_id%22%3A%220%22%2C%22user_postalcode%22%3A%22%22%2C%22user_statut%22%3A%22anonyme%22%2C%22wamid%22%3A%222446%22%2C%22typ%22%3A%221%22%2C%22ref%22%3A%22http%253A%252F%252Fwww.lemonde.fr%252F%22%2C%22url%22%3A%22http%253A%252F%252Fmobile.lemonde.fr%252F%253Fxtref%253Dacc_dir%22%7D&d.r=1469204067132
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=prd&d.format=jsonp&d.key=jXnbLuCa2E2W&d.callback=SmartSync.callback
+HTTP: [10.0.0.20] GET lmfranalytics.solution.weborama.fr/fcgi-bin/comptage_wreport.fcgi?WRP_ID=485197&WRP_SECTION=a-la-une&WRP_SUBSECTION=a-la-une&WRP_ID_GRP=485196&WRP_SECTION_GRP=Lemonde&WRP_SUBSECTION_GRP=Lemonde&ver=2&ta=1440x900&co=24&da2=1469204067210
+HTTP: [10.0.0.20] GET ping.chartbeat.net/ping?h=lemonde.fr&p=%2F&u=B9OndNBf7FQNBTb2rz&d=mobile.lemonde.fr&g=12231&n=0&f=f0001&c=0&x=0&m=0&y=5198&o=384&w=511&j=45&R=1&W=0&I=0&E=0&e=0&r=http%3A%2F%2Fwww.lemonde.fr%2F&b=14158&t=3YYfP5hGGvDQPYa3-mwkln4gas&V=80&i=Le%20Monde.fr%20-%20Actualit%C3%A9%20%C3%A0%20la%20Une%20pour%20mobiles&tz=-120&sn=1&EE=0&_
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/police-justice/article/2016/07/22/comptes-de-campagne-le-parquet-demande-un-proces-pour-le-fn-et-deux-dirigeants_4973563_1653578.html
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/tour-de-france/article/2016/07/22/tour-de-france-romain-bardet-signe-la-premiere-victoire-francaise-et-monte-sur-le-podium_4973567_1616918.html
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=google_id&d.u=http%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dweborama_dmp%26google_cm
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=appnexus_id&d.u=http%3A%2F%2Fib.adnxs.com%2Fgetuidnb%3Fhttp%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdispatch.fcgi%3Fd.A%3Dtp%26d.k%3Dappnexus_id%26d.v%3D%24UID
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=videology_id&d.u=http%3A//sync.tidaltv.com/genericusersync.ashx%3Fdpid%3D29
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=radiumone_id&d.u=http%3A%2F%2Frp.gwallet.com%2Fr1%2Fcm%2Fp79r1469204067842
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=criteov2_id&d.u=http%3A%2F%2Fgum.criteo.com%2Fsync%3Fc%3D13%26a%3D1%26r%3D1%26u%3Dhttp%253A%252F%252Faimfar.solution.weborama.fr%252Ffcgi-bin%252Fdispatch.fcgi%253Fd.A%253Dtp%2526d.k%253Dcriteov2_id%2526d.v%253D%2540USERID%2540
+HTTP: [10.0.0.20] GET mobile.lemonde.fr/pixels/article/2016/07/22/a-paris-dans-les-pas-des-dresseurs-de-pokemon-go_4973529_4408996.html
+HTTP: [10.0.0.20] GET ww690.smartadserver.com/track/compginc.asp?keyword=10383=1
+HTTP: [10.0.0.20:49814 > 185.86.138.32:80] Searched ww690.smartadserver.com: 10383=1
+HTTP: [10.0.0.20] GET ww690.smartadserver.com/track/compginc.asp?keyword=10383=1
+HTTP: [10.0.0.20:49814 > 185.86.138.32:80] Searched ww690.smartadserver.com: 10383=1
+HTTP: [10.0.0.20] GET geosync.solution.weborama.fr/sync/
+HTTP: [10.0.0.20] GET wam-yahoo.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=yahoo_id&d.u=https%3A//cms.analytics.yahoo.com/cms%3Fpartner_id%3DWEBMA
+HTTP: [10.0.0.20] GET ib.adnxs.com/getuidnb?http://aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=tp&d.k=appnexus_id&d.v=$UID
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=mediamath_id&d.u=http%3A%2F%2Fpixel.mathtag.com%2Fsync%2Fimg%3Fmt_exid%3D10014%26redir%3Dhttp%253A%252F%252Faimfar.solution.weborama.fr%252Ffcgi-bin%252Fdispatch.fcgi%253Fd.A%253Dtp%2526d.k%253Dmediamath_id%2526d.v%253D%255BMM_UUID%255D
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=rd&d.k=rubicon&d.u=http%3a%2f%2ftap.rubiconproject.com%2foz%2ffeeds%2fweborama%2ftokens%3fpk%3dJQXH-IBB29RJW%26afu%3d%7bWEBO_CID%7d
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=cr&d.k=smartadserver_id&d.u=http%3a%2f%2fsync.smartadserver.com%2fgetuid%3furl%3dhttp%253a%252f%252faimfar.solution.weborama.fr%252ffcgi-bin%252fdispatch.fcgi%253fd.A%253dtp%2526d.k%253dsmartadserver_id%2526d.v%253d%255bsas_uid%255d
+HTTP: [10.0.0.20] GET sync.tidaltv.com/genericusersync.ashx?dpid=29
+HTTP: [10.0.0.20] GET rp.gwallet.com/r1/cm/p79r1469204067842
+HTTP: [10.0.0.20] GET cm.g.doubleclick.net/pixel?google_nid=weborama_dmp&google_cm
+HTTP: [10.0.0.20] GET gum.criteo.com/sync?c=13&a=1&r=1&u=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdispatch.fcgi%3Fd.A%3Dtp%26d.k%3Dcriteov2_id%26d.v%3D%40USERID%40
+HTTP: [10.0.0.20] GET gum.criteo.com/sync?c=13&a=1&r=1&u=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdispatch.fcgi%3Fd.A%3Dtp%26d.k%3Dcriteov2_id%26d.v%3D%40USERID%40
+HTTP: [10.0.0.20] GET cms.analytics.yahoo.com/cms?partner_id=WEBMA
+HTTP: [10.0.0.20] GET cms.analytics.yahoo.com/cms?partner_id=WEBMA
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=rd&d.k=acxiom&d.u=http%3a%2f%2fidsync.rlcdn.com%2f401736.gif%3fpartner_uid%3d%7bWEBO_CID%7d
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=tp&d.k=appnexus_id&d.v=9050492961764286292
+HTTP: [10.0.0.20] GET pixel.mathtag.com/sync/img?mt_exid=10014&redir=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdispatch.fcgi%3Fd.A%3Dtp%26d.k%3Dmediamath_id%26d.v%3D%5BMM_UUID%5D
+HTTP: [10.0.0.20] GET tap.rubiconproject.com/oz/feeds/weborama/tokens?pk=JQXH-IBB29RJW&afu=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET tap.rubiconproject.com/oz/feeds/weborama/tokens?pk=JQXH-IBB29RJW&afu=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET tap.rubiconproject.com/oz/feeds/weborama/tokens?pk=JQXH-IBB29RJW&afu=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET sync.smartadserver.com/getuid?url=http%3a%2f%2faimfar.solution.weborama.fr%2ffcgi-bin%2fdispatch.fcgi%3fd.A%3dtp%26d.k%3dsmartadserver_id%26d.v%3d%5bsas_uid%5d
+HTTP: [10.0.0.20] GET sync.smartadserver.com/getuid?url=http%3a%2f%2faimfar.solution.weborama.fr%2ffcgi-bin%2fdispatch.fcgi%3fd.A%3dtp%26d.k%3dsmartadserver_id%26d.v%3d%5bsas_uid%5d
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/401736.gif?partner_uid=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/401736.gif?partner_uid=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/401736.gif?partner_uid=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/401736.gif?partner_uid=PNxjwF37A5HeGFZjuQfJ2e
+HTTP: [10.0.0.20] GET aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=tp&d.k=smartadserver_id&d.v=4389606729022530327
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/fr/
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/coffee/errorhandler,degradation,debuglog,formatprice,earlyload,mycontroller,popupcontroller,favorite.controller,confirmation.popup,block-fixer,ismobile/get-71377817.coffee
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/coffee/errorhandler,degradation,debuglog,formatprice,earlyload,mycontroller,popupcontroller,favorite.controller,confirmation.popup,block-fixer,ismobile/get-71377817.coffee
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/coffee/googlemaps.controller,addressbox.controller/get-71377817.coffee
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/coffee/betterselect,login.popup,basket.controller,spinner.controller,header.controller,mobileheader.controller,synctime,main/get-71377817.coffee
+HTTP: [10.0.0.20] GET www.takeeateasy.fr/coffee/activable/get-71377817.coffee
+HTTP: [10.0.0.20] GET ib.adnxs.com/seg?add=2129894,204915,204919&t=2
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET maps.googleapis.com/maps/api/js?key=AIzaSyCtC6uT4y9JSrM3DxM5acCTC6Ws_tYykHo&sensor=false&v=3&libraries=places&callback=window.maps.onload&language=fr
+HTTP: [10.0.0.20] GET www.googletagmanager.com/gtm.js?id=GTM-W4HBHS
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET fonts.googleapis.com/css?family=Open+Sans
+HTTP: [10.0.0.20] GET fonts.googleapis.com/css?family=Open+Sans
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2
+HTTP: [10.0.0.20] GET fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2
+HTTP: [10.0.0.20] GET v2.zopim.com/?37ZGpliIxqNpKTzqDzim3ZTke6qO5C5n
+HTTP: [10.0.0.20] GET hey.hellobar.com/v/N1wAyiBF-_uS/0Epc7S6wUmS-2OYxSWGgRHAPvUxz7OjSS?a=lf%3A54%7Cnv%3A9%7Cns%3A4%7Crf%3A%7Crd%3A%7Cpp%3A%7Cpu%3Atakeeateasy.fr%2Ffr%7Cpup%3A%2Ffr%7Cdv%3Amobile%7Cls%3A22&t=1469204731&v=1c703998-fae2-43a5-a269-34108c01c114&f=i&s=d4d3362d02961f5c7504b76e0e6b9d422cb77e8c8dced5cb0ef9829120cf1427b099dbb3ea5a88e9a2f8445778db9dcd102b2724f6d4fd0cde769db9a9a08dda
+HTTP: [10.0.0.20] GET images.takeeateasy.be/site/videos/Henri_Agnes_5b.mp4
+HTTP: [10.0.0.20] GET csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=24.12&action=apiboot2&libraries=places&rt=main.94
+HTTP: [10.0.0.20] GET maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fwww.takeeateasy.fr%2Ffr%2F&4sAIzaSyCtC6uT4y9JSrM3DxM5acCTC6Ws_tYykHo&callback=_xdc_._b3a083&token=100757
+HTTP: [10.0.0.20] GET maps.googleapis.com/maps/api/place/js/AutocompletionService.GetPredictions?1s5%20Rue%20de%20Puebla%2C%2059800%20Lille&4sfr&7scountry%3Afr&9sgeocode&15e3&key=AIzaSyCtC6uT4y9JSrM3DxM5acCTC6Ws_tYykHo&callback=_xdc_._konk7h&token=48717
+HTTP: [10.0.0.20] GET d.adroll.com/pixel/K35DLK2LIRG5POMQOEWJLA/BMV27BERGVGIJPN6TRMSUV?pv=29426316757.136715&cookie=&adroll_s_ref=&keyw=&adroll_external_data=
+HTTP: [10.0.0.20] GET d.adroll.com/pixel/K35DLK2LIRG5POMQOEWJLA/BMV27BERGVGIJPN6TRMSUV?pv=29426316757.136715&cookie=&adroll_s_ref=&keyw=&adroll_external_data=
+HTTP: [10.0.0.20] GET d.adroll.com/cm/n/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/r/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/f/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/b/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/w/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/x/out
+HTTP: [10.0.0.20] GET ads.yahoo.com/pixel?id=2498203&t=2&piggyback=http%3A%2F%2Fads.yahoo.com%2Fcms%2Fv1%3Fesig%3D1~bf4e7dc4546a90c08591652d78a230d3f2ef5733%26nwid%3D10001032567%26sigv%3D1
+HTTP: [10.0.0.20] GET pixel.rubiconproject.com/tap.php?v=194538&nid=3644&put=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc&expires=365
+HTTP: [10.0.0.20] GET pixel.rubiconproject.com/tap.php?v=194538&nid=3644&put=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc&expires=365
+HTTP: [10.0.0.20] GET pixel.rubiconproject.com/tap.php?v=194538&nid=3644&put=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc&expires=365
+HTTP: [10.0.0.20] GET x.bidswitch.net/sync?dsp_id=44&user_id=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc
+HTTP: [10.0.0.20] GET x.bidswitch.net/sync?dsp_id=44&user_id=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc
+HTTP: [10.0.0.20] GET ads.yahoo.com/pixel?id=2498203&t=2&piggyback=http%3A%2F%2Fads.yahoo.com%2Fcms%2Fv1%3Fesig%3D1~bf4e7dc4546a90c08591652d78a230d3f2ef5733%26nwid%3D10001032567%26sigv%3D1
+HTTP: [10.0.0.20] GET pixel.rubiconproject.com/tap.php?v=194538&nid=3644&put=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc&expires=365
+HTTP: [10.0.0.20] GET x.bidswitch.net/sync?dsp_id=44&user_id=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc
+HTTP: [10.0.0.20] GET pixel.rubiconproject.com/tap.php?v=194538&nid=3644&put=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc&expires=365
+HTTP: [10.0.0.20] GET ads.yahoo.com/pixel?id=2498203&t=2&piggyback=http%3A%2F%2Fads.yahoo.com%2Fcms%2Fv1%3Fesig%3D1~bf4e7dc4546a90c08591652d78a230d3f2ef5733%26nwid%3D10001032567%26sigv%3D1
+HTTP: [10.0.0.20] GET x.bidswitch.net/sync?dsp_id=44&user_id=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc
+HTTP: [10.0.0.20] GET ads.yahoo.com/pixel?id=2498203&t=2&piggyback=http%3A%2F%2Fads.yahoo.com%2Fcms%2Fv1%3Fesig%3D1~bf4e7dc4546a90c08591652d78a230d3f2ef5733%26nwid%3D10001032567%26sigv%3D1
+HTTP: [10.0.0.20] GET ib.adnxs.com/pxj?bidder=172&seg=802787&action=setuid(%27YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc%27)
+HTTP: [10.0.0.20] GET x.bidswitch.net/sync?dsp_id=44&user_id=YmE2MDRjOGU4MTE5MzBhNDEwOWQ4ODE2NzcwOWQ5OTc
+HTTP: [10.0.0.20] GET d.adroll.com/cm/l/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/o/out
+HTTP: [10.0.0.20] GET d.adroll.com/cm/g/out?google_nid=adroll4
+HTTP: [10.0.0.20] GET ads.yahoo.com/cms/v1?esig=1~bf4e7dc4546a90c08591652d78a230d3f2ef5733&nwid=10001032567&sigv=1
+HTTP: [10.0.0.20] GET d.adroll.com/cm/r/in?xid=P5ffGe9VOJb2Q19xkKAIOzMU
+HTTP: [10.0.0.20] GET us-u.openx.net/w/1.0/sd?id=537103138&val=ba604c8e811930a4109d88167709d997
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/377928.gif?partner_uid=ba604c8e811930a4109d88167709d997
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/377928.gif?partner_uid=ba604c8e811930a4109d88167709d997
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/377928.gif?partner_uid=ba604c8e811930a4109d88167709d997
+HTTP: [10.0.0.20] GET idsync.rlcdn.com/377928.gif?partner_uid=ba604c8e811930a4109d88167709d997
+HTTP: [10.0.0.20] GET cm.g.doubleclick.net/pixel?google_sc&google_nid=artb&google_hm=umBMjoEZMKQQnYgWdwnZlw&google_ula=1535926
+HTTP: [10.0.0.20] GET d.adroll.com/cm/g/in?google_ula=1535926,0
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET srv3.airdroid.com/p14/phone/upgrade/?q=A491F0868594D110DE5BAC6CFCCCAD536BEE530526B6864D7126E5A3D1BC898810610B757FBD45DF7BC6B144B5D9E79D4204C7C1950AF93CD4A2FC4A3DBC9748E0F1634A38D4E76A9480709C9A9E442537BE2E3DB3BC233A3F7C99150D2FB858080BD359406967AF41F4E28FEC5D9938173B0E13DD400BC30DE9ED88BE18C910E8A69F6862EEBC1F4E4B0822872ABC8AAF2F737769B09A9428D54BB72F5E01FF0C34BEBBC0670B4597073A361C887E0B89DD07C24C1849619D6B9CDCDDB3747E2B498D01E21E964B665A5A4A3BE6E30E012649FC29C2C5D764BD965DD8389752004841C0011425F3FEF3B7F5730A295E3FC549A0E6B204BF0F959B86A49C5997D16FE2D2D3F9AEBD80CD49F7885D43597400EBC923C7B8D3214A82A4F6A4C12B469C1ACDEFD2202EF2D75B06BF98E3DC0738F91624863806B9C9F535205C90C825BFD9300E04AFF21190868D7BD02A0791C12396676E5F0D4DE9F77B9583CE79130DBD4B8A03FAC1EC1266A24FF04331AD02F623658B3326D07CFE20EB8D8997E516317EF518A20736E770BE5B8406321A4B318EE76D77BC889C96E7755EE93FB97B5CD9751BB380&ver=20153
+HTTP: [10.0.0.20] GET srv3.airdroid.com/p14/phone/upgrade/?q=A491F0868594D110DE5BAC6CFCCCAD536BEE530526B6864D7126E5A3D1BC898810610B757FBD45DF7BC6B144B5D9E79D4204C7C1950AF93CD4A2FC4A3DBC9748E0F1634A38D4E76A9480709C9A9E442537BE2E3DB3BC233A3F7C99150D2FB858080BD359406967AF41F4E28FEC5D9938173B0E13DD400BC30DE9ED88BE18C910E8A69F6862EEBC1F4E4B0822872ABC8AAF2F737769B09A9428D54BB72F5E01FF0C34BEBBC0670B4597073A361C887E0B89DD07C24C1849619D6B9CDCDDB3747E2B498D01E21E964B665A5A4A3BE6E30E012649FC29C2C5D764BD965DD8389752004841C0011425F3FEF3B7F5730A295E3FC549A0E6B204BF0F959B86A49C5997D16FE2D2D3F9AEBD80CD49F7885D43597400EBC923C7B8D3214A82A4F6A4C12B469C1ACDEFD2202EF2D75B06BF98E3DC0738F91624863806B9C9F535205C90C825BFD9300E04AFF21190868D7BD02A0791C12396676E5F0D4DE9F77B9583CE79130DBD4B8A03FAC1EC1266A24FF04331AD02F623658B3326D07CFE20EB8D8997E516317EF518A20736E770BE5B8406321A4B318EE76D77BC889C96E7755EE93FB97B5CD9751BB380&ver=20153
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.1:1234 > 10.0.0.20:48490] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:48490] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET api-cdn.lemonde.fr/ws/6/mobile/www/android-phone/element/4974087/index.json
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:50732] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:50732] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:45106] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:45106] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33782] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33782] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET api.mobula.sdk.duapps.com/adunion/slot/getSrcPrio?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=172&vn=6.1.2&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&sid=10971&res=1080*460%2C244*244%2C170*170%2C108*108
+HTTP: [10.0.0.20] GET api.mobula.sdk.duapps.com/adunion/slot/getSrcPrio?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=172&vn=6.1.2&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&sid=10971&res=1080*460%2C244*244%2C170*170%2C108*108
+HTTP: [10.0.0.20] POST common.duapps.com/appLock/getConf?tk=8b005558e83e4ecf&sdk=22&dpi=320&vn=lockscreen_pub&locale=fr_FR&op=20810&h=1184&w=768&ntt=WIFI&lc=pub&v=1&pkg=mobi.infolife.taskmanager&vendor=LGE&model=Nexus+4&module=lockscreen
+HTTP: [10.0.0.20] POST load: {"pkg_utime":"0","conf_utime":"0"}
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:34107] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:34107] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.20] GET portal.fb.com/mobile/status.php
+HTTP: [10.0.0.1:1234 > 10.0.0.20:57579] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:57579] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:57579] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:57579] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:38610] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:38610] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:38610] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:38610] HTTP password: pwd=monpassword
+HTTP: [10.0.0.20] POST rts.mobula.sdk.duapps.com/orts/rpb?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=172&vn=6.1.2&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&mdu=adsdk&rv=1.0&ts=1469386809727&seq=98&stype=behavior&s=6b2c1e4bab07246746dd1c7bbd3eb1d9
+HTTP: [10.0.0.20] GET connectivitycheck.android.com/generate_204
+HTTP: [10.0.0.1:1234 > 10.0.0.20:45284] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:45284] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33897] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33897] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33897] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:33897] HTTP password: pwd=monpassword
+HTTP: [10.0.0.1:1234 > 10.0.0.20:39544] HTTP username: log=Monpseudo
+HTTP: [10.0.0.1:1234 > 10.0.0.20:39544] HTTP password: pwd=monpassword
