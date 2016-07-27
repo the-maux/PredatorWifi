@@ -1,7 +1,7 @@
 from os import getcwd,path
 from Core.loaders.Stealth.PackagesUI import *
 
-class frm_get_credentials(PumpkinModule):
+class frm_get_credentials(PredatorModule):
     def __init__(self, parent = None):
         super(frm_get_credentials, self).__init__(parent)
         self.setGeometry(0, 0, 400, 400)

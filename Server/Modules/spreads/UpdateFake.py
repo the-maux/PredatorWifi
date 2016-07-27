@@ -7,7 +7,7 @@ from Core.loaders.Stealth.PackagesUI import *
 
 threadloading = {'server':[]}
 
-class frm_update_attack(PumpkinModule):
+class frm_update_attack(PredatorModule):
     def __init__(self, parent=None):
         super(frm_update_attack, self).__init__(parent)
         self.setWindowTitle('Windows Update Attack Generator ')

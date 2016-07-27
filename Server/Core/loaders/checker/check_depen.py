@@ -10,9 +10,9 @@ ENDC = '\033[0m'
 def notinstall(app):
     print '[%s✘%s] %s is not %sinstalled%s.'%(RED,ENDC,app,YELLOW,ENDC)
 
-def check_dep_pumpkin():
+def check_dep_Predator():
     if sys.version_info.major != 2:
-        print("WiFi-Pumpkin need Python 2 :(")
+        print("WiFi-Predator need Python 2 :(")
         sys.exit(-1)
     hostapd = popen('which hostapd').read().split("\n")
     dhcpd = popen('which dhcpd').read().split("\n")
@@ -25,8 +25,8 @@ def check_dep_pumpkin():
             if k == 0:notinstall('isc-dhcp-server')
             if k == 1:notinstall('hostapd')
     if not path.isfile('Templates/Update/Windows_Update/Settins_WinUpdate.html'):
-        if '/usr/bin/wifi-pumpkin' in sys.argv[0]:
-            chdir('/usr/share/WiFi-Pumpkin')
+        if '/usr/bin/wifi-Predator' in sys.argv[0]:
+            chdir('/usr/share/WiFi-Predator')
         copy('Settings/source.tar.gz','Templates/')
         system('cd Templates/ && tar -xf source.tar.gz')
         remove('Templates/source.tar.gz')

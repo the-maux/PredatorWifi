@@ -3,7 +3,7 @@ from PyQt4.QtCore import QSettings
 
 
 class SettingsINI(object):
-	""" Settings INI file implemented for Wifi-Pumpkin"""
+	""" Settings INI file implemented for Wifi-Predator"""
 	def __init__(self,filename):
 		if path.isfile(filename) and filename.endswith('.ini'):
 			self.psettings = QSettings(filename,QSettings.IniFormat)

@@ -5,7 +5,7 @@ from Core.loaders.Stealth.PackagesUI import *
 
 
 
-class frm_PMonitor(PumpkinModule):
+class frm_PMonitor(PredatorModule):
     def __init__(self, parent=None):
         super(frm_PMonitor, self).__init__(parent)
         self.Main       = QVBoxLayout()

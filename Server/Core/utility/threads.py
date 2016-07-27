@@ -337,9 +337,9 @@ class Thread_sergioProxy(QThread):
         print 'Stop thread:' + self.objectName()
 
 class ThreadFrontServer(QThread):
-    def __init__(self, WifiPumpkin):
+    def __init__(self, WifiPredator):
         QThread.__init__(self)
-        self.main = WifiPumpkin
+        self.main = WifiPredator
         self.server = ServerFront(self)
         QtCore.QObject.connect(self.server, QtCore.SIGNAL("DataReceived"), self.remoteControl)
 

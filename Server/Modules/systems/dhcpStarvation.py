@@ -2,7 +2,7 @@ from Core.packets.network import ThreadAttackStar
 from Core.loaders.Stealth.PackagesUI import *
 
 
-class frm_dhcp_Attack(PumpkinModule):
+class frm_dhcp_Attack(PredatorModule):
     def __init__(self, parent=None):
         super(frm_dhcp_Attack, self).__init__(parent)
         self.loadtheme(self.configure.XmlThemeSelected())

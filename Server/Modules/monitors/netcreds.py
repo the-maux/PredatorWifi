@@ -2,7 +2,7 @@ from os import getcwd,path
 from Core.loaders.Stealth.PackagesUI import *
 
 
-class frm_NetCredsLogger(PumpkinModule):
+class frm_NetCredsLogger(PredatorModule):
     def __init__(self, parent = None):
         super(frm_NetCredsLogger, self).__init__(parent)
         self.setGeometry(0, 0, 550, 400)

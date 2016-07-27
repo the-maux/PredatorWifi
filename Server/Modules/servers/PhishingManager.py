@@ -112,9 +112,9 @@ class frm_PhishingManager(QWidget):
 
 
         # left layout
-        self.txt_html.setPlainText('<html>\n<head>\n<title>WiFi-Pumpkin Phishing </title>'
+        self.txt_html.setPlainText('<html>\n<head>\n<title>WiFi-Predator Phishing </title>'
         '\n</head>\n<body>\n'
-        '\n<h3 align=\'center\'>WiFi-Pumpkin Framework</h3>\n'
+        '\n<h3 align=\'center\'>WiFi-Predator Framework</h3>\n'
         '\n<p align=\'center\'>this is demo Attack Redirect.</p>\n'
         '\n</body>\n</html>')
         self.txt_html.setEnabled(False)

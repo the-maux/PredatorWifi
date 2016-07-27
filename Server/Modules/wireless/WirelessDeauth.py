@@ -8,7 +8,7 @@ threadloading = {'deauth':[],'mdk3':[]}
 
 
 
-class frm_deauth(PumpkinModule):
+class frm_deauth(PredatorModule):
     def __init__(self, parent=None):
         super(frm_deauth, self).__init__(parent)
         self.Main           = QVBoxLayout()

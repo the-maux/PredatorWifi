@@ -763,3 +763,16 @@
 2016-07-24 20:39:52,878 : [10.0.0.20] GET portal.fb.com/mobile/status.php
 2016-07-24 21:00:06,704 : [10.0.0.20] POST rts.mobula.sdk.duapps.com/orts/rpb?h=1184&w=768&model=Nexus+4&vendor=LGE&sdk=22&dpi=320&sv=1.0.5.1&svn=HW-1.0.5.1&pkg=mobi.infolife.taskmanager&v=172&vn=6.1.2&op=20810&locale=fr_FR&ntt=WIFI&ls=cdaf65ede4353228d3cb5244801eb1c6&aid=8b005558e83e4ecf&mdu=adsdk&rv=1.0&ts=1469386809727&seq=98&stype=behavior&s=6b2c1e4bab07246746dd1c7bbd3eb1d9
 2016-07-24 21:08:07,537 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:50:35,628 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:50:35,788 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:50:40,238 : [10.0.0.20] GET portal.fb.com/mobile/status.php
+2016-07-26 18:51:21,388 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:51:21,575 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:51:30,238 : [10.0.0.20] GET portal.fb.com/mobile/status.php
+2016-07-26 18:54:56,726 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:54:57,532 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:54:57,909 : [10.0.0.20] GET portal.fb.com/mobile/status.php
+2016-07-26 18:54:57,944 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:56:19,357 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 18:56:19,559 : [10.0.0.20] GET connectivitycheck.android.com/generate_204
+2016-07-26 20:33:17,021 : [10.0.0.20] GET portal.fb.com/mobile/status.php

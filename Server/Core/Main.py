@@ -5,7 +5,7 @@ try:
     from PyQt4.QtGui import *
     from PyQt4.QtCore import *
 except ImportError:
-    exit('WiFi-Pumpkin need PyQt4 :(')
+    exit('WiFi-Predator need PyQt4 :(')
 
 from pwd import getpwnam
 from grp import getgrnam
@@ -26,8 +26,8 @@ from Core.Utils import (
     Refactor,set_monitor_mode
 )
 from Core.widgets.TabModels import (
-    PumpkinProxy,PumpkinMonitor,
-    PumpkinSettings
+    PredatorProxy,PredatorMonitor,
+    PredatorSettings
 )
 
 from Core.widgets.PopupModels import (
@@ -47,21 +47,12 @@ from Core.utility.settings import frm_Settings
 from Core.utility.progressBarWid import ProgressBarWid
 
 
-
-
-author      = 'Marcos Nesster (@mh4x0f)  P0cl4bs Team'
-emails      = ['mh4root@gmail.com','p0cl4bs@gmail.com']
-license     = ' GNU GPL 3'
-version     = '0.7.5'
-update      = '07/05/2016' # This is Brasil :D
-desc        = ['Framework for Rogue Wi-Fi Access Point Attacks']
-
 class Initialize(QMainWindow):
     ''' Main window settings multi-window opened'''
     def __init__(self, parent=None):
         super(Initialize, self).__init__(parent)
         self.FSettings      = frm_Settings()
-        self.form_widget    = WifiPumpkin(self,self,self.FSettings)
+        self.form_widget    = WifiPredator(self,self,self.FSettings)
         self.form_widget.setFixedHeight(540)
         self.form_widget.setFixedWidth(370)
         dock = QDockWidget()
@@ -71,7 +62,7 @@ class Initialize(QMainWindow):
         dock.setFeatures(QDockWidget.NoDockWidgetFeatures)
         dock.setAllowedAreas(Qt.AllDockWidgetAreas)
         self.addDockWidget(Qt.LeftDockWidgetArea, dock)
-        self.setWindowTitle('WiFi-Pumpkin v' + version)
+        self.setWindowTitle('WiFi-Predator Hub Version')
         self.setGeometry(0, 0, 350, 450)
         self.loadtheme(self.FSettings.XmlThemeSelected())
 
@@ -107,11 +98,11 @@ class Initialize(QMainWindow):
         if hasattr(self,'reply'):
             event.ignore()
 
-class WifiPumpkin(QWidget):
+class WifiPredator(QWidget):
     ''' load main window class'''
     def __init__(self, parent = None,window=None,Fsettings=None):
         self.InitialMehtod = window
-        super(WifiPumpkin, self).__init__(parent)
+        super(WifiPredator, self).__init__(parent)
         #self.create_sys_tray()
         self.MainControl    = QVBoxLayout()
         self.TabControl     = QTabWidget()
@@ -142,10 +133,10 @@ class WifiPumpkin(QWidget):
                 'thread_name': 'Netcreds::Credentials',
                 'error': 'netcreds no logger found.'},
 
-            '::Pumpkin-Phishing:: ': {
+            '::Predator-Phishing:: ': {
                 'active' : self.FSettings.Settings.get_setting('dockarea','dock_phishing',format=bool),
                 'path': 'Logs/Phishing/Webclone.log',
-                'thread_name': 'PumpKin-Phishing::Capture',
+                'thread_name': 'Predator-Phishing::Capture',
                 'error': 'Phishing::capture no logger found'}
         }
         self.ConfigTwin     = {
@@ -168,7 +159,7 @@ class WifiPumpkin(QWidget):
         self.FormBanner.addRow(self.imagem)
 
     def InjectorTABContent(self):
-        self.ProxyPluginsTAB = PumpkinProxy(self.PopUpPlugins,self.FSettings)
+        self.ProxyPluginsTAB = PredatorProxy(self.PopUpPlugins,self.FSettings)
         self.ProxyPluginsTAB.sendError.connect(self.GetErrorInjector)
         self.ContentTabInject.addLayout(self.ProxyPluginsTAB)
 
@@ -181,11 +172,11 @@ class WifiPumpkin(QWidget):
         QMessageBox.information(self,'Settings DHCP',data)
 
     def ApMonitorTabContent(self):
-        self.PumpMonitorTAB = PumpkinMonitor(self.FSettings)
+        self.PumpMonitorTAB = PredatorMonitor(self.FSettings)
         self.ContentTabMonitor.addLayout(self.PumpMonitorTAB)
 
     def SettingsTABContent(self):
-        self.PumpSettingsTAB = PumpkinSettings(None,self.AreaDockInfo,self.InitialMehtod,self.FSettings)
+        self.PumpSettingsTAB = PredatorSettings(None,self.AreaDockInfo,self.InitialMehtod,self.FSettings)
         self.PumpSettingsTAB.checkDockArea.connect(self.getContentTabDock)
         self.PumpSettingsTAB.sendMensage.connect(self.GetmessageSave)
         self.ContentTabsettings.addLayout(self.PumpSettingsTAB)
@@ -580,7 +571,7 @@ class WifiPumpkin(QWidget):
             self.FormPopup.StatusServer(False)
 
     def CoreSettings(self):
-        self.DHCP = self.PumpSettingsTAB.getPumpkinSettings()
+        self.DHCP = self.PumpSettingsTAB.getPredatorSettings()
         self.ConfigTwin['PortRedirect'] = self.FSettings.Settings.get_setting('settings','redirect_port')
         self.SettingsAP = {
         'interface':
@@ -664,7 +655,7 @@ class WifiPumpkin(QWidget):
         self.interfacesLink = Refactor.get_interfaces()
         if len(self.EditGateway.text()) == 0 or self.interfacesLink['activated'] == None:
             return QMessageBox.warning(self,'Internet Connection','No internet connection not found, '
-            'sorry WiFi-Pumpkin tool requires an internet connection to mount MITM attack. '
+            'sorry WiFi-Predator tool requires an internet connection to mount MITM attack. '
             'check your connection and try again')
 
         if str(self.selectCard.currentText()) == self.interfacesLink['activated']:
@@ -682,12 +673,12 @@ class WifiPumpkin(QWidget):
                 return QMessageBox.information(self,'Error network card',
                     'You are connected with interface wireless, try again with local connection')
 
-        dh, gateway = self.PumpSettingsTAB.getPumpkinSettings()['router'],str(self.EditGateway.text())
+        dh, gateway = self.PumpSettingsTAB.getPredatorSettings()['router'],str(self.EditGateway.text())
         if dh[:len(dh)-len(dh.split('.').pop())] == gateway[:len(gateway)-len(gateway.split('.').pop())]:
             return QMessageBox.warning(self,'DHCP Server Settings',
                 'The DHCP server check if range ip class is same.'
                 'it works, but not share internet connection in some case.\n'
-                'for fix this, You need change on tab (Pumpkin-Settings -> Class Ranges)'
+                'for fix this, You need change on tab (Predator-Settings -> Class Ranges)'
                 'now you have choose the Class range different of your network.')
         self.btn_start_attack.setDisabled(True)
         popen('ulimit -n 64000')

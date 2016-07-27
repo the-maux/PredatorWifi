@@ -6,7 +6,7 @@ from Core.packets.network import ThARP_posion,ThSpoofAttack
 from Core.loaders.Stealth.PackagesUI import *
 threadloading = {'template':[],'posion':[]}
 
-class frm_Arp_Poison(PumpkinModule):
+class frm_Arp_Poison(PredatorModule):
 
     def __init__(self, parent=None):
         super(frm_Arp_Poison, self).__init__(parent)

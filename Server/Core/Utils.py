@@ -119,7 +119,7 @@ class Refactor:
                 HTML += readFile[key][readFile[key].keys()[0]]
                 HTML += '</span><span class="s4"><br><br></span><span class="s1">\n'
         HTML += '</span></pre>\n<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >\
-        <TR><TD><CENTER>''<FONT FACE="Arial, Helvetica" COLOR="#000000">WiFi-Pumpkin (C) 2015 P0cL4bs Team' \
+        <TR><TD><CENTER>''<FONT FACE="Arial, Helvetica" COLOR="#000000">WiFi-Predator (C) 2015 P0cL4bs Team' \
         '</FONT></center></TD></TR></TABLE></body>\n</html>\n'
 
         Load_ = {'HTML': HTML,'Files':[readFile[x].keys()[0] for x in readFile.keys()]}
@@ -175,6 +175,11 @@ class Refactor:
         interfaces['all'] = netifaces.interfaces()
         try:
             interfaces['gateway'] = netifaces.gateways()['default'][netifaces.AF_INET][0]
+            p1 = Popen('ifconfig', stdout=PIPE)
+            p2 = Popen(['grep', 'inet adr:'], stdin=p1.stdout, stdout=PIPE)
+            for line in str(p2.communicate()).split(" "):
+                if "adr:" in line and "127.0.0" not in line:
+                    interfaces['gateway'] = line[4:]
             interfaces['activated'] = netifaces.gateways()['default'][netifaces.AF_INET][1]
             interfaces['IPaddress'] = Refactor.get_Ipaddr(interfaces['activated'])
         except KeyError:
@@ -222,7 +227,7 @@ class Refactor:
     @staticmethod
     def threadRoot(sudo_password):
         call(['sudo','-k'])
-        p = Popen(['sudo', '-S','./wifi-pumpkin.py'], stdin=PIPE, stderr=PIPE,
+        p = Popen(['sudo', '-S','./wifi-Predator.py'], stdin=PIPE, stderr=PIPE,
         universal_newlines=True)
         waiter().start()
         p.communicate(str(sudo_password) + '\n')[1]

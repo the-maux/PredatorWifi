@@ -10,7 +10,7 @@ from Core.packets.network import ThARP_posion,ThSpoofAttack
 threadloading = {'template':[],'dnsspoof':[],'arps':[]}
 
 
-class frm_DnsSpoof(PumpkinModule):
+class frm_DnsSpoof(PredatorModule):
     def __init__(self, parent=None):
         super(frm_DnsSpoof, self).__init__(parent)
         self.setWindowTitle('Dns Spoof Attack')

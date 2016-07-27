@@ -14,7 +14,7 @@ requeries=true
 func_Banner(){
 	clear
 	echo '   ============================='
-	echo "   |$bldblu wifi-pumpkin Installer$txtrst|"
+	echo "   |$bldblu wifi-Predator Installer$txtrst|"
 	echo '   ============================='
 	echo "          Version: $(tput setaf 5)0.7.5 $txtrst"
 	echo "usage: ./installer.sh --install | --uninstall"
@@ -53,7 +53,7 @@ func_install(){
 	apt-get install -y libpcap-dev
     pip install -r requirements.txt
     File="/etc/apt/sources.list"
-    if  grep -q '#Wifi Pumpkin' $File;then
+    if  grep -q '#Wifi Predator' $File;then
 	    cp /etc/apt/sources.list.backup /etc/apt/sources.list
 	    rm /etc/apt/sources.list.backup
     fi
@@ -104,20 +104,20 @@ func_install(){
 		fi
 	fi
 	echo "----------------------------------------"
-	echo "[=] $bldblu Install WiFi-Pumpkin $txtrst"
+	echo "[=] $bldblu Install WiFi-Predator $txtrst"
 	if [ ! -d "$DIRECTORY" ]; then
 		mkdir $DIRECTORY
-		cp -r $path_install /usr/share/WiFi-Pumpkin/
+		cp -r $path_install /usr/share/WiFi-Predator/
 		bin_install
-		echo "[$green✔$txtrst] wifi-pumpkin installed with success"
-		echo "[$green✔$txtrst] execute $bldred sudo wifi-pumpkin$txtrst in terminal"
+		echo "[$green✔$txtrst] wifi-Predator installed with success"
+		echo "[$green✔$txtrst] execute $bldred sudo wifi-Predator$txtrst in terminal"
 	else
 		rm -r $DIRECTORY
 		mkdir $DIRECTORY
-		cp -r $path_install /usr/share/WiFi-Pumpkin/
+		cp -r $path_install /usr/share/WiFi-Predator/
 		bin_install
-		echo "[$green✔$txtrst] wifi-pumpkin installed with success"
-		echo "[$green✔$txtrst] execute $bldred sudo wifi-pumpkin$txtrst in terminal"
+		echo "[$green✔$txtrst] wifi-Predator installed with success"
+		echo "[$green✔$txtrst] execute $bldred sudo wifi-Predator$txtrst in terminal"
 	fi
 	echo "[$green+$txtrst]$color_y P0cL4bs Team CopyRight 2015-2016$txtrst"
 	echo "[$green+$txtrst] Enjoy"
@@ -125,11 +125,11 @@ func_install(){
 }
 
 bin_install(){
-	if [ ! -f "/usr/bin/wifi-pumpkin" ]; then
+	if [ ! -f "/usr/bin/wifi-Predator" ]; then
 	    echo "[$green✔$txtrst] PATH::$DIRECTORY"
 		echo "[$green✔$txtrst] binary::/usr/bin/"
-        ln -sfT /usr/share/WiFi-Pumpkin/wifi-pumpkin.py /usr/bin/wifi-pumpkin
-		chmod +x /usr/bin/wifi-pumpkin
+        ln -sfT /usr/share/WiFi-Predator/wifi-Predator.py /usr/bin/wifi-Predator
+		chmod +x /usr/bin/wifi-Predator
 	fi
 }
 
@@ -141,16 +141,16 @@ uninstall(){
 	if [  -d "$DIRECTORY" ]; then
 		echo "[$red_color-$txtrst] Delete Path:$bldwht $DIRECTORY $txtrst"
 		rm -r $path_uninstall
-		if [ -f "/usr/bin/wifi-pumpkin" ]; then
-			rm /usr/bin/wifi-pumpkin
-			echo "[$red_color-$txtrst] Deleted Binary:$bldwht/usr/bin/wifi-pumpkin $txtrst"
+		if [ -f "/usr/bin/wifi-Predator" ]; then
+			rm /usr/bin/wifi-Predator
+			echo "[$red_color-$txtrst] Deleted Binary:$bldwht/usr/bin/wifi-Predator $txtrst"
 		fi
 	else
-		echo "[$red_color✘$txtrst] wifi-pumpkin not Installed"
+		echo "[$red_color✘$txtrst] wifi-Predator not Installed"
 	fi
 }
 func_Banner
-DIRECTORY="/usr/share/WiFi-Pumpkin"
+DIRECTORY="/usr/share/WiFi-Predator"
 Dir_isntall=$(pwd)
 path_install=$Dir_isntall"/*"
 path_uninstall=$DIRECTORY"/"

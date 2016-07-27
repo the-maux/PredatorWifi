@@ -51,7 +51,7 @@ class frm_Settings(QDialog):
 
         self.Settings.set_setting('settings','mdk3',str(self.txt_arguments.text()))
         self.Settings.set_setting('settings','scanner_rangeIP',str(self.txt_ranger.text()))
-        self.Settings.set_setting('accesspoint','interface',str(self.interface.text()))
+ #       self.Settings.set_setting('accesspoint','interface',str(self.interface.text()))
         self.Settings.set_setting('accesspoint','APname', str(self.Apname.text()))
         self.Settings.set_setting('accesspoint','channel', str(self.channel.value()))
         self.Settings.set_setting('settings','redirect_port', str(self.redirectport.text()))
@@ -268,7 +268,7 @@ class frm_Settings(QDialog):
         self.page_1.addRow(QLabel('DHCP:'))
         self.page_1.addRow(self.dhcp1)
         self.page_1.addRow(self.dhcp2)
-        self.page_1.addRow(QLabel('Pumpkin Themes:'))
+        self.page_1.addRow(QLabel('Predator Themes:'))
         self.page_1.addRow(self.theme1)
         self.page_1.addRow(self.theme2)
 

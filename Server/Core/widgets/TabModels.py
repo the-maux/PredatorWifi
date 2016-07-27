@@ -11,12 +11,12 @@ from Core.widgets.docks.DockMonitor import ThreadLogger
 from Plugins.sergio_proxy.sslstrip.ProxyPlugins import ProxyPlugins
 
 
-class PumpkinProxy(QVBoxLayout):
+class PredatorProxy(QVBoxLayout):
     ''' settings  Transparent Proxy '''
     sendError = pyqtSignal(str)
     _PluginsToLoader = {'Plugins': None,'Content':''}
     def __init__(self,popup,FsettingsUI=None,parent = None):
-        super(PumpkinProxy, self).__init__(parent)
+        super(PredatorProxy, self).__init__(parent)
         self.popup      = popup
         self.urlinjected= []
         self.FSettings  = FsettingsUI
@@ -178,10 +178,10 @@ class PumpkinProxy(QVBoxLayout):
 
 
 
-class PumpkinMonitor(QVBoxLayout):
+class PredatorMonitor(QVBoxLayout):
     ''' Monitor Access Point cleints connections'''
     def __init__(self,FsettingsUI=None ,parent = None):
-        super(PumpkinMonitor, self).__init__(parent)
+        super(PredatorMonitor, self).__init__(parent)
         self.FSettings      = FsettingsUI
         self.Home           = QFormLayout()
         self.GroupMonitor   = QGroupBox()
@@ -235,12 +235,12 @@ class PumpkinMonitor(QVBoxLayout):
 
 
 
-class PumpkinSettings(QVBoxLayout):
+class PredatorSettings(QVBoxLayout):
     ''' settings DHCP options'''
     sendMensage = pyqtSignal(str)
     checkDockArea = pyqtSignal(dict)
     def __init__(self, parent = None,dockinfo=None,InitialMehtod=None,FsettingsUI=None):
-        super(PumpkinSettings, self).__init__(parent)
+        super(PredatorSettings, self).__init__(parent)
         self.InitialMehtod   = InitialMehtod
         self.dockInfo      = dockinfo
         self.SettingsDHCP  = {}
@@ -383,7 +383,7 @@ class PumpkinSettings(QVBoxLayout):
         self.FSettings.Settings.set_setting('dockarea','advanced',self.CB_ActiveMode.isChecked())
         self.dockInfo[':: URLMonitor::']['active'] = self.CB_monitorURL.isChecked()
         self.dockInfo['::Credentials:: ']['active'] = self.CB_Cread.isChecked()
-        self.dockInfo['::Pumpkin-Phishing:: ']['active'] = self.CB_phising.isChecked()
+        self.dockInfo['::Predator-Phishing:: ']['active'] = self.CB_phising.isChecked()
         if self.CB_ActiveMode.isChecked():
             self.AreaWidgetLoader(self.dockInfo)
             self.checkDockArea.emit(self.AllDockArea)
@@ -430,7 +430,7 @@ class PumpkinSettings(QVBoxLayout):
         self.sendMensage.emit('settings DHCP saved with success...')
         self.btnSave.setEnabled(True)
 
-    def getPumpkinSettings(self):
+    def getPredatorSettings(self):
         self.SettingsDHCP['leasetimeDef'] = str(self.leaseTime_def.text())
         self.SettingsDHCP['leasetimeMax'] = str(self.leaseTime_Max.text())
         self.SettingsDHCP['subnet'] = str(self.subnet.text())

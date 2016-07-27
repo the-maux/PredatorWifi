@@ -4,7 +4,7 @@ import subprocess
 import random
 
 
-class frm_mac_generator(PumpkinModule):
+class frm_mac_generator(PredatorModule):
     def __init__(self, parent=None):
         super(frm_mac_generator, self).__init__(parent)
         self.setWindowIcon(QIcon('Icons/icon.ico'))

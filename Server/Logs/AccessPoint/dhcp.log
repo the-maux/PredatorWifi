@@ -2472,3 +2472,438 @@
 2016-07-24 21:25:22,594 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
 2016-07-24 21:30:11,246 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
 2016-07-24 21:30:11,246 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:40:00,290 : ---[ Start DHCP Tue Jul 26 18:40:00 2016]---
+2016-07-26 18:40:00,604 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 18:40:00,604 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 18:40:00,613 : All rights reserved.
+2016-07-26 18:40:00,613 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 18:40:00,613 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 18:40:00,613 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 18:40:00,613 : PID file: /var/run/dhcpd.pid
+2016-07-26 18:40:00,714 : Wrote 0 leases to leases file.
+2016-07-26 18:40:00,787 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 18:40:00,787 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 18:40:00,787 : Sending on   Socket/fallback/fallback-net
+2016-07-26 18:40:00,805 : Server starting service.
+2016-07-26 18:43:01,126 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 18:43:01,128 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 18:49:34,249 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-26 18:49:35,251 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:50:28,629 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:50:28,629 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:50:29,007 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:50:29,008 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:51:18,878 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:51:18,879 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 18:54:45,644 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef via wlan1
+2016-07-26 18:54:45,645 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:56:18,188 : DHCPREQUEST for 10.0.0.20 from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 18:56:18,188 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 19:08:07,358 : ---[ Start DHCP Tue Jul 26 19:08:07 2016]---
+2016-07-26 19:08:07,557 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 19:08:07,558 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 19:08:07,558 : All rights reserved.
+2016-07-26 19:08:07,558 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 19:08:07,558 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 19:08:07,558 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 19:08:07,558 : PID file: /var/run/dhcpd.pid
+2016-07-26 19:08:07,814 : Wrote 0 leases to leases file.
+2016-07-26 19:08:07,848 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:08:07,849 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:08:07,849 : Sending on   Socket/fallback/fallback-net
+2016-07-26 19:08:07,849 : Server starting service.
+2016-07-26 19:22:11,590 : ---[ Start DHCP Tue Jul 26 19:22:11 2016]---
+2016-07-26 19:22:11,643 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 19:22:11,643 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 19:22:11,644 : All rights reserved.
+2016-07-26 19:22:11,644 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 19:22:11,644 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 19:22:11,645 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 19:22:11,645 : PID file: /var/run/dhcpd.pid
+2016-07-26 19:22:11,699 : Wrote 0 leases to leases file.
+2016-07-26 19:22:11,740 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:22:11,740 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:22:11,740 : Sending on   Socket/fallback/fallback-net
+2016-07-26 19:22:11,741 : Server starting service.
+2016-07-26 19:25:16,459 : ---[ Start DHCP Tue Jul 26 19:25:16 2016]---
+2016-07-26 19:25:16,459 : ---[ Start DHCP Tue Jul 26 19:25:16 2016]---
+2016-07-26 19:25:16,477 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 19:25:16,477 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 19:25:16,478 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 19:25:16,478 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 19:25:16,478 : All rights reserved.
+2016-07-26 19:25:16,478 : All rights reserved.
+2016-07-26 19:25:16,479 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 19:25:16,479 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 19:25:16,479 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 19:25:16,479 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 19:25:16,480 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 19:25:16,480 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 19:25:16,480 : PID file: /var/run/dhcpd.pid
+2016-07-26 19:25:16,480 : PID file: /var/run/dhcpd.pid
+2016-07-26 19:25:16,536 : Wrote 0 leases to leases file.
+2016-07-26 19:25:16,536 : Wrote 0 leases to leases file.
+2016-07-26 19:25:16,568 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:25:16,568 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:25:16,568 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:25:16,568 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:25:16,569 : Sending on   Socket/fallback/fallback-net
+2016-07-26 19:25:16,569 : Sending on   Socket/fallback/fallback-net
+2016-07-26 19:25:16,569 : Server starting service.
+2016-07-26 19:25:16,569 : Server starting service.
+2016-07-26 19:27:00,641 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 19:27:00,641 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 19:27:00,642 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 19:27:00,642 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 19:41:25,467 : ---[ Start DHCP Tue Jul 26 19:41:25 2016]---
+2016-07-26 19:41:25,662 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 19:41:25,663 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 19:41:25,663 : All rights reserved.
+2016-07-26 19:41:25,663 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 19:41:25,663 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 19:41:25,664 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 19:41:25,664 : PID file: /var/run/dhcpd.pid
+2016-07-26 19:41:25,771 : Wrote 0 leases to leases file.
+2016-07-26 19:41:25,792 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:41:25,792 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 19:41:25,792 : Sending on   Socket/fallback/fallback-net
+2016-07-26 19:41:25,793 : Server starting service.
+2016-07-26 20:19:13,529 : ---[ Start DHCP Tue Jul 26 20:19:13 2016]---
+2016-07-26 20:19:13,613 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 20:19:13,613 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 20:19:13,613 : All rights reserved.
+2016-07-26 20:19:13,614 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 20:19:13,614 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 20:19:13,614 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 20:19:13,614 : PID file: /var/run/dhcpd.pid
+2016-07-26 20:19:13,655 : Wrote 0 leases to leases file.
+2016-07-26 20:19:13,710 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:19:13,710 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:19:13,710 : Sending on   Socket/fallback/fallback-net
+2016-07-26 20:19:13,710 : Server starting service.
+2016-07-26 20:28:21,552 : ---[ Start DHCP Tue Jul 26 20:28:21 2016]---
+2016-07-26 20:28:21,699 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 20:28:21,699 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 20:28:21,700 : All rights reserved.
+2016-07-26 20:28:21,700 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 20:28:21,700 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 20:28:21,701 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 20:28:21,701 : PID file: /var/run/dhcpd.pid
+2016-07-26 20:28:21,747 : Wrote 0 leases to leases file.
+2016-07-26 20:28:21,770 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:28:21,772 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:28:21,772 : Sending on   Socket/fallback/fallback-net
+2016-07-26 20:28:21,772 : Server starting service.
+2016-07-26 20:28:23,216 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 20:28:23,216 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 20:28:26,865 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 20:28:26,865 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 20:28:28,077 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-26 20:28:29,079 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 20:28:29,198 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 20:28:29,198 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 20:32:37,359 : ---[ Start DHCP Tue Jul 26 20:32:37 2016]---
+2016-07-26 20:32:37,384 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-26 20:32:37,385 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-26 20:32:37,385 : All rights reserved.
+2016-07-26 20:32:37,385 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-26 20:32:37,386 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-26 20:32:37,386 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-26 20:32:37,386 : PID file: /var/run/dhcpd.pid
+2016-07-26 20:32:37,482 : Wrote 0 leases to leases file.
+2016-07-26 20:32:37,518 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:32:37,518 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-26 20:32:37,519 : Sending on   Socket/fallback/fallback-net
+2016-07-26 20:32:37,519 : Server starting service.
+2016-07-26 20:33:03,762 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-26 20:33:03,762 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-26 20:33:04,984 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-26 20:33:05,985 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 20:33:06,013 : DHCPREQUEST for 10.0.0.20 (10.0.0.1) from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-26 20:33:06,013 : DHCPACK on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:22:08,167 : ---[ Start DHCP Wed Jul 27 03:22:08 2016]---
+2016-07-27 03:22:08,323 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-27 03:22:08,323 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-27 03:22:08,323 : All rights reserved.
+2016-07-27 03:22:08,323 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-27 03:22:08,324 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-27 03:22:08,324 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-27 03:22:08,324 : PID file: /var/run/dhcpd.pid
+2016-07-27 03:22:08,454 : Wrote 0 leases to leases file.
+2016-07-27 03:22:08,483 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:22:08,483 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:22:08,483 : Sending on   Socket/fallback/fallback-net
+2016-07-27 03:22:08,483 : Server starting service.
+2016-07-27 03:23:20,190 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:23:20,191 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:23:25,079 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:23:25,079 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:23:25,172 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:23:26,173 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:29,858 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:29,858 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:38,284 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:38,284 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:52,209 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:23:52,209 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:23:55,999 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:23:55,999 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:23:57,195 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:23:57,195 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:01,630 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:01,630 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:10,584 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:10,584 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:32,046 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:32,046 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:39,326 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:24:39,326 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:10,345 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:10,346 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:27,548 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:25:27,548 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:25:29,254 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:29,254 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:32,493 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:32,494 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:39,636 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:25:39,636 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:26:11,675 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:26:11,675 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:26:58,376 : ---[ Start DHCP Wed Jul 27 03:26:58 2016]---
+2016-07-27 03:26:58,376 : ---[ Start DHCP Wed Jul 27 03:26:58 2016]---
+2016-07-27 03:26:58,391 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-27 03:26:58,391 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-27 03:26:58,391 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-27 03:26:58,391 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-27 03:26:58,391 : All rights reserved.
+2016-07-27 03:26:58,391 : All rights reserved.
+2016-07-27 03:26:58,391 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-27 03:26:58,391 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-27 03:26:58,391 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-27 03:26:58,391 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-27 03:26:58,391 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-27 03:26:58,391 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-27 03:26:58,392 : PID file: /var/run/dhcpd.pid
+2016-07-27 03:26:58,392 : PID file: /var/run/dhcpd.pid
+2016-07-27 03:26:58,460 : Wrote 0 leases to leases file.
+2016-07-27 03:26:58,460 : Wrote 0 leases to leases file.
+2016-07-27 03:26:58,493 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:26:58,493 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:26:58,494 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:26:58,494 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:26:58,494 : Sending on   Socket/fallback/fallback-net
+2016-07-27 03:26:58,494 : Sending on   Socket/fallback/fallback-net
+2016-07-27 03:26:58,494 : Server starting service.
+2016-07-27 03:26:58,494 : Server starting service.
+2016-07-27 03:27:14,997 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:27:14,997 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:27:15,999 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:15,999 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:32,307 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:27:32,307 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:27:32,308 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:27:32,308 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:27:32,309 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:32,309 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:32,309 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:32,309 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:36,790 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:36,790 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:36,791 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:36,791 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:45,157 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:45,157 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:45,158 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:27:45,158 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:03,285 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:03,285 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:03,286 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:03,286 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:07,689 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:07,689 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:07,690 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:07,690 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:08,201 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:08,201 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:09,205 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:09,205 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:12,576 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:12,576 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:12,577 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:12,577 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:20,012 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:20,012 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:20,012 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:20,012 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:35,075 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:35,075 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:35,075 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:35,075 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:39,684 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:39,684 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:30:39,685 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:39,685 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:30:40,003 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:40,003 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:40,004 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:40,004 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:43,746 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:43,746 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:43,746 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:43,746 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:52,451 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:52,451 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:52,452 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:30:52,452 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:16,923 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:16,923 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:16,924 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:31:16,924 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:31:20,488 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:20,488 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:20,488 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:31:20,488 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:31:21,916 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:21,916 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:21,916 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:21,916 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:26,390 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:26,390 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:26,390 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:26,390 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:34,540 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:34,540 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:34,540 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:34,540 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:31:59,147 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:59,147 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:31:59,147 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:31:59,147 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:03,750 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:03,750 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:03,752 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:03,752 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:04,133 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:04,133 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:04,134 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:04,134 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:07,312 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:07,312 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:07,312 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:07,312 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:14,945 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:14,945 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:14,946 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:14,946 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:32,328 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:32,328 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:32,328 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:32,328 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:36,259 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:36,259 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:32:36,260 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:36,260 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:32:37,275 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:37,275 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:37,275 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:37,275 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:40,620 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:40,620 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:40,621 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:40,621 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:49,555 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:49,555 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:49,556 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:32:49,556 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:14,014 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:14,014 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:14,015 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:33:14,015 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:33:17,689 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:17,689 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:17,690 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:33:17,690 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:33:18,921 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:18,921 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:18,921 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:18,921 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:23,791 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:23,791 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:23,833 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:23,833 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:31,706 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:31,706 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:31,707 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:31,707 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:33:55,960 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:55,960 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:33:55,960 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:33:55,960 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:34:00,758 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:34:00,758 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:34:00,758 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:34:00,758 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:34:00,960 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:00,960 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:00,960 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:00,960 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:04,928 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:04,928 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:04,928 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:34:04,928 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:14,765 : ---[ Start DHCP Wed Jul 27 03:45:14 2016]---
+2016-07-27 03:45:14,781 : Internet Systems Consortium DHCP Server 4.3.1
+2016-07-27 03:45:14,781 : Copyright 2004-2014 Internet Systems Consortium.
+2016-07-27 03:45:14,781 : All rights reserved.
+2016-07-27 03:45:14,781 : For info, please visit https://www.isc.org/software/dhcp/
+2016-07-27 03:45:14,781 : Config file: /etc/dhcp/dhcpd.conf
+2016-07-27 03:45:14,782 : Database file: /var/lib/dhcp/dhcpd.leases
+2016-07-27 03:45:14,782 : PID file: /var/run/dhcpd.pid
+2016-07-27 03:45:14,790 : Wrote 0 leases to leases file.
+2016-07-27 03:45:14,817 : Listening on LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:45:14,817 : Sending on   LPF/wlan1/a0:63:91:64:bf:f6/10.0.0.0/8
+2016-07-27 03:45:14,817 : Sending on   Socket/fallback/fallback-net
+2016-07-27 03:45:14,818 : Server starting service.
+2016-07-27 03:45:19,188 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:45:19,188 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:45:23,439 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:45:23,439 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:45:24,150 : DHCPDISCOVER from 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:45:25,154 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:28,323 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:28,324 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:35,726 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:35,726 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:51,254 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:45:51,255 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:45:55,671 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:45:55,672 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:45:56,288 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:45:56,289 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:00,968 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:00,968 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:07,885 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:07,886 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:23,479 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:46:23,479 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:46:27,860 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:46:27,860 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:46:28,472 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:28,473 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:33,375 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:33,375 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:41,315 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:41,315 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:46:55,695 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:46:55,695 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:47:00,396 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:47:00,397 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1
+2016-07-27 03:47:00,598 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:00,599 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:05,001 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:05,001 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:13,954 : DHCPDISCOVER from 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:13,954 : DHCPOFFER on 10.0.0.20 to 10:68:3f:7a:65:ef (android-8b005558e83e4ecf) via wlan1
+2016-07-27 03:47:27,598 : DHCPREQUEST for 192.168.0.19 from 10:68:3f:7a:65:ef via wlan1: wrong network.
+2016-07-27 03:47:27,598 : DHCPNAK on 192.168.0.19 to 10:68:3f:7a:65:ef via wlan1

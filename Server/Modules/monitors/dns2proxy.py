@@ -2,7 +2,7 @@ from os import getcwd,path
 from Core.loaders.Stealth.PackagesUI import *
 
 
-class frm_dns2proxy(PumpkinModule):
+class frm_dns2proxy(PredatorModule):
     def __init__(self, parent = None):
         super(frm_dns2proxy, self).__init__(parent)
         self.setGeometry(0, 0, 400, 400)
